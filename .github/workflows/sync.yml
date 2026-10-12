@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
+      APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+      APPS_SCRIPT_TOKEN: ${{ secrets.APPS_SCRIPT_TOKEN }}
       GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}

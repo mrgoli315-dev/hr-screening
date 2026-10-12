@@ -1,4 +1,4 @@
-# HR Screening — self-hosted (v1.0)
+# HR Screening — self-hosted (v1.1)
 
 The same HR screening page, running on your own free accounts:
 
@@ -17,7 +17,9 @@ api/sync.js                  Vercel function: the Sync button starts the GitHub 
 public/index.html            the page (rebuilt by every sync)
 public/claude-shim.js        replaces the Claude runtime (marks -> Supabase, sync -> /api/sync)
 public/config.js             your Supabase URL + anon key  <-- edit once
-pipeline/fetch.py            reads the sheets (Google service account)
+apps-script/Code.gs          Google Apps Script bridge (reads sheets + resumes as the sheet owner)
+pipeline/gdrive.py           talks to the bridge (or to a service account)
+pipeline/fetch.py            reads the sheets
 pipeline/rate.py             rates resumes with the Claude API
 pipeline/update.py, v3/...   unchanged scripts from the Claude version
 pipeline/runs.py             writes sync status for the page
@@ -39,7 +41,20 @@ supabase.sql                 database table
 3. Project Settings → API: copy **Project URL** and the **anon public** key.
 4. Put both in `public/config.js` and commit.
 
-### 3. Google service account (reads the sheets and resumes)
+### 3. Google access (reads the sheets and resumes) — use 3A
+
+#### 3A. Apps Script bridge (recommended; works when your organisation blocks service-account keys)
+1. Sign in as the account that owns the sheets and Forms (mrgolisoda2026@gmail.com) → script.google.com → **New project**. Name it `HR sync bridge`.
+2. Delete the sample code, paste the whole of `apps-script/Code.gs`.
+3. Change `TOKEN` (line `var TOKEN = ...`) to a long random text, e.g. `goli-7Hq2-Zp91-xK4m-2026`. Save (Ctrl+S).
+4. Choose function **testSetup** → **Run** → Review permissions → choose the account → Advanced → Go to HR sync bridge → **Allow**.
+   The log should show `BDE sheet rows: ...`.
+5. **Deploy → New deployment** → type **Web app** → Execute as **Me** → Who has access **Anyone** → **Deploy**. Copy the **Web app URL** (ends with `/exec`).
+6. These two go into GitHub secrets (step 5): `APPS_SCRIPT_URL` = the URL, `APPS_SCRIPT_TOKEN` = the TOKEN text.
+   (Then you do not need `GOOGLE_SA_JSON`.)
+If you edit Code.gs later: Deploy → Manage deployments → ✏️ → Version: New version → Deploy (the URL stays the same).
+
+#### 3B. Google service account (only if your account can create keys)
 1. console.cloud.google.com → create a project → APIs & Services → enable **Google Drive API**.
 2. IAM & Admin → Service Accounts → Create. Open it → Keys → Add key → JSON. A `.json` file downloads.
 3. Copy the service account e-mail (`...@...iam.gserviceaccount.com`) and **share with it as Viewer**,
@@ -58,7 +73,9 @@ Repository → Settings → Secrets and variables → Actions.
 **Secrets**
 | Name | Value |
 |---|---|
-| `GOOGLE_SA_JSON` | the whole content of the service-account `.json` file |
+| `APPS_SCRIPT_URL` | (3A) the Web app URL ending with `/exec` |
+| `APPS_SCRIPT_TOKEN` | (3A) the TOKEN text you set in Code.gs |
+| `GOOGLE_SA_JSON` | (3B only) the whole content of the service-account `.json` file |
 | `ANTHROPIC_API_KEY` | the Claude API key |
 | `SUPABASE_URL` | Supabase Project URL |
 | `SUPABASE_KEY` | Supabase anon key (same as in config.js) |

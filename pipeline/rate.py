@@ -93,7 +93,11 @@ def parse_json(text):
 
 
 def rate(item):
-    blocks, note = resume_blocks(item.get('fid'))
+    try:
+        blocks, note = resume_blocks(item.get('fid'))
+    except Exception as e:      # Drive / bridge hiccup: leave this person waiting, retry next run
+        print('FAILED (resume download)', item.get('n'), item.get('ph'), str(e)[:200], flush=True)
+        return None
     info = {k: item.get(k, '') for k in ('src', 'n', 'ph', 'st', 'fd', 'form', 'fid')}
     prompt = PROMPT.format(item=json.dumps(info, ensure_ascii=False), note=note, rules=RULES, schema=SCHEMA)
     last = None

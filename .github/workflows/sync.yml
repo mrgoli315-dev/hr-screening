@@ -1,0 +1,92 @@
+name: sync
+
+on:
+  schedule:
+    - cron: "30 0,12 * * *"   # 06:00 and 18:00 IST (cron is in UTC)
+  workflow_dispatch: {}        # "Sync leads now" button and the Actions tab "Run workflow"
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GOOGLE_SA_JSON: ${{ secrets.GOOGLE_SA_JSON }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      BDE_SHEET_ID: ${{ vars.BDE_SHEET_ID }}
+      BDE_GID: ${{ vars.BDE_GID }}
+      MBA_SHEET_ID: ${{ vars.MBA_SHEET_ID }}
+      MBA_GID: ${{ vars.MBA_GID }}
+      CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+      RUN_ID: run-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: 1 - mark started
+        run: python pipeline/runs.py started
+
+      - name: 2 - read the Google Sheets
+        run: python pipeline/fetch.py
+
+      - name: 3 - add new rows
+        run: |
+          if [ -f work/mba_rows.json ]; then
+            python pipeline/update.py append --bde work/bde_rows.json --mba work/mba_rows.json
+          else
+            python pipeline/update.py append --bde work/bde_rows.json
+          fi
+
+      - name: 4 - find unscreened applicants
+        run: |
+          python pipeline/update.py new > work/new_raw.txt
+          cat work/new_raw.txt
+          python -c "import json;t=open('work/new_raw.txt').read();json.dump(json.loads(t[t.index('{'):]),open('work/new.json','w'))"
+
+      - name: 5 - rate resumes with Claude
+        run: |
+          python pipeline/rate.py | tee work/rate_raw.txt
+          tail -n 1 work/rate_raw.txt > work/rate.json
+
+      - name: 6 - merge ratings
+        run: |
+          python pipeline/update.py merge | tee work/merge_raw.txt
+          tail -n 1 work/merge_raw.txt > work/merge.json
+
+      - name: 7 - build the page
+        run: |
+          python pipeline/update.py build
+          python pipeline/publish.py
+
+      - name: 8 - save and deploy
+        run: |
+          git config user.name  "${{ vars.COMMIT_NAME || 'hr-sync-bot' }}"
+          git config user.email "${{ vars.COMMIT_EMAIL || 'hr-sync-bot@users.noreply.github.com' }}"
+          git add -A pipeline public
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "sync: new applications $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+
+      - name: 9 - mark done
+        run: python pipeline/runs.py done
+
+      - name: mark failed
+        if: failure()
+        run: python pipeline/runs.py failed "${{ job.status }}" "Sync failed - open GitHub Actions to see the step"

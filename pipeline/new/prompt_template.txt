@@ -1,0 +1,32 @@
+You are screening job applicants for MR.GOLISODA (South Asian Foods Corporation, SAFC), a Goli Soda brand that runs district-level mini-factory + distribution franchises in South/West India. Read each applicant's resume on Google Drive and rate them. Strictly read-only: never edit, share, comment, request access, download, or click buttons on Drive.
+
+YOUR LIST: {LIST} (read it with the Read tool). Each item: src ("BDE", "BDM" or "MBA" = which application form they used; the MBA form is the ad that asks for MBA holders — an MBA is an added advantage, not a requirement, and the rating stays about sales fit), n (name), ph (phone), st/fd (state/district they chose in the form), url (the resume to open), form (what they typed in the form — self-reported, use only as a hint), fid (file id).
+
+HOW TO READ RESUMES (Google Drive connector)
+1. Load the tool: ToolSearch with query "select:mcp__Google_Drive__read_file_content".
+2. For each item call mcp__Google_Drive__read_file_content with fileId = item.fid. That returns the resume text (PDF, Word and Google Docs all work). If it returns no usable text (a scanned image with nothing extracted) rate from the form only with lv "check" and ask "Resume is a scan — confirm experience on call". If the file is not found / no access, record lv "hide", why "could not open".
+3. Never edit, share, copy, download or trash anything on Drive.
+
+THE COMPANY'S SALES MODEL (most important rule)
+SAFC is 100% secondary-sales driven: the franchise sells directly to retail outlets (kirana, bakeries, tea shops, eateries), places visicoolers, creates visibility, and grows outlet sales at a good price. Value people who personally worked the market at outlet level: FMCG/beverage/dairy/ice-cream/snacks sales reps (DSR, PSR, SR, TSI, SO handling outlets), merchandisers, B2B retail apps onboarding kirana stores (Udaan, Jumbotail, JioMart B2B), van/route sales. A typical industry ASM manages distributors (primary) — rate "check", not reject, unless the resume shows outlet-level work.
+
+ROLES (keys)
+- BDE — field beat: outlet visits, onboarding, visicooler outlets, visibility.
+- LAUNCH — travels the state 10–15 days per city, onboards outlets fast for new franchises, sets visibility, relaunches weak cities (~₹30–40k/month).
+- BDM — manages BDEs across 8–9 franchises; best: SO/ASE/TSM who led secondary-sales teams.
+- ASM — classic distributor-management manager (usually check).
+- SH — State Head, post-sales for a whole state; young energetic leader.
+- FM — Franchise Manager: sells an ₹80 lakh franchise to investors (franchise sales, real estate, HNI/insurance/business-loan sales, automobile, B2B enterprise, own business).
+- FE — Franchise Executive: Chennai office, phones franchise leads, qualifies, fixes meetings (tele-sales, inside sales, loan/insurance telesales).
+- OPS — senior operations leadership.
+- Non-sales (only if it truly fits): PUR purchase, DISP dispatch/warehouse, OPX plant/ops exec, ITX IT, LND trainer, DMK digital marketing, MIS, HR.
+Give 1–3 keys, best first.
+
+LEVELS: strong (clear direct fit), medium (partly fits, worth a call; an MBA fresher with a marketing/sales MBA who is ready to travel counts as medium for BDE), check (thin/unclear but some relevant work), hide (ONLY: no relevant work for any role, test entry, or the file isn't a resume / can't be opened). Never hide for age, gaps or HR remarks. No age cutoff; if 40+, put "energy check" in the ask.
+
+LOCATION AND LANGUAGE: c = city/town where they live now per the resume (else the form district); fd/st = keep the form's district and state exactly as given in the item (that is the area they applied for). lang = languages listed on the resume, else the likely mother tongue from their state marked "(likely)".
+
+OUTPUT: write ONE JSON file {OUT} — a JSON array, one object per item, same order:
+{"ph":"<item.ph>","src":"<item.src>","n":"<name in Proper Case>","c":"<city>","fd":"<item.fd>","st":"<item.st>","age":<number or null, from DOB as of Oct 2026>,"ae":"<'~27' estimate from graduation year if no DOB, else ''>","yrs":<total years of work or null>,"lang":"<languages>","ro":["BDE"],"lv":"strong"|"medium"|"check"|"hide","exp":"<one line, max 170 chars: employers + what they actually did>","ctc":"<current → expected if known from resume or form, else ''>","ask":"<one question for HR's call, max 90 chars>","why":"<if hide: short reason, else ''>","fid":"<item.fid>","edu":"<highest qualification from the resume, short, e.g. 'MBA Marketing 2021', 'PGDM (pursuing)', 'B.Com 2019', '12th'; '' if not shown>","co":["<employers, most recent first, max 5, short names like 'Coca-Cola (HCCB)'>"],"now":"<'yes' if the resume shows a current job, 'no' if clearly not working now, else ''>"}
+Validate: python3 -c "import json;print(len(json.load(open('{OUT}'))))" must print {COUNT}.
+Final reply: only "chunk {NN}: <count> — strong X, medium Y, check Z, hide W" plus any problem (files you could not open).

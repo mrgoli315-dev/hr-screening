@@ -1,0 +1,59 @@
+{
+ "missing": [
+  "Tamil Nadu · Launch Team (Coimbatore, Salem, Chennai) — added on this page on 7 Oct; still to be created in the HR app",
+  "12 positions from Chandru's open-positions list of 8 Oct (BDE Ranipet, Nirmal, Hubli, Satara, Nagpur; BDM Trichy, Coimbatore, Nandyal, Tirupati, Vizag, Hubli; State Head Karnataka) — on this page, still to be created in the HR app",
+  "5 positions marked 'Temporarily closed' in the HR app are open on Chandru's list of 8 Oct (BDM Chennai, BDE Nalgonda, BDE Hyderabad, State Head Hyderabad, BDE Jamshedpur) — shown open here; reopen them in the app",
+  "Telangana · Franchise Executive (Telugu, sits in Chennai) — not created in the app",
+  "Franchise Operations Manager — Kiran K taken, but no position exists in the app"
+ ],
+ "issues": [
+  [
+   "Akhilesh Sudhamsetti",
+   "Resume file belongs to someone else (S. Ajith Kumar, Chennai). Get his real resume."
+  ],
+  [
+   "Shaikh Abbas",
+   "Resume file belongs to \"Shaikh Ahejaj\". Get his real resume."
+  ],
+  [
+   "Pramod RU",
+   "Resume file belongs to Ravindran L (Erode). Get his real resume."
+  ],
+  [
+   "Spandana Reddy",
+   "Resume file belongs to Vigneshwar Reddy Konaganti. Get her real resume."
+  ],
+  [
+   "Pochimireddy Srikanth Reddy",
+   "One of his two files is another person's CV (Sree Hari S). Re-upload his own."
+  ],
+  [
+   "Kasindala Naga Dileep",
+   "The \"resume\" is our internal MIS meeting agenda — get his real resume, and check where that file came from."
+  ],
+  [
+   "\"delete\" and \"delete3\"",
+   "Test records sitting in Telangana Franchise Manager — they make it look 2 of 3 filled. Delete them."
+  ],
+  [
+   "Neha Manish",
+   "Phone saved as 662865287 (from LinkedIn URL). Real number on resume: 9962128039."
+  ],
+  [
+   "Vanam Vignesh",
+   "No phone number saved; his resume also has none. Use email."
+  ],
+  [
+   "Thiruvallur BDE / Nashik Manager",
+   "Department saved as \"BDE\" and \"Sales\" in the app, so they don't group with Post Sales. Shown under Post Sales here — change the department in the app."
+  ],
+  [
+   "Avadhut Potdar (Sangli, BDE form, 7 Oct)",
+   "Uploaded someone else's resume (Kajal Ramesh Biruagi). Ask him for his own."
+  ],
+  [
+   "Basavaraj (Dharwad, BDE form, 6 Oct)",
+   "His PDF is password-protected, so it could not be read. Ask him to re-send it without a password."
+  ]
+ ]
+}

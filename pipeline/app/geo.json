@@ -1,0 +1,884 @@
+{
+ "alias": {
+  "bengaluru urban": [
+   "bangalore",
+   "bengaluru",
+   "bangalore urban",
+   "bangalore city",
+   "whitefield",
+   "electronic city",
+   "yelahanka",
+   "marathahalli",
+   "jp nagar",
+   "btm layout",
+   "koramangala",
+   "hebbal",
+   "kr puram",
+   "peenya",
+   "banashankari",
+   "jayanagar",
+   "rajajinagar",
+   "bommanahalli",
+   "hsr layout"
+  ],
+  "bengaluru rural": [
+   "bangalore rural",
+   "hoskote",
+   "devanahalli",
+   "nelamangala",
+   "doddaballapur",
+   "anekal"
+  ],
+  "belagavi": [
+   "belgaum",
+   "gokak",
+   "chikodi",
+   "athani",
+   "nippani",
+   "bailhongal",
+   "saundatti",
+   "khanapur"
+  ],
+  "dharwad": [
+   "hubli",
+   "hubballi",
+   "hubballi dharwad",
+   "hubli dharwad"
+  ],
+  "bagalkot": [
+   "bagalkote",
+   "jamkhandi",
+   "mudhol"
+  ],
+  "vijayapura": [
+   "bijapur"
+  ],
+  "uttara kannada": [
+   "karwar",
+   "dandeli",
+   "sirsi"
+  ],
+  "mysuru": [
+   "mysore"
+  ],
+  "tumakuru": [
+   "tumkur"
+  ],
+  "ramanagara": [
+   "ramanagaram",
+   "channapatna"
+  ],
+  "chikkaballapur": [
+   "chikballapur",
+   "chikkaballapura"
+  ],
+  "kolar": [],
+  "ananthapuramu": [
+   "anantapur",
+   "ananthapur",
+   "ananthapuram",
+   "anantapuramu",
+   "guntakal",
+   "tadipatri",
+   "gooty",
+   "rayadurg",
+   "kalyandurg",
+   "uravakonda"
+  ],
+  "sri sathya sai": [
+   "sri satya sai",
+   "puttaparthi",
+   "dharmavaram",
+   "hindupur",
+   "kadiri",
+   "penukonda"
+  ],
+  "chittoor": [
+   "chitoor",
+   "palamaner",
+   "kuppam",
+   "punganur"
+  ],
+  "tirupati": [
+   "tirupathi",
+   "srikalahasti",
+   "puttur"
+  ],
+  "annamayya": [
+   "rayachoti",
+   "madanapalle",
+   "madanapalli"
+  ],
+  "guntur": [
+   "tenali",
+   "mangalagiri"
+  ],
+  "palnadu": [
+   "narasaraopet",
+   "sattenapalli",
+   "macherla",
+   "vinukonda",
+   "chilakaluripet",
+   "piduguralla"
+  ],
+  "bapatla": [
+   "chirala"
+  ],
+  "ntr": [
+   "vijayawada",
+   "ntr district",
+   "nandigama"
+  ],
+  "krishna": [
+   "machilipatnam",
+   "gudivada"
+  ],
+  "prakasam": [
+   "ongole"
+  ],
+  "visakhapatnam": [
+   "vishakapatnam",
+   "vishakhapatnam",
+   "vizag",
+   "visakapatnam",
+   "vishakapatanam",
+   "gajuwaka"
+  ],
+  "anakapalli": [
+   "anakapalle"
+  ],
+  "vizianagaram": [],
+  "alluri sitharama raju": [
+   "paderu"
+  ],
+  "hyderabad": [
+   "secunderabad",
+   "kukatpally",
+   "lb nagar",
+   "ameerpet",
+   "dilsukhnagar",
+   "begumpet",
+   "mehdipatnam",
+   "hitech city",
+   "madhapur",
+   "gachibowli",
+   "kondapur"
+  ],
+  "rangareddy": [
+   "ranga reddy",
+   "rangareddi",
+   "shamshabad",
+   "rajendranagar",
+   "manikonda",
+   "serilingampally",
+   "hayathnagar"
+  ],
+  "medchal malkajgiri": [
+   "medchal",
+   "malkajgiri",
+   "medchal malkajigiri",
+   "uppal",
+   "kompally",
+   "quthbullapur",
+   "alwal",
+   "ghatkesar",
+   "keesara"
+  ],
+  "sangareddy": [
+   "patancheru"
+  ],
+  "nalgonda": [
+   "miryalaguda",
+   "devarakonda"
+  ],
+  "suryapet": [],
+  "yadadri bhuvanagiri": [
+   "yadadri",
+   "bhongir",
+   "bhuvanagiri"
+  ],
+  "vikarabad": [],
+  "medak": [],
+  "chennai": [
+   "madras",
+   "velachery",
+   "porur",
+   "ambattur",
+   "anna nagar",
+   "t nagar",
+   "adyar",
+   "guindy",
+   "egmore",
+   "kodambakkam",
+   "mylapore",
+   "perambur",
+   "tondiarpet",
+   "saidapet",
+   "vadapalani",
+   "nungambakkam",
+   "royapettah",
+   "sholinganallur",
+   "thoraipakkam",
+   "perungudi",
+   "madhavaram",
+   "kolathur",
+   "villivakkam",
+   "ashok nagar",
+   "k k nagar",
+   "valasaravakkam",
+   "virugambakkam",
+   "mogappair",
+   "kilpauk",
+   "purasaiwalkam",
+   "washermanpet",
+   "tiruvottiyur",
+   "ennore",
+   "manali"
+  ],
+  "tiruvallur": [
+   "thiruvallur",
+   "tiruvalur",
+   "thiruvalur",
+   "avadi",
+   "poonamallee",
+   "ponneri",
+   "gummidipoondi",
+   "tiruttani",
+   "thiruttani",
+   "redhills",
+   "red hills",
+   "thirunindravur",
+   "tiruninravur",
+   "pattabiram",
+   "thiruverkadu"
+  ],
+  "chengalpattu": [
+   "chengalpet",
+   "chengalpattu district",
+   "tambaram",
+   "pallavaram",
+   "chromepet",
+   "guduvancheri",
+   "maraimalai nagar",
+   "kelambakkam",
+   "urapakkam",
+   "medavakkam",
+   "selaiyur",
+   "perungalathur",
+   "vandalur",
+   "madipakkam",
+   "pammal",
+   "keelkattalai",
+   "nanganallur"
+  ],
+  "kancheepuram": [
+   "kanchipuram",
+   "kanchepuram",
+   "sriperumbudur",
+   "kunrathur"
+  ],
+  "ranipet": [
+   "arakkonam",
+   "walajapet",
+   "arcot",
+   "sholinghur"
+  ],
+  "vellore": [
+   "katpadi",
+   "gudiyatham"
+  ],
+  "coimbatore": [
+   "kovai",
+   "pollachi",
+   "mettupalayam",
+   "sulur",
+   "gandhipuram",
+   "peelamedu",
+   "saravanampatti",
+   "singanallur",
+   "ganapathy"
+  ],
+  "tiruppur": [
+   "tirupur",
+   "avinashi",
+   "palladam",
+   "dharapuram",
+   "udumalpet",
+   "udumalaipettai"
+  ],
+  "nilgiris": [
+   "ooty",
+   "udhagamandalam",
+   "coonoor"
+  ],
+  "salem": [
+   "mettur",
+   "attur",
+   "omalur",
+   "yercaud",
+   "edappadi",
+   "sankari"
+  ],
+  "namakkal": [
+   "tiruchengode",
+   "rasipuram",
+   "paramathi velur"
+  ],
+  "erode": [
+   "gobichettipalayam",
+   "bhavani",
+   "perundurai",
+   "sathyamangalam"
+  ],
+  "dharmapuri": [
+   "harur",
+   "palacode"
+  ],
+  "krishnagiri": [
+   "hosur",
+   "denkanikottai"
+  ],
+  "gandhinagar": [
+   "kalol"
+  ],
+  "ahmedabad": [
+   "amdavad",
+   "sanand"
+  ],
+  "mehsana": [
+   "mahesana"
+  ],
+  "sabarkantha": [
+   "himmatnagar"
+  ],
+  "kheda": [
+   "nadiad"
+  ],
+  "nagpur": [
+   "kamptee",
+   "hingna"
+  ],
+  "wardha": [],
+  "bhandara": [],
+  "kolhapur": [
+   "ichalkaranji",
+   "kagal",
+   "gadhinglaj",
+   "jaysingpur"
+  ],
+  "sangli": [
+   "miraj",
+   "islampur",
+   "tasgaon",
+   "sangli miraj kupwad"
+  ],
+  "pune": [
+   "pimpri chinchwad",
+   "pimpri",
+   "chinchwad",
+   "hadapsar",
+   "haveli",
+   "chakan",
+   "hinjewadi",
+   "wakad",
+   "kothrud",
+   "bhosari"
+  ],
+  "satara": [
+   "karad",
+   "phaltan",
+   "wai"
+  ],
+  "ahmednagar": [
+   "ahmadnagar",
+   "ahilyanagar",
+   "ahmed nagar",
+   "shirdi",
+   "sangamner"
+  ],
+  "raigad": [
+   "panvel",
+   "alibag"
+  ],
+  "nashik": [
+   "nasik",
+   "malegaon",
+   "sinnar",
+   "niphad"
+  ],
+  "dhule": [],
+  "solapur": [
+   "sholapur",
+   "sangola"
+  ],
+  "east singhbhum": [
+   "jamshedpur",
+   "purbi singhbhum",
+   "east singhbhum jamshedpur"
+  ],
+  "seraikela kharsawan": [
+   "seraikela",
+   "saraikela",
+   "adityapur"
+  ],
+  "west singhbhum": [
+   "chaibasa"
+  ],
+  "raipur": [],
+  "durg": [
+   "bhilai"
+  ],
+  "dhamtari": [],
+  "mahasamund": [],
+  "baloda bazar": [],
+  "delhi": [
+   "new delhi",
+   "south delhi",
+   "north delhi",
+   "east delhi",
+   "west delhi",
+   "central delhi",
+   "south west delhi",
+   "north west delhi",
+   "shahdara"
+  ],
+  "gurugram": [
+   "gurgaon"
+  ],
+  "gautam buddh nagar": [
+   "noida",
+   "greater noida",
+   "gautam budh nagar",
+   "gautam buddha nagar"
+  ],
+  "ghaziabad": [],
+  "faridabad": [],
+  "tiruchirappalli": [
+   "lalgudi",
+   "manapparai",
+   "musiri",
+   "srirangam",
+   "thiruchirappalli",
+   "thuraiyur",
+   "tiruchi",
+   "tiruchirapalli",
+   "trichirappalli",
+   "trichy"
+  ],
+  "thanjavur": [
+   "kumbakonam",
+   "tanjore"
+  ],
+  "karur": [],
+  "perambalur": [],
+  "ariyalur": [],
+  "pudukkottai": [
+   "pudukottai"
+  ],
+  "tiruvannamalai": [
+   "arani",
+   "thiruvannamalai"
+  ],
+  "villupuram": [
+   "viluppuram"
+  ],
+  "cuddalore": [],
+  "madurai": [],
+  "dindigul": [],
+  "theni": [],
+  "virudhunagar": [],
+  "nirmal": [
+   "bhainsa"
+  ],
+  "adilabad": [],
+  "nizamabad": [],
+  "jagtial": [
+   "jagityal"
+  ],
+  "mancherial": [],
+  "kamareddy": [],
+  "karimnagar": [],
+  "nandyal": [
+   "allagadda",
+   "atmakur",
+   "banaganapalle",
+   "dhone",
+   "nandikotkur"
+  ],
+  "kurnool": [
+   "adoni",
+   "yemmiganur"
+  ],
+  "ysr kadapa": [
+   "cuddapah",
+   "kadapa",
+   "proddatur",
+   "pulivendula",
+   "ysr"
+  ],
+  "sri potti sriramulu nellore": [
+   "gudur",
+   "kavali",
+   "nellore",
+   "spsr nellore"
+  ],
+  "gadag": [],
+  "haveri": [
+   "ranebennur"
+  ],
+  "koppal": [],
+  "ballari": [
+   "bellary",
+   "hosapete",
+   "hospet"
+  ],
+  "vijayanagara": [],
+  "chandrapur": [],
+  "amravati": [],
+  "gondia": [],
+  "yavatmal": []
+ },
+ "area": {
+  "Chittoor": [
+   [
+    "chittoor",
+    "tirupati"
+   ],
+   [
+    "annamayya"
+   ]
+  ],
+  "Ananthapur": [
+   [
+    "ananthapuramu"
+   ],
+   [
+    "sri sathya sai"
+   ]
+  ],
+  "Guntur": [
+   [
+    "bapatla",
+    "guntur",
+    "palnadu"
+   ],
+   [
+    "krishna",
+    "ntr",
+    "prakasam"
+   ]
+  ],
+  "Visakhapatnam": [
+   [
+    "anakapalli",
+    "visakhapatnam"
+   ],
+   [
+    "alluri sitharama raju",
+    "vizianagaram"
+   ]
+  ],
+  "Palnadu": [
+   [
+    "guntur",
+    "palnadu"
+   ],
+   [
+    "bapatla",
+    "ntr",
+    "prakasam"
+   ]
+  ],
+  "Hyderabad": [
+   [
+    "hyderabad",
+    "medchal malkajgiri",
+    "rangareddy"
+   ],
+   [
+    "medak",
+    "sangareddy",
+    "vikarabad",
+    "yadadri bhuvanagiri"
+   ]
+  ],
+  "Nalgonda": [
+   [
+    "nalgonda"
+   ],
+   [
+    "suryapet",
+    "yadadri bhuvanagiri"
+   ]
+  ],
+  "Thiruvallur": [
+   [
+    "chennai",
+    "tiruvallur"
+   ],
+   [
+    "chengalpattu",
+    "kancheepuram",
+    "ranipet"
+   ]
+  ],
+  "Pallavaram": [
+   [
+    "chengalpattu",
+    "chennai",
+    "kancheepuram"
+   ],
+   [
+    "tiruvallur"
+   ]
+  ],
+  "Velachery": [
+   [
+    "chengalpattu",
+    "chennai"
+   ],
+   [
+    "kancheepuram",
+    "tiruvallur"
+   ]
+  ],
+  "Chennai": [
+   [
+    "chengalpattu",
+    "chennai",
+    "kancheepuram",
+    "tiruvallur"
+   ],
+   [
+    "ranipet"
+   ]
+  ],
+  "Coimbatore": [
+   [
+    "coimbatore"
+   ],
+   [
+    "erode",
+    "nilgiris",
+    "tiruppur"
+   ]
+  ],
+  "Salem": [
+   [
+    "salem"
+   ],
+   [
+    "dharmapuri",
+    "erode",
+    "krishnagiri",
+    "namakkal"
+   ]
+  ],
+  "Belagavi": [
+   [
+    "belagavi"
+   ],
+   [
+    "bagalkot",
+    "dharwad",
+    "uttara kannada",
+    "vijayapura"
+   ]
+  ],
+  "Bengaluru": [
+   [
+    "bengaluru rural",
+    "bengaluru urban"
+   ],
+   [
+    "chikkaballapur",
+    "kolar",
+    "ramanagara",
+    "tumakuru"
+   ]
+  ],
+  "Gandhinagar": [
+   [
+    "ahmedabad",
+    "gandhinagar"
+   ],
+   [
+    "kheda",
+    "mehsana",
+    "sabarkantha"
+   ]
+  ],
+  "Ahmedabad": [
+   [
+    "ahmedabad",
+    "gandhinagar"
+   ],
+   [
+    "kheda",
+    "mehsana"
+   ]
+  ],
+  "Nagpur": [
+   [
+    "nagpur"
+   ],
+   [
+    "wardha",
+    "bhandara",
+    "chandrapur",
+    "amravati",
+    "gondia"
+   ]
+  ],
+  "Kolhapur": [
+   [
+    "kolhapur"
+   ],
+   [
+    "sangli"
+   ]
+  ],
+  "Pune": [
+   [
+    "pune"
+   ],
+   [
+    "ahmednagar",
+    "raigad",
+    "satara"
+   ]
+  ],
+  "Nashik": [
+   [
+    "nashik"
+   ],
+   [
+    "ahmednagar",
+    "dhule"
+   ]
+  ],
+  "Sangli": [
+   [
+    "sangli"
+   ],
+   [
+    "kolhapur",
+    "satara",
+    "solapur"
+   ]
+  ],
+  "Jamshedpur": [
+   [
+    "east singhbhum"
+   ],
+   [
+    "seraikela kharsawan",
+    "west singhbhum"
+   ]
+  ],
+  "Raipur": [
+   [
+    "raipur"
+   ],
+   [
+    "baloda bazar",
+    "dhamtari",
+    "durg",
+    "mahasamund"
+   ]
+  ],
+  "Thiruvananthapuram": [
+   [],
+   []
+  ],
+  "Delhi": [
+   [
+    "delhi",
+    "faridabad",
+    "gautam buddh nagar",
+    "ghaziabad",
+    "gurugram"
+   ],
+   []
+  ],
+  "Ranipet": [
+   [
+    "ranipet",
+    "vellore"
+   ],
+   [
+    "tiruvannamalai",
+    "kancheepuram",
+    "tiruvallur",
+    "chengalpattu"
+   ]
+  ],
+  "Tiruchirappalli": [
+   [
+    "tiruchirappalli"
+   ],
+   [
+    "karur",
+    "perambalur",
+    "thanjavur",
+    "pudukkottai",
+    "ariyalur",
+    "namakkal"
+   ]
+  ],
+  "Nirmal": [
+   [
+    "nirmal"
+   ],
+   [
+    "adilabad",
+    "nizamabad",
+    "jagtial",
+    "mancherial",
+    "kamareddy"
+   ]
+  ],
+  "Nandyal": [
+   [
+    "nandyal"
+   ],
+   [
+    "kurnool",
+    "ysr kadapa",
+    "prakasam"
+   ]
+  ],
+  "Tirupati": [
+   [
+    "tirupati",
+    "chittoor"
+   ],
+   [
+    "annamayya",
+    "sri potti sriramulu nellore"
+   ]
+  ],
+  "Hubli": [
+   [
+    "dharwad"
+   ],
+   [
+    "belagavi",
+    "gadag",
+    "haveri",
+    "uttara kannada"
+   ]
+  ],
+  "Satara": [
+   [
+    "satara"
+   ],
+   [
+    "sangli",
+    "kolhapur",
+    "pune",
+    "solapur"
+   ]
+  ]
+ }
+}

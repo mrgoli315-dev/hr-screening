@@ -1,0 +1,12 @@
+work/
+__pycache__/
+pipeline/new/chunk_run_*.json
+pipeline/new/prompt_run_*.txt
+pipeline/new/out_run_*.json
+pipeline/new/done/
+pipeline/v3/data.js
+pipeline/v3/t.js
+pipeline/v3/sales-hiring-shortlist.html
+pipeline/v3/combined-hiring-shortlist.html
+pipeline/v3/MR_GOLISODA_Hiring_Shortlist.html
+.vercel

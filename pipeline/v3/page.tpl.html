@@ -1,0 +1,1021 @@
+<title>HR screening (Copy)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: header + rule line → summary figures → view switch (Positions / Candidates / Needs attention) + state chips → one view at a time; a side drawer shows one person */
+:root{
+  --bg:#f3f6f4; --surface:#ffffff; --sunk:#eaf0ed; --fg:#14211d; --muted:#5b6b66; --line:#dbe3df;
+  --accent:#17705f; --accent-soft:#e1f0eb; --on-accent:#ffffff;
+  --green:#1d7a3e; --green-soft:#e2f3e7; --yellow:#8a6a00; --yellow-soft:#fbf3d0;
+  --orange:#b4520e; --orange-soft:#fde8d8; --red:#b3261e; --red-soft:#fbe4e2; --wa:#1f8a4c;
+  --shadow:0 12px 40px rgba(20,33,29,.18);
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1715; --surface:#16211e; --sunk:#121c19; --fg:#e4ece9; --muted:#97a8a2; --line:#2a3834;
+  --accent:#5cc3a8; --accent-soft:#1c3530; --on-accent:#0f1715;
+  --green:#6fd08f; --green-soft:#173322; --yellow:#e9cc5e; --yellow-soft:#352d10;
+  --orange:#f2a46b; --orange-soft:#3b2414; --red:#f08a80; --red-soft:#3b1d1a; --wa:#3fb872;
+  --shadow:0 12px 40px rgba(0,0,0,.5); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1715; --surface:#16211e; --sunk:#121c19; --fg:#e4ece9; --muted:#97a8a2; --line:#2a3834;
+  --accent:#5cc3a8; --accent-soft:#1c3530; --on-accent:#0f1715;
+  --green:#6fd08f; --green-soft:#173322; --yellow:#e9cc5e; --yellow-soft:#352d10;
+  --orange:#f2a46b; --orange-soft:#3b2414; --red:#f08a80; --red-soft:#3b1d1a; --wa:#3fb872;
+  --shadow:0 12px 40px rgba(0,0,0,.5); color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:14px;line-height:1.45}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:16px;padding-block:24px 64px;display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(24px,4vw,34px);letter-spacing:-.01em}
+h2{font-size:20px}
+h3{font-size:16px}
+.sub{color:var(--muted);margin:6px 0 0;max-width:78ch}
+.rule{margin:10px 0 0;padding:9px 12px;border-radius:8px;background:var(--accent-soft);max-width:78ch}
+.rule b{color:var(--accent)}
+
+/* summary figures */
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(160px,100%),1fr));gap:10px}
+.fig{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:2px}
+.fig b{font-family:var(--display);font-size:26px;line-height:1.1;font-variant-numeric:tabular-nums}
+.fig span{color:var(--muted);font-size:12.5px}
+.fig .split{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;font-weight:600}
+.split .s,.fsum .s{color:var(--green)} .split .m,.fsum .m{color:var(--yellow)} .split .c,.fsum .c{color:var(--orange)}
+.fig.warn b{color:var(--orange)}
+
+/* view switch + chips */
+.bar{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;position:relative;z-index:5;background:var(--bg);padding-block:8px;border-bottom:1px solid var(--line)}
+.views{display:flex;gap:4px;background:var(--sunk);border:1px solid var(--line);border-radius:10px;padding:4px;width:fit-content;max-width:100%;overflow-x:auto}
+.view{font:inherit;font-weight:700;border:0;background:transparent;color:var(--muted);border-radius:7px;padding:7px 14px;cursor:pointer;white-space:nowrap}
+.view small{font-weight:600;margin-left:6px;font-variant-numeric:tabular-nums}
+.view[aria-selected="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.filterrow{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.pfilters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;align-items:end}
+.pfilters .sel{display:grid;gap:3px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;min-width:0}
+.pfilters select{font:inherit;font-size:13px;text-transform:none;letter-spacing:0;font-weight:500;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 8px;min-width:0;width:100%}
+.pfilters select.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);font-weight:700}
+.pfilters .chk{align-self:center;font-size:13px}
+.fclear{font:inherit;font-size:13px;font-weight:700;color:var(--accent);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}
+.fsum{color:var(--muted);font-size:12.5px;margin:0}
+.fsum b{color:var(--fg)}
+.flabel{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;min-width:48px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;flex:1;min-width:0}
+.tab{font:inherit;font-weight:600;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:4px 11px;cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.tab small{font-weight:500;opacity:.75;margin-left:4px;font-variant-numeric:tabular-nums}
+button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* positions */
+.stgroup{display:grid;gap:12px}
+.sthead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-top:8px}
+.sthead small{color:var(--muted);font-size:13px}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.ptop{display:grid;gap:6px;padding:12px 14px 10px}
+.ptitle{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.ptitle h3{font-size:16.5px}
+.meta{color:var(--muted);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.meta b{color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums}
+.pnote{color:var(--muted);font-size:12.5px}
+.pst{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:2px 9px;white-space:nowrap;text-transform:uppercase;letter-spacing:.04em}
+.pst.open{background:var(--green-soft);color:var(--green)}
+.pst.stuck{background:var(--orange-soft);color:var(--orange)}
+.pst.temp{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+.pst.prio{background:var(--red-soft);color:var(--red)}
+.mcount{display:flex;gap:8px;flex-wrap:wrap;font-size:12.5px;font-weight:700}
+.mcount .s{color:var(--green)} .mcount .m{color:var(--yellow)} .mcount .c{color:var(--orange)} .mcount .z{color:var(--red)}
+.mlist{border-top:1px solid var(--line)}
+.mhead,.mrow{display:grid;grid-template-columns:minmax(0,1.5fr) 46px 62px minmax(0,1fr) minmax(0,.95fr) minmax(0,1.55fr) auto;gap:6px 12px;align-items:center}
+.mhead{padding:7px 14px 7px 18px;background:var(--sunk);border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.mrow{padding:9px 14px;border-bottom:1px solid var(--line);border-left:4px solid transparent}
+.cell{font-size:13px;min-width:0}
+.cell .lab{display:none}
+.sub{font-size:12px;color:var(--muted)}
+.who .phone{font-size:12px;color:var(--muted)}
+.co{font-size:12.5px;line-height:1.35}
+.cmore{color:var(--muted);font-weight:600}
+.dash{color:var(--muted)}
+.ask0{color:var(--muted);font-size:12px;font-style:italic}
+.jn{font-size:11.5px;font-weight:700;border-radius:999px;padding:2px 8px;display:inline-block;white-space:nowrap}
+.jn.imm,.jn.free{background:var(--green-soft);color:var(--green)}
+.jn.days{background:var(--yellow-soft);color:var(--yellow)}
+.jn.work{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+.lvtabs{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.lvt{font:inherit;font-size:12.5px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:3px 11px;cursor:pointer}
+.lvt small{font-weight:600;margin-left:3px;font-variant-numeric:tabular-nums;opacity:.85}
+.lvt.lv-strong{color:var(--green)} .lvt.lv-medium{color:var(--yellow)} .lvt.lv-check{color:var(--orange)} .lvt.lv-wait{color:var(--muted);border-style:dashed}
+.lvt[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.lvt.lv-strong[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.lvt.lv-medium[aria-pressed="true"]{background:var(--yellow);border-color:var(--yellow);color:#fff}
+.lvt.lv-check[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#fff}
+.lvt.lv-wait[aria-pressed="true"]{background:var(--muted);border-color:var(--muted);color:#fff;border-style:solid}
+.lvt:disabled{opacity:.4;cursor:default}
+.lvtabs .z{color:var(--red);font-weight:700;font-size:12.5px}
+.mrow:last-child{border-bottom:0}
+.mrow.strong{border-left-color:var(--green)} .mrow.medium{border-left-color:var(--yellow)} .mrow.check{border-left-color:var(--orange)} .mrow.wait{border-left-color:var(--line);border-left-style:dashed}
+.who{min-width:0;display:grid;gap:2px}
+.nm{font:inherit;font-weight:700;color:var(--fg);background:none;border:0;padding:0;text-align:left;cursor:pointer;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.nm:hover{text-decoration-color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:4px}
+.act{display:flex;gap:6px;align-items:center;justify-content:flex-end;flex-wrap:wrap}
+.pill{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:1px 8px;white-space:nowrap}
+.lvpill.strong{background:var(--green-soft);color:var(--green)}
+.lvpill.medium{background:var(--yellow-soft);color:var(--yellow)}
+.lvpill.check{background:var(--orange-soft);color:var(--orange)}
+.lvpill.wait{background:var(--sunk);color:var(--muted);border:1px dashed var(--muted)}
+.lvpill.hide{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+tr.lv-hide td:first-child{border-left-color:var(--line)}
+.lnk{font:inherit;font-weight:700;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.tier{background:var(--accent-soft);color:var(--accent)}
+.tier.nearby,.tier.state,.tier.move{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+.tier.unknown{background:var(--yellow-soft);color:var(--yellow)}
+.src{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}
+.when{background:var(--accent-soft);color:var(--accent);font-variant-numeric:tabular-nums}
+.dpick{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-size:12.5px;color:var(--muted)}
+.dpick label{display:inline-flex;align-items:center;gap:6px}
+.dpick input[type=date]{font:inherit;font-size:13px;padding:3px 8px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--fg)}
+.dpick.on input[type=date]{border-color:var(--accent)}
+.dpick .dcount{font-weight:700;color:var(--fg)}
+.lang{background:var(--yellow-soft);color:var(--yellow)}
+.lang.yes{background:var(--green-soft);color:var(--green)}
+.here{background:var(--accent);color:var(--on-accent)}
+.newp{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.neg{color:var(--red);font-weight:600}
+.phone{font-family:var(--mono);font-size:12.5px;user-select:all;white-space:nowrap}
+.btn{font:inherit;font-size:12px;font-weight:700;border-radius:6px;padding:4px 10px;cursor:pointer;text-decoration:none;white-space:nowrap;display:inline-block}
+.btn.wa{background:var(--wa);color:#fff;border:1px solid var(--wa)}
+.btn.wa.ask{background:var(--surface);color:var(--wa);border:1px dashed var(--wa)}
+.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.btn.cv{background:var(--surface);color:var(--accent);border:1px solid var(--accent)}
+.cvno{font-size:11.5px;color:var(--muted);white-space:nowrap;border:1px dashed var(--line);border-radius:6px;padding:3px 8px}
+.btn:hover{filter:brightness(1.08)}
+.more{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;padding:8px 14px;background:var(--sunk);border-top:1px solid var(--line)}
+.more button{font:inherit;font-weight:700;color:var(--accent);background:none;border:0;cursor:pointer;padding:2px 0}
+.far{padding:8px 14px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)}
+.far b{color:var(--fg);font-weight:600}
+.nomatch{padding:12px 14px;border-top:1px solid var(--line);background:var(--red-soft);color:var(--red);font-weight:600;font-size:13px}
+
+/* candidates table */
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.controls input[type=search]{font:inherit;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--fg);flex:1 1 240px;min-width:0}
+.chk{display:flex;gap:6px;align-items:center;font-weight:600;white-space:nowrap}
+.chk input{width:16px;height:16px;accent-color:var(--accent)}
+.role-note{background:var(--accent-soft);border-radius:8px;padding:10px 14px}
+.tablebox{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:1040px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;background:var(--surface)}
+tbody tr:last-child td{border-bottom:0}
+tr.row:hover td{background:var(--accent-soft)}
+tr.row td:first-child{border-left:4px solid transparent}
+tr.lv-strong td:first-child{border-left-color:var(--green)}
+tr.lv-medium td:first-child{border-left-color:var(--yellow)}
+tr.lv-check td:first-child{border-left-color:var(--orange)}
+tr.lv-wait td:first-child{border-left-color:var(--line);border-left-style:dashed}
+.grp td{background:var(--bg);font-family:var(--display);font-weight:700;font-size:15px;padding-block:12px 8px}
+.grp td small{font-family:var(--body);font-weight:500;color:var(--muted);font-size:12px;margin-left:6px}
+.alt{display:block;color:var(--muted);font-weight:400;font-size:12px}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.est{color:var(--muted)}
+.roles{display:flex;flex-wrap:wrap;gap:4px;max-width:180px}
+.rp{background:var(--accent-soft);color:var(--accent)}
+.rp.on{background:var(--accent);color:var(--on-accent)}
+.acts{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.exp{max-width:42ch}
+.ask{max-width:30ch}
+.ask::before{content:"Ask: ";font-weight:700;color:var(--orange)}
+.mo{display:block;color:var(--muted);font-size:12px}
+.empty{padding:24px;text-align:center;color:var(--muted)}
+.showmore{display:flex;justify-content:center}
+.showmore button{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--accent);border-radius:8px;padding:8px 16px;cursor:pointer}
+
+/* needs attention */
+.att{display:grid;gap:14px}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:10px}
+.box.red{border-color:var(--red);background:var(--red-soft)}.box.green{border-color:var(--green);background:var(--green-soft)}.box.green .lnk{font-weight:600;font-size:14px}.box.green li{margin:4px 0}.flash{outline:3px solid var(--green);outline-offset:3px;transition:outline .3s}
+.box.red h2{color:var(--red)}
+.box ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.box p{margin:0;color:var(--muted);max-width:80ch}
+details.np{border:1px solid var(--line);border-radius:8px;padding:8px 12px;background:var(--bg)}
+details.np summary{cursor:pointer;font-weight:700}
+details.np summary small{color:var(--muted);font-weight:500;margin-left:6px}
+.nplist{display:grid;gap:4px;margin-top:8px;font-size:13px}
+.nplist div{display:flex;gap:10px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line);padding-block:4px}
+.nplist div:last-child{border-bottom:0}
+.hid{display:grid;gap:6px}
+.hid div{border-left:3px solid var(--line);padding-left:10px}
+.hid .fake{border-left-color:var(--red)}
+.hid em{font-style:normal;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-right:6px}
+
+/* fit / unfit */
+.vbx{display:inline-flex;gap:4px;align-items:center}
+.vb{font:inherit;font-size:11.5px;font-weight:700;border-radius:6px;padding:3px 9px;cursor:pointer;background:var(--surface)}
+.vb.fit{color:var(--green);border:1px solid var(--green)}
+.vb.unfit{color:var(--red);border:1px solid var(--red)}
+.vb:hover{filter:brightness(1.1)}
+.vmark{font:inherit;font-size:11.5px;font-weight:700;border-radius:6px;padding:3px 9px;cursor:pointer;border:0;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left}
+.vmark.fit{background:var(--green-soft);color:var(--green)}
+.vmark.unfit{background:var(--red-soft);color:var(--red)}
+.mrow.vd-unfit{opacity:.62}
+.vbar{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.vbar b{font-variant-numeric:tabular-nums}
+.vbar .g{color:var(--green)} .vbar .r{color:var(--red)}
+.vdlg{position:fixed;inset:0;display:grid;place-items:center;z-index:30;padding:16px}
+.vdlg .card{background:var(--surface);border-radius:12px;box-shadow:var(--shadow);width:min(480px,100%);max-height:calc(100dvh - 32px);overflow:auto;padding:16px 18px;display:grid;gap:12px}
+.vdlg h2{font-size:18px}
+.vseg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.vseg button{font:inherit;font-weight:700;font-size:15px;padding:10px;border-radius:8px;cursor:pointer;background:var(--surface);border:2px solid var(--line);color:var(--fg)}
+.vseg button[aria-pressed="true"].fit{border-color:var(--green);background:var(--green-soft);color:var(--green)}
+.vseg button[aria-pressed="true"].unfit{border-color:var(--red);background:var(--red-soft);color:var(--red)}
+.vchips{display:flex;flex-wrap:wrap;gap:6px}
+.vchips button{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--sunk);color:var(--fg);border-radius:999px;padding:3px 10px;cursor:pointer}
+.vdlg textarea,.vdlg select,.vdlg input[type=text]{font:inherit;width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--fg)}
+.vdlg textarea{min-height:84px;resize:vertical}
+.vdlg label{font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;display:grid;gap:4px}
+.verr{color:var(--red);font-weight:600;font-size:13px;margin:0}
+.vfoot{display:flex;justify-content:flex-end;gap:8px}
+.vfoot button{font:inherit;font-weight:700;border-radius:8px;padding:8px 16px;cursor:pointer}
+.vsave{background:var(--accent);color:var(--on-accent);border:1px solid var(--accent)}
+.vcancel{background:var(--surface);color:var(--fg);border:1px solid var(--line)}
+.vme{margin:4px 0 0;font-size:13px}
+.vlast{font-size:12px;color:var(--muted)}
+
+/* drawer */
+.scrim{position:fixed;inset:0;background:rgba(10,18,16,.45);z-index:20}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(460px,100%);background:var(--surface);z-index:21;box-shadow:var(--shadow);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.dhead{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:16px 18px 10px;border-bottom:1px solid var(--line)}
+.dhead h2{font-size:21px}
+.dclose{font:inherit;font-size:20px;line-height:1;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;width:34px;height:34px;cursor:pointer;flex:none}
+.dbody{overflow-y:auto;padding:14px 18px 24px;display:grid;gap:14px;align-content:start}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:13.5px}
+.kv dt{color:var(--muted);font-weight:600}
+.kv dd{margin:0;min-width:0}
+.dsec{display:grid;gap:6px}
+.dsec h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-family:var(--body);font-weight:700}
+.plink{font:inherit;text-align:left;background:var(--accent-soft);color:var(--accent);border:0;border-radius:8px;padding:7px 10px;cursor:pointer;font-weight:600}
+.aprow{font-size:13px;border-left:3px solid var(--line);padding-left:8px}
+.legend{color:var(--muted);font-size:12px;margin:0}
+
+.menurow{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.sync{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sync button{font:inherit;font-weight:700;font-size:13px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);border-radius:999px;padding:7px 14px;cursor:pointer}
+.sync button:disabled{opacity:.6;cursor:default}
+.sync .small,#lastSync{font-size:12.5px;color:var(--muted)}
+#lastSync{margin:4px 0 0}
+.menu{display:flex;gap:6px;margin:12px 0 2px;flex-wrap:wrap}
+.menu button{font:inherit;font-weight:800;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:999px;padding:8px 18px;cursor:pointer}
+.menu button[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.menu button small{font-weight:700;margin-left:6px;opacity:.85;font-variant-numeric:tabular-nums}
+.pgtitle{margin:14px 0 4px;font-size:clamp(20px,3vw,26px)}
+.lday{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:16px 0 6px;flex-wrap:wrap}
+.lday h3{margin:0;font-size:15px}
+.lday small{color:var(--muted);font-weight:600;font-size:12.5px}
+.lbox{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.lhead,.lrow{display:grid;grid-template-columns:54px minmax(0,1.25fr) 82px minmax(0,1.7fr) minmax(0,1.1fr);gap:6px 12px;align-items:start}
+.lhead{padding:6px 14px;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;border-bottom:1px solid var(--line)}
+.lrow{padding:10px 14px;border-bottom:1px solid var(--line);border-left:4px solid transparent}
+.lrow:last-child{border-bottom:0}
+.lrow.strong{border-left-color:var(--green)} .lrow.medium{border-left-color:var(--yellow)} .lrow.check{border-left-color:var(--orange)} .lrow.hide{opacity:.7}
+.lrow .no{font-weight:800;font-variant-numeric:tabular-nums;font-size:15px} .lrow .no small{display:block;color:var(--muted);font-weight:600;font-size:11px;white-space:nowrap}
+.lrow .elig{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px}
+.lrow .pl{font:inherit;font-size:11.5px;font-weight:700;background:var(--accent-soft);color:var(--accent);border:0;border-radius:999px;padding:2px 9px;cursor:pointer;text-align:left}
+.lrow .pl:hover{filter:brightness(.95)}
+.lrow .pl.best{background:var(--accent);color:var(--on-accent)}
+.lrow .read{font-size:12.5px}
+.lrow .meta{font-size:12.5px}
+.lrow .acts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.lempty{color:var(--muted);padding:14px}
+.mdiv{padding:6px 14px;font-size:11.5px;font-weight:700;color:var(--muted);background:var(--sunk);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:760px){
+  .lhead{display:none}
+  .lrow{grid-template-columns:54px minmax(0,1fr)}
+  .lrow .rt,.lrow .el,.lrow .meta{grid-column:2}
+  .bar{position:static}
+  .view{padding:7px 10px}
+  .fig b{font-size:22px}
+  .mhead{display:none}
+  .mrow{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px 12px}
+  .mrow .who,.mrow .cos,.mrow .act{grid-column:1/-1}
+  .mrow .cell .lab{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;margin-bottom:1px}
+  .act{justify-content:flex-start}
+  .kv{grid-template-columns:96px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){.tab,.view,.btn{transition:background .15s,color .15s,filter .15s}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>HR screening</h1>
+    <div class="menurow"><nav class="menu" id="menu" aria-label="Pages"></nav><div class="sync" id="syncBox" hidden><button type="button" id="syncBtn">Sync leads now</button><span class="small" id="syncMsg"></span></div></div>
+    <p class="small" id="lastSync" hidden></p>
+  </header>
+
+  <div id="pgDash">
+  <p class="sub" id="lede"></p>
+  <p class="rule"><b>Location rule:</b> only Franchise Executives relocate. They work from the Chennai office and must speak the language of the state they handle. Everyone else is matched only to positions in their own district or a neighbouring one (Franchise Manager, State Head and Launch Team: anywhere in the same state).</p>
+
+  <div class="figs" id="figs"></div>
+  <div class="vbar" id="vbar" hidden></div>
+
+  <div class="bar" id="dFilters">
+    <div class="views" role="tablist" aria-label="Choose a view" id="views"></div>
+    <div class="filterrow" id="stateRow"><span class="flabel">State</span><div class="tabs" role="group" aria-label="Filter by state" id="states"></div></div>
+    <div class="pfilters" id="pfilters">
+      <label class="sel">Department<select id="fDept"></select></label>
+      <label class="sel">Position<select id="fPos"></select></label>
+      <label class="sel">City<select id="fCity"></select></label>
+      <label class="sel">Recruiter<select id="fRec"></select></label>
+      <label class="sel">Status<select id="fStat"></select></label>
+      <label class="sel">Health<select id="fHealth"></select></label>
+      <label class="sel">Posted<select id="fPosted"></select></label>
+      <label class="chk"><input type="checkbox" id="fPrio"> Priority only</label>
+      <button class="fclear" id="fClear" type="button">Clear filters</button>
+    </div>
+    <p class="fsum" id="fsum"></p>
+  </div>
+
+  <section id="vPositions" class="stgroup" aria-label="Open positions and matching candidates"></section>
+
+  <section id="vCandidates" hidden>
+    <div style="display:grid;gap:10px">
+      <div class="filterrow" id="distRow" hidden><span class="flabel">District</span><div class="tabs" role="group" aria-label="Filter by district" id="dists"></div></div>
+      <div class="filterrow"><span class="flabel">Role</span><div class="tabs" role="group" aria-label="Filter by role" id="roles"></div></div>
+      <div class="filterrow"><span class="flabel">Level</span><div class="tabs" role="group" aria-label="Filter by level" id="lvls"></div></div>
+      <div class="filterrow"><span class="flabel">Source</span><div class="tabs" role="group" aria-label="Filter by source" id="srcs"></div></div>
+      <div class="role-note" id="roleNote"></div>
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search name, city, company, phone…" aria-label="Search candidates">
+        <label class="chk"><input type="checkbox" id="telugu"> Telugu speakers</label>
+        <label class="chk"><input type="checkbox" id="matched"> Matches an open position</label>
+        <label class="chk"><input type="checkbox" id="onlynew"> New applicants only</label>
+      </div>
+      <div class="tablebox">
+        <table>
+          <thead><tr><th>Level</th><th>Name &amp; location</th><th>Suggested roles</th><th>Age</th><th>Exp</th><th>Salary now → wants</th><th>Joining</th><th>Worked at</th><th>Contact</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <div class="showmore" id="showMoreBox" hidden><button id="showMore">Show more</button></div>
+      <p class="legend">Age: from date of birth on the resume; <span class="est">~ = estimated from education years</span>. No age cutoff — 40+ just means check energy in the interview. Salary and joining come from the BDE/BDM application form (L = lakhs a year). For HR-app people the form isn't there, so joining shows whether the resume says they are working now — ask both on the first call.</p>
+    </div>
+  </section>
+
+  <section id="vAttention" class="att" hidden></section>
+  </div>
+
+  <div id="pgLeads" hidden>
+    <h2 class="pgtitle">Daily leads</h2>
+    <p class="sub">Everything that came in, in order of arrival. Pick a day (or a range) and screen from the top. Fit / Unfit here works exactly as on the dashboard.</p>
+    <div class="bar" id="lFilters">
+      <div class="filterrow"><span class="flabel">Applied</span><div class="tabs" role="group" aria-label="Filter by application date" id="dates"></div></div>
+      <div class="filterrow"><span class="flabel">Pick</span><div class="dpick" id="dPick"><label>one date <input type="date" id="dOne" min="2026-07-01"></label><span class="or">or</span><label>from <input type="date" id="dFrom" min="2026-07-01"></label><label>to <input type="date" id="dTo" min="2026-07-01"></label><span class="dcount" id="dCount"></span></div></div>
+    </div>
+    <div style="display:grid;gap:10px;margin-top:10px">
+      <div class="filterrow"><span class="flabel">Rating</span><div class="tabs" role="group" aria-label="Filter by rating" id="lLvls"></div></div>
+      <div class="filterrow"><span class="flabel">Source</span><div class="tabs" role="group" aria-label="Filter by source" id="lSrcs"></div></div>
+      <p class="fsum" id="lSum"></p>
+      <div id="lList"></div>
+      <div class="showmore" id="lMoreBox" hidden><button id="lMore">Show more</button></div>
+    </div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="scrim" id="vscrim" hidden style="z-index:29"></div>
+<div class="vdlg" id="vdlg" hidden role="dialog" aria-modal="true" aria-labelledby="vTitle">
+  <div class="card">
+    <div><h2 id="vTitle"></h2><div class="pnote" id="vSub"></div></div>
+    <div class="vseg"><button type="button" class="fit" data-v="fit" aria-pressed="false">✓ Fit</button><button type="button" class="unfit" data-v="unfit" aria-pressed="false">✕ Unfit</button></div>
+    <div class="vchips" id="vChips"></div>
+    <label>Reason (required)<textarea id="vReason" maxlength="600" placeholder="Pick a quick reason above or type your own"></textarea></label>
+    <p class="vme" id="vMe" hidden>Marked by <b id="vMeWho"></b> <span class="pnote">(your Claude sign-in — recorded with the mark)</span></p>
+    <label id="vHrLab">Marked by<select id="vHr"><option value="">Choose your name</option><option>Amreen</option><option>Shakina</option><option>Radhi</option><option>Chandru</option><option>Aziz</option><option value="__other">Someone else…</option></select></label>
+    <input type="text" id="vHrOther" placeholder="Your name" hidden maxlength="40">
+    <p class="vlast" id="vLast"></p>
+    <p class="verr" id="vErr" hidden></p>
+    <div class="vfoot"><button type="button" class="vcancel" id="vCancel">Cancel</button><button type="button" class="vsave" id="vSave">Save</button></div>
+  </div>
+</div>
+<aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="dName">
+  <div class="dhead"><div><h2 id="dName"></h2><div class="tags" id="dTags" style="margin-top:6px"></div></div><button class="dclose" id="dClose" aria-label="Close">×</button></div>
+  <div class="dbody" id="dBody"></div>
+</aside>
+
+<script>
+/*DATA*/
+const ROLES={
+  ALL:{label:"All roles",note:"Showing every role. Each person can be suggested for up to three roles; the first is the best fit."},
+  BDE:{label:"BDE",note:"<b>BDE / Post Sales Executive</b> — owns profit per outlet (higher price, not volume), visicooler outlet average sales and buying outlet average sales, through visibility and outlet relationships. Matched only in their own district or a neighbouring one."},
+  LAUNCH:{label:"Launch Team",note:"<b>Launch Team</b> — travels across the state, stays 10–15 days per city, onboards outlets for each new franchise, relaunches weak cities, sets ideal visibility. Budget around ₹30–40k/month. Matched anywhere in the same state."},
+  BDM:{label:"BDM / Manager",note:"<b>BDM / Post Sales Manager</b> — manages the BDEs and 8–9 franchises. Matched only in their own district or a neighbouring one."},
+  ASM:{label:"ASM",note:"<b>ASM</b> — we are 100% secondary. Industry ASMs mostly come from primary (stock into distributors), so they are usually Check: one call decides if they understand secondary."},
+  SH:{label:"State Head",note:"<b>State Head</b> — owns the whole state; young and active. Matched anywhere in the same state."},
+  FM:{label:"Franchise Manager",note:"<b>Franchise Manager</b> — sells the ₹80L franchise to investors. Matched anywhere in the same state."},
+  FE:{label:"Franchise Executive",note:"<b>Franchise Executive</b> — sits in the Chennai office, screens franchise leads by phone and fixes meetings. The only role that relocates; must speak the language of the state they handle."},
+  OPS:{label:"Franchise Ops",note:"<b>Franchise Operations Manager</b> — runs franchise operations: mini-factory production, SOPs, quality, reporting."},
+  PUR:{label:"Purchase",note:"<b>Purchase</b> — Chennai head office."},
+  DISP:{label:"Dispatch",note:"<b>Dispatch / warehouse</b>."},
+  OPX:{label:"Operations exec",note:"<b>Operations executive / supervisor</b> — plant or franchise operations."},
+  ITX:{label:"IT",note:"<b>IT executive</b> — Chennai head office."},
+  LND:{label:"L&D",note:"<b>Learning &amp; Development</b> — Chennai head office."},
+  DMK:{label:"Digital marketing",note:"<b>Performance / digital marketing</b> — Chennai head office."},
+  MIS:{label:"MIS",note:"<b>MIS / reporting</b> — that position is filled; kept for later."},
+  HR:{label:"HR",note:"<b>HR / recruitment</b> — that position is filled; kept for later."}
+};
+const ROLE_TITLE={BDE:"Business Development Executive",LAUNCH:"Launch Team Executive",BDM:"Business Development Manager",ASM:"Area Sales Manager",SH:"State Head",FM:"Franchise Manager",FE:"Franchise Executive",OPS:"Franchise Operations Manager",PUR:"Purchase",DISP:"Dispatch",OPX:"Operations Executive",ITX:"IT Executive",LND:"Learning & Development Executive",DMK:"Performance Marketing",MIS:"MIS Executive",HR:"HR Executive"};
+const LV={strong:{label:"Strong",help:"Clear fit. Call first."},medium:{label:"Medium",help:"Relevant, with one gap. Call if Strong doesn't fill the seats."},check:{label:"Check",help:"Resume isn't enough to decide. One screening call."},wait:{label:"Waiting",help:"Applied after the last resume pass — not rated yet. Only the form answers are shown."}};
+const LV_ORDER=["strong","medium","check","wait"];
+const TIER={local:"in area",nearby:"nearby district",state:"elsewhere in state",chennai:"in Chennai",move:"moves to Chennai",unknown:"location not on resume"};
+const SRC={S:"Sheet",A:"HR app",SA:"Sheet + HR app"};
+const FE_LANG={"Andhra Pradesh":"Telugu","Telangana":"Telugu","Karnataka":"Kannada","Tamil Nadu":"Tamil","Kerala":"Malayalam","Gujarat":"Gujarati","Maharashtra":"Marathi","Delhi":"Hindi"};
+const PAGE=120;
+let page="dash",view="positions",curSt="",curRole="ALL",curLv="",curDist="",curSrc="",curDate="",shown=PAGE,lLv="",lSrc="",lShown=PAGE;
+const fmtTime=t=>{if(!t)return "";const [h,m]=t.split(":").map(Number);return `${h%12||12}:${String(m).padStart(2,"0")} ${h<12?"am":"pm"}`};
+const DATEF={"":"Any time","0":"Today","1":"Yesterday","7":"Last 7 days","30":"Last 30 days","old":"Older than 30 days"};
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const fmtDate=s=>{if(!s)return "";const [y,m,dd]=s.split("-");return (+dd)+" "+MON[+m-1]+(+y!==new Date().getFullYear()?" "+y:"")};
+const adText=d=>d.al?`Applied again ${fmtDate(d.al)} (first ${fmtDate(d.ad)})`:(d.ad?((d.adk==="app"?"In HR app since ":"Applied ")+fmtDate(d.ad)):"");
+const isDay=s=>/^\d{4}-\d{2}-\d{2}$/.test(s||"");
+const dateOK=s=>{if(!curDate)return true;if(!s)return false;if(isDay(curDate))return s===curDate;if(curDate.includes("..")){const [a,b]=curDate.split("..");return (!a||s>=a)&&(!b||s<=b)}const a=DAYS(s);return curDate==="old"?a>30:curDate==="0"?a<=0:curDate==="1"?a===1:a<=+curDate};
+const lastAd=d=>d.al||d.ad||"";
+const inDate=d=>{if(page!=="leads"||!curDate)return true;if(curDate==="old")return !lastAd(d)||DAYS(lastAd(d))>30;return dateOK(d.ad)||(!!d.al&&dateOK(d.al))};
+const hidIn=h=>{if(page!=="leads"||!curDate)return false;const f=h[3]||"",l=h[4]||"";if(curDate==="old")return !!(l||f)&&DAYS(l||f)>30;return dateOK(f)||dateOK(l)};
+const byNew=(a,b)=>lastAd(b).localeCompare(lastAd(a));
+const FD={dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false}, FL={dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false};
+let F=FD;   // dashboard and Daily leads keep their own position filters
+const openCards=new Set(), cardLv={}, ROWS_SHOWN=8;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cnt=(arr,f)=>arr.reduce((a,x)=>a+(f(x)?1:0),0);
+const LIVE_P=P.filter(p=>!/mark Filled/.test(p.note));
+const PBY={}; P.forEach(p=>PBY[p.id]=p);
+const cityOf=p=>p.city||"Whole state";
+const posLabel=p=>`${p.desig} · ${p.dept} — ${p.st}${p.city?", "+p.city:""} (${/Temporarily/.test(p.status)?"temp. closed":"open"}${p.seats>1?", "+p.seats+" seats":""})`;
+const DAYS=d=>Math.floor((Date.now()-new Date(d+"T00:00:00").getTime())/864e5);
+const POS_TYPE={BDE:"BDE",BDM:"BDM",SH:"State Head",FM:"Franchise Manager",FE:"Franchise Executive",LAUNCH:"Launch Team",OPX:"Operations Executive",DISP:"Dispatch",PUR:"Purchase Manager",ITX:"IT Executive",LND:"L&D Executive",DMK:"Performance Marketing"};
+const POS_ORDER=Object.keys(POS_TYPE);
+const POSTED={"":"Any time","7":"Last 7 days","30":"Last 30 days","90":"Last 90 days","old":"Older than 30 days"};
+function postedOK(p){ if(!F.posted) return true; const a=DAYS(p.opened); return F.posted==="old"?a>30:a<=+F.posted; }
+function posPass(p,skip){ return (!curSt||p.st===curSt)&&(skip==="dept"||!F.dept||p.dept===F.dept)&&(skip==="pos"||!F.pos||p.role===F.pos)&&(skip==="city"||!F.city||cityOf(p)===F.city)&&(skip==="rec"||!F.rec||p.owner===F.rec)&&(skip==="stat"||!F.stat||(F.stat==="Open"?!/Temporarily/.test(p.status):/Temporarily/.test(p.status)))&&(skip==="health"||!F.health||p.health===F.health)&&(skip==="posted"||postedOK(p))&&(!F.prio||!!p.prio); }
+const anyPF=()=>!!(F.dept||F.pos||F.city||F.rec||F.stat||F.health||F.posted||F.prio);
+const inPosF=d=>{if(!anyPF())return true;if(page!=="leads")return (d.pos||[]).some(id=>PBY[id]&&posPass(PBY[id]));const p=d.pp&&PBY[d.pp];return !!(p&&!/mark Filled/.test(p.note)&&posPass(p))};
+function fillSel(id,key,opts){ const el=$("#"+id); const cur=F[key]; el.innerHTML=opts.map(([v,l])=>`<option value="${esc(v)}"${v===cur?" selected":""}>${esc(l)}</option>`).join(""); el.classList.toggle("on",!!cur); }
+function renderPFLeads(){
+  // on Daily leads the dropdowns follow the leads: only departments / positions / cities / recruiters that the
+  // currently listed leads are eligible for, counted in leads (not positions)
+  const srcOK=d=>!lSrc||(lSrc==="S"?d.src!=="A":d.src!=="S");
+  const leads=(lLv==="hide"||lLv==="nofit")?[]:D.filter(d=>inSt(d)&&inDate(d)&&srcOK(d)&&lvOKL(d));
+  const posOf=d=>d.pp&&PBY[d.pp]&&!/mark Filled/.test(PBY[d.pp].note)?[PBY[d.pp]]:[];   // each lead counted once, under its best position
+  const lead_cnt=(k,f,v)=>cnt(leads,d=>posOf(d).some(p=>posPass(p,k)&&(f?f(p)===v:true)));
+  const opts=(k,f)=>[...new Set(leads.flatMap(d=>posOf(d).filter(p=>posPass(p,k)).map(f)))].sort();
+  const sel=(id,key,label,f,order)=>{const vals=order?order.filter(v=>opts(key,f).includes(v)):opts(key,f);fillSel(id,key,[["",label+" ("+lead_cnt(key)+")"],...vals.map(v=>[v,(key==="pos"?POS_TYPE[v]:v)+" ("+lead_cnt(key,f,v)+")"])]);};
+  sel("fDept","dept","All departments",p=>p.dept);
+  sel("fPos","pos","All positions",p=>p.role,POS_ORDER);
+  sel("fCity","city","All cities",cityOf);
+  sel("fRec","rec","All recruiters",p=>p.owner);
+  const stat=p=>/Temporarily/.test(p.status)?"Temporarily closed":"Open"; sel("fStat","stat","Any status",stat);
+  sel("fHealth","health","Any health",p=>p.health);
+  fillSel("fPosted","posted",Object.entries(POSTED).map(([v,l])=>[v,v?l:l+" ("+lead_cnt("posted")+")"]));
+  $("#fPrio").checked=!!F.prio;
+  const shownN=LIVE_P.filter(p=>posPass(p)).length;
+  $("#fsum").innerHTML=anyPF()?`Showing leads who fit <b>${shownN}</b> of ${LIVE_P.length} positions`:"";
+  $("#pfilters").hidden=false;
+}
+function renderPF(){
+  if(page==="leads") return renderPFLeads();
+  const base=k=>LIVE_P.filter(p=>posPass(p,k));
+  const count=(arr,f,v)=>arr.filter(p=>f(p)===v).length;
+  const uniq=(arr,f)=>[...new Set(arr.map(f))].sort();
+  let a=base("dept"); fillSel("fDept","dept",[["","All departments ("+a.length+")"],...uniq(a,p=>p.dept).map(v=>[v,v+" ("+count(a,p=>p.dept,v)+")"])]);
+  a=base("pos"); fillSel("fPos","pos",[["","All positions ("+a.length+")"],...POS_ORDER.filter(k=>a.some(p=>p.role===k)).map(k=>[k,POS_TYPE[k]+" ("+count(a,p=>p.role,k)+")"])]);
+  a=base("city"); fillSel("fCity","city",[["","All cities ("+a.length+")"],...uniq(a,cityOf).map(v=>[v,v+" ("+count(a,cityOf,v)+")"])]);
+  a=base("rec"); fillSel("fRec","rec",[["","All recruiters ("+a.length+")"],...uniq(a,p=>p.owner).map(v=>[v,v+" ("+count(a,p=>p.owner,v)+")"])]);
+  a=base("stat"); const op=a.filter(p=>!/Temporarily/.test(p.status)).length; fillSel("fStat","stat",[["","Any status ("+a.length+")"],["Open","Open ("+op+")"],["Temporarily closed","Temporarily closed ("+(a.length-op)+")"]]);
+  a=base("health"); fillSel("fHealth","health",[["","Any health ("+a.length+")"],...["Stuck","Slipping","On target","Temporarily closed"].map(v=>[v,v+" ("+count(a,p=>p.health,v)+")"]).filter(x=>!/\(0\)$/.test(x[1]))]);
+  a=base("posted"); fillSel("fPosted","posted",Object.entries(POSTED).map(([v,l])=>[v,v?l:l+" ("+a.length+")"]));
+  $("#fPrio").checked=!!F.prio;
+  const shownN=LIVE_P.filter(p=>posPass(p)).length;
+  $("#fsum").innerHTML=(page==="leads"||view==="candidates")?(anyPF()?`Showing ${page==="leads"?"leads":"candidates"} who fit <b>${shownN}</b> of ${LIVE_P.length} positions`:""):(anyPF()||curSt?`Showing <b>${shownN}</b> of ${LIVE_P.length} positions`:"");
+  $("#pfilters").hidden=page==="dash"&&view==="attention";
+}
+
+const NEEDS_CV=/deleted|could not (read|open)|blank|password|another person|someone else|not the applicant|resend|send (a|his|her|your) (proper )?resume|no resume/i;
+const needsResume=d=>d.src!=="A"&&(!d.res||NEEDS_CV.test((d.exp||"")+" "+(d.ask||"")+" "+(d.why||"")));
+function waMsg(d,role,place,feState){
+  const r=role==="FE"?`Franchise Executive role at our Chennai office (handling ${feState} enquiries)`:`${ROLE_TITLE[role]||"open"} role in ${place}`;
+  if(needsResume(d)) return `Hi ${d.n}, greetings from the HR team at MR.GOLISODA (South Asian Foods Corporation). Thank you for applying for our ${r}. We could not open the resume you uploaded, so please share your updated resume here on WhatsApp (PDF or Word) and we will take it forward.`;
+  return `Hi ${d.n}, greetings from the HR team at MR.GOLISODA (South Asian Foods Corporation). We reviewed your profile and it looks like a good fit for our ${r}. If you are interested, please reply to this message and we will take it forward.`;
+}
+function cvBtn(d,lab){
+  if(d.res) return `<a class="btn cv" href="https://drive.google.com/file/d/${esc(d.res)}/view" target="_blank" rel="noopener noreferrer">${lab||"Resume"}</a>`;
+  return d.src==="A"?`<span class="cvno" title="This resume file is stored inside the HR app. It is not on this page yet.">Resume in HR app</span>`:`<span class="cvno">No resume file</span>`;
+}
+function waBtn(d,role,place,feState){
+  if(!d.wa) return `<span class="alt">No phone</span>`;
+  const nr=needsResume(d);
+  return `<a class="btn wa${nr?" ask":""}" href="https://wa.me/${d.wa}?text=${encodeURIComponent(waMsg(d,role,place,feState))}" target="_blank" rel="noopener" title="${nr?"Message asks them to share the resume":"Message says we reviewed the profile and asks if they are interested"}">${nr?"WhatsApp · ask resume":"WhatsApp"}</a>`;
+}
+function stCls(s){return /priority/i.test(s)?"prio":/stuck|slipping/i.test(s)?"stuck":/Temporarily/i.test(s)?"temp":"open"}
+function lvPill(lv){return `<span class="pill lvpill ${lv}">${LV[lv].label}</span>`}
+const TIER_S={local:"In area",nearby:"Nearby",state:"Same state",chennai:"In Chennai",move:"Moves to Chennai",unknown:"Location not on resume"};
+function tierPill(d,tier){const pl=d.fd||d.c||"";const t=(TIER_S[tier]||tier)+((tier==="nearby"||tier==="state"||tier==="move")&&pl?" · "+pl:"");return `<span class="pill tier ${tier}" title="${esc(TIER[tier]||tier)}">${esc(t)}</span>`}
+function ageCell(d){const a=d.age&&d.age!=="—"?String(d.age):"";return a?`<span class="num ${d.ae?"est":""}" title="${d.ae?"Estimated from education years":"From date of birth"}">${esc(a)}</span>`:`<span class="dash">—</span>`}
+function xpCell(d){return d.xp?`<span class="num">${esc(d.xp)}</span>`:`<span class="dash">—</span>`}
+function salCell(d){return d.sal?`<span class="num" title="Current salary → expected salary (L = lakhs a year)">${esc(d.sal)}</span>`:`<span class="ask0">Ask</span>`}
+function joinCell(d){
+  if(!d.nt) return `<span class="ask0">Ask</span>`;
+  const tip=d.ntk==="work"?"Resume shows a current job, so ask the notice period":d.ntk==="free"?"Resume shows no current job, so can likely join soon":"Notice period from the application form";
+  return `<span class="jn ${d.ntk}" title="${tip}">${esc(d.nt)}</span>`;
+}
+function coCell(d){const c=d.co||[];if(!c.length)return `<span class="dash">—</span>`;return `<span class="co" title="${esc(c.join(", "))}">${c.slice(0,3).map(esc).join(" · ")}${c.length>3?` <span class="cmore">+${c.length-3}</span>`:""}</span>`}
+function placeOf(d){return [d.fd||d.c,d.st].filter(Boolean).join(", ")}
+
+/* ---------- header figures ---------- */
+function renderFigs(){
+  const seats=LIVE_P.reduce((a,p)=>a+p.seats,0);
+  const none=cnt(LIVE_P,p=>!p.m.length);
+  const s=cnt(D,d=>d.lv==="strong"),m=cnt(D,d=>d.lv==="medium"),c=cnt(D,d=>d.lv==="check"),w=cnt(D,d=>d.lv==="wait");const rated=D.length-w;
+  const fromSheet=cnt(D,d=>d.src!=="A"),fromApp=cnt(D,d=>d.src!=="S"),both=cnt(D,d=>d.src==="SA");
+  $("#lede").textContent=`Everyone we could read, rated from their actual resume: ${rated} people — ${fromSheet-w} from the applications sheet and ${fromApp} from the HR app${both?` (${both} are in both)`:""}${w?`, plus ${w} new applicants waiting for their resume to be read`:""}. Nobody is rejected here; the rating only says who to call first. Rated on secondary skills: shop-level selling, outlet onboarding, retailer visits.`;
+  $("#figs").innerHTML=`
+   <div class="fig"><b>${LIVE_P.length}</b><span>positions still hiring · ${seats} seats</span></div>
+   <div class="fig"><b>${rated}</b><span>candidates rated</span><div class="split"><span class="s">${s} Strong</span><span class="m">${m} Medium</span><span class="c">${c} Check</span></div></div>
+   <div class="fig ${w?"warn":""}"><b>${w}</b><span>new applicants waiting — resume not read yet</span></div>
+   <div class="fig ${none?"warn":""}"><b>${none}</b><span>positions with nobody who fits — need fresh sourcing</span></div>
+   <div class="fig warn"><b>${NORES.filter(x=>!x.joined).length}</b><span>people in the HR app with no readable resume</span></div>`;
+}
+
+/* ---------- view switch + state chips ---------- */
+function renderViews(){
+  const att=MISSING.length+ISSUES.length+cnt(P,p=>/mark Filled/.test(p.note));
+  const items=[["positions","Positions",LIVE_P.length],["candidates","All candidates",D.length],["attention","Needs attention",att]];
+  $("#views").innerHTML=items.map(([k,l,c])=>`<button class="view" role="tab" data-v="${k}" aria-selected="${k===view}">${l}<small>${c}</small></button>`).join("");
+  $("#views").querySelectorAll(".view").forEach(b=>b.onclick=()=>{view=b.dataset.v;shown=PAGE;save();go()});
+}
+function renderStates(){
+  const sts=[...new Set([...P.map(p=>p.st),...D.map(d=>d.st).filter(Boolean)])].sort();
+  let items;
+  if(page==="leads"){
+    items=[["","All states",cnt(D,inDate)+cnt(HIDDEN,hidIn)],...sts.map(s=>[s,s,cnt(D,d=>d.st===s&&inDate(d))]).filter(x=>x[2]>0||x[0]===curSt)];
+  } else if(view==="positions"){
+    const ps=[...new Set(LIVE_P.map(p=>p.st))].sort();
+    const pf=p=>{const s0=curSt;curSt="";const r=posPass(p);curSt=s0;return r;};
+    items=[["","All states",cnt(LIVE_P,pf)],...ps.map(s=>[s,s,cnt(LIVE_P,p=>p.st===s&&pf(p))]).filter(x=>x[2]>0||x[0]===curSt)];
+  } else {
+    const base=d=>inRole(d,curRole)&&inLv(d)&&inSrc(d);
+    items=[["","All states",cnt(D,base)],...sts.map(s=>[s,s,cnt(D,d=>d.st===s&&base(d))]).filter(x=>x[2]>0)];
+  }
+  chips($("#states"),items,curSt,v=>{curSt=v;curDist="";shown=PAGE});
+}
+function chips(el,items,cur,onPick){
+  el.innerHTML=items.map(([k,l,c])=>`<button class="tab" data-v="${esc(k)}" aria-pressed="${k===cur}">${esc(l)}<small>${c}</small></button>`).join("");
+  el.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{onPick(b.dataset.v);save();go()});
+}
+
+/* ---------- positions view ---------- */
+function matchRow(p,m){
+  const [i,tier,lang,here,neg]=m; const d=D[i];
+  const ap=here?(d.ap||[]).find(a=>a[0]===p.id):null;
+  const tags=[lvPill(d.lv),tierPill(d,tier)];
+  if(p.role==="FE"){const L=FE_LANG[p.st]; tags.push(lang==="yes"?`<span class="pill lang yes">${L} ✓</span>`:`<span class="pill lang">${L}? confirm</span>`)}
+  tags.push(`<span class="pill src">${SRC[d.src]}</span>`);
+  if(d.ad) tags.push(`<span class="pill when">${esc(adText(d))}</span>`);
+  if(d.nw) tags.push(`<span class="pill newp">New</span>`);
+  if(ap) tags.push(`<span class="pill here">Applied here</span>`);
+  const place=p.city?`${p.city}, ${p.st}`:p.st;
+  const vd=VDB?verdictOf(d,p.id):null;
+  return `<div class="mrow ${d.lv}${vd&&vd.verdict==="unfit"?" vd-unfit":""}">
+    <div class="who"><button class="nm" data-i="${i}">${esc(d.n)}</button><div class="tags">${tags.join("")}</div><span class="phone">${esc(d.ph||"")}</span>${ap?`<div class="sub">In the app: ${esc(ap[1])}</div>`:""}${neg&&!ap?`<div class="sub neg">Earlier said: ${esc(neg)}</div>`:""}</div>
+    <div class="cell"><span class="lab">Age</span>${ageCell(d)}</div>
+    <div class="cell"><span class="lab">Experience</span>${xpCell(d)}</div>
+    <div class="cell"><span class="lab">Salary now → wants</span>${salCell(d)}</div>
+    <div class="cell"><span class="lab">Joining</span>${joinCell(d)}</div>
+    <div class="cell cos"><span class="lab">Worked at</span>${coCell(d)}</div>
+    <div class="act">${vBox(i,p.id)}${cvBtn(d)}${waBtn(d,p.role,place,p.st)}</div>
+  </div>`;
+}
+const MHEAD=`<div class="mhead"><span>Candidate</span><span>Age</span><span>Exp</span><span>Salary now → wants</span><span>Joining</span><span>Worked at</span><span></span></div>`;
+function posCard(p){
+  const mk=m=>!!verdictOf(D[m[0]],p.id);
+  const all=p.m.filter(m=>inDate(D[m[0]])).sort((a,b)=>(mk(a)-mk(b))||byNew(D[a[0]],D[b[0]])), n=all.length, k={strong:0,medium:0,check:0,wait:0};
+  all.forEach(m=>{k[D[m[0]].lv]++});
+  let lv=cardLv[p.id]||""; if(lv&&!k[lv]) lv="";
+  const ms=lv?all.filter(m=>D[m[0]].lv===lv):all;
+  const open=openCards.has(p.id), list=open?ms:ms.slice(0,ROWS_SHOWN);
+  const filled=/mark Filled/.test(p.note);
+  const tabs=n?[["","All",n],["strong","Strong",k.strong],["medium","Medium",k.medium],["check","Check",k.check],["wait","Waiting",k.wait]].map(([v,l,c])=>`<button type="button" class="lvt ${v?"lv-"+v:""}" data-lvt="${p.id}" data-lv="${v}" aria-pressed="${lv===v}"${c?"":" disabled"}>${l}<small>${c}</small></button>`).join(""):(p.m.length?`<span class="z" style="color:var(--muted)">Nobody applied in this period (${p.m.length} earlier)</span>`:`<span class="z">No match yet</span>`);
+  const head=`<div class="ptop">
+     <div class="ptitle"><span class="pst ${stCls(p.status)}">${esc(p.status)}</span><h3>${esc(p.title)}</h3></div>
+     <div class="meta"><span><b>${p.seats}</b> seat${p.seats>1?"s":""}</span><span>In the HR app: <b>${p.inapp}</b> people, <b>${p.active}</b> in process</span>${p.city?`<span>Area: <b>${esc(p.city)}</b></span>`:`<span>Area: <b>whole state</b></span>`}</div>
+     ${p.note?`<div class="pnote">${esc(p.note)}</div>`:""}
+     <div class="lvtabs" role="group" aria-label="Show candidates by level">${tabs}</div>
+   </div>`;
+  let body="";
+  if(n){ let rows="",seenMk=false; list.forEach(m=>{ if(mk(m)&&!seenMk){seenMk=true;rows+=MARKED_DIV(cnt(ms,mk))} rows+=matchRow(p,m) });
+    body=`<div class="mlist">${MHEAD}${rows}</div>`+(ms.length>ROWS_SHOWN?`<div class="more"><span class="pnote">Showing ${list.length} of ${ms.length}${lv?" "+LV[lv].label:""} — unmarked first, newest first.</span><button data-card="${p.id}">${open?"Show fewer":"Show all "+ms.length}</button></div>`:""); }
+  else if(!filled&&!p.m.length) body=`<div class="nomatch">Nobody in the sheet or the HR app fits this one. It needs fresh sourcing (Naukri / referrals).</div>`;
+  if(p.x.length){
+    const xs=p.x.slice(0,8).map(([i,w])=>`<button class="nm" data-i="${i}">${esc(D[i].n)}</button> (${esc(w)})`).join(" · ");
+    body+=`<div class="far"><b>Applied here but left out</b> — they would have to relocate: ${xs}${p.x.length>8?` · and ${p.x.length-8} more`:""}</div>`;
+  }
+  return `<article class="pcard" id="pos-${p.id}">${head}${body}</article>`;
+}
+function renderPositions(){
+  const ps=LIVE_P.filter(p=>posPass(p));
+  const order=["Tamil Nadu","Andhra Pradesh","Telangana","Karnataka","Maharashtra","Gujarat","Kerala","Jharkhand","Chhattisgarh","Delhi"];
+  const sts=[...new Set(ps.map(p=>p.st))].sort((a,b)=>order.indexOf(a)-order.indexOf(b));
+  const isNew=p=>/new \d+ Oct|reopened/i.test(p.status||"");
+  const rank=p=>(/mark Filled/.test(p.note)?3:/Temporarily/.test(p.status)?2:isNew(p)?-1:/stuck|priority|slipping/i.test(p.status)?0:1);
+  const fresh=LIVE_P.filter(isNew);
+  let html=fresh.length?`<div class="box green" id="newPosBox"><h2>Added to this page from Chandru's open-positions list (${fresh.length})</h2><p>Shown first inside each state below. Click a name to jump to it.</p><ul>${fresh.map(p=>{const k={strong:0,medium:0,check:0};p.m.forEach(m=>{const l=D[m[0]].lv;if(k[l]!=null)k[l]++});return `<li><button type="button" class="lnk" data-jump="${p.id}">${esc(p.st)} · ${esc(p.title.replace(/^Post Sales · /,""))}</button> <small>${esc(p.status)} · ${p.m.length} matched (${k.strong} strong, ${k.medium} medium, ${k.check} check)</small></li>`}).join("")}</ul></div>`:"";
+  html+=`<div class="box red"><h2>Not created in the HR app yet</h2><ul>${MISSING.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`;
+  sts.forEach(st=>{
+    const g=ps.filter(p=>p.st===st).sort((a,b)=>rank(a)-rank(b));
+    const seats=g.filter(p=>!/mark Filled/.test(p.note)).reduce((a,p)=>a+p.seats,0);
+    html+=`<div class="sthead"><h2>${esc(st)}</h2><small>${g.length} position${g.length>1?"s":""} · ${seats} seat${seats>1?"s":""} · open and stuck first</small></div>`+g.map(posCard).join("");
+  });
+  if(!ps.length) html+=`<div class="box"><h2>No positions match these filters</h2><p>Change a filter or press Clear filters.</p></div>`;
+  $("#vPositions").innerHTML=html;
+  $("#vPositions").querySelectorAll("[data-lvt]").forEach(b=>b.onclick=()=>{const id=b.dataset.lvt;cardLv[id]=b.dataset.lv;openCards.delete(id);renderPositions();document.getElementById("pos-"+id)?.scrollIntoView({block:"nearest"})});
+  $("#vPositions").querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>{const id=b.dataset.card;openCards.has(id)?openCards.delete(id):openCards.add(id);renderPositions();document.getElementById("pos-"+id)?.scrollIntoView({block:"nearest"})});
+  $("#vPositions").querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{const el=document.getElementById("pos-"+b.dataset.jump);if(el){el.scrollIntoView({block:"start",behavior:"smooth"});el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),2500)}});
+  bindNames($("#vPositions"));
+}
+
+/* ---------- candidates view ---------- */
+const inRole=(d,k)=>k==="ALL"||(d.ro||[]).includes(k);
+const inLv=d=>!curLv||d.lv===curLv;
+const inSrc=d=>!curSrc||(curSrc==="S"?d.src!=="A":d.src!=="S");
+const inSt=d=>(!curSt||d.st===curSt)&&(!curDist||(d.fd||"")===curDist);
+function renderDates(){
+  const base=d=>!curSt||d.st===curSt;           // every application counts, whether or not it fits a position
+  const c=v=>{const s0=curDate;curDate=v;const r=cnt(D,d=>base(d)&&inDate(d))+(v&&!curSt?cnt(HIDDEN,hidIn):0);curDate=s0;return r};
+  chips($("#dates"),["","0","1","7","30","old"].map(v=>[v,DATEF[v],c(v)]),curDate,v=>{curDate=v;shown=PAGE});
+  const single=isDay(curDate),range=curDate.includes("..");const [ra,rb]=range?curDate.split(".."):["",""];
+  $("#dOne").value=single?curDate:"";$("#dFrom").value=ra;$("#dTo").value=rb;
+  $("#dPick").classList.toggle("on",single||range);
+  if(curDate){
+    const people=D.filter(d=>base(d)&&inDate(d)), hid=curSt?[]:HIDDEN.filter(hidIn);
+    const placed=cnt(people,d=>(d.pos||[]).length>0), again=cnt(people,d=>d.al&&dateOK(d.al)&&!dateOK(d.ad));
+    const when=single?"on "+fmtDate(curDate):range?(ra&&rb?fmtDate(ra)+" – "+fmtDate(rb):ra?"from "+fmtDate(ra):"up to "+fmtDate(rb)):DATEF[curDate].toLowerCase();
+    $("#dCount").innerHTML=`<b>${people.length+hid.length}</b> applications ${esc(when)} · ${placed} fit an open position${people.length-placed?`, ${people.length-placed} fit none`:""}${again?` · ${again} applied again`:""}${hid.length?` · ${hid.length} not usable`:""}`;
+  } else $("#dCount").textContent="";
+}
+const inTel=d=>!$("#telugu").checked||/telugu/i.test(d.lang||"")||(!d.lang&&(d.st==="Andhra Pradesh"||d.st==="Telangana"));
+const inMatched=d=>!$("#matched").checked||(d.pos||[]).length>0;
+const inNew=d=>!$("#onlynew").checked||!!d.nw;
+const q=()=>$("#q").value.trim().toLowerCase();
+const inQ=d=>{const t=q();return !t||[d.n,d.c,d.fd,d.st,d.exp,d.ph,d.lang||"",(d.co||[]).join(" ")].join(" ").toLowerCase().includes(t)};
+function renderCandFilters(){
+  const dr=$("#distRow");
+  if(curSt){
+    dr.hidden=false;
+    const ds=[...new Set(D.filter(d=>d.st===curSt).map(d=>d.fd||""))].filter(Boolean);
+    const c=x=>cnt(D,d=>d.st===curSt&&(!x||d.fd===x)&&inRole(d,curRole)&&inLv(d)&&inSrc(d));
+    chips($("#dists"),[["","All districts",c("")],...ds.map(x=>[x,x,c(x)]).sort((a,b)=>b[2]-a[2])],curDist,v=>{curDist=v;shown=PAGE});
+  } else dr.hidden=true;
+  const used=Object.keys(ROLES).filter(k=>k==="ALL"||D.some(d=>(d.ro||[]).includes(k)));
+  chips($("#roles"),used.map(k=>[k,ROLES[k].label,cnt(D,d=>inSt(d)&&inRole(d,k)&&inLv(d)&&inSrc(d))]),curRole,v=>{curRole=v;shown=PAGE});
+  chips($("#lvls"),[["","All levels",cnt(D,d=>inSt(d)&&inRole(d,curRole)&&inSrc(d))],...LV_ORDER.map(k=>[k,LV[k].label,cnt(D,d=>d.lv===k&&inSt(d)&&inRole(d,curRole)&&inSrc(d))])],curLv,v=>{curLv=v;shown=PAGE});
+  chips($("#srcs"),[["","Both",cnt(D,d=>inSt(d)&&inRole(d,curRole)&&inLv(d))],["S","Applications sheet",cnt(D,d=>d.src!=="A"&&inSt(d)&&inRole(d,curRole)&&inLv(d))],["A","HR app",cnt(D,d=>d.src!=="S"&&inSt(d)&&inRole(d,curRole)&&inLv(d))]],curSrc,v=>{curSrc=v;shown=PAGE});
+  $("#roleNote").innerHTML=ROLES[curRole].note;
+}
+function rowHtml(d){
+  const i=D.indexOf(d);
+  const rk=curRole!=="ALL"&&(d.ro||[]).includes(curRole)?curRole:(d.ro||[])[0];
+  return `<tr class="row lv-${d.lv}">
+  <td>${lvPill(d.lv)}</td>
+  <td><button class="nm" data-i="${i}">${esc(d.n)}</button>${d.taken?` <span class="pill lvpill strong">Taken</span>`:""}
+    <span class="alt">${esc(placeOf(d)||"Location not on resume")}${d.mv?` · lives in ${esc(d.c)}`:""}</span>
+    <span class="alt"><span class="pill src">${SRC[d.src]}</span>${d.ad?` <span class="pill when">${esc(adText(d))}</span>`:""}${d.nw?` <span class="pill newp">New</span>`:""}${d.lang?` <span class="pill lang">${esc(d.lang)}</span>`:""}${(d.pos||[]).length?` · fits ${d.pos.length} open position${d.pos.length>1?"s":""}`:""}</span></td>
+  <td><div class="roles">${(d.ro||[]).map(r=>`<span class="pill rp ${r===curRole?"on":""}">${esc(ROLES[r]?.label||r)}</span>`).join("")}</div></td>
+  <td>${ageCell(d)}</td>
+  <td>${xpCell(d)}</td>
+  <td>${salCell(d)}</td>
+  <td>${joinCell(d)}</td>
+  <td class="cos" style="max-width:28ch">${coCell(d)}</td>
+  <td><span class="phone">${esc(d.ph||"—")}</span>${d.alt?`<span class="alt">also ${esc(d.alt)}</span>`:""}<div class="acts" style="margin-top:6px">${vBox(i,"any")}${cvBtn(d)}${waBtn(d,rk,d.st||"your state",d.st)}</div></td></tr>`;
+}
+function renderCandidates(){
+  renderCandFilters();
+  const rank=d=>curRole==="ALL"?0:(d.ro||[]).indexOf(curRole);
+  const rows=D.filter(d=>inSt(d)&&inRole(d,curRole)&&inLv(d)&&inSrc(d)&&inDate(d)&&inTel(d)&&inMatched(d)&&inNew(d)&&inPosF(d)&&inQ(d));
+  let html="",left=shown;
+  LV_ORDER.forEach(k=>{
+    const g=rows.filter(d=>d.lv===k).sort((a,b)=>(anyMark(a)-anyMark(b))||byNew(a,b)||rank(a)-rank(b)||(b.pos||[]).length-(a.pos||[]).length||a.n.localeCompare(b.n));
+    if(!g.length||left<=0)return;
+    const part=g.slice(0,left); left-=part.length;
+    html+=`<tr class="grp"><td colspan="9">${LV[k].label}<small>${g.length} · ${LV[k].help} Newest first.</small></td></tr>`+part.map(rowHtml).join("");
+  });
+  if(curDate&&!curSt&&curRole==="ALL"&&!curLv&&!curSrc&&!q()){
+    const hid=HIDDEN.filter(hidIn);
+    if(hid.length) html+=`<tr class="grp"><td colspan="9">Not usable<small>${hid.length} · resume read, nothing for any open role</small></td></tr>`+hid.map(h=>`<tr class="row lv-hide"><td><span class="pill lvpill hide">Not rated</span></td><td colspan="8"><b>${esc(h[0])}</b> — ${esc(h[2])} <span class="alt" style="display:inline">${h[4]&&h[4]!==h[3]?"applied again "+fmtDate(h[4])+" (first "+fmtDate(h[3])+")":"applied "+fmtDate(h[4]||h[3])}</span></td></tr>`).join("");
+  }
+  $("#rows").innerHTML=html||`<tr><td colspan="9" class="empty">No one matches these filters.</td></tr>`;
+  $("#showMoreBox").hidden=rows.length<=shown;
+  $("#showMore").textContent=`Show more (${rows.length-Math.min(shown,rows.length)} left)`;
+  bindNames($("#rows"));
+}
+
+/* ---------- leads by date ---------- */
+const placedL=d=>!!(d.pp&&PBY[d.pp]&&!/mark Filled/.test(PBY[d.pp].note));   // has a best-fit open position
+const lvOKL=d=>!lLv?true:lLv==="nofit"?!placedL(d):lLv==="hide"?false:(d.lv===lLv&&placedL(d));
+const shortPos=p=>p.role==="FE"?`Franchise Executive · Chennai office (${FE_LANG[p.st]||p.st})`:`${POS_TYPE[p.role]||ROLE_TITLE[p.role]||p.role} · ${p.city?p.city+" ("+p.st+")":p.st+" (whole state)"}`;
+const noFitWhy=d=>{const rs=(d.ro||[]).map(r=>ROLES[r]?.label||r);return rs.length?`No open ${rs.join(" / ")} position near ${d.fd||d.c||"them"}`:"No open role fits"};
+function leadRow(it,n){
+  const tm=it.tm?`<small>${esc(fmtTime(it.tm))}</small>`:"";
+  if(it.h){const h=it.h;const askCv=NEEDS_CV.test(h[2]);const wa=askCv&&h[6]?`<a class="btn wa ask" href="https://wa.me/${h[6]}?text=${encodeURIComponent(`Hi ${h[0]}, greetings from the HR team at MR.GOLISODA (South Asian Foods Corporation). Thank you for applying. We could not open the resume you uploaded, so please share your updated resume here on WhatsApp (PDF or Word) and we will take it forward.`)}" target="_blank" rel="noopener">WhatsApp · ask resume</a>`:"";
+    return `<div class="lrow hide"><div class="no">${n}${tm}</div><div class="who"><b>${esc(h[0])}</b><div class="tags">${h[4]&&h[4]!==h[3]?`<span class="pill when">applied again · first ${fmtDate(h[3])}</span>`:""}<span class="pill src">${esc(h[1])}</span></div></div><div class="rt"><span class="pill lvpill hide">Not usable</span></div><div class="el"><div class="read">${esc(h[2])}</div></div><div class="meta"><div class="sub">${askCv?"Ask for a proper resume":"No action"}</div>${wa?`<div class="acts" style="margin-top:6px">${wa}</div>`:""}</div></div>`}
+  const d=it.d,i=D.indexOf(d);
+  const el=(d.pos||[]).map(id=>PBY[id]).filter(Boolean);
+  const eligible=el.length?el.map((p,j)=>`<button class="pl${j?"":" best"}" data-p="${p.id}" title="${j?"Also fits this position":"Best fit — counted here in the filters"}">${esc(shortPos(p))}</button>`).join(""):`<span class="sub">${esc(noFitWhy(d))}</span>`;
+  const who=[d.age&&d.age!=="—"?"age "+esc(d.age)+(d.ae?" (est.)":""):"",d.xp?esc(d.xp):""].filter(Boolean).join(" · ");
+  const tags=[d.al?`<span class="pill when">applied again · first ${fmtDate(d.ad)}</span>`:"",d.adk==="app"?`<span class="pill src">HR app</span>`:"",d.src==="SA"?`<span class="pill src">Sheet + HR app</span>`:"",d.nw?`<span class="pill newp">New</span>`:""].filter(Boolean).join("");
+  return `<div class="lrow ${d.lv}"><div class="no">${n}${tm}</div>
+   <div class="who"><button class="nm" data-i="${i}">${esc(d.n)}</button><span class="sub">${esc(placeOf(d)||"Location not on resume")}${d.mv?` · lives in ${esc(d.c)}`:""}</span>${tags?`<div class="tags">${tags}</div>`:""}${who?`<span class="sub">${who}</span>`:""}<span class="phone">${esc(d.ph||"")}</span></div>
+   <div class="rt">${lvPill(d.lv)}</div>
+   <div class="el"><div class="elig">${eligible}</div><div class="read">${esc(d.exp||"")}</div>${d.ask?`<div class="sub">Ask: ${esc(d.ask)}</div>`:""}</div>
+   <div class="meta"><div>${[d.sal?salCell(d):"",d.nt?joinCell(d):""].filter(Boolean).join(" · ")||`<span class="ask0">Salary and joining: ask on the call</span>`}</div><div class="acts" style="margin-top:6px">${vBox(i,"any")}${cvBtn(d)}${waBtn(d,(d.ro||[])[0],d.st||"your state",d.st)}</div></div></div>`;
+}
+function renderLeads(){
+  const srcOK=d=>!lSrc||(lSrc==="S"?d.src!=="A":d.src!=="S");
+  const base=d=>inSt(d)&&inDate(d)&&inPosF(d);
+  const hidOK=!!curDate&&!curSt&&!anyPF()&&lSrc!=="A";
+  const hidAll=hidOK?HIDDEN.filter(hidIn):[];
+  chips($("#lLvls"),[["","All",cnt(D,d=>base(d)&&srcOK(d))+hidAll.length],...LV_ORDER.filter(k=>k!=="wait"||D.some(d=>d.lv==="wait")).map(k=>[k,LV[k].label,cnt(D,d=>base(d)&&srcOK(d)&&d.lv===k&&placedL(d))]),["nofit","No open position",cnt(D,d=>base(d)&&srcOK(d)&&!placedL(d))],["hide","Not usable",hidAll.length]],lLv,v=>{lLv=v;lShown=PAGE});
+  const lvOK=lvOKL;
+  chips($("#lSrcs"),[["","All sources",cnt(D,d=>base(d)&&lvOK(d)&&lLv!=="hide")+((!lLv||lLv==="hide")&&!!curDate&&!curSt&&!anyPF()?HIDDEN.filter(hidIn).length:0)],["S","Applications sheet",cnt(D,d=>base(d)&&lvOK(d)&&lLv!=="hide"&&d.src!=="A")+((!lLv||lLv==="hide")&&!!curDate&&!curSt&&!anyPF()?HIDDEN.filter(hidIn).length:0)],["A","HR app",cnt(D,d=>base(d)&&lvOK(d)&&lLv!=="hide"&&d.src!=="S")]],lSrc,v=>{lSrc=v;lShown=PAGE});
+  const people=lLv==="hide"?[]:D.filter(d=>base(d)&&srcOK(d)&&lvOK(d));
+  const nofit=cnt(people,d=>!placedL(d));
+  const hids=(!lLv||lLv==="hide")?hidAll:[];
+  const items=[...people.map(d=>({day:lastAd(d),tm:d.at||"",d})),...hids.map(h=>({day:h[4]||h[3]||"",tm:h[5]||"",h}))];
+  const nm=x=>x.d?x.d.n:x.h[0];
+  items.sort((x,y)=>y.day.localeCompare(x.day)||((x.tm&&y.tm)?x.tm.localeCompare(y.tm):(x.tm?-1:(y.tm?1:0)))||nm(x).localeCompare(nm(y)));
+  const k={strong:0,medium:0,check:0,wait:0}; people.forEach(d=>{if(placedL(d))k[d.lv]++});
+  const again=cnt(people,d=>d.al&&dateOK(d.al)&&!dateOK(d.ad));
+  const when=!curDate?"":isDay(curDate)?"on "+fmtDate(curDate):curDate.includes("..")?"in that range":DATEF[curDate].toLowerCase();
+  $("#lSum").innerHTML=items.length?`<b>${items.length}</b> lead${items.length>1?"s":""} ${esc(when)}${curDate?"":" (all dates, newest day first)"} · <span class="s">${k.strong} Strong</span> · <span class="m">${k.medium} Medium</span> · <span class="c">${k.check} Check</span>${nofit?` · ${nofit} no open position`:""}${hids.length?` · ${hids.length} not usable`:""}${again?` · ${again} applied again`:""} · numbered in order of arrival`:"";
+  // arrival number per day, then unmarked first, not-usable next, marked (Fit/Unfit done) last
+  let dayN="",k2=0; items.forEach(it=>{if(it.day!==dayN){dayN=it.day;k2=0} it.n=++k2; it.grp=it.h?2:(anyMark(it.d)?3:(placedL(it.d)?0:1))});
+  items.sort((x,y)=>y.day.localeCompare(x.day)||x.grp-y.grp||x.n-y.n);
+  let html="",day="",left=lShown,grp=0;
+  for(const it of items){
+    if(left<=0)break;
+    if(it.day!==day){ if(day)html+=`</div>`; day=it.day;grp=0; const sameDay=items.filter(x=>x.day===day), tot=sameDay.length, mk=cnt(sameDay,x=>x.grp===3), un=cnt(sameDay,x=>x.grp===0), nf=cnt(sameDay,x=>x.grp===1); html+=`<div class="lday"><h3>${day?esc(fmtDate(day)):"No date"}</h3><small>${tot} lead${tot>1?"s":""}${un?` · ${un} to screen`:""}${nf?` · ${nf} no open position`:""}${mk?` · ${mk} marked`:""}</small></div><div class="lbox"><div class="lhead"><span>#</span><span>Lead</span><span>Rating</span><span>Eligible for · what the resume shows</span><span>Salary · joining · actions</span></div>`; }
+    if(it.grp===1&&grp!==1){html+=`<div class="mdiv">No open position fits — ${cnt(items,x=>x.day===day&&x.grp===1)}. Rated, but nothing to place them in right now.</div>`}
+    if(it.grp===3&&grp!==3){html+=MARKED_DIV(cnt(items,x=>x.day===day&&x.grp===3))} grp=it.grp;
+    html+=leadRow(it,it.n); left--;
+  }
+  if(day)html+=`</div>`;
+  $("#lList").innerHTML=html||`<div class="lbox"><div class="lempty">${curDate?"Nobody applied "+esc(when)+" with these filters.":"No one matches these filters."}</div></div>`;
+  $("#lMoreBox").hidden=items.length<=lShown;
+  $("#lMore").textContent=`Show more (${items.length-Math.min(lShown,items.length)} left)`;
+  bindNames($("#lList"));
+  $("#lList").querySelectorAll(".pl").forEach(b=>b.onclick=()=>{const p=PBY[b.dataset.p];view="positions";curSt=p.st;save();go();setTimeout(()=>document.getElementById("pos-"+p.id)?.scrollIntoView({behavior:"smooth",block:"start"}),30)});
+}
+
+/* ---------- needs attention ---------- */
+function renderAttention(){
+  const open=new Set(P.map(p=>p.id));
+  const nr=NORES.filter(x=>!x.joined);
+  const byPos={};
+  nr.forEach(x=>{const ids=[...new Set(x.ap.map(a=>a[0]))];ids.forEach(id=>{(byPos[id]=byPos[id]||[]).push(x)})});
+  const ordered=Object.keys(byPos).sort((a,b)=>(open.has(b)-open.has(a))||byPos[b].length-byPos[a].length);
+  const npHtml=ordered.map(id=>{
+    const list=byPos[id];
+    return `<details class="np"><summary>${esc(PLAB[id]||id)}<small>${list.length} without a readable resume${open.has(id)?"":" · position filled"}</small></summary><div class="nplist">${list.map(x=>{const a=x.ap.find(a=>a[0]===id);return `<div><b>${esc(x.n)}</b><span class="phone">${esc(x.ph)}</span><span class="pnote">${esc(a?a[1]:"")}</span>${x.nk?`<span class="pnote">Naukri: ${esc(x.nk)} experience</span>`:""}</div>`}).join("")}</div></details>`;
+  }).join("");
+  const why={nofile:"no file uploaded",image:"photo of a resume",empty:"scanned page",["parse timeout"]:"file too large to read"};
+  const reasons={}; nr.forEach(x=>{const k=(x.why||"").split(",")[0]||"empty";reasons[k]=(reasons[k]||0)+1});
+  $("#vAttention").innerHTML=`
+  <div class="box red"><h2>Positions not created in the HR app</h2><ul>${MISSING.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+  <div class="box"><h2>Filled, but not marked closed</h2><p>Each shows 1 of 1 joined and is set to Temporarily closed. If the person is working, mark it Filled / closed so it stops counting as open.</p><ul>${P.filter(p=>/mark Filled/.test(p.note)).map(p=>`<li><b>${esc(p.st)}</b> · ${esc(p.title)}</li>`).join("")}</ul></div>
+  <div class="box"><h2>Files to fix in the HR app</h2><p>Found while reading every resume in the app. Each one either hides a candidate or makes a position look filled when it isn't.</p><ul>${ISSUES.map(([n,t])=>`<li><b>${esc(n)}</b> — ${esc(t)}</li>`).join("")}</ul></div>
+  <div class="box"><h2>In the HR app, but not screened — ${nr.length} people</h2><p>Their resume could not be read: ${Object.entries(reasons).map(([k,v])=>`${v} ${esc(why[k]||k)}`).join(", ")}. For Naukri applicants, open their Naukri profile; for the rest, ask them to resend a PDF. Grouped by the position they applied for; open positions first.</p>${npHtml}</div>
+  <div class="box"><h2>Still to screen</h2><ul>
+    <li><b>38 new applicants in the applications sheet</b> (since Oct 4) — send the sheet link and they will be added.</li>
+    <li><b>Naukri responses</b> — Franchise Manager 50, Franchise Executive 66, Area Sales Manager 209 + 98, Sales Officer posts. Ready to screen once HR logs in to Naukri in the browser.</li>
+  </ul></div>
+  <div class="box"><h2>Not rated — ${HIDDEN.length+HIDDEN_APP.length} people</h2><p>No usable experience for any open role, test records, or a file that isn't a resume.</p><div class="hid">${HIDDEN.map(([n,t,x,f,l])=>`<div class="${t==="Fake upload"?"fake":""}"><em>${esc(t)}</em><b>${esc(n)}</b> — ${esc(x)}${(l||f)?` <span class="pill when">${l&&l!==f?"again "+fmtDate(l)+" (first "+fmtDate(f)+")":"applied "+fmtDate(l||f)}</span>`:""}</div>`).join("")}${HIDDEN_APP.map(([n,w,a])=>`<div><em>HR app</em><b>${esc(n)}</b> — ${esc(w)}${a?` <span class="pnote">(${esc(a)})</span>`:""}</div>`).join("")}</div></div>`;
+}
+
+/* ---------- drawer ---------- */
+let lastFocus=null;
+function openDrawer(i){
+  const d=D[i]; if(!d) return;
+  lastFocus=document.activeElement;
+  $("#dName").textContent=d.n;
+  $("#dTags").innerHTML=[lvPill(d.lv),`<span class="pill src">${SRC[d.src]}</span>`,...(d.ro||[]).map(r=>`<span class="pill rp">${esc(ROLES[r]?.label||r)}</span>`)].join(" ");
+  const fits=(d.pos||[]).map(id=>P.find(p=>p.id===id)).filter(Boolean);
+  const rk=(d.ro||[])[0];
+  $("#dBody").innerHTML=`
+   <dl class="kv">
+     <dt>Phone</dt><dd><span class="phone">${esc(d.ph||"—")}</span>${d.alt?` · ${esc(d.alt)}`:""}${d.em?`<br>${esc(d.em)}`:""}</dd>
+     ${d.ad?`<dt>${d.adk==="app"?"In HR app since":"Applied on"}</dt><dd>${esc(fmtDate(d.ad))}${d.nw?` · ${esc(d.form==='MBA'?'MBA application form':d.form==='BDM'?'BDM application form':'BDE application form')}${d.form2==='MBA'?' · also applied via the MBA form':''}`:""}</dd>`:(d.nw?`<dt>Applied via</dt><dd>${esc(d.form==='MBA'?'MBA application form':d.form==='BDM'?'BDM application form':'BDE application form')}${d.form2==='MBA'?' · also applied via the MBA form':''}</dd>`:"")}
+     <dt>Lives in</dt><dd>${esc(placeOf(d)||"Not on resume")}${d.mv?` (applied for ${esc(d.fd)}; resume says ${esc(d.c)})`:""}</dd>
+     <dt>Age</dt><dd>${esc(d.age||"—")}${d.ae?" (estimated)":""}</dd>
+     <dt>Experience</dt><dd>${esc(d.xp||"Not stated")}</dd>
+     <dt>Salary</dt><dd>${d.sal?`${esc(d.sal)} <span class="pnote">(now → wants, lakhs a year)</span>`:"Not stated — ask"}${d.mo!=null?` · asks ≈ ₹${d.mo}k/month`:""}</dd>
+     <dt>Joining</dt><dd>${d.nt?esc(d.ntk==="work"?"Working now — ask the notice period":d.ntk==="free"?"Not working now — can likely join soon":d.nt):"Not stated — ask"}</dd>
+     <dt>Worked at</dt><dd>${esc((d.co||[]).join(", ")||"Not stated")}</dd>
+     ${d.tv||d.fmcg||d.fs||d.tm?`<dt>On the form</dt><dd>${[d.tv?"Ready to travel: "+d.tv:"",d.fmcg?"FMCG: "+d.fmcg:"",d.fs?"Field sales: "+d.fs:"",d.tm?"Team handled: "+d.tm:""].filter(Boolean).map(esc).join(" · ")}</dd>`:""}
+     <dt>Languages</dt><dd>${esc(d.lang||"Not stated")}</dd>
+   </dl>
+   ${VDB?`<div class="dsec"><h3>Fit or unfit</h3><div>${vBox(i,"any")}</div><div class="pnote">To mark them for one position, use the buttons on that position's list.</div></div>`:""}
+   <div class="dsec"><h3>What the resume shows</h3><div>${esc(d.exp)}</div></div>
+   <div class="dsec"><h3>Ask on the call</h3><div>${esc(d.ask)}</div></div>
+   <div class="dsec"><h3>Contact</h3><div class="act" style="justify-content:flex-start">${cvBtn(d,"Resume (Drive)")}${waBtn(d,rk,d.st||"your state",d.st)}</div>${!d.res&&d.src==="A"?`<div class="pnote">This resume file is stored inside the HR app, so it can't open from this page yet.</div>`:""}</div>
+   ${(d.ap||[]).length?`<div class="dsec"><h3>In the HR app</h3>${d.ap.map(a=>`<div class="aprow"><b>${esc(PLAB[a[0]]||a[0])}</b><br>${esc(a[1])}</div>`).join("")}</div>`:""}
+   <div class="dsec"><h3>Fits these open positions</h3>${fits.length?fits.map(p=>`<button class="plink" data-p="${p.id}">${esc(p.st)} · ${esc(p.title)}</button>`).join(""):`<div class="pnote">None right now under the location rule.</div>`}</div>`;
+  $("#dBody").querySelectorAll(".plink").forEach(b=>b.onclick=()=>{closeDrawer();view="positions";curSt=P.find(p=>p.id===b.dataset.p).st;save();go();setTimeout(()=>document.getElementById("pos-"+b.dataset.p)?.scrollIntoView({behavior:"smooth",block:"start"}),30)});
+  $("#scrim").hidden=false;$("#drawer").hidden=false;$("#dClose").focus();
+}
+function closeDrawer(){$("#scrim").hidden=true;$("#drawer").hidden=true;lastFocus?.focus?.()}
+/* ---------- fit / unfit ---------- */
+let VDB=null, VER={}, VUID=null, VME=null, vCur=null;   // VME = {id,name,email} of the signed-in viewer
+const meLabel=()=>VME?(VME.email||VME.name||""):"";
+const VCHIPS={fit:["FMCG secondary sales","Shop-to-shop field work","Lives in the area","Salary fits","Can join immediately","Good communication","Has a two-wheeler","Team handling"],unfit:["No field sales experience","Salary too high","Lives too far","Not interested","Not reachable","Poor communication","Age / energy","Fake or wrong resume","Already joined elsewhere"]};
+const vkey=d=>d.src==="A"?"A:"+d.k:"S:"+String(d.ph||"").replace(/\D/g,"").slice(-10);
+const vdocId=(d,pid)=>vkey(d)+"~"+(pid||"any");
+function verdictOf(d,pid){return VER[vdocId(d,pid)]||(pid&&pid!=="any"?VER[vdocId(d,"any")]:null)||null}
+let VMARK=new Set();
+const anyMark=d=>VMARK.has(vkey(d));
+const MARKED_DIV=n=>`<div class="mdiv">Already marked — ${n}. Unmarked people stay on top.</div>`;
+function vHtml(i,pid){
+  if(!VDB) return "";
+  const d=D[i], v=verdictOf(d,pid);
+  if(v) return `<button type="button" class="vmark ${v.verdict}" data-vi="${i}" data-vp="${pid}" title="${esc((v.verdict==="fit"?"Fit":"Unfit")+": "+v.reason+(v.hr?" — "+v.hr:""))}">${v.verdict==="fit"?"✓ Fit":"✕ Unfit"} · ${esc(v.reason)}</button>`;
+  return `<button type="button" class="vb fit" data-vi="${i}" data-vp="${pid}" data-vv="fit">Fit</button><button type="button" class="vb unfit" data-vi="${i}" data-vp="${pid}" data-vv="unfit">Unfit</button>`;
+}
+function vBox(i,pid){return `<span class="vbx" data-vbox="${i}|${pid}">${vHtml(i,pid)}</span>`}
+function refreshVerdicts(){
+  VMARK=new Set(Object.keys(VER).map(k=>k.split("~")[0]));
+  if(document.body.dataset.ready){ if(page==="leads")renderLeads();else if(view==="positions")renderPositions();else if(view==="candidates")renderCandidates(); }
+  document.querySelectorAll("[data-vbox]").forEach(el=>{const [i,pid]=el.dataset.vbox.split("|");el.innerHTML=vHtml(+i,pid);const row=el.closest(".mrow");if(row){const v=verdictOf(D[+i],pid);row.classList.toggle("vd-unfit",!!v&&v.verdict==="unfit")}});
+  const vs=Object.values(VER), f=vs.filter(v=>v.verdict==="fit").length;
+  const bar=$("#vbar");
+  if(!VDB){bar.hidden=true;return}
+  bar.hidden=false;
+  bar.innerHTML=`<span>Screening marks: <b class="g">${f} Fit</b> · <b class="r">${vs.length-f} Unfit</b></span><span class="pnote">Every mark needs a reason. They're saved for the whole HR team.</span>${vDl?`<button type="button" class="fclear" id="vDl">Download marks (CSV)</button>`:""}`;
+  $("#vDl")?.addEventListener("click",downloadVerdicts);
+}
+let vDl=null;
+async function downloadVerdicts(){
+  const cols=["Date","Candidate","Phone","Source","Position","State","Level on page","Fit / Unfit","Reason","Marked by"];
+  const q=s=>`"${String(s??"").replace(/"/g,'""')}"`;
+  const rows=Object.values(VER).sort((a,b)=>String(a.at).localeCompare(String(b.at))).map(v=>[v.at,v.cand,v.phone,v.src,v.pos||"(general)",v.st,v.level,v.verdict==="fit"?"Fit":"Unfit",v.reason,v.hr].map(q).join(","));
+  try{await vDl.save({filename:"screening-marks.csv",data:[cols.map(q).join(","),...rows].join("\n")})}catch(e){}
+}
+function openVerdict(i,pid,preset){
+  const d=D[i]; if(!d||!VDB) return;
+  const p=pid&&pid!=="any"?PBY[pid]:null, v=VER[vdocId(d,pid)];
+  vCur={i,pid,verdict:preset||(v&&v.verdict)||""};
+  $("#vTitle").textContent=d.n;
+  $("#vSub").textContent=p?`For ${p.st} · ${p.title}`:"General mark (not tied to one position)";
+  $("#vReason").value=v?v.reason:"";
+  const who=meLabel();
+  $("#vMe").hidden=!who; $("#vHrLab").hidden=!!who; if(who){$("#vMeWho").textContent=who+(VME.name&&VME.email?" · "+VME.name:"");}
+  let hr="";try{hr=localStorage.getItem("hf_hr")||""}catch(e){}
+  const known=[...$("#vHr").options].some(o=>o.value===hr&&hr);
+  $("#vHr").value=known?hr:(hr?"__other":""); $("#vHrOther").hidden=!!who||!(hr&&!known); $("#vHrOther").value=known?"":hr;
+  $("#vLast").textContent=v?`Last marked ${v.verdict==="fit"?"Fit":"Unfit"} by ${v.hr||"someone"} on ${String(v.at||"").slice(0,10)}`:"";
+  $("#vErr").hidden=true;
+  paintVerdict();
+  $("#vscrim").hidden=false;$("#vdlg").hidden=false;
+  setTimeout(()=>$("#vReason").focus(),30);
+}
+function paintVerdict(){
+  document.querySelectorAll(".vseg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===vCur.verdict)));
+  $("#vChips").innerHTML=vCur.verdict?VCHIPS[vCur.verdict].map(c=>`<button type="button">${esc(c)}</button>`).join(""):`<span class="pnote">Choose Fit or Unfit first.</span>`;
+  $("#vChips").querySelectorAll("button").forEach(b=>b.onclick=()=>{const r=$("#vReason");const cur=r.value.trim();if(!cur.includes(b.textContent))r.value=cur?cur+"; "+b.textContent:b.textContent;r.focus()});
+}
+function closeVerdict(){$("#vscrim").hidden=true;$("#vdlg").hidden=true;vCur=null}
+async function saveVerdict(){
+  if(!vCur) return;
+  const err=m=>{$("#vErr").textContent=m;$("#vErr").hidden=false};
+  const reason=$("#vReason").value.trim();
+  let hr=meLabel()||($("#vHr").value==="__other"?$("#vHrOther").value.trim():$("#vHr").value);
+  if(!vCur.verdict) return err("Choose Fit or Unfit.");
+  if(reason.length<4) return err(vCur.verdict==="fit"?"Write why this person is good.":"Write why this person is not suitable.");
+  if(!hr) return err("Choose your name so the team knows who marked it.");
+  if(!meLabel()){try{localStorage.setItem("hf_hr",hr)}catch(e){}}
+  const d=D[vCur.i], pid=vCur.pid||"any", p=PBY[pid];
+  const body={key:vkey(d),cand:d.n,phone:d.ph||"",src:SRC[d.src],pid,pos:p?p.title:"",st:p?p.st:(d.st||""),level:LV[d.lv]?.label||d.lv,verdict:vCur.verdict,reason,hr,by:VUID||"",email:(VME&&VME.email)||"",name:(VME&&VME.name)||"",at:new Date().toISOString()};
+  $("#vSave").disabled=true;
+  try{await VDB.collection("verdicts").doc(vdocId(d,pid)).set(body);VER[vdocId(d,pid)]=body;closeVerdict();refreshVerdicts()}
+  catch(e){err(e&&e.code==="quota_exceeded"?"Storage is full — tell the page owner.":e&&e.code==="invalid_argument"?"You can view this page but not mark candidates. Ask Chandru for Contributor access.":"Couldn't save. Check the internet and try again.")}
+  finally{$("#vSave").disabled=false}
+}
+/* ---------- manual sync (runs the scheduled screening task now) ---------- */
+const SYNC_TRIG="trig_01TWNWfdSEEkpqfj44tQ5oFa";
+let MCP=null, syncSince=null, LASTRUN=null;
+const runAge=r=>r&&r.at?(Date.now()-Date.parse(r.at))/60000:1e9;
+const runBusy=()=>!!(LASTRUN&&LASTRUN.status==="started"&&runAge(LASTRUN)<20);
+const fmtWhen=iso=>{try{const d=new Date(iso);return d.toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit",hour12:true,timeZone:"Asia/Kolkata"})}catch(e){return iso||""}};
+function paintRuns(docs){
+  const runs=docs.map(x=>({id:x.id,...(x.data()||{})})).filter(r=>r.at).sort((a,b)=>String(b.at).localeCompare(String(a.at)));
+  const done=runs.find(r=>r.status==="done"), last=runs[0]; LASTRUN=last||null;
+  const el=$("#lastSync");
+  if(done){el.hidden=false;el.textContent=`Last automatic update: ${fmtWhen(done.at)}${done.new_bde!=null?` · ${(done.new_bde||0)+(done.new_bdm||0)} new application${((done.new_bde||0)+(done.new_bdm||0))===1?"":"s"}`:""}${done.waiting?` · ${done.waiting} resumes still to read`:""}`;}
+  if(syncSince){
+    const mine=runs.find(r=>String(r.at)>=syncSince);
+    const m=$("#syncMsg");
+    if(!mine){m.textContent="Starting… (up to a minute)";}
+    else if(mine.status==="started"){m.textContent=`Running since ${fmtWhen(mine.at)} — reading new applications and resumes. Usually 2–15 minutes.`;}
+    else if(mine.status==="done"){m.innerHTML=`Done: ${(mine.new_bde||0)+(mine.new_bdm||0)} new, ${mine.read||0} resumes read${mine.waiting?`, ${mine.waiting} still waiting`:""}. <button type="button" class="lnk" id="syncReload">Reload the page</button>`;$("#syncReload").onclick=()=>location.reload();$("#syncBtn").disabled=false;syncSince=null;}
+    else if(mine.status==="failed"){m.textContent=`Stopped at step ${mine.step||"?"}: ${mine.error||"unknown error"}. It will retry at the next automatic run.`;$("#syncBtn").disabled=false;syncSince=null;}
+    else if(mine.status==="skipped"){const busy=runs.find(r=>r.status==="started"&&String(r.at)<String(mine.at));if(busy){syncSince=busy.at;m.textContent=`A sync was already running since ${fmtWhen(busy.at)} — this box follows that one.`;}else{m.textContent="Another sync was already running. Try again in a few minutes.";$("#syncBtn").disabled=false;syncSince=null;}}
+  }
+}
+async function initSync(db){
+  try{ if(db) db.collection("runs").onSnapshot(s=>paintRuns(s.docs),e=>console.warn("runs",e&&e.code)); }catch(e){}
+  if(!(window.claude&&typeof claude.use==="function")) return;
+  MCP=await claude.use("mcp"); if(!MCP) return;
+  $("#syncBox").hidden=false;
+  $("#syncBtn").onclick=async()=>{
+    const b=$("#syncBtn"), m=$("#syncMsg");
+    if(runBusy()){b.disabled=true;syncSince=LASTRUN.at;m.textContent=`A sync is already running since ${fmtWhen(LASTRUN.at)} — no need to start another. This box updates by itself when it finishes.`;return;}
+    b.disabled=true; syncSince=new Date().toISOString(); m.textContent="Starting…";
+    try{
+      await MCP.callTool("Claude Code Remote","fire_trigger",{trigger_id:SYNC_TRIG});
+      m.textContent="Sync started. It reads the new applications and resumes, then republishes this page — usually 2–15 minutes. You'll see a reload link here when it's done.";
+    }catch(e){
+      const c=e&&e.code; syncSince=null; b.disabled=false;
+      const mobile=/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent);
+      const nextRun="Automatic runs happen every 2 hours (10 min to the even hour: 6:50, 8:50, 10:50 …).";
+      m.textContent=c==="not_in_manifest"||c==="not_granted"?"You didn't allow this page to use Claude Code Remote. Click again and allow it when asked.":
+        c==="server_not_connected"?`The Claude Code Remote connector isn't available to this page ${mobile?"on the phone app":"here"} (code: server_not_connected). ${mobile?"Open this page on the laptop, or message Claude \"sync HR\" from any chat.":"Open it from the laptop's Claude app or claude.ai in a browser."} ${nextRun}`:
+        c==="tool_error"?`Claude Code Remote answered but refused (tool_error): ${(e&&e.message)||"no detail"}. Only the Claude account that owns the scheduled sync can start it. ${nextRun}`:
+        c==="needs_reauth"?"Reconnect Claude Code Remote in claude.ai Settings → Connectors, then try again.":
+        `Couldn't start the sync (code: ${c||"error"}). ${(e&&e.message)||""} ${nextRun}`;
+    }
+  };
+}
+async function initVerdicts(){
+  if(!(window.claude&&typeof claude.use==="function")) return;
+  const [db,u,dl]=await Promise.all([claude.use("db"),claude.use("user"),claude.use("downloads")]);
+  if(!db) return;
+  VDB=db; vDl=dl; VUID=u?await u.id():null;
+  try{if(u&&u.me){const m=await u.me();VME={id:m.id||VUID,name:m.name||"",email:m.email||null}}}catch(e){VME=null}
+  initSync(db);
+  refreshVerdicts();
+  db.collection("verdicts").onSnapshot(s=>{const v={};s.docs.forEach(x=>{const b=x.data();if(b)v[x.id]=b});VER=v;refreshVerdicts()},e=>{console.warn("marks",e&&e.code)});
+}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-vi]");if(!b)return;e.preventDefault();openVerdict(+b.dataset.vi,b.dataset.vp,b.dataset.vv||"")});
+
+function bindNames(root){root.querySelectorAll(".nm[data-i]").forEach(b=>b.onclick=()=>openDrawer(+b.dataset.i))}
+
+/* ---------- routing ---------- */
+function renderMenu(){
+  const p0=page,d0=curDate; page="leads";curDate="0"; const today=cnt(D,inDate)+cnt(HIDDEN,hidIn); page=p0;curDate=d0;
+  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button>`;
+  $("#menu").querySelectorAll("button").forEach(b=>b.onclick=()=>{page=b.dataset.pg;shown=PAGE;lShown=PAGE;save();go();window.scrollTo({top:0})});
+}
+function go(){
+  F=page==="leads"?FL:FD;
+  renderMenu();
+  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";
+  const host=page==="leads"?$("#lFilters"):$("#dFilters");
+  host.appendChild($("#stateRow"));host.appendChild($("#pfilters"));host.appendChild($("#fsum"));
+  if(page==="leads"){
+    renderStates();renderDates();renderPF();renderLeads();
+    try{if(location.hash.slice(1)!=="leads")history.replaceState(null,"","#leads")}catch(e){}
+    return;
+  }
+  renderViews();renderStates();renderPF();
+  $("#vPositions").hidden=view!=="positions";$("#vCandidates").hidden=view!=="candidates";$("#vAttention").hidden=view!=="attention";
+  if(view==="positions")renderPositions();else if(view==="candidates")renderCandidates();else renderAttention();
+  try{if(location.hash.slice(1)!==view)history.replaceState(null,"","#"+view)}catch(e){}
+}
+function save(){try{localStorage.setItem("hf3",JSON.stringify({page,view,curSt,curRole,curLv,curSrc,curDate,lLv,lSrc,FD,FL}))}catch(e){}}
+function init(){
+  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads"].includes(v.page))page=v.page;if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
+  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
+  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
+  renderFigs();
+  $("#q").addEventListener("input",()=>{shown=PAGE;renderCandidates()});
+  $("#telugu").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
+  $("#matched").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
+  $("#onlynew").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
+  $("#showMore").onclick=()=>{shown+=PAGE;renderCandidates()};
+  $("#lMore").onclick=()=>{lShown+=PAGE;renderLeads()};
+  [["fDept","dept"],["fPos","pos"],["fCity","city"],["fRec","rec"],["fStat","stat"],["fHealth","health"],["fPosted","posted"]].forEach(([id,k])=>$("#"+id).addEventListener("change",e=>{F[k]=e.target.value;shown=PAGE;save();go();}));
+  $("#fPrio").addEventListener("change",e=>{F.prio=e.target.checked;shown=PAGE;save();go();});
+  $("#dOne").addEventListener("change",e=>{curDate=e.target.value||"";shown=PAGE;save();go();});
+  const dRange=()=>{const a=$("#dFrom").value,b=$("#dTo").value;curDate=(a||b)?a+".."+b:"";shown=PAGE;save();go();};
+  $("#dFrom").addEventListener("change",dRange);$("#dTo").addEventListener("change",dRange);
+  $("#fClear").onclick=()=>{Object.assign(F,{dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false});curSt="";curDist="";if(page==="leads"){curDate="";lLv="";lSrc=""}shown=PAGE;lShown=PAGE;save();go();};
+  $("#dClose").onclick=closeDrawer;$("#scrim").onclick=closeDrawer;
+  document.querySelectorAll(".vseg button").forEach(b=>b.onclick=()=>{if(!vCur)return;vCur.verdict=b.dataset.v;paintVerdict()});
+  $("#vHr").onchange=()=>{$("#vHrOther").hidden=$("#vHr").value!=="__other"};
+  $("#vCancel").onclick=closeVerdict;$("#vscrim").onclick=closeVerdict;$("#vSave").onclick=saveVerdict;
+  document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if(!$("#vdlg").hidden)closeVerdict();else if(!$("#drawer").hidden)closeDrawer()});
+  go();
+  document.body.dataset.ready="1";
+  initVerdicts();
+}
+init();
+</script>

@@ -712,3 +712,29 @@
 10/13/2026 14:24:14|Talari chaithanya sai|7569094829|Andhra Pradesh|Ananthapuramu|0-1 years|3|4|Yes|Immediate joiner|No|No|1rH9-gN5FivunMeT0O70Z2TjOje2aH3GH
 10/13/2026 14:26:13|LOKESHWARAN S|9710401055|Tamil Nadu|Tiruvallur|4+ years|3.84 LPA|5.5 LPA|Yes|15 days|No|Yes|18ilyE5bzZfM9lDZ2nU9Gw88pbZaABwNp
 10/13/2026 14:29:37|Maruthi|9666719522|Andhra Pradesh|Sri Sathya Sai|2-4 years|440000|550000|Yes|15 days|No|Yes|1nYVBobZA9cHutOc90V8FrX1zl1lq08CP
+10/13/2026 14:47:44|Elavarasan|9677658764|Tamil Nadu|Chennai|4+ years|4.2|500000|Yes|Immediate joiner|Yes|Yes|1tvrmJvDE1vRAUAgCgpYOou6D3Mieq0ZO
+10/13/2026 14:48:43|CHOUHAN ARAVINDER SINGH|6300881517|Telangana|Nirmal|4+ years|300000|380000|Yes|15 days|Yes|Yes|1RNpjPOLLxq16y-wNVemohYcP-hdTW0C4
+10/13/2026 14:54:03|Krushna Rambhau Gore|7028186998|Maharashtra|Ahmednagar|1-2 years|3|5|Yes|15 days|No|Yes|1Kn-WgKrAj1Zt_w4Ougbjg2c_NlJCY6JA
+10/13/2026 15:00:10|Laxman Gitte|9640404206|Telangana|Adilabad|2-4 years|2.50LPA|4.0LPA|Yes|Immediate joiner|Yes|Yes|1EyWv2WRT_8jB8XwO4VXzelwd3OYEsHcq
+10/13/2026 15:19:01|Anil Datta kunte|9923219839|Maharashtra|Kolhapur|4+ years|2.8|3.5|Yes|Immediate joiner|No|Yes|1YaLunPmXG-hADtoFjuKgMjQ1pI4YL1rh
+10/13/2026 15:23:29|Chetan Mahure|9158998766|Maharashtra|Nagpur|2-4 years|350000|450000|Yes|Immediate joiner|No|Yes|1OGWi0RaJOcmcjvGkyNRuywVpoM1lVGk2
+10/13/2026 15:25:13|Bhukya Tharun|9989051632|Telangana|Hanumakonda|1-2 years|3.5|4.6|Yes|Immediate joiner|No|Yes|1J8p6MCI9175Vu6Aue2J8arQ9wqH0KEMx
+10/13/2026 15:26:26|Amancha Raghavendra|8639926166|Telangana|Hyderabad|4+ years|5.5L|6.5L|Yes|Immediate joiner|Yes|Yes|17Ekulpsupt9eknn80MhXQJSwdGu4SgbQ
+10/13/2026 15:37:00|Ashish Ananda Pawar|9763023393|Maharashtra|Sangli|0-1 years|.|4.8|Yes|Immediate joiner|No|No|1RGQL5obIoCs1q-aE-Bk5QTXoEEsbmlhZ
+10/13/2026 15:44:44|Daneshwar Bagewadi|8400033315|Karnataka|Belagavi|4+ years|3.5lakh|5.5lakh|Yes|15 days|Yes|Yes|1lZj80ZhPPQrRUcT7l3KrUrhcXLIfs1oP
+10/13/2026 15:45:33|Arun Belavi|9060330292|Karnataka|Belagavi|4+ years|3.5|4.5|Yes|15 days|No|Yes|1kiJCI6yfuwb05CyLvoqoC90WS6cQTaQ1
+10/13/2026 15:57:49|Vishwa|8050591324|Karnataka|Bengaluru Urban|4+ years|5.4lac|7.5lac|Yes|15 days|Yes|Yes|1T-GeF4PR-qjFI8D40XG6yqNZWsoFAI4A
+10/13/2026 16:13:00|Gajanan Tambe|8600319438|Maharashtra|Sangli|4+ years|8 lakh|9 lakh|Yes|Immediate joiner|Yes|Yes|1Go2LN0EP-7V20FQlrzqVN11xseHV8GEb
+10/13/2026 16:14:59|Dhirendra Wasnik|8623045571|Maharashtra|Nagpur|4+ years|5.7|6|Yes|Immediate joiner|Yes|Yes|1Ng78Po1yfis_ByXHNhZjnEGauIC5gRIs
+10/13/2026 16:49:22|Shubham shinde|9970593926|Maharashtra|Pune|4+ years|430000|500000|Yes|15 days|Yes|Yes|1gzRBMr0JFfVJU2KN4dPzVgRMY-LdszxA
+10/13/2026 16:50:07|91 Khan|9922784705|Maharashtra|Nagpur|0-1 years|4 lakh|7 lakh|No|Immediate joiner|No|No|1UqK3AVjhMhawMTBaDGtTrSC_6qrJLt_z
+10/13/2026 16:53:47|Anvesh S|7981474424|Telangana|Warangal|4+ years|5.5|7 lacs|Yes|15 days|Yes|Yes|1yaQKuXmSeWOrtxwE5Q92nNPVOhqOsP1-
+10/13/2026 17:06:24|Vadithya Giribabu|9959493969|Telangana|Nalgonda|4+ years|3.4l|4.5l|Yes|15 days|Yes|Yes|1boS4EE6epbBKgE1hpx3xrtmtqjhfMxxf
+10/13/2026 17:14:05|Uppara Ravikumar|6302526462|Telangana|Medchal-Malkajgiri|4+ years|324000|450000|Yes|15 days|Yes|Yes|1DUM8VtXa0qBm2N5kyGJv7w9QRWGzw8mH
+10/13/2026 17:46:05|Nagaraj CN|9035921238|Karnataka|Bengaluru Urban|0-1 years|30000|40000|Yes|15 days|Yes|Yes|1oL91oaVXfhhN4f09umNmTZ0z-jAquSVq
+10/13/2026 17:56:01|Yograj Hedau|8669061956|Maharashtra|Nagpur|0-1 years|3|4|Yes|Immediate joiner|No|Yes|1xyL9mNwHwF22PtNoKtWmLZxO0oedpY7y
+10/13/2026 17:57:33|OMKAR ALBUR|9481880933|Karnataka|Dharwad|0-1 years|No|4-5|Yes|Immediate joiner|Yes|No|1pe-V7Kf6DC-iTj_78E3RrT2YAB9AGbDx
+10/13/2026 18:01:02|C SAIKUMAR|9963404569|Telangana|Medchal-Malkajgiri|1-2 years|2.8|3.5|Yes|Immediate joiner|Yes|Yes|1JHSOfYjKN2rqxakTFB7PRT3cCvYhn8a2
+10/13/2026 18:14:20|MOHAMMAD VAHEED|7207138350|Telangana|Mahabubabad|4+ years|4.5LPA|6LPA|Yes|Immediate joiner|Yes|Yes|1uO3v7EEKnnyD0C4MtR-bIJZQb4ElKiQo
+10/13/2026 18:15:13|Rakesh|7411202974|Karnataka|Bengaluru Rural|1-2 years|4,20,000|4,60,000|Yes|Immediate joiner|Yes|Yes|16d4RCmsuAhySaXQ2-aoOTJxu4uE5hKN3
+10/13/2026 18:16:05|Afzal|7396871622|Telangana|Medchal-Malkajgiri|1-2 years|2.8lpa|3.3lpa|Yes|Immediate joiner|Yes|Yes|1FmSfOjLYgFO1NDaAudOf084QOp0GlM0q

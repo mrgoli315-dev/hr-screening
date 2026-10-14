@@ -794,3 +794,7 @@
 10/14/2026 14:15:47|Pavankumar|7026048058|Karnataka|Belagavi|1-2 years|20000|30000|Yes|15 days|No|Yes|1E79ryto77CgVMHx6fUTKOaBLqwCC938Z
 10/14/2026 14:19:59|Karthik Ravichandran|9566018266|Tamil Nadu|Chennai|1-2 years|300000|360000|Yes|Immediate joiner|No|Yes|18zsSq44xH8R0Qg6UKzJ-KpQfp-leXHee
 10/14/2026 14:25:39|VELU PANDIYAN|9840142897|Tamil Nadu|Chennai|4+ years|385000|450000|Yes|Immediate joiner|Yes|Yes|1CCSDw9ag5-PQc9GdGvUlxeLZlBiLi8hz
+10/14/2026 14:44:59|Balaji Anbalagan|9566153697|Tamil Nadu|Chennai|4+ years|8.5L|6L|Yes|Immediate joiner|Yes|Yes|1FP3E-O0QKl_cnfx0eKVadukrVQC8p91D
+10/14/2026 15:08:20|Atharv Sonmale|9145574441|Maharashtra|Satara|1-2 years|3.0 LPA|4.0LPA|Yes|15 days|No|Yes|1lQ89nGdAorF8tM7h1_xrvyH1KLQG7ZRV
+10/14/2026 15:37:40|mohammed|9035168279|Karnataka|Bengaluru Rural|4+ years|5lk|6lk|Yes|Immediate joiner|Yes|Yes|1bCtnT35GCdBIDdN4TuB1QnTPhHzzzMqH
+10/14/2026 15:46:22|Murali S|8870293921|Tamil Nadu|Chengalpattu|4+ years|7.2 lpa|8.0 lpa|Yes|15 days|No|Yes|1fRcYd9x85cmP-aQFwwZSWQ9PmgzNX47l

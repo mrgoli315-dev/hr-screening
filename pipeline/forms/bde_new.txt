@@ -738,3 +738,32 @@
 10/13/2026 18:14:20|MOHAMMAD VAHEED|7207138350|Telangana|Mahabubabad|4+ years|4.5LPA|6LPA|Yes|Immediate joiner|Yes|Yes|1uO3v7EEKnnyD0C4MtR-bIJZQb4ElKiQo
 10/13/2026 18:15:13|Rakesh|7411202974|Karnataka|Bengaluru Rural|1-2 years|4,20,000|4,60,000|Yes|Immediate joiner|Yes|Yes|16d4RCmsuAhySaXQ2-aoOTJxu4uE5hKN3
 10/13/2026 18:16:05|Afzal|7396871622|Telangana|Medchal-Malkajgiri|1-2 years|2.8lpa|3.3lpa|Yes|Immediate joiner|Yes|Yes|1FmSfOjLYgFO1NDaAudOf084QOp0GlM0q
+10/13/2026 18:29:11|PANDU AD|8098065700|Tamil Nadu|Tiruvallur|4+ years|3.4LPA|4LPA|Yes|Immediate joiner|Yes|Yes|1vmaKyeeuPNzKIRVwv5wagNa_acaG-0VY
+10/13/2026 18:30:55|CHINNAPAKA NARESH|9951190890|Telangana|Nalgonda|2-4 years|3.25|3.6|Yes|Immediate joiner|No|Yes|1ezYNVgLos6auHhqk6oeneIij6uVz8rW6
+10/13/2026 18:48:04|Danish Khan|8888222454|Maharashtra|Nagpur|2-4 years|3.60 per annum|4 lac per annum minimum|Yes|Immediate joiner|No|Yes|1ApEpwtfOXhUyimoH1xgnfqDivLwZZIG4
+10/13/2026 18:50:56|Panchaneni Thirupathi Rao|8688311725|Telangana|Jayashankar Bhupalpally|4+ years|4.5|5.8|Yes|Immediate joiner|Yes|Yes|1uSXk7useVcKFn0HdhNeBPtaXgDeevRyr
+10/13/2026 18:54:08|Shaik azhar|7013980497|Telangana|Medchal-Malkajgiri|0-1 years|2.5|3|Yes|Immediate joiner|Yes|Yes|1NJsdwO14hgzHUValLyZRwaW6WLFzV_hC
+10/13/2026 19:11:44|Anas Ahmed|8892299687|Karnataka|Bengaluru Urban|4+ years|5|6|Yes|Immediate joiner|Yes|Yes|1LpaSb_RBjolETetOHAzg5prAc5dlMiP2
+10/13/2026 19:46:18|K vishnu|7997632681|Telangana|Hyderabad|4+ years|3.2|4|Yes|Immediate joiner|Yes|Yes|1Mi-pwq8sc_VuxvwJquGb7HxcDTExpGrE
+10/13/2026 20:35:39|BHUSHAN Narnaware|8055591688|Maharashtra|Nagpur|4+ years|25000|30000|Yes|Immediate joiner|No|Yes|1X86LtY5hTcf_J9MM8C28kO6dFAf8vOcO
+10/13/2026 20:44:56|Anshul Madan|7517017682|Maharashtra|Nagpur|4+ years|3|4|Yes|Immediate joiner|Yes|Yes|1eZwcIXrtH9MzufWu4y0ocRXCOsQ818Pn
+10/13/2026 20:59:49|Devunuri Manohar|9666832521|Telangana|Jayashankar Bhupalpally|2-4 years|3|4.5|Yes|Immediate joiner|Yes|Yes|1ZglAN6-Oowe-gvuL9IQixX4UDdRg1Nnc
+10/13/2026 21:02:21|Prem Kumar|9182527211|Telangana|Hyderabad|4+ years|480,000|680,000|Yes|15 days|Yes|Yes|1gVQokVn5PLF59epfINfLJH7_sJSelG3B
+10/13/2026 21:07:16|Aravind Patla|9160044291|Telangana|Warangal|4+ years|4.5|6.2|Yes|15 days|No|Yes|1eM-XlcnRf4_PElUXvVwcEfIo43s2igyg
+10/13/2026 21:21:08|Menday Anvesh|9110565814|Telangana|Medchal-Malkajgiri|2-4 years|456000|550000|Yes|Immediate joiner|Yes|No|1JSFYK7ftRXbU4Hu7a-NPgBScjCNAYvqU
+10/13/2026 21:22:56|Mohammed Roshan baig|9686912407|Karnataka|Bengaluru Urban|4+ years|6.6|7|Yes|Immediate joiner|Yes|Yes|1_jFy6kmTHIyT4tI1sp4h62cNGHusvnzr
+10/13/2026 21:30:33|SYED ZABI ULLAH|7893926632|Telangana|Hyderabad|2-4 years|3.6LPA|5.2LPA|Yes|Immediate joiner|Yes|Yes|1_qowyPngTdnYvs4duGZaM8wJNDULceDr
+10/13/2026 22:00:56|Sanjay Kumar H K|6361288761|Karnataka|Bengaluru Rural|2-4 years|4.2LPA|5 LPA|Yes|15 days|No|Yes|1M8zgi-JE5jvgG4_F2A3-67JztFXiKVq6
+10/13/2026 22:33:20|Santosh Bamne|9175163455|Maharashtra|Sangli|1-2 years|2 LPA|3 LPA|Yes|15 days|Yes|Yes|13obOdQbM8z0ensjWbHefcZ75UmOV8L_r
+10/13/2026 22:39:18|Sumit sunil karande|7387579080|Maharashtra|Satara|4+ years|35000|40000|Yes|15 days|Yes|Yes|1gYcExdGB1i-bsiAUb3gXWOCFuJ-uU5tl
+10/13/2026 22:43:29|PRASATH P|9080627773|Tamil Nadu|Ranipet|4+ years|5 LPA|6.0 LPA|Yes|15 days|No|Yes|1nPFpNJqFi2dtkCJbGdCzsiG0x9SEkJvC
+10/13/2026 22:54:01|Pitta adam|9121614768|Andhra Pradesh|West Godavari|4+ years|4.2|6L|Yes|15 days|Yes|No|1AJEQYQHg9F51DWH_2vEesmJO0t9LbfmZ
+10/13/2026 22:56:45|Mandar Deshmukh|7620896368|Maharashtra|Wardha|4+ years|3.5|4|Yes|Immediate joiner|No|Yes|10-kqwcuEPHRbWcNTkC16V_xKgJ8AfJNk
+10/13/2026 23:06:27|BODDU PRAVEEN KUMAR|7671921898|Andhra Pradesh|Sri Potti Sriramulu Nellore|2-4 years|4.2 LPA|4.6 LPA|Yes|Immediate joiner|Yes|Yes|11UV33mbmueb5aP4OY1kqwWpwNPmqHpNl
+10/13/2026 23:14:44|Mohammad zumair|9515695185|Telangana|Warangal|2-4 years|2.7|3.5|Yes|15 days|Yes|Yes|1QsYgkmpu0rX5OmbNf_f_mwl4mRmMbtNf
+10/13/2026 23:31:49|Mangesh Devidas Gawai|9272335474|Maharashtra|Buldhana|2-4 years|3 lpa|3 LPA|Yes|Immediate joiner|Yes|Yes|1JgWnNOnct5o3gAa68kod3ivb2dzP6P4N
+10/13/2026 23:54:21|Ghanshyam N|9535143438|Karnataka|Bengaluru Urban|0-1 years|4|6|Yes|Immediate joiner|No|Yes|1rgr_xxqj2X4wFFd6j4zRFeQDm1SUJSEM
+10/14/2026 0:12:46|Abhiraj sharma|8126815568|Uttar Pradesh|Agra|0-1 years|0|4|Yes|15 days|No|No|1lDocw8nVVArqPN1ACCxl24eW_XcKKMEw
+10/14/2026 1:24:38|Aslam Ibrahim|9080797546|Tamil Nadu|Chennai|1-2 years|4|6|Yes|Immediate joiner|Yes|Yes|1nK3OCssUoK2HFq5FNYp9seAujLGOSn8L
+10/14/2026 2:08:30|Faisal Sheikh|9730786036|Maharashtra|Nagpur|4+ years|4.6|5.5|Yes|Immediate joiner|Yes|Yes|1mf7jgC4w_wLaYG7vYeS1FOKE820CPneJ
+10/14/2026 2:47:16|Abdul Rahman|6361771191|Karnataka|Bengaluru Urban|1-2 years|32|35|Yes|Immediate joiner|Yes|Yes|1zj96Y1I5g3KSIVNolDVfb8D-1VC0ibDJ

@@ -67,8 +67,9 @@ FE_LANG = {'Andhra Pradesh': 'telugu', 'Telangana': 'telugu', 'Karnataka': 'kann
 LANG_HOME = {'telugu': {'Andhra Pradesh', 'Telangana'}, 'kannada': {'Karnataka'}, 'tamil': {'Tamil Nadu', 'Puducherry'},
              'malayalam': {'Kerala'}, 'gujarati': {'Gujarat'}, 'marathi': {'Maharashtra'}, 'hindi': {'Delhi', 'Uttar Pradesh', 'Madhya Pradesh', 'Rajasthan', 'Haryana', 'Bihar', 'Jharkhand', 'Chhattisgarh'}}
 STATE_WIDE = {'FM', 'SH', 'LAUNCH'}
+PLANT_ROLES = {'DISP', 'PUR', 'PROD', 'TECH'}   # a plant position with no city = any franchise plant in that state
 ROLE_OK = {'BDE': {'BDE'}, 'LAUNCH': {'LAUNCH'}, 'BDM': {'BDM', 'ASM'}, 'SH': {'SH'}, 'FM': {'FM'}, 'FE': {'FE'},
-           'OPX': {'OPX', 'OPS'}, 'PUR': {'PUR'}, 'DISP': {'DISP'}, 'DMK': {'DMK'}, 'ITX': {'ITX'}, 'LND': {'LND'}}
+           'OPX': {'OPX', 'OPS', 'PROD'}, 'PUR': {'PUR'}, 'DISP': {'DISP'}, 'PROD': {'PROD', 'OPX'}, 'TECH': {'TECH'}, 'DMK': {'DMK'}, 'ITX': {'ITX'}, 'LND': {'LND'}}
 STAGE_FIX = {'Salary discussio': 'Salary discussion'}
 
 def status_text(stage, status, exit_):
@@ -236,7 +237,7 @@ for p in POS:
             dc = c.get('dc')
             if dc and dc in loc_l: tier = 'local'
             elif dc and dc in loc_n: tier = 'nearby'
-            elif role in STATE_WIDE and same_state: tier = 'state'
+            elif (role in STATE_WIDE or (role in PLANT_ROLES and not city)) and same_state: tier = 'state'
             elif state == 'Delhi' and dc in loc_l: tier = 'local'
             elif not c.get('st') and applied: tier = 'unknown'     # no location on resume, but applied here
             else: continue

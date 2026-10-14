@@ -1,4 +1,4 @@
-# HR Screening — self-hosted (v1.4)
+# HR Screening — self-hosted (v1.5)
 
 The same HR screening page, running on your own free accounts:
 
@@ -133,6 +133,15 @@ Filter by person, action, period or search text; "Download CSV" exports what is 
 ## v1.4 — every 2 hours
 Upgrade from v1.3: on GitHub replace only `.github/workflows/sync.yml`, `pipeline/runs.py`, `pipeline/publish.py`, `README.md`.
 No Supabase or Vercel change. Do NOT upload `public/index.html`.
+
+## v1.5 — plant roles: Dispatch, Purchase, Production, Technician
+- New applicants are also rated for TECH (Technician), PROD (Production), PUR (Purchase), DISP (Dispatch) with their own rules
+  (`pipeline/new/prompt_template.txt`, "PLANT / OPERATIONS ROLES"). Applicants rated before v1.5 are not re-rated.
+- 28 new positions: one per role in each franchise state (TN, AP, Telangana, Karnataka, Maharashtra, Gujarat, Jharkhand),
+  "Operations · <Role> · Franchise plants", 1 seat each, recruiter "Not assigned". They match applicants anywhere in that state.
+  Change seats/recruiter in `pipeline/app/positions.json` (6th value = seats) and `pipeline/app/posmeta.json` (3rd value = recruiter).
+- Upgrade from v1.4: replace `pipeline/app/positions.json`, `pipeline/app/posmeta.json`, `pipeline/new/prompt_template.txt`,
+  `pipeline/v3/build.py`, `pipeline/v3/page.tpl.html`, `README.md`; then Actions → sync → Run workflow. Do NOT upload `public/index.html`.
 
 ## Notes
 - Marks made on the old Claude pages are not copied here (they are stored inside those pages).

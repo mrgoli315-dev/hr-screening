@@ -315,7 +315,7 @@ details.np summary small{color:var(--muted);font-weight:500;margin-left:6px}
 
   <div id="pgDash">
   <p class="sub" id="lede"></p>
-  <p class="rule"><b>Location rule:</b> only Franchise Executives relocate. They work from the Chennai office and must speak the language of the state they handle. Everyone else is matched only to positions in their own district or a neighbouring one (Franchise Manager, State Head and Launch Team: anywhere in the same state).</p>
+  <p class="rule"><b>Location rule:</b> only Franchise Executives relocate. They work from the Chennai office and must speak the language of the state they handle. Everyone else is matched only to positions in their own district or a neighbouring one (Franchise Manager, State Head and Launch Team: anywhere in the same state; Dispatch, Purchase, Production and Technician at franchise plants: anywhere in the same state).</p>
 
   <div class="figs" id="figs"></div>
   <div class="vbar" id="vbar" hidden></div>
@@ -416,8 +416,10 @@ const ROLES={
   FM:{label:"Franchise Manager",note:"<b>Franchise Manager</b> — sells the ₹80L franchise to investors. Matched anywhere in the same state."},
   FE:{label:"Franchise Executive",note:"<b>Franchise Executive</b> — sits in the Chennai office, screens franchise leads by phone and fixes meetings. The only role that relocates; must speak the language of the state they handle."},
   OPS:{label:"Franchise Ops",note:"<b>Franchise Operations Manager</b> — runs franchise operations: mini-factory production, SOPs, quality, reporting."},
-  PUR:{label:"Purchase",note:"<b>Purchase</b> — Chennai head office."},
-  DISP:{label:"Dispatch",note:"<b>Dispatch / warehouse</b>."},
+  PUR:{label:"Purchase",note:"<b>Purchase</b> — procurement, vendors, POs, ERP; head office and franchise plants."},
+  DISP:{label:"Dispatch",note:"<b>Dispatch / warehouse</b> — loading, FIFO, stock and crate registers, vehicle planning; franchise plants."},
+  PROD:{label:"Production",note:"<b>Production</b> — operator/supervisor in a beverage, FMCG, food or dairy plant; shifts, output records, hygiene and QC. Matched anywhere in the same state."},
+  TECH:{label:"Technician",note:"<b>Technician</b> — ITI/Diploma; filling machines, CO₂/carbonator, chiller, plant maintenance and breakdowns. Matched anywhere in the same state."},
   OPX:{label:"Operations exec",note:"<b>Operations executive / supervisor</b> — plant or franchise operations."},
   ITX:{label:"IT",note:"<b>IT executive</b> — Chennai head office."},
   LND:{label:"L&D",note:"<b>Learning &amp; Development</b> — Chennai head office."},
@@ -425,7 +427,7 @@ const ROLES={
   MIS:{label:"MIS",note:"<b>MIS / reporting</b> — that position is filled; kept for later."},
   HR:{label:"HR",note:"<b>HR / recruitment</b> — that position is filled; kept for later."}
 };
-const ROLE_TITLE={BDE:"Business Development Executive",LAUNCH:"Launch Team Executive",BDM:"Business Development Manager",ASM:"Area Sales Manager",SH:"State Head",FM:"Franchise Manager",FE:"Franchise Executive",OPS:"Franchise Operations Manager",PUR:"Purchase",DISP:"Dispatch",OPX:"Operations Executive",ITX:"IT Executive",LND:"Learning & Development Executive",DMK:"Performance Marketing",MIS:"MIS Executive",HR:"HR Executive"};
+const ROLE_TITLE={BDE:"Business Development Executive",LAUNCH:"Launch Team Executive",BDM:"Business Development Manager",ASM:"Area Sales Manager",SH:"State Head",FM:"Franchise Manager",FE:"Franchise Executive",OPS:"Franchise Operations Manager",PUR:"Purchase",DISP:"Dispatch",PROD:"Production",TECH:"Technician",OPX:"Operations Executive",ITX:"IT Executive",LND:"Learning & Development Executive",DMK:"Performance Marketing",MIS:"MIS Executive",HR:"HR Executive"};
 const LV={strong:{label:"Strong",help:"Clear fit. Call first."},medium:{label:"Medium",help:"Relevant, with one gap. Call if Strong doesn't fill the seats."},check:{label:"Check",help:"Resume isn't enough to decide. One screening call."},wait:{label:"Waiting",help:"Applied after the last resume pass — not rated yet. Only the form answers are shown."}};
 const LV_ORDER=["strong","medium","check","wait"];
 const TIER={local:"in area",nearby:"nearby district",state:"elsewhere in state",chennai:"in Chennai",move:"moves to Chennai",unknown:"location not on resume"};
@@ -455,7 +457,7 @@ const PBY={}; P.forEach(p=>PBY[p.id]=p);
 const cityOf=p=>p.city||"Whole state";
 const posLabel=p=>`${p.desig} · ${p.dept} — ${p.st}${p.city?", "+p.city:""} (${/Temporarily/.test(p.status)?"temp. closed":"open"}${p.seats>1?", "+p.seats+" seats":""})`;
 const DAYS=d=>Math.floor((Date.now()-new Date(d+"T00:00:00").getTime())/864e5);
-const POS_TYPE={BDE:"BDE",BDM:"BDM",SH:"State Head",FM:"Franchise Manager",FE:"Franchise Executive",LAUNCH:"Launch Team",OPX:"Operations Executive",DISP:"Dispatch",PUR:"Purchase Manager",ITX:"IT Executive",LND:"L&D Executive",DMK:"Performance Marketing"};
+const POS_TYPE={BDE:"BDE",BDM:"BDM",SH:"State Head",FM:"Franchise Manager",FE:"Franchise Executive",LAUNCH:"Launch Team",OPX:"Operations Executive",PROD:"Production",TECH:"Technician",DISP:"Dispatch",PUR:"Purchase Manager",ITX:"IT Executive",LND:"L&D Executive",DMK:"Performance Marketing"};
 const POS_ORDER=Object.keys(POS_TYPE);
 const POSTED={"":"Any time","7":"Last 7 days","30":"Last 30 days","90":"Last 90 days","old":"Older than 30 days"};
 function postedOK(p){ if(!F.posted) return true; const a=DAYS(p.opened); return F.posted==="old"?a>30:a<=+F.posted; }

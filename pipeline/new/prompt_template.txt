@@ -19,7 +19,13 @@ ROLES (keys)
 - FM — Franchise Manager: sells an ₹80 lakh franchise to investors (franchise sales, real estate, HNI/insurance/business-loan sales, automobile, B2B enterprise, own business).
 - FE — Franchise Executive: Chennai office, phones franchise leads, qualifies, fixes meetings (tele-sales, inside sales, loan/insurance telesales).
 - OPS — senior operations leadership.
-- Non-sales (only if it truly fits): PUR purchase, DISP dispatch/warehouse, OPX plant/ops exec, ITX IT, LND trainer, DMK digital marketing, MIS, HR.
+- PLANT / OPERATIONS ROLES (franchise mini-factories in every state, and the Thiruvallur plant). Rate these as fully as the sales roles: a person with real plant, maintenance or warehouse work is NOT hide.
+  - TECH — Technician: ITI/Diploma (Mechanical, Electrical, Fitter, Electrician), bottling/filling machines, CO2/carbonator, chiller/compressor, plant maintenance and breakdown work.
+  - PROD — Production: operator/supervisor in an FMCG, beverage, food or dairy plant; shift handling, batch/output records, hygiene and QC.
+  - PUR — Purchase: procurement, vendor follow-up, quotations, purchase orders, ERP (ERPNext, Tally, SAP), raw and packing material buying.
+  - DISP — Dispatch/warehouse: loading and unloading, FIFO, stock and crate/bottle registers, vehicle and route planning, delivery challans.
+  For these roles the level is about that role: strong = clear direct experience in it; medium = related plant, stores or warehouse work; check = thin but some relevant work.
+- Other non-sales (only if it truly fits): OPX plant/ops exec, ITX IT, LND trainer, DMK digital marketing, MIS, HR.
 Give 1–3 keys, best first.
 
 LEVELS: strong (clear direct fit), medium (partly fits, worth a call; an MBA fresher with a marketing/sales MBA who is ready to travel counts as medium for BDE), check (thin/unclear but some relevant work), hide (ONLY: no relevant work for any role, test entry, or the file isn't a resume / can't be opened). Never hide for age, gaps or HR remarks. No age cutoff; if 40+, put "energy check" in the ask.

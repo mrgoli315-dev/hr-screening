@@ -807,3 +807,8 @@
 10/14/2026 17:30:06|Ronit Kumar|9234166393|Jharkhand|Dhanbad|1-2 years|280000|350000|Yes|Immediate joiner|Yes|Yes|145w8p6scODdeqOUyiCUnPJP50c2RbXaV
 10/14/2026 17:43:53|Naresh kumar R|6369451954|Tamil Nadu|Tiruvallur|4+ years|35000|40000|Yes|Immediate joiner|Yes|Yes|1Z6SydB_x2ohZtcthfa645GyBmDJlOb4A
 10/14/2026 19:55:16|Prasad Bhosale|7767878804|Maharashtra|Satara|2-4 years|3.5 LPA|4.5 LPA|Yes|Immediate joiner|No|Yes|14z7PbAFjgXINZzUhjERpi446snbpy1ys
+10/14/2026 20:32:59|Surya|7904940456|Tamil Nadu|Ranipet|0-1 years|2.4|3|Yes|15 days|No|No|1kAGK6J5j-yz0hFcsKuUmI_fNUHURdqer
+10/14/2026 20:40:09|Vijay Vijay|7904402556|Tamil Nadu|Tiruvallur|4+ years|24000|30000|Yes|15 days|Yes|Yes|1ZUbabYkqhQhYDCDI-kBUxeevI3R8oAPb
+10/14/2026 20:59:15|Santosh Bamane|7798109830|Maharashtra|Sangli|1-2 years|2 lac|3. 30 lac|Yes|Immediate joiner|Yes|Yes|1H2JxX958-LlKn71-IV1WHp_gK404Y_CM
+10/14/2026 21:24:26|Abhijit sanjay thorat|7620501225|Maharashtra|Satara|1-2 years|3lpa|4.5lpa|Yes|15 days|Yes|Yes|1muUF68Q0d36YHRFs0xNfF4w29nYWZ6hx
+10/14/2026 22:05:25|Zabi|9742680991|Karnataka|Bengaluru Urban|4+ years|12,00,000|14,00,000|Yes|Immediate joiner|No|Yes|1IT_ZXmOgep5QgZFVT5pBaShn2_YGUNNz

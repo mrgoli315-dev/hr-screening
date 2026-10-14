@@ -767,3 +767,15 @@
 10/14/2026 1:24:38|Aslam Ibrahim|9080797546|Tamil Nadu|Chennai|1-2 years|4|6|Yes|Immediate joiner|Yes|Yes|1nK3OCssUoK2HFq5FNYp9seAujLGOSn8L
 10/14/2026 2:08:30|Faisal Sheikh|9730786036|Maharashtra|Nagpur|4+ years|4.6|5.5|Yes|Immediate joiner|Yes|Yes|1mf7jgC4w_wLaYG7vYeS1FOKE820CPneJ
 10/14/2026 2:47:16|Abdul Rahman|6361771191|Karnataka|Bengaluru Urban|1-2 years|32|35|Yes|Immediate joiner|Yes|Yes|1zj96Y1I5g3KSIVNolDVfb8D-1VC0ibDJ
+10/14/2026 7:36:04|Narasimhan B|9597396659|Tamil Nadu|Ranipet|4+ years|480000|600000|Yes|15 days|No|No|1PGrVpyCfocH5K9lhL00vZ_5_L3Y0PJ41
+10/14/2026 8:04:39|Karthick|9043708789|Tamil Nadu|Tiruvallur|2-4 years|35000|40000|Yes|Immediate joiner|Yes|Yes|1kEGRaranI0yvSS5FQYBlCggucxKbuyQb
+10/14/2026 8:20:36|v vijaykumar|9848632205|Telangana|Hyderabad|4+ years|5 LPA|7 LPA|Yes|Immediate joiner|Yes|Yes|1ZSt6aKhVO9gYxsdIH5aGcjIKmoedLknO
+10/14/2026 8:22:22|Aniket|9049363019|Maharashtra|Satara|1-2 years|6.7|6.7|Yes|Immediate joiner|Yes|Yes|1z1JUBTi-FvSQBwZ35rLT1FFpebMUnhcJ
+10/14/2026 8:38:34|Prakash|8610647851|Tamil Nadu|Chennai|4+ years|40|40|Yes|Immediate joiner|Yes|Yes|1T3jJDD57x3qGzamRUYvgP3qSiGqoUWdG
+10/14/2026 8:47:19|Aditya kishorsingh joie|7875407070|Maharashtra|Nagpur|4+ years|300000|500000|Yes|Immediate joiner|No|Yes|14przcBoo0iAvcM3ALl_q9Zx_uCoxpkn1
+10/14/2026 9:22:21|Giridhar Mahadev patil|9353684781|Karnataka|Belagavi|2-4 years|3|4|Yes|Immediate joiner|No|Yes|1iXyLZ9ZpQgmv_shWtR0GPO4cFMLg2x6T
+10/14/2026 9:56:08|Mohammad Shareef Md Shareef|7075469922|Telangana|Rangareddy|2-4 years|2.5|3.5|Yes|15 days|No|Yes|1pOWldcqRbLQmB0LXe4XL2ZvyRrQCFeUZ
+10/14/2026 10:00:54|Ravi|7892220799|Karnataka|Bengaluru Urban|2-4 years|650000|660000|Yes|Immediate joiner|No|No|1VCu5d6cpDNWxroYFI7ttKUR3WZkcRg7-
+10/14/2026 10:10:05|Asif Meerasab Gori|8867860617|Karnataka|Belagavi|4+ years|3.6 LPA|4 LPA|Yes|Immediate joiner|No|Yes|1CAiJtIYQo1uuoZe3RYzb8J3coNBNTISZ
+10/14/2026 10:23:40|MD Surendranath|8500488573|Andhra Pradesh|Kurnool|4+ years|500000|500000|Yes|Immediate joiner|Yes|Yes|1JFV9DVD15SkvKIlI0WAbsXotchFb85Pr
+10/14/2026 10:45:10|Saddamhusen mahiboob|7972197991|Maharashtra|Sangli|1-2 years|2.5 lac|3 lac|Yes|Immediate joiner|No|Yes|117HPj78ZqkEmCR3R7qts8-Z--yEGFWaJ

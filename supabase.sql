@@ -15,3 +15,5 @@ grant select, insert, update, delete on public.docs to anon, authenticated;
 
 -- Live updates: a mark saved by one person shows on everyone's screen.
 alter publication supabase_realtime add table public.docs;
+
+-- v1.3: then also run sql/v1.3_activity_log.sql (Activity log table).

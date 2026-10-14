@@ -8,7 +8,8 @@ src = os.path.join(ROOT, 'pipeline', 'v3', 'MR_GOLISODA_Hiring_Shortlist.html')
 html = open(src, encoding='utf-8').read()
 tags = ('<script src="config.js"></script>\n'
         '<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>\n'
-        '<script src="claude-shim.js"></script>\n')
+        '<script src="claude-shim.js"></script>\n'
+        '<script src="activity-log.js" defer></script>\n')
 marker = '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
 assert marker in html, 'page head not found'
 html = html.replace(marker, marker + tags, 1)

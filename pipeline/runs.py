@@ -12,7 +12,9 @@ import datetime, json, os, sys
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
+URL = os.environ.get('SUPABASE_URL', '').strip().rstrip('/')
+if URL.endswith('/rest/v1'):          # accept the URL with or without /rest/v1
+    URL = URL[:-len('/rest/v1')]
 KEY = os.environ.get('SUPABASE_KEY', '')
 RUN_ID = os.environ.get('RUN_ID') or datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%S')
 STAMP = os.path.join(ROOT, 'work', 'run_started_at.txt')
@@ -32,6 +34,24 @@ def put(data):
                       json=[{'collection': 'runs', 'id': RUN_ID, 'data': data, 'updated_at': now()}], timeout=30)
     if r.status_code >= 300:
         print('status write failed', r.status_code, r.text[:300])
+
+
+def log_action(action, new_value, reason='', detail=None):
+    """Add one row to the Activity log (v1.3). Never fails the run."""
+    if not URL or not KEY:
+        return
+    event = os.environ.get('GITHUB_EVENT_NAME', '')
+    who = 'System (scheduled sync)' if event == 'schedule' else 'System (sync started from the page or GitHub)'
+    try:
+        r = requests.post(URL + '/rest/v1/activity_log',
+                          headers={'apikey': KEY, 'Authorization': 'Bearer ' + KEY, 'Content-Type': 'application/json',
+                                   'Prefer': 'return=minimal'},
+                          json={'who': who, 'action': action, 'new_value': new_value, 'reason': reason[:300],
+                                'detail': dict(detail or {}, run_id=RUN_ID)}, timeout=30)
+        if r.status_code >= 300:
+            print('activity log write failed (run sql/v1.3_activity_log.sql?)', r.status_code, r.text[:200])
+    except Exception as e:
+        print('activity log write failed', e)
 
 
 def load(name):
@@ -57,11 +77,16 @@ if cmd == 'started':
     put({'at': at, 'status': 'started'})
 elif cmd == 'done':
     n, r, m = load('new.json'), load('rate.json'), load('merge.json')
-    put({'at': started_at(), 'status': 'done', 'new_bde': n.get('new_bde', 0), 'new_bdm': n.get('new_bdm', 0),
-         'new_mba': n.get('new_mba', 0), 'read': r.get('rated', 0), 'waiting': m.get('still_waiting', 0)})
+    data = {'at': started_at(), 'status': 'done', 'new_bde': n.get('new_bde', 0), 'new_bdm': n.get('new_bdm', 0),
+            'new_mba': n.get('new_mba', 0), 'read': r.get('rated', 0), 'waiting': m.get('still_waiting', 0)}
+    put(data)
+    new_total = data['new_bde'] + data['new_bdm'] + data['new_mba']
+    log_action('sync_done', '%d new, %d rated, %d waiting' % (new_total, data['read'], data['waiting']),
+               detail={k: data[k] for k in ('new_bde', 'new_bdm', 'new_mba', 'read', 'waiting')})
 elif cmd == 'failed':
     step = sys.argv[2] if len(sys.argv) > 2 else '?'
     msg = ' '.join(sys.argv[3:]) or 'see the GitHub Actions log'
     put({'at': started_at(), 'status': 'failed', 'step': step, 'error': msg[:300]})
+    log_action('sync_failed', 'failed', msg, detail={'step': step})
 else:
     print(__doc__)

@@ -9,9 +9,38 @@
     console.warn('HR page: Supabase not configured - marks and sync are switched off');
     return;
   }
-  var sb = window.supabase.createClient(cfg.SUPABASE_URL, cfg.SUPABASE_ANON_KEY);
+  // Accept the Project URL with or without a trailing "/rest/v1/" (supabase-js adds it itself).
+  var baseUrl = String(cfg.SUPABASE_URL).trim().replace(/\/+$/, '').replace(/\/rest\/v1$/, '');
+  var sb = window.supabase.createClient(baseUrl, cfg.SUPABASE_ANON_KEY);
+
+  window.HR_SB = sb; // used by activity-log.js
 
   function fail(code, message) { var e = new Error(message || code); e.code = code; return e; }
+
+  // Activity log (v1.3): one row per action. A failed log write never blocks the action itself.
+  async function logAction(row) {
+    try {
+      var r = await sb.from('activity_log').insert(row);
+      if (r.error) console.warn('activity log:', r.error.message);
+    } catch (e) { console.warn('activity log:', e && e.message); }
+  }
+  function myName() {
+    try { return localStorage.getItem('hf_hr') || ''; } catch (e) { return ''; }
+  }
+
+  async function logVerdict(id, before, body) {
+    var action = !before ? 'mark'
+      : before.verdict !== body.verdict ? 'mark_changed'
+      : 'mark_edited';
+    await logAction({
+      who: body.hr || '', action: action,
+      cand: body.cand || '', phone: body.phone || '', pos: body.pos || '',
+      old_value: before ? (before.verdict || '') : '', new_value: body.verdict || '',
+      reason: body.reason || '',
+      detail: { doc_id: id, src: body.src || '', level: body.level || '',
+                old_reason: before ? (before.reason || '') : '', old_by: before ? (before.hr || '') : '' }
+    });
+  }
 
   async function loadAll(col) {
     var rows = [], from = 0, size = 1000;
@@ -34,8 +63,16 @@
       doc: function (id) {
         return {
           set: async function (body) {
+            var before = null;
+            if (col === 'verdicts') {
+              try {
+                var o = await sb.from('docs').select('data').eq('collection', col).eq('id', id).maybeSingle();
+                before = o.data ? o.data.data : null;
+              } catch (e) { before = null; }
+            }
             var r = await sb.from('docs').upsert({ collection: col, id: id, data: body, updated_at: new Date().toISOString() });
             if (r.error) throw fail('write_failed', r.error.message);
+            if (col === 'verdicts') await logVerdict(id, before, body);
           },
           get: async function () {
             var r = await sb.from('docs').select('id,data').eq('collection', col).eq('id', id).maybeSingle();
@@ -78,10 +115,18 @@
 
   var mcp = {
     callTool: async function () {
-      var r;
+      var r, who = myName() || 'Unknown (no name chosen yet)';
       try { r = await fetch('/api/sync', { method: 'POST' }); }
-      catch (e) { throw fail('tool_error', 'Could not reach /api/sync'); }
-      if (!r.ok) { var t = ''; try { t = await r.text(); } catch (e) {} throw fail('tool_error', t.slice(0, 200) || ('HTTP ' + r.status)); }
+      catch (e) {
+        await logAction({ who: who, action: 'sync_button', new_value: 'failed', reason: 'Could not reach /api/sync' });
+        throw fail('tool_error', 'Could not reach /api/sync');
+      }
+      if (!r.ok) {
+        var t = ''; try { t = await r.text(); } catch (e) {}
+        await logAction({ who: who, action: 'sync_button', new_value: 'failed', reason: (t.slice(0, 200) || ('HTTP ' + r.status)) });
+        throw fail('tool_error', t.slice(0, 200) || ('HTTP ' + r.status));
+      }
+      await logAction({ who: who, action: 'sync_button', new_value: 'started' });
       return { ok: true };
     }
   };

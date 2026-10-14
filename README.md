@@ -1,4 +1,4 @@
-# HR Screening — self-hosted (v1.1)
+# HR Screening — self-hosted (v1.3)
 
 The same HR screening page, running on your own free accounts:
 
@@ -15,7 +15,9 @@ the page is rebuilt → committed to GitHub → Vercel redeploys automatically. 
 ```
 api/sync.js                  Vercel function: the Sync button starts the GitHub workflow
 public/index.html            the page (rebuilt by every sync)
-public/claude-shim.js        replaces the Claude runtime (marks -> Supabase, sync -> /api/sync)
+public/claude-shim.js        replaces the Claude runtime (marks -> Supabase, sync -> /api/sync), writes the Activity log
+public/activity-log.js       the "Activity log" button and panel
+sql/v1.3_activity_log.sql    Activity log table (run once in Supabase)
 public/config.js             your Supabase URL + anon key  <-- edit once
 apps-script/Code.gs          Google Apps Script bridge (reads sheets + resumes as the sheet owner)
 pipeline/gdrive.py           talks to the bridge (or to a service account)
@@ -37,8 +39,8 @@ supabase.sql                 database table
 
 ### 2. Supabase (marks database)
 1. supabase.com → New project (free).
-2. SQL Editor → paste `supabase.sql` → Run.
-3. Project Settings → API: copy **Project URL** and the **anon public** key.
+2. SQL Editor → paste `supabase.sql` → Run. Then a new query → paste `sql/v1.3_activity_log.sql` → Run.
+3. Project Settings → API: copy **Project URL** (just `https://xxxx.supabase.co`, nothing after it) and the **anon public** key.
 4. Put both in `public/config.js` and commit.
 
 ### 3. Google access (reads the sheets and resumes) — use 3A
@@ -111,6 +113,20 @@ Then share the Vercel URL with the HR team — everyone uses that one link.
 - A run shows on the page: "Last automatic update: …". A failed run shows the step; details are in GitHub → Actions.
 - A resume Claude could not read stays "waiting" and is retried on the next run.
 - Marked by: there is no login; each person picks their name from the list (as before when not signed in).
+
+## Activity log (v1.3)
+"Activity log" (next to "Sync leads now") shows who did what and when, newest first:
+Marked · Changed mark (old → new) · Edited reason · Pressed Sync · Sync finished · Sync failed · Mark (before log) for marks made before v1.3.
+Filter by person, action, period or search text; "Download CSV" exports what is shown.
+- "Who" is the name picked in "Marked by" (no login). The Sync button uses the last name that browser picked.
+- The log is insert-only: the page can add rows but cannot edit or delete them.
+
+### Upgrade an existing v1.2 install to v1.3
+1. Supabase → SQL Editor → New query → paste `sql/v1.3_activity_log.sql` → Run (creates the table and imports existing marks once).
+2. On GitHub upload/replace only these files: `public/claude-shim.js`, `public/activity-log.js` (new), `pipeline/runs.py`,
+   `pipeline/publish.py`, `sql/v1.3_activity_log.sql` (new), `supabase.sql`, `README.md`.
+   Do NOT upload `public/index.html` from the zip: the one on GitHub has newer leads.
+3. GitHub → Actions → sync → Run workflow. The run rebuilds the page with the Activity log button.
 
 ## Notes
 - Marks made on the old Claude pages are not copied here (they are stored inside those pages).

@@ -81,8 +81,9 @@ elif cmd == 'done':
             'new_mba': n.get('new_mba', 0), 'read': r.get('rated', 0), 'waiting': m.get('still_waiting', 0)}
     put(data)
     new_total = data['new_bde'] + data['new_bdm'] + data['new_mba']
-    log_action('sync_done', '%d new, %d rated, %d waiting' % (new_total, data['read'], data['waiting']),
-               detail={k: data[k] for k in ('new_bde', 'new_bdm', 'new_mba', 'read', 'waiting')})
+    if new_total or data['read']:   # v1.4: runs that found nothing new are not logged (every 2 hours = 12 a day)
+        log_action('sync_done', '%d new, %d rated, %d waiting' % (new_total, data['read'], data['waiting']),
+                   detail={k: data[k] for k in ('new_bde', 'new_bdm', 'new_mba', 'read', 'waiting')})
 elif cmd == 'failed':
     step = sys.argv[2] if len(sys.argv) > 2 else '?'
     msg = ' '.join(sys.argv[3:]) or 'see the GitHub Actions log'

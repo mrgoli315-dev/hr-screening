@@ -1,11 +1,11 @@
-# HR Screening — self-hosted (v1.3)
+# HR Screening — self-hosted (v1.4)
 
 The same HR screening page, running on your own free accounts:
 
 | Part | Service | Cost |
 |---|---|---|
 | Page + "Sync leads now" button | Vercel (Hobby) | Free |
-| Sync twice a day (06:00 and 18:00 IST) | GitHub Actions | Free |
+| Sync every 2 hours (06:00, 08:00 … 04:00 IST) | GitHub Actions | Free (about 400–800 of the 2,000 free minutes a month) |
 | Fit / Unfit marks, sync status | Supabase | Free |
 | Resume rating (Strong / Medium / Check / Hide) | Claude API | **Paid** — prepaid credits, charged per resume |
 
@@ -109,7 +109,9 @@ Then share the Vercel URL with the HR team — everyone uses that one link.
 ---
 
 ## Day to day
-- Nothing to do. It syncs at 06:00 and 18:00 IST. "Sync leads now" on the page runs it at any time.
+- Nothing to do. It syncs every 2 hours (06:00, 08:00, 10:00 … IST, day and night). "Sync leads now" on the page runs it at any time.
+- A run that finds nothing new skips the Claude rating and finishes in about 1–2 minutes; the page is redeployed only if it changed; no Activity log row.
+- To change the schedule: the `cron` line in `.github/workflows/sync.yml` (UTC; `30 */2 * * *` = every 2 hours on the even IST hour).
 - A run shows on the page: "Last automatic update: …". A failed run shows the step; details are in GitHub → Actions.
 - A resume Claude could not read stays "waiting" and is retried on the next run.
 - Marked by: there is no login; each person picks their name from the list (as before when not signed in).
@@ -127,6 +129,10 @@ Filter by person, action, period or search text; "Download CSV" exports what is 
    `pipeline/publish.py`, `sql/v1.3_activity_log.sql` (new), `supabase.sql`, `README.md`.
    Do NOT upload `public/index.html` from the zip: the one on GitHub has newer leads.
 3. GitHub → Actions → sync → Run workflow. The run rebuilds the page with the Activity log button.
+
+## v1.4 — every 2 hours
+Upgrade from v1.3: on GitHub replace only `.github/workflows/sync.yml`, `pipeline/runs.py`, `pipeline/publish.py`, `README.md`.
+No Supabase or Vercel change. Do NOT upload `public/index.html`.
 
 ## Notes
 - Marks made on the old Claude pages are not copied here (they are stored inside those pages).

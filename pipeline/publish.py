@@ -20,7 +20,7 @@ TEXT = [
     ("Sync started. It reads the new applications and resumes, then republishes this page — usually 2–15 minutes. You'll see a reload link here when it's done.",
      "Sync started. It reads the new applications, rates the resumes with Claude and redeploys this page — usually 5–20 minutes. You'll see a reload link here when it's done."),
     ('Automatic runs happen every 2 hours (10 min to the even hour: 6:50, 8:50, 10:50 …).',
-     'Automatic runs happen twice a day: 6:00 AM and 6:00 PM.'),
+     'Automatic runs happen every 2 hours (6 AM, 8 AM, 10 AM … around the clock).'),
     ('Claude Code Remote answered but refused (tool_error): ${(e&&e.message)||"no detail"}. Only the Claude account that owns the scheduled sync can start it. ${nextRun}',
      'Could not start the sync: ${(e&&e.message)||"no detail"}. Check GH_TOKEN and GH_REPO in Vercel → Settings → Environment Variables. ${nextRun}'),
 ]

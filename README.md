@@ -1,4 +1,4 @@
-# HR Screening — self-hosted (v1.5)
+# HR Screening — self-hosted (v1.6)
 
 The same HR screening page, running on your own free accounts:
 
@@ -142,6 +142,12 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   Change seats/recruiter in `pipeline/app/positions.json` (6th value = seats) and `pipeline/app/posmeta.json` (3rd value = recruiter).
 - Upgrade from v1.4: replace `pipeline/app/positions.json`, `pipeline/app/posmeta.json`, `pipeline/new/prompt_template.txt`,
   `pipeline/v3/build.py`, `pipeline/v3/page.tpl.html`, `README.md`; then Actions → sync → Run workflow. Do NOT upload `public/index.html`.
+
+## v1.6 — MBA sheet always read
+- Before v1.6 the MBA/BDM sheet was read only when the GitHub variable `MBA_SHEET_ID` was set; without it the sheet was skipped with no error.
+  Now it is read by default (sheet `1sGCaXYi0aCuOtFLfq40QAwKBEKg-hytw9-LAdNFXKwQ`, first tab "All Applications"). `MBA_SHEET_ID=none` switches it off.
+- Upgrade: replace `pipeline/fetch.py` and `README.md`, then Actions → sync → Run workflow.
+  The first run adds every MBA application not yet on the page and rates them (one-time Claude cost).
 
 ## Notes
 - Marks made on the old Claude pages are not copied here (they are stored inside those pages).

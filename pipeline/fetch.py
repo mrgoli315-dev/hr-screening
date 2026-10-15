@@ -4,7 +4,7 @@
 Env:
   BDE_SHEET_ID  (default: Mr. GoliSoda BDE Applications)
   BDE_GID       optional tab gid; empty = first tab ("Applications")
-  MBA_SHEET_ID  optional; empty = skip the MBA sheet
+  MBA_SHEET_ID  default: Mr. GoliSoda BDM/MBA Applications; "none" = skip the MBA sheet
   MBA_GID       optional tab gid; empty = first tab
 Writes work/bde_rows.json and (if MBA_SHEET_ID is set) work/mba_rows.json.
 """
@@ -31,6 +31,10 @@ def save(name, sheet_id, gid):
 
 bde = os.environ.get('BDE_SHEET_ID') or '1Esi7wAV-Yyh8uasE2qmzaoArGMPsovQcvAXdog_XzQU'
 save('bde_rows.json', bde, os.environ.get('BDE_GID'))
-mba = os.environ.get('MBA_SHEET_ID', '').strip()
-if mba:
+# v1.6: the MBA sheet is always read (it was skipped silently when the MBA_SHEET_ID variable was not set).
+# Set MBA_SHEET_ID only to read a different sheet; set it to "none" to switch the MBA sheet off.
+mba = (os.environ.get('MBA_SHEET_ID') or '1sGCaXYi0aCuOtFLfq40QAwKBEKg-hytw9-LAdNFXKwQ').strip()
+if mba.lower() != 'none':
     save('mba_rows.json', mba, os.environ.get('MBA_GID'))
+else:
+    print('MBA sheet switched off (MBA_SHEET_ID=none)')

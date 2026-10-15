@@ -650,3 +650,14 @@
 9677757425|4-7 yrs|700000|900000|Immediate|Yes|Yes|Yes|4-8
 8778635344|7+ yrs|8.5|8.5|Immediate|Yes|Yes|Yes|15+
 9890847167|1-2 yrs|2.4|3.4|Immediate|No|No|No|None
+7639011228|7+ yrs|4.2|5|Immediate|Yes|No|Yes|4-8
+9524025140|2-4 yrs|5.12|7|15 days|Yes|No|Yes|None
+7353077099|7+ yrs|8|8|Immediate|Yes|No|Yes|15+
+8885932917|7+ yrs|450000|600000|Immediate|Yes|Yes|Yes|15+
+8686571129|7+ yrs|4|5|Immediate|Yes|Yes|Yes|15+
+7498283435|0-1 yrs|420000|500000|15 days|Yes|Yes|Yes|4-8
+7075065643|7+ yrs|5|6|Immediate|Yes|Yes|Yes|15+
+9059870580|7+ yrs|900000|900000|Immediate|Yes|No|Yes|15+
+9766436772|7+ yrs|35|40|Immediate|Yes|No|Yes|4-8
+6300928955|1-2 yrs|25000|320000|15 days|Yes|No|No|9-15
+7709321167|7+ yrs|3.9|6|15 days|Yes|No|No|15+

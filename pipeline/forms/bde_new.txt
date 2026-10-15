@@ -820,3 +820,13 @@
 10/15/2026 9:44:14|Mohammed Faizan|9372429585|Maharashtra|Nagpur|2-4 years|3.6|4.8|Yes|Immediate joiner|Yes|Yes|14UmEDSQmn6zcGoX9_P4vR678veoV5i0j
 10/15/2026 9:52:12|A PRAVEEN IMMANUVAL SHARMA|9597266019|Tamil Nadu|Tiruvallur|4+ years|4,20,000|5,00,000|Yes|Immediate joiner|No|Yes|1I7A6C33uwPJUxcfK69VIJ88YdLUVloUS
 10/15/2026 9:58:06|Kowsalya|6382598063|Tamil Nadu|Chennai|4+ years|4.56|500000|Yes|15 days|No|Yes|1_PZc78vq1UX4bKN89mM1NdJTAHmrCzFp
+10/15/2026 10:36:50|Shubham Auraskar|7972238933|Maharashtra|Nagpur|4+ years|6.5L|8L|Yes|15 days|No|Yes|1k0GF_2FGgpb2ym6yQgoNZGpZHO4VXYqo
+10/15/2026 10:54:09|Ramizulla Tambitgar|7795380927|Karnataka|Belagavi|4+ years|3.5 LPA|5 LPA|Yes|15 days|Yes|Yes|19JN-SPQ8rEPHEsbWuaasKWrFtArYLrZ_
+10/15/2026 11:17:01|SATHISH C|8667656136|Tamil Nadu|Chennai|4+ years|620000|700000|Yes|Immediate joiner|Yes|Yes|14AMGMjLaEcuVpqcBGQLSTU9eLs_8odqW
+10/15/2026 11:17:14|Ankit tandiya|7999772081|Madhya Pradesh|Chhindwara|2-4 years|297000|310000|Yes|Immediate joiner|No|Yes|15dsNmgAjGS1vvAOzLplwY_HEQUvsZp3g
+10/15/2026 11:35:09|Shubham Yemekar|8805161296|Maharashtra|Nanded|0-1 years|240000|240000|Yes|15 days|No|No|1R7RbYMkEZsO-RatUxcB4I5abPDQKJRKw
+10/15/2026 11:39:01|Sahil dongardive|8668372701|Maharashtra|Nagpur|4+ years|6.5|7|Yes|15 days|Yes|Yes|1igtWwab8qrDKUNtRCb0X0fsz3l_Osxmj
+10/15/2026 11:40:29|Vivek|9545788000|Maharashtra|Nagpur|2-4 years|2.95|4|Yes|15 days|Yes|Yes|10gvsbvNaB6xD3LfLbXZky8mgTlgi-Agq
+10/15/2026 12:23:31|Aniket ghatol|7769822812|Maharashtra|Amravati|0-1 years|3.4|3|Yes|Immediate joiner|No|Yes|1zmbhDxWvpwJGeCKsLzVtLkAonfqV3AFc
+10/15/2026 12:24:44|Saurabh Patle|9604816117|Maharashtra|Nagpur|1-2 years|2.4 LPA|5.5 LPA|Yes|Immediate joiner|Yes|Yes|1HHzJIExlwlnpx29J20CHEV3Fw4VbNdN-
+10/15/2026 12:39:36|Ravi Kshirsagar|7378727637|Maharashtra|Latur|4+ years|4.5|5.2|Yes|Immediate joiner|Yes|Yes|1js7pv-l99aibcciBQovztr5dytHq23ka

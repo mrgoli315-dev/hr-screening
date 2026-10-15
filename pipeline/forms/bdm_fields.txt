@@ -638,3 +638,15 @@
 8667250388|4-7 yrs|4.5|5.5|Immediate|Yes|Yes|Yes|4-8
 9381518261|2-4 yrs|400000|500000|15 days|Yes|Yes|Yes|4-8
 9908833270|2-4 yrs|3|4.2|Immediate|Yes|No|Yes|4-8
+9975804061|7+ yrs|400000|500000|Immediate|Yes|Yes|Yes|15+
+9370824238|0-1 yrs|540000|600000|Immediate|Yes|No|Yes|4-8
+8788384131|4-7 yrs|4.5|6|Immediate|Yes|Yes|Yes|9-15
+7378887570|1-2 yrs|800000|100000|Immediate|Yes|No|Yes|15+
+8217818004|1-2 yrs|600000|750000|15 days|Yes|Yes|Yes|9-15
+7020317838|4-7 yrs|5|6|Immediate|Yes|Yes|Yes|15+
+9030150200|7+ yrs|660000|750000|Immediate|Yes|Yes|Yes|4-8
+8610557703|4-7 yrs|4.2|5.5|Immediate|Yes|No|Yes|None
+9970544191|7+ yrs|980000|100000|Immediate|Yes|Yes|Yes|15+
+9677757425|4-7 yrs|700000|900000|Immediate|Yes|Yes|Yes|4-8
+8778635344|7+ yrs|8.5|8.5|Immediate|Yes|Yes|Yes|15+
+9890847167|1-2 yrs|2.4|3.4|Immediate|No|No|No|None

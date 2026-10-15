@@ -846,3 +846,8 @@
 10/15/2026 19:46:15|DINAKARAN T|6374993044|Tamil Nadu|Ranipet|2-4 years|3|3.5|No|15 days|No|Yes|1nYJmH0xg-015bqiyQA_nridV9ROxD3AQ
 10/15/2026 19:48:40|Sushil|7972810513|Karnataka|Belagavi|0-1 years|7 lakh|8 to 9 lakh|Yes|15 days|Yes|Yes|1pgYxMlimnTiP7ZXqDKIvo3M0Szqaw-4C
 10/15/2026 20:13:57|Sharuk Aparad|8904738200|Karnataka|Belagavi|4+ years|28000|30000|Yes|Immediate joiner|Yes|No|1JsoOd4ryTT02rFGrqtt9PtXKv4cD2exN
+10/15/2026 20:36:37|SIVA S|9087696114|Tamil Nadu|Ranipet|1-2 years|24000|40000|Yes|Immediate joiner|No|Yes|17Va7ewF5wGsqtURSi9FbMMAd8tQAHUSA
+10/15/2026 21:24:44|Nikhil  Mahajan Mahajan|9765973973|Maharashtra|Satara|4+ years|5.8|6.5|Yes|15 days|Yes|Yes|1CaPDGbqbrfTE-_KikR-9wyQZ3TivQn2a
+10/15/2026 21:37:19|Madhusudhan J|8660716467|Karnataka|Bengaluru Rural|4+ years|37K|45k|Yes|Immediate joiner|Yes|Yes|1o0xna3DcA3yw9Y3BR80zliPD2X7j4RHt
+10/15/2026 22:03:04|Lenin|9080833998|Tamil Nadu|Chennai|4+ years|4.5 lak|5lakh|Yes|Immediate joiner|Yes|Yes|1aVtWPvEbhGmImW7hzSoZ2NNcYVKA5-Ib
+10/15/2026 22:22:58|Arif Khan|9272742323|Maharashtra|Ahmednagar|4+ years|5|5.5|Yes|Immediate joiner|No|Yes|1jEpVVpAqkaKe4sraAomlFflbDViDXzMZ

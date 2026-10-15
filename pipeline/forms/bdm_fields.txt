@@ -610,3 +610,18 @@
 8072686087|7+ yrs|787876|984844|15 days|Yes|No|Yes|15+
 8825869814|4-7 yrs|600000|700000|Immediate|Yes|No|Yes|4-8
 6281536941|0-1 yrs|2.5|3|Immediate|Yes|Yes|Yes|1-3
+7672084914|4-7 yrs|3.1|3.5|15 days|Yes|Yes|No|4-8
+8500299178|4-7 yrs|7|7|Immediate|Yes|Yes|Yes|4-8
+9739304716|7+ yrs|5.5|6.5|Immediate|Yes|No|Yes|1-3
+7385511557|7+ yrs|540000|700000|Immediate|Yes|Yes|Yes|15+
+9666691983|7+ yrs|34,800|40,000|Immediate|Yes|No|Yes|1-3
+7411473376|7+ yrs|3.89|5|15 days|Yes|Yes|No|15+
+7013330738|4-7 yrs|4.2|5.1|15 days|Yes|Yes|Yes|1-3
+9000678220|7+ yrs|900000|1200000|Immediate|Yes|Yes|Yes|15+
+8220191372|2-4 yrs|3.2|4.5|15 days|Yes|No|Yes|1-3
+6384984762|0-1 yrs|3|3-5|15 days|Yes|Yes|Yes|1-3
+9553619574|7+ yrs|500000|600000|Immediate|Yes|Yes|Yes|9-15
+9860129357|7+ yrs|531000|600000|15 days|Yes|No|Yes|4-8
+9130692915|1-2 yrs|420000|550000|Immediate|Yes|No|Yes|4-8
+9921179001|7+ yrs|350000|600000|Immediate|Yes|Yes|Yes|1-3
+8008436887|7+ yrs|6|8|Immediate|Yes|Yes|Yes|15+

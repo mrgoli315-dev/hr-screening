@@ -1,5 +1,7 @@
 /* Stand-in for the Claude artifact runtime (window.claude.use) so the page runs unchanged on Vercel.
    db        -> Supabase table "docs" (collection, id, data), live updates + 60 s refresh
+                collections: "verdicts" (Fit/Unfit marks), "runs" (sync status), "overrides" (v1.7: Unsuitable -> dashboard transfers);
+                every mark, transfer and undo also adds one Activity log row
    user      -> null  (the page then shows its "Marked by" name list)
    downloads -> browser file download
    mcp       -> POST /api/sync, which starts the GitHub Actions sync                       */
@@ -42,6 +44,34 @@
     });
   }
 
+  // v1.7 transfers (Unsuitable page -> dashboard): one log row per transfer / change / undo
+  async function logTransfer(id, before, body) {
+    await logAction({
+      who: body.hr || '', action: before ? 'transfer_changed' : 'transfer',
+      cand: body.cand || '', phone: body.phone || '', pos: (body.ro || []).join(', '),
+      old_value: before ? (before.lv || '') : 'unsuitable', new_value: body.lv || '',
+      reason: body.reason || '',
+      detail: { doc_id: id, src: body.src || '', form: body.form || '', st: body.st || '', why: body.why || '',
+                old_roles: before ? (before.ro || []) : [], old_reason: before ? (before.reason || '') : '', old_by: before ? (before.hr || '') : '' }
+    });
+  }
+  async function logUndo(id, before) {
+    await logAction({
+      who: myName() || 'Unknown (no name chosen yet)', action: 'transfer_undo',
+      cand: before.cand || '', phone: before.phone || '', pos: (before.ro || []).join(', '),
+      old_value: before.lv || '', new_value: 'unsuitable', reason: before.reason || '',
+      detail: { doc_id: id, src: before.src || '', transferred_by: before.hr || '', transferred_at: before.at || '' }
+    });
+  }
+  var LOGGED = { verdicts: true, overrides: true };
+  async function readBefore(col, id) {
+    if (!LOGGED[col]) return null;
+    try {
+      var o = await sb.from('docs').select('data').eq('collection', col).eq('id', id).maybeSingle();
+      return o.data ? o.data.data : null;
+    } catch (e) { return null; }
+  }
+
   async function loadAll(col) {
     var rows = [], from = 0, size = 1000;
     for (;;) {
@@ -63,16 +93,17 @@
       doc: function (id) {
         return {
           set: async function (body) {
-            var before = null;
-            if (col === 'verdicts') {
-              try {
-                var o = await sb.from('docs').select('data').eq('collection', col).eq('id', id).maybeSingle();
-                before = o.data ? o.data.data : null;
-              } catch (e) { before = null; }
-            }
+            var before = await readBefore(col, id);
             var r = await sb.from('docs').upsert({ collection: col, id: id, data: body, updated_at: new Date().toISOString() });
             if (r.error) throw fail('write_failed', r.error.message);
             if (col === 'verdicts') await logVerdict(id, before, body);
+            if (col === 'overrides') await logTransfer(id, before, body);
+          },
+          delete: async function () {
+            var before = await readBefore(col, id);
+            var r = await sb.from('docs').delete().eq('collection', col).eq('id', id);
+            if (r.error) throw fail('write_failed', r.error.message);
+            if (col === 'overrides' && before) await logUndo(id, before);
           },
           get: async function () {
             var r = await sb.from('docs').select('id,data').eq('collection', col).eq('id', id).maybeSingle();

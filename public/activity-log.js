@@ -9,9 +9,13 @@
     mark_imported: 'Mark (before log)',
     sync_button: 'Pressed Sync',
     sync_done: 'Sync finished',
-    sync_failed: 'Sync failed'
+    sync_failed: 'Sync failed',
+    transfer: 'Transferred to dashboard',
+    transfer_changed: 'Transfer changed',
+    transfer_undo: 'Transfer undone'
   };
   var VERDICT = { fit: 'Fit', unfit: 'Unfit' };
+  var LEVEL = { unsuitable: 'Unsuitable', check: 'Check', medium: 'Medium', strong: 'Strong' };   // v1.7 transfers
   var TZ = 'Asia/Kolkata';
   var rows = [], loaded = false, loading = false, live = null, els = {};
 
@@ -40,6 +44,9 @@
     '.alog .alog-chip.alog-a-sync_failed{background:var(--red-soft);color:var(--red)}',
     '.alog .alog-chip.alog-a-sync_button{background:var(--yellow-soft);color:var(--yellow)}',
     '.alog .alog-v-fit{color:var(--green);font-weight:700}.alog .alog-v-unfit{color:var(--red);font-weight:700}',
+    '.alog .alog-chip.alog-a-transfer,.alog .alog-chip.alog-a-transfer_changed{background:var(--accent);color:var(--on-accent)}',
+    '.alog .alog-chip.alog-a-transfer_undo{background:var(--sunk);color:var(--muted);border:1px solid var(--line)}',
+    '.alog .alog-lv-check{color:var(--orange);font-weight:700}.alog .alog-lv-medium{color:var(--yellow);font-weight:700}.alog .alog-lv-strong{color:var(--green);font-weight:700}.alog .alog-lv-unsuitable{color:var(--muted);font-weight:700}',
     '.alog .alog-reason{max-width:320px;overflow-wrap:anywhere}',
     '.alog-msg{color:var(--muted);padding:24px 0}',
     '@media (max-width:640px){.alog-head,.alog-filters{padding-left:16px;padding-right:16px}.alog-wrap{padding:0 16px 16px}}'
@@ -56,11 +63,15 @@
     } catch (e) { return iso || ''; }
   }
   function dayKey(d) { return d.toLocaleDateString('en-CA', { timeZone: TZ }); } // YYYY-MM-DD in IST
-  function vword(v) { return VERDICT[v] || v || ''; }
+  function vword(v) { return VERDICT[v] || LEVEL[v] || v || ''; }
   function change(r) {
     if (r.action === 'mark' || r.action === 'mark_imported') return '<span class="alog-v-' + esc(r.new_value) + '">' + esc(vword(r.new_value)) + '</span>';
     if (r.action === 'mark_changed') return '<span class="alog-v-' + esc(r.old_value) + '">' + esc(vword(r.old_value)) + '</span> → <span class="alog-v-' + esc(r.new_value) + '">' + esc(vword(r.new_value)) + '</span>';
     if (r.action === 'mark_edited') return '<span class="alog-v-' + esc(r.new_value) + '">' + esc(vword(r.new_value)) + '</span> <small>reason edited</small>';
+    if (r.action === 'transfer' || r.action === 'transfer_changed' || r.action === 'transfer_undo') {
+      return '<span class="alog-lv-' + esc(r.old_value) + '">' + esc(vword(r.old_value)) + '</span> → <span class="alog-lv-' + esc(r.new_value) + '">' + esc(vword(r.new_value)) + '</span>' +
+        (r.pos && r.action !== 'transfer_undo' ? '<small>as ' + esc(r.pos) + '</small>' : '');
+    }
     return esc(r.new_value);
   }
 
@@ -126,7 +137,7 @@
     els.count.textContent = ' · ' + list.length + (list.length === rows.length ? '' : ' of ' + rows.length) + ' entries';
     if (!list.length) { els.body.innerHTML = '<div class="alog-msg">' + (rows.length ? 'No entries match these filters.' : 'No activity yet. Marks and syncs will appear here.') + '</div>'; return; }
     var shown = list.slice(0, 500);
-    els.body.innerHTML = '<table><thead><tr><th>When (IST)</th><th>Who</th><th>Action</th><th>Candidate</th><th>Position</th><th>Change</th><th>Reason / details</th></tr></thead><tbody>' +
+    els.body.innerHTML = '<table><thead><tr><th>When (IST)</th><th>Who</th><th>Action</th><th>Candidate</th><th>Position / roles</th><th>Change</th><th>Reason / details</th></tr></thead><tbody>' +
       shown.map(function (r) {
         var oldReason = r.action === 'mark_edited' && r.detail && r.detail.old_reason ? '<small>Before: ' + esc(r.detail.old_reason) + '</small>' : '';
         var step = r.action === 'sync_failed' && r.detail && r.detail.step ? '<small>Step: ' + esc(r.detail.step) + '</small>' : '';
@@ -165,11 +176,11 @@
   }
 
   function csv() {
-    var head = ['When (IST)', 'Who', 'Action', 'Candidate', 'Phone', 'Position', 'From', 'To', 'Reason'];
+    var head = ['When (IST)', 'Who', 'Action', 'Candidate', 'Phone', 'Position / roles', 'From', 'To', 'Reason'];
     var q = function (v) { return '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"'; };
     var lines = [head.map(q).join(',')].concat(filtered().map(function (r) {
       return [when(r.at), r.who, ACTIONS[r.action] || r.action, r.cand, r.phone, r.pos,
-              VERDICT[r.old_value] || r.old_value, VERDICT[r.new_value] || r.new_value, r.reason].map(q).join(',');
+              vword(r.old_value), vword(r.new_value), r.reason].map(q).join(',');
     }));
     var blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
     var a = document.createElement('a');

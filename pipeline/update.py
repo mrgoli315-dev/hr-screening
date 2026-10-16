@@ -201,7 +201,7 @@ def cmd_build(args):
     lv = collections.Counter(d['lv'] for d in tp)
     strong = [d['n'] + ' (' + (d.get('fd') or d.get('c') or '') + ') -> ' + ', '.join(PP[i]['title'].split(' · ')[-1] for i in d.get('pos', [])[:2]) for d in tp if d['lv'] == 'strong']
     print(json.dumps({'page_candidates': len(D), 'today_applications': len(tp) + len(th), 'today_rated': dict(lv), 'today_not_usable': len(th),
-                      'today_waiting': sum(1 for d in tp if d['lv'] == 'wait'), 'today_strong': strong,
+                      'today_waiting': sum(1 for d in tp if d['lv'] == 'wait'), 'today_strong': strong, 'transfers': sum(1 for d in D if d.get('tf')),
                       'html': P('v3', 'combined-hiring-shortlist.html'), 'bytes': os.path.getsize(P('v3', 'combined-hiring-shortlist.html'))}, ensure_ascii=False, indent=1))
 
 def cmd_rows(args):

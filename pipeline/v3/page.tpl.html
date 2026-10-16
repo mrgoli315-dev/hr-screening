@@ -304,6 +304,28 @@ details.np summary small{color:var(--muted);font-weight:500;margin-left:6px}
   .kv{grid-template-columns:96px 1fr}
 }
 @media (prefers-reduced-motion:no-preference){.tab,.view,.btn{transition:background .15s,color .15s,filter .15s}}
+/* unsuitable resumes + transfers (v1.7) */
+.pill.tf{background:var(--accent);color:var(--on-accent)}
+.pill.tfp{background:var(--yellow-soft);color:var(--yellow);border:1px dashed var(--yellow)}
+.ufilters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+.ufilters select,.ufilters input[type=search]{font:inherit;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:7px 10px;background:var(--surface);color:var(--fg);min-height:36px}
+.ufilters input[type=search]{flex:1 1 220px;min-width:0}
+.ufilters select.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);font-weight:700}
+#pgUnsuit .tablebox{margin-top:10px}
+#pgUnsuit .fsum{margin-top:8px}
+td.why{max-width:42ch}
+td.why>b{color:var(--red)}
+.tbtn{font:inherit;font-size:12px;font-weight:700;border-radius:6px;padding:5px 11px;cursor:pointer;background:var(--accent);color:var(--on-accent);border:1px solid var(--accent);white-space:nowrap}
+.tbtn.undo{background:var(--surface);color:var(--muted);border-color:var(--line)}
+.tbtn:disabled{opacity:.5;cursor:default}
+.tstate{display:grid;gap:4px;font-size:12.5px;min-width:0;justify-items:start}
+.tstate .tfby{font-weight:700;color:var(--accent)}
+.tstate .pnote{font-size:12px;max-width:28ch}
+.vseg.three{grid-template-columns:repeat(3,1fr)}
+.vseg button[aria-pressed="true"].lv-check{border-color:var(--orange);background:var(--orange-soft);color:var(--orange)}
+.vseg button[aria-pressed="true"].lv-medium{border-color:var(--yellow);background:var(--yellow-soft);color:var(--yellow)}
+.vseg button[aria-pressed="true"].lv-strong{border-color:var(--green);background:var(--green-soft);color:var(--green)}
+.vchips button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
 </style>
 
 <div class="wrap">
@@ -381,6 +403,27 @@ details.np summary small{color:var(--muted);font-weight:500;margin-left:6px}
       <div class="showmore" id="lMoreBox" hidden><button id="lMore">Show more</button></div>
     </div>
   </div>
+
+  <div id="pgUnsuit" hidden>
+    <h2 class="pgtitle">Unsuitable resumes</h2>
+    <p class="sub">Claude read these resumes and found nothing for any open role, so they are not on the dashboard. If you disagree, press <b>Transfer to dashboard</b>, choose the roles to consider them for, and they are matched to positions at the next sync (every 2 hours, or press "Sync leads now"). Every transfer and undo is recorded in the Activity log.</p>
+    <div class="ufilters" id="uFilters">
+      <input type="search" id="uQ" placeholder="Search name, district, reason, phone…" aria-label="Search unsuitable resumes">
+      <select id="uSt" aria-label="State"></select>
+      <select id="uTf" aria-label="Transfer status"></select>
+      <select id="uSrc" aria-label="Source"></select>
+      <select id="uDate" aria-label="Applied"></select>
+    </div>
+    <p class="fsum" id="uSum"></p>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Name &amp; location</th><th>Why Claude set it aside</th><th>Roles considered</th><th>Age · Exp · form</th><th>Contact</th><th>Dashboard</th></tr></thead>
+        <tbody id="uRows"></tbody>
+      </table>
+    </div>
+    <div class="showmore" id="uMoreBox" hidden><button id="uMore">Show more</button></div>
+    <p class="legend">"Roles considered" are the roles Claude weighed before deciding the resume did not fit. A transfer replaces that rating with the level and roles you choose; Claude's reason stays visible on the dashboard row.</p>
+  </div>
 </div>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -397,6 +440,20 @@ details.np summary small{color:var(--muted);font-weight:500;margin-left:6px}
     <p class="vlast" id="vLast"></p>
     <p class="verr" id="vErr" hidden></p>
     <div class="vfoot"><button type="button" class="vcancel" id="vCancel">Cancel</button><button type="button" class="vsave" id="vSave">Save</button></div>
+  </div>
+</div>
+<div class="scrim" id="tscrim" hidden style="z-index:29"></div>
+<div class="vdlg" id="tdlg" hidden role="dialog" aria-modal="true" aria-labelledby="tTitle">
+  <div class="card">
+    <div><h2 id="tTitle"></h2><div class="pnote" id="tSub"></div></div>
+    <label>Consider for these roles (pick 1 to 3)<div class="vchips" id="tRoles"></div></label>
+    <label>Enter the dashboard as<div class="vseg three" id="tLv"><button type="button" class="lv-check" data-lv="check" aria-pressed="true">Check</button><button type="button" class="lv-medium" data-lv="medium" aria-pressed="false">Medium</button><button type="button" class="lv-strong" data-lv="strong" aria-pressed="false">Strong</button></div></label>
+    <div class="vchips" id="tChips"></div>
+    <label>Why they belong on the dashboard (required)<textarea id="tReason" maxlength="600" placeholder="Pick a quick reason above or type your own"></textarea></label>
+    <label>Transferred by<select id="tHr"></select></label>
+    <input type="text" id="tHrOther" placeholder="Your name" hidden maxlength="40">
+    <p class="verr" id="tErr" hidden></p>
+    <div class="vfoot"><button type="button" class="vcancel" id="tCancel">Cancel</button><button type="button" class="vsave" id="tSave">Transfer to dashboard</button></div>
   </div>
 </div>
 <aside class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="dName">
@@ -434,6 +491,8 @@ const TIER={local:"in area",nearby:"nearby district",state:"elsewhere in state",
 const SRC={S:"Sheet",A:"HR app",SA:"Sheet + HR app"};
 const FE_LANG={"Andhra Pradesh":"Telugu","Telangana":"Telugu","Karnataka":"Kannada","Tamil Nadu":"Tamil","Kerala":"Malayalam","Gujarat":"Gujarati","Maharashtra":"Marathi","Delhi":"Hindi"};
 const PAGE=120;
+let uQ="",uSt="",uTf="",uSrc="",uDate="",uShown=PAGE;   // Unsuitable page filters (v1.7)
+let OVR={}, tCur=null;                                 // transfers saved on the page (shared storage "overrides"); the open transfer dialog
 let page="dash",view="positions",curSt="",curRole="ALL",curLv="",curDist="",curSrc="",curDate="",shown=PAGE,lLv="",lSrc="",lShown=PAGE;
 const fmtTime=t=>{if(!t)return "";const [h,m]=t.split(":").map(Number);return `${h%12||12}:${String(m).padStart(2,"0")} ${h<12?"am":"pm"}`};
 const DATEF={"":"Any time","0":"Today","1":"Yesterday","7":"Last 7 days","30":"Last 30 days","old":"Older than 30 days"};
@@ -586,6 +645,7 @@ function matchRow(p,m){
   tags.push(`<span class="pill src">${SRC[d.src]}</span>`);
   if(d.ad) tags.push(`<span class="pill when">${esc(adText(d))}</span>`);
   if(d.nw) tags.push(`<span class="pill newp">New</span>`);
+  if(d.tf) tags.push(tfPill(d));
   if(ap) tags.push(`<span class="pill here">Applied here</span>`);
   const place=p.city?`${p.city}, ${p.st}`:p.st;
   const vd=VDB?verdictOf(d,p.id):null;
@@ -692,7 +752,7 @@ function rowHtml(d){
   <td>${lvPill(d.lv)}</td>
   <td><button class="nm" data-i="${i}">${esc(d.n)}</button>${d.taken?` <span class="pill lvpill strong">Taken</span>`:""}
     <span class="alt">${esc(placeOf(d)||"Location not on resume")}${d.mv?` · lives in ${esc(d.c)}`:""}</span>
-    <span class="alt"><span class="pill src">${SRC[d.src]}</span>${d.ad?` <span class="pill when">${esc(adText(d))}</span>`:""}${d.nw?` <span class="pill newp">New</span>`:""}${d.lang?` <span class="pill lang">${esc(d.lang)}</span>`:""}${(d.pos||[]).length?` · fits ${d.pos.length} open position${d.pos.length>1?"s":""}`:""}</span></td>
+    <span class="alt"><span class="pill src">${SRC[d.src]}</span>${d.ad?` <span class="pill when">${esc(adText(d))}</span>`:""}${d.nw?` <span class="pill newp">New</span>`:""}${d.tf?" "+tfPill(d):""}${d.lang?` <span class="pill lang">${esc(d.lang)}</span>`:""}${(d.pos||[]).length?` · fits ${d.pos.length} open position${d.pos.length>1?"s":""}`:""}</span></td>
   <td><div class="roles">${(d.ro||[]).map(r=>`<span class="pill rp ${r===curRole?"on":""}">${esc(ROLES[r]?.label||r)}</span>`).join("")}</div></td>
   <td>${ageCell(d)}</td>
   <td>${xpCell(d)}</td>
@@ -735,7 +795,7 @@ function leadRow(it,n){
   const el=(d.pos||[]).map(id=>PBY[id]).filter(Boolean);
   const eligible=el.length?el.map((p,j)=>`<button class="pl${j?"":" best"}" data-p="${p.id}" title="${j?"Also fits this position":"Best fit — counted here in the filters"}">${esc(shortPos(p))}</button>`).join(""):`<span class="sub">${esc(noFitWhy(d))}</span>`;
   const who=[d.age&&d.age!=="—"?"age "+esc(d.age)+(d.ae?" (est.)":""):"",d.xp?esc(d.xp):""].filter(Boolean).join(" · ");
-  const tags=[d.al?`<span class="pill when">applied again · first ${fmtDate(d.ad)}</span>`:"",d.adk==="app"?`<span class="pill src">HR app</span>`:"",d.src==="SA"?`<span class="pill src">Sheet + HR app</span>`:"",d.nw?`<span class="pill newp">New</span>`:""].filter(Boolean).join("");
+  const tags=[d.al?`<span class="pill when">applied again · first ${fmtDate(d.ad)}</span>`:"",d.adk==="app"?`<span class="pill src">HR app</span>`:"",d.src==="SA"?`<span class="pill src">Sheet + HR app</span>`:"",d.nw?`<span class="pill newp">New</span>`:"",d.tf?tfPill(d):""].filter(Boolean).join("");
   return `<div class="lrow ${d.lv}"><div class="no">${n}${tm}</div>
    <div class="who"><button class="nm" data-i="${i}">${esc(d.n)}</button><span class="sub">${esc(placeOf(d)||"Location not on resume")}${d.mv?` · lives in ${esc(d.c)}`:""}</span>${tags?`<div class="tags">${tags}</div>`:""}${who?`<span class="sub">${who}</span>`:""}<span class="phone">${esc(d.ph||"")}</span></div>
    <div class="rt">${lvPill(d.lv)}</div>
@@ -801,7 +861,8 @@ function renderAttention(){
     <li><b>38 new applicants in the applications sheet</b> (since Oct 4) — send the sheet link and they will be added.</li>
     <li><b>Naukri responses</b> — Franchise Manager 50, Franchise Executive 66, Area Sales Manager 209 + 98, Sales Officer posts. Ready to screen once HR logs in to Naukri in the browser.</li>
   </ul></div>
-  <div class="box"><h2>Not rated — ${HIDDEN.length+HIDDEN_APP.length} people</h2><p>No usable experience for any open role, test records, or a file that isn't a resume.</p><div class="hid">${HIDDEN.map(([n,t,x,f,l])=>`<div class="${t==="Fake upload"?"fake":""}"><em>${esc(t)}</em><b>${esc(n)}</b> — ${esc(x)}${(l||f)?` <span class="pill when">${l&&l!==f?"again "+fmtDate(l)+" (first "+fmtDate(f)+")":"applied "+fmtDate(l||f)}</span>`:""}</div>`).join("")}${HIDDEN_APP.map(([n,w,a])=>`<div><em>HR app</em><b>${esc(n)}</b> — ${esc(w)}${a?` <span class="pnote">(${esc(a)})</span>`:""}</div>`).join("")}</div></div>`;
+  <div class="box"><h2>Not rated — ${HIDDEN.length+HIDDEN_APP.length} people</h2><p>No usable experience for any open role, test records, or a file that isn't a resume. <button type="button" class="lnk" data-pg-link="unsuit">Open the Unsuitable page</button> to transfer anyone who should be on the dashboard.</p><div class="hid">${HIDDEN.map(([n,t,x,f,l])=>`<div class="${t==="Fake upload"?"fake":""}"><em>${esc(t)}</em><b>${esc(n)}</b> — ${esc(x)}${(l||f)?` <span class="pill when">${l&&l!==f?"again "+fmtDate(l)+" (first "+fmtDate(f)+")":"applied "+fmtDate(l||f)}</span>`:""}</div>`).join("")}${HIDDEN_APP.map(([n,w,a])=>`<div><em>HR app</em><b>${esc(n)}</b> — ${esc(w)}${a?` <span class="pnote">(${esc(a)})</span>`:""}</div>`).join("")}</div></div>`;
+  $("#vAttention").querySelectorAll("[data-pg-link]").forEach(b=>b.onclick=()=>{page=b.dataset.pgLink;save();go();window.scrollTo({top:0})});
 }
 
 /* ---------- drawer ---------- */
@@ -810,7 +871,7 @@ function openDrawer(i){
   const d=D[i]; if(!d) return;
   lastFocus=document.activeElement;
   $("#dName").textContent=d.n;
-  $("#dTags").innerHTML=[lvPill(d.lv),`<span class="pill src">${SRC[d.src]}</span>`,...(d.ro||[]).map(r=>`<span class="pill rp">${esc(ROLES[r]?.label||r)}</span>`)].join(" ");
+  $("#dTags").innerHTML=[lvPill(d.lv),`<span class="pill src">${SRC[d.src]}</span>`,...(d.ro||[]).map(r=>`<span class="pill rp">${esc(ROLES[r]?.label||r)}</span>`),...(d.tf?[tfPill(d)]:[])].join(" ");
   const fits=(d.pos||[]).map(id=>P.find(p=>p.id===id)).filter(Boolean);
   const rk=(d.ro||[])[0];
   $("#dBody").innerHTML=`
@@ -825,6 +886,7 @@ function openDrawer(i){
      <dt>Worked at</dt><dd>${esc((d.co||[]).join(", ")||"Not stated")}</dd>
      ${d.tv||d.fmcg||d.fs||d.tm?`<dt>On the form</dt><dd>${[d.tv?"Ready to travel: "+d.tv:"",d.fmcg?"FMCG: "+d.fmcg:"",d.fs?"Field sales: "+d.fs:"",d.tm?"Team handled: "+d.tm:""].filter(Boolean).map(esc).join(" · ")}</dd>`:""}
      <dt>Languages</dt><dd>${esc(d.lang||"Not stated")}</dd>
+     ${d.tf?`<dt>Transferred</dt><dd>By <b>${esc(d.tf.hr||"someone")}</b>${d.tf.at?" on "+esc(tfWhen(d.tf.at)):""}${d.tf.reason?" — "+esc(d.tf.reason):""}<br><span class="pnote">Claude had set this resume aside: ${esc(d.tf.why||"nothing for any open role")}</span></dd>`:""}
    </dl>
    ${VDB?`<div class="dsec"><h3>Fit or unfit</h3><div>${vBox(i,"any")}</div><div class="pnote">To mark them for one position, use the buttons on that position's list.</div></div>`:""}
    <div class="dsec"><h3>What the resume shows</h3><div>${esc(d.exp)}</div></div>
@@ -836,6 +898,111 @@ function openDrawer(i){
   $("#scrim").hidden=false;$("#drawer").hidden=false;$("#dClose").focus();
 }
 function closeDrawer(){$("#scrim").hidden=true;$("#drawer").hidden=true;lastFocus?.focus?.()}
+/* ---------- unsuitable resumes + transfers (v1.7) ---------- */
+const TF_ROLES=["BDE","LAUNCH","BDM","ASM","SH","FM","FE","OPS","OPX","PUR","DISP","PROD","TECH","ITX","LND","DMK"];
+const TCHIPS=["Fresher, but ready for daily field sales","Has a two-wheeler and knows the area","Plant / technician background fits","Applied on the wrong form; fits another role","Spoke to them: relevant work not on the resume","Referred by the team"];
+const UBY={}; UNSUIT.forEach(u=>{if(u.key)UBY[u.key]=u});
+const tfLive=u=>u&&u.key?(OVR[u.key]||null):null;    // transfer saved on the page (shared storage), maybe not synced yet
+const tfBuilt=u=>(u&&u.tf)||null;                      // transfer already applied by the last sync
+const isTf=u=>!!(tfLive(u)||tfBuilt(u));
+const uOpen=()=>cnt(UNSUIT,u=>!!u.key&&!isTf(u));
+const tfWhen=iso=>{if(!iso)return "";try{return fmtWhen(iso)}catch(e){return ""}};
+const tfPill=d=>`<span class="pill tf" title="${esc("Transferred from Unsuitable by "+(d.tf.hr||"someone")+(d.tf.reason?": "+d.tf.reason:"")+". Claude had set this resume aside: "+(d.tf.why||"nothing for any open role"))}">Transferred</span>`;
+const uDateOK=u=>{const s=u.al||u.ad||"";if(!uDate)return true;if(uDate==="none")return !s;if(!s)return false;const a=DAYS(s);return uDate==="old"?a>30:a<=+uDate};
+function uRow(u){
+  const live=tfLive(u),built=tfBuilt(u),t=live||built;
+  const place=[u.fd||u.c,u.st].filter(Boolean).join(", ");
+  const when=u.ad?`<span class="pill when">${u.al&&u.al!==u.ad?"applied again "+fmtDate(u.al)+" · first "+fmtDate(u.ad):"applied "+fmtDate(u.ad)}</span>`:"";
+  const src=`<span class="pill src">${u.src==="A"?"HR app":(u.form?esc(u.form)+" form":"Sheet")}</span>`;
+  const who=[u.age?"age "+esc(String(u.age))+(u.ae?" (est.)":""):"",u.xp?esc(u.xp):""].filter(Boolean).join(" · ");
+  const roles=(u.ro||[]).length?u.ro.map(r=>`<span class="pill rp">${esc(ROLES[r]?.label||r)}</span>`).join(""):`<span class="dash">—</span>`;
+  const d={n:u.n,res:u.res,src:u.src,wa:u.wa,exp:u.exp,ask:u.ask,why:u.why};
+  const undo=`<button type="button" class="tbtn undo" data-tundo="${esc(u.key)}">Undo transfer</button>`;
+  const by=x=>`<span>by <span class="tfby">${esc(x.hr||"someone")}</span>${x.at?" · "+esc(tfWhen(x.at)):""}</span>${x.reason?`<span class="pnote">${esc(x.reason)}</span>`:""}`;
+  let act;
+  if(u.kind==="old") act=`<span class="pnote">Rated by hand before the sync existed. Nothing to transfer.</span>`;
+  else if(!VDB) act=t?`<div class="tstate"><span class="pill tf">On the dashboard</span>${by(t)}</div>`:`<span class="pnote">Transfers need the shared storage, which is switched off on this page.</span>`;
+  else if(live&&built) act=`<div class="tstate"><span class="pill tf">On the dashboard</span>${by(live)}${undo}</div>`;
+  else if(live) act=`<div class="tstate"><span class="pill tfp">Transferred · on the dashboard after the next sync</span>${by(live)}${undo}</div>`;
+  else if(built) act=`<div class="tstate"><span class="pill tfp">Undo saved · leaves the dashboard after the next sync</span><button type="button" class="tbtn" data-tf="${esc(u.key)}">Transfer again</button></div>`;
+  else act=`<button type="button" class="tbtn" data-tf="${esc(u.key)}">Transfer to dashboard</button>`;
+  const asLv=t?`<span class="alt">Dashboard rating: <span class="pill lvpill ${esc(t.lv)}">${LV[t.lv]?LV[t.lv].label:esc(t.lv)}</span> ${(t.ro||[]).map(r=>`<span class="pill rp on">${esc(ROLES[r]?.label||r)}</span>`).join(" ")}</span>`:"";
+  const form=[u.tv?"travel "+esc(u.tv):"",u.fmcg?"FMCG "+esc(u.fmcg):"",u.fs?"field sales "+esc(u.fs):""].filter(Boolean).join(" · ");
+  return `<tr class="row lv-hide" data-ukey="${esc(u.key||"")}"><td><b>${esc(u.n)}</b>${u.kind==="old"&&u.tag?` <span class="pill lvpill hide">${esc(u.tag)}</span>`:""}<span class="alt">${esc(place||"Location not on resume")}</span><span class="alt">${src}${when}</span>${u.ap?`<span class="alt">In the app: ${esc(u.ap)}</span>`:""}</td>
+  <td class="why"><b>${esc(u.why||"")}</b>${u.exp?`<span class="alt">${esc(u.exp)}</span>`:""}${asLv}</td>
+  <td><div class="roles">${roles}</div></td>
+  <td><span class="num">${who||"—"}</span>${u.sal?`<span class="alt" title="Salary now → wants (L = lakhs a year)">${esc(u.sal)}</span>`:""}${u.nt?`<span class="alt">${esc(u.nt)}</span>`:""}${form?`<span class="alt">${form}</span>`:""}</td>
+  <td><span class="phone">${esc(u.ph||"—")}</span><div class="acts" style="margin-top:6px">${u.kind==="old"?"":cvBtn(d)}${waBtn(d,(u.ro||[])[0]||"BDE",u.st||"your state",u.st)}</div></td>
+  <td>${act}</td></tr>`;
+}
+function renderUnsuit(){
+  const sel=(id,cur,opts)=>{const el=$("#"+id);el.innerHTML=opts.map(([v,l])=>`<option value="${esc(v)}"${v===cur?" selected":""}>${esc(l)}</option>`).join("");el.classList.toggle("on",!!cur)};
+  const pass=(u,skip)=>(skip==="st"||!uSt||u.st===uSt)&&(skip==="src"||!uSrc||(uSrc==="A"?u.src==="A":u.src!=="A"))&&(skip==="tf"||!uTf||(uTf==="yes")===isTf(u))&&(skip==="date"||uDateOK(u));
+  const t=uQ.trim().toLowerCase();
+  const inQ=u=>!t||[u.n,u.c,u.fd,u.st,u.why,u.exp,u.ph,(u.ro||[]).join(" ")].join(" ").toLowerCase().includes(t);
+  const sts=[...new Set(UNSUIT.map(u=>u.st).filter(Boolean))].sort();
+  sel("uSt",uSt,[["","All states ("+cnt(UNSUIT,u=>pass(u,"st")&&inQ(u))+")"],...sts.map(s=>[s,s+" ("+cnt(UNSUIT,u=>u.st===s&&pass(u,"st")&&inQ(u))+")"])]);
+  sel("uTf",uTf,[["","Transferred or not ("+cnt(UNSUIT,u=>pass(u,"tf")&&inQ(u))+")"],["no","Not transferred ("+cnt(UNSUIT,u=>!isTf(u)&&pass(u,"tf")&&inQ(u))+")"],["yes","Transferred ("+cnt(UNSUIT,u=>isTf(u)&&pass(u,"tf")&&inQ(u))+")"]]);
+  sel("uSrc",uSrc,[["","All sources"],["S","Applications sheet ("+cnt(UNSUIT,u=>u.src!=="A"&&pass(u,"src")&&inQ(u))+")"],["A","HR app ("+cnt(UNSUIT,u=>u.src==="A"&&pass(u,"src")&&inQ(u))+")"]]);
+  sel("uDate",uDate,[["","Applied any time"],["7","Last 7 days"],["30","Last 30 days"],["old","Older than 30 days"],["none","No date"]]);
+  const rows=UNSUIT.filter(u=>pass(u)&&inQ(u)).sort((a,b)=>(isTf(a)-isTf(b))||((b.al||b.ad||"").localeCompare(a.al||a.ad||""))||a.n.localeCompare(b.n));
+  const tf=cnt(UNSUIT,isTf);
+  $("#uSum").innerHTML=UNSUIT.length?`<b>${rows.length}</b> of ${UNSUIT.length} resume${UNSUIT.length===1?"":"s"} set aside${tf?` · <b>${tf}</b> transferred to the dashboard`:""} · not transferred first, newest first`:"";
+  $("#uRows").innerHTML=rows.length?rows.slice(0,uShown).map(uRow).join(""):`<tr><td colspan="6" class="empty">${UNSUIT.length?"No one matches these filters.":"Nothing here. Every resume read so far fits at least one role."}</td></tr>`;
+  $("#uMoreBox").hidden=rows.length<=uShown;$("#uMore").textContent=`Show more (${rows.length-Math.min(uShown,rows.length)} left)`;
+  $("#uRows").querySelectorAll("[data-tf]").forEach(b=>b.onclick=()=>openTransfer(b.dataset.tf));
+  $("#uRows").querySelectorAll("[data-tundo]").forEach(b=>b.onclick=()=>undoTransfer(b.dataset.tundo,b));
+}
+function openTransfer(key){
+  const u=UBY[key]; if(!u||!VDB) return;
+  const prev=tfLive(u)||tfBuilt(u);
+  tCur={key,ro:new Set(((prev&&prev.ro)||[]).filter(r=>TF_ROLES.includes(r))),lv:prev&&["check","medium","strong"].includes(prev.lv)?prev.lv:"check"};
+  $("#tTitle").textContent=u.n;
+  $("#tSub").textContent=`Claude: ${u.why||"nothing for any open role"}${u.exp?" — "+u.exp:""}`;
+  $("#tReason").value=prev?(prev.reason||""):"";
+  let hr="";try{hr=localStorage.getItem("hf_hr")||""}catch(e){}
+  const known=[...$("#tHr").options].some(o=>o.value===hr&&hr);
+  $("#tHr").value=known?hr:(hr?"__other":"");$("#tHrOther").hidden=!(hr&&!known);$("#tHrOther").value=known?"":hr;
+  $("#tErr").hidden=true;
+  paintTransfer();
+  $("#tscrim").hidden=false;$("#tdlg").hidden=false;
+  setTimeout(()=>$("#tRoles button")?.focus(),30);
+}
+function paintTransfer(){
+  if(!tCur) return;
+  $("#tRoles").innerHTML=TF_ROLES.map(r=>`<button type="button" data-r="${r}" aria-pressed="${tCur.ro.has(r)}" title="${esc((ROLES[r]?.note||"").replace(/<[^>]+>/g,""))}">${esc(ROLES[r]?.label||r)}</button>`).join("");
+  $("#tRoles").querySelectorAll("button").forEach(b=>b.onclick=()=>{const r=b.dataset.r;if(tCur.ro.has(r))tCur.ro.delete(r);else if(tCur.ro.size<3)tCur.ro.add(r);else{$("#tErr").textContent="Pick at most three roles.";$("#tErr").hidden=false;return}$("#tErr").hidden=true;paintTransfer()});
+  $("#tLv").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lv===tCur.lv)));
+  $("#tChips").innerHTML=TCHIPS.map(c=>`<button type="button">${esc(c)}</button>`).join("");
+  $("#tChips").querySelectorAll("button").forEach(b=>b.onclick=()=>{const r=$("#tReason");const cur=r.value.trim();if(!cur.includes(b.textContent))r.value=cur?cur+"; "+b.textContent:b.textContent;r.focus()});
+}
+function closeTransfer(){$("#tscrim").hidden=true;$("#tdlg").hidden=true;tCur=null}
+async function saveTransfer(){
+  if(!tCur||!VDB) return;
+  const u=UBY[tCur.key]; if(!u) return;
+  const err=m=>{$("#tErr").textContent=m;$("#tErr").hidden=false};
+  const ro=TF_ROLES.filter(r=>tCur.ro.has(r));
+  const reason=$("#tReason").value.trim();
+  const hr=$("#tHr").value==="__other"?$("#tHrOther").value.trim():$("#tHr").value;
+  if(!ro.length) return err("Pick at least one role to consider them for.");
+  if(reason.length<4) return err("Write why this person belongs on the dashboard.");
+  if(!hr) return err("Choose your name so the team knows who transferred them.");
+  try{localStorage.setItem("hf_hr",hr)}catch(e){}
+  const body={key:u.key,cand:u.n,phone:u.ph||"",src:u.src==="A"?"HR app":"Sheet",form:u.form||"",st:u.st||"",fd:u.fd||"",ro,lv:tCur.lv,reason,hr,why:u.why||"",ro0:u.ro||[],lv0:"hide",at:new Date().toISOString()};
+  $("#tSave").disabled=true;
+  try{await VDB.collection("overrides").doc(u.key).set(body);OVR[u.key]=body;closeTransfer();renderUnsuit();renderMenu()}
+  catch(e){err("Couldn't save. Check the internet and try again."+(e&&e.message?" ("+e.message+")":""))}
+  finally{$("#tSave").disabled=false}
+}
+async function undoTransfer(key,btn){
+  const u=UBY[key],live=tfLive(u); if(!u||!VDB||!live) return;
+  if(!confirm(`Undo the transfer of ${u.n}? They go back to the Unsuitable list at the next sync. This is recorded in the Activity log.`)) return;
+  const doc=VDB.collection("overrides").doc(key);
+  if(typeof doc.delete!=="function"){alert("This page cannot undo transfers: the storage has no delete.");return}
+  if(btn)btn.disabled=true;
+  try{await doc.delete();delete OVR[key];renderUnsuit();renderMenu()}
+  catch(e){alert("Couldn't undo. Check the internet and try again.");if(btn)btn.disabled=false}
+}
 /* ---------- fit / unfit ---------- */
 let VDB=null, VER={}, VUID=null, VME=null, vCur=null;   // VME = {id,name,email} of the signed-in viewer
 const meLabel=()=>VME?(VME.email||VME.name||""):"";
@@ -965,6 +1132,8 @@ async function initVerdicts(){
   initSync(db);
   refreshVerdicts();
   db.collection("verdicts").onSnapshot(s=>{const v={};s.docs.forEach(x=>{const b=x.data();if(b)v[x.id]=b});VER=v;refreshVerdicts()},e=>{console.warn("marks",e&&e.code)});
+  db.collection("overrides").onSnapshot(s=>{const o={};s.docs.forEach(x=>{const b=x.data();if(b)o[x.id]=b});OVR=o;renderMenu();if(page==="unsuit")renderUnsuit()},e=>{console.warn("transfers",e&&e.code)});
+  if(page==="unsuit")renderUnsuit();
 }
 document.addEventListener("click",e=>{const b=e.target.closest("[data-vi]");if(!b)return;e.preventDefault();openVerdict(+b.dataset.vi,b.dataset.vp,b.dataset.vv||"")});
 
@@ -973,13 +1142,14 @@ function bindNames(root){root.querySelectorAll(".nm[data-i]").forEach(b=>b.oncli
 /* ---------- routing ---------- */
 function renderMenu(){
   const p0=page,d0=curDate; page="leads";curDate="0"; const today=cnt(D,inDate)+cnt(HIDDEN,hidIn); page=p0;curDate=d0;
-  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button>`;
+  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button>`;
   $("#menu").querySelectorAll("button").forEach(b=>b.onclick=()=>{page=b.dataset.pg;shown=PAGE;lShown=PAGE;save();go();window.scrollTo({top:0})});
 }
 function go(){
   F=page==="leads"?FL:FD;
   renderMenu();
-  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";
+  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";$("#pgUnsuit").hidden=page!=="unsuit";
+  if(page==="unsuit"){renderUnsuit();try{if(location.hash.slice(1)!=="unsuit")history.replaceState(null,"","#unsuit")}catch(e){}return;}
   const host=page==="leads"?$("#lFilters"):$("#dFilters");
   host.appendChild($("#stateRow"));host.appendChild($("#pfilters"));host.appendChild($("#fsum"));
   if(page==="leads"){
@@ -994,9 +1164,9 @@ function go(){
 }
 function save(){try{localStorage.setItem("hf3",JSON.stringify({page,view,curSt,curRole,curLv,curSrc,curDate,lLv,lSrc,FD,FL}))}catch(e){}}
 function init(){
-  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads"].includes(v.page))page=v.page;if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
-  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
-  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
+  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads","unsuit"].includes(v.page))page=v.page;if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
+  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(h==="unsuit")page="unsuit";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
+  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(x==="unsuit"&&page!=="unsuit"){page="unsuit";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
   renderFigs();
   $("#q").addEventListener("input",()=>{shown=PAGE;renderCandidates()});
   $("#telugu").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
@@ -1010,11 +1180,17 @@ function init(){
   const dRange=()=>{const a=$("#dFrom").value,b=$("#dTo").value;curDate=(a||b)?a+".."+b:"";shown=PAGE;save();go();};
   $("#dFrom").addEventListener("change",dRange);$("#dTo").addEventListener("change",dRange);
   $("#fClear").onclick=()=>{Object.assign(F,{dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false});curSt="";curDist="";if(page==="leads"){curDate="";lLv="";lSrc=""}shown=PAGE;lShown=PAGE;save();go();};
+  $("#uQ").addEventListener("input",()=>{uQ=$("#uQ").value;uShown=PAGE;renderUnsuit()});
+  [["uSt",v=>uSt=v],["uTf",v=>uTf=v],["uSrc",v=>uSrc=v],["uDate",v=>uDate=v]].forEach(([id,f])=>$("#"+id).addEventListener("change",e=>{f(e.target.value);uShown=PAGE;renderUnsuit()}));
+  $("#uMore").onclick=()=>{uShown+=PAGE;renderUnsuit()};
+  $("#tHr").innerHTML=$("#vHr").innerHTML;$("#tHr").onchange=()=>{$("#tHrOther").hidden=$("#tHr").value!=="__other"};
+  $("#tLv").querySelectorAll("button").forEach(b=>b.onclick=()=>{if(!tCur)return;tCur.lv=b.dataset.lv;paintTransfer()});
+  $("#tCancel").onclick=closeTransfer;$("#tscrim").onclick=closeTransfer;$("#tSave").onclick=saveTransfer;
   $("#dClose").onclick=closeDrawer;$("#scrim").onclick=closeDrawer;
-  document.querySelectorAll(".vseg button").forEach(b=>b.onclick=()=>{if(!vCur)return;vCur.verdict=b.dataset.v;paintVerdict()});
+  document.querySelectorAll("#vdlg .vseg button").forEach(b=>b.onclick=()=>{if(!vCur)return;vCur.verdict=b.dataset.v;paintVerdict()});
   $("#vHr").onchange=()=>{$("#vHrOther").hidden=$("#vHr").value!=="__other"};
   $("#vCancel").onclick=closeVerdict;$("#vscrim").onclick=closeVerdict;$("#vSave").onclick=saveVerdict;
-  document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if(!$("#vdlg").hidden)closeVerdict();else if(!$("#drawer").hidden)closeDrawer()});
+  document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if(!$("#vdlg").hidden)closeVerdict();else if(!$("#tdlg").hidden)closeTransfer();else if(!$("#drawer").hidden)closeDrawer()});
   go();
   document.body.dataset.ready="1";
   initVerdicts();

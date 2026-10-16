@@ -1,4 +1,4 @@
-# HR Screening — self-hosted (v1.6)
+# HR Screening — self-hosted (v1.7)
 
 The same HR screening page, running on your own free accounts:
 
@@ -25,6 +25,7 @@ pipeline/fetch.py            reads the sheets
 pipeline/rate.py             rates resumes with the Claude API
 pipeline/update.py, v3/...   unchanged scripts from the Claude version
 pipeline/runs.py             writes sync status for the page
+pipeline/overrides.py        reads the Unsuitable → dashboard transfers from Supabase into pipeline/app/overrides.json (v1.7)
 .github/workflows/sync.yml   the schedule
 supabase.sql                 database table
 ```
@@ -118,7 +119,8 @@ Then share the Vercel URL with the HR team — everyone uses that one link.
 
 ## Activity log (v1.3)
 "Activity log" (next to "Sync leads now") shows who did what and when, newest first:
-Marked · Changed mark (old → new) · Edited reason · Pressed Sync · Sync finished · Sync failed · Mark (before log) for marks made before v1.3.
+Marked · Changed mark (old → new) · Edited reason · Pressed Sync · Sync finished · Sync failed · Mark (before log) for marks made before v1.3 ·
+Transferred to dashboard · Transfer changed · Transfer undone (v1.7, see below).
 Filter by person, action, period or search text; "Download CSV" exports what is shown.
 - "Who" is the name picked in "Marked by" (no login). The Sync button uses the last name that browser picked.
 - The log is insert-only: the page can add rows but cannot edit or delete them.
@@ -148,6 +150,42 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   Now it is read by default (sheet `1sGCaXYi0aCuOtFLfq40QAwKBEKg-hytw9-LAdNFXKwQ`, first tab "All Applications"). `MBA_SHEET_ID=none` switches it off.
 - Upgrade: replace `pipeline/fetch.py` and `README.md`, then Actions → sync → Run workflow.
   The first run adds every MBA application not yet on the page and rates them (one-time Claude cost).
+
+## v1.7 — Unsuitable page: transfer resumes Claude set aside
+- A resume Claude rates "hide" (nothing for any open role) used to disappear from the dashboard; only the name showed under
+  "Not rated". The new **Unsuitable** page (third button in the menu, next to Daily leads) lists every such resume with Claude's
+  reason, the roles it weighed, the form answers (experience, salary, travel, FMCG), the resume link and a WhatsApp button.
+  Filters: search, state, transferred or not, source, applied date.
+- **Transfer to dashboard** on a row: pick 1–3 roles to consider them for, the level they enter at (Check / Medium / Strong),
+  a reason and your name. At the next sync (every 2 hours, or "Sync leads now") the person is matched to positions like anyone
+  else and carries a "Transferred" pill on every list; the drawer shows who transferred them, why, and what Claude had said.
+  Until that sync the row says "Transferred · on the dashboard after the next sync". **Undo transfer** reverses it the same way.
+- Audit: every transfer, change and undo is one row in the Activity log ("Transferred to dashboard", "Transfer changed",
+  "Transfer undone" — who, candidate, roles, level, reason), also in its CSV. The transfer itself is stored in Supabase
+  (table `docs`, collection `overrides`, one document per person) and copied into `pipeline/app/overrides.json` by every sync,
+  so the git history also shows which transfers were in force when each page was built.
+- Entries rated by hand before the sync existed (name only, no phone) are listed read-only: there is no record to transfer.
+- A transfer only changes roles and level. Claude's one-line experience summary and "ask on the call" stay as they were.
+  If Supabase is unreachable during a sync, the previous `overrides.json` is kept, so transfers never vanish because of a network hiccup.
+- Upgrade from v1.6: replace `pipeline/v3/build.py`, `pipeline/v3/page.tpl.html`, `public/claude-shim.js`, `public/activity-log.js`,
+  `.github/workflows/sync.yml`, `pipeline/update.py`, `README.md`; add `pipeline/overrides.py` and `pipeline/app/overrides.json`
+  (content `{}`). No Supabase SQL and no Vercel change. Then Actions → sync → Run workflow. Do NOT upload `public/index.html`.
+
+## Test locally before pushing (v1.7)
+```
+python local/serve.py            the page at http://127.0.0.1:8765 with a local stand-in for Supabase (data in work/local_db.json)
+python local/serve.py --reset    same, starting with empty local data
+python local/serve.py --live     the page against the real Supabase: what the team sees (marks and transfers are real)
+```
+- Local mode: marks, transfers and the Activity log stay on your computer. "Sync leads now" runs the build locally
+  (transfers → dashboard, about 15 seconds) without touching Google Sheets or Claude; the page picks up the result within
+  a minute, or reload it. No live updates locally, so red "WebSocket … failed" lines in the browser console are expected.
+  Ctrl+C stops the server and restores `public/index.html` and `pipeline/app/overrides.json`, so the test leaves nothing in the repo.
+- Live mode: the Sync button cannot start GitHub from a local page. To see a live transfer on the dashboard, run
+  `python pipeline/overrides.py && python pipeline/update.py build && python pipeline/publish.py` with the real
+  `SUPABASE_URL` / `SUPABASE_KEY` set, then reload.
+- Needs Python 3 with `pip install -r requirements.txt` (only `requests` is used locally) and internet for the supabase-js CDN.
+  On Windows set `PYTHONUTF8=1` before running pipeline scripts by hand (the server sets it for you).
 
 ## Notes
 - Marks made on the old Claude pages are not copied here (they are stored inside those pages).

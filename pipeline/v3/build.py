@@ -72,6 +72,27 @@ ROLE_OK = {'BDE': {'BDE'}, 'LAUNCH': {'LAUNCH'}, 'BDM': {'BDM', 'ASM'}, 'SH': {'
            'OPX': {'OPX', 'OPS', 'PROD'}, 'PUR': {'PUR'}, 'DISP': {'DISP'}, 'PROD': {'PROD', 'OPX'}, 'TECH': {'TECH'}, 'DMK': {'DMK'}, 'ITX': {'ITX'}, 'LND': {'LND'}}
 STAGE_FIX = {'Salary discussio': 'Salary discussion'}
 
+# ---------------------------------------------------------------- v1.7 transfers from the page's Unsuitable tab
+# pipeline/overrides.py writes app/overrides.json from Supabase: key "S:<phone>" / "A:<HR-app key>" -> {ro, lv, reason, hr, at}.
+# A resume Claude rated "hide" is shown on the dashboard with those roles and level instead; what Claude said is kept
+# in rec['tf'] so the page can show it. UNSUIT lists every hide-rated resume (transferred or not) for the Unsuitable tab.
+_ovr_path = os.path.join(APP, 'overrides.json')
+OVR = json.load(open(_ovr_path, encoding='utf-8')) if os.path.exists(_ovr_path) else {}
+TF_LEVELS = {'strong', 'medium', 'check'}
+TF_ROLES = set().union(*ROLE_OK.values()) | set(ROLE_OK) | {'ASM', 'OPS', 'MIS', 'HR'}
+UNSUIT = []
+
+def transfer(rec, key, why):
+    """Apply the team's transfer to a hide-rated record. True = the record now goes on the dashboard."""
+    o = OVR.get(key) or {}
+    ro = [r for r in (o.get('ro') or []) if r in TF_ROLES]
+    if not ro or o.get('lv') not in TF_LEVELS:
+        return False
+    rec['tf'] = {'hr': o.get('hr', ''), 'at': o.get('at', ''), 'reason': o.get('reason', ''), 'lv': o['lv'], 'ro': ro,
+                 'why': why or '', 'ro0': list(rec.get('ro') or [])}
+    rec['lv'] = o['lv']; rec['ro'] = ro
+    return True
+
 def status_text(stage, status, exit_):
     stage = STAGE_FIX.get(stage, stage)
     if status == 'active': t = 'In process · ' + stage
@@ -154,8 +175,16 @@ if os.path.exists(new_path):
         cc = canon(rec['c'])
         if cc and rec['dc'] and cc != rec['dc']: rec['mv'] = 1
         if rec['lv'] == 'hide':
-            new_hidden.append([rec['n'], 'Not rated', r.get('why') or 'Nothing usable', TS.get(n10(r['ph']), ''), TSL.get(n10(r['ph']), ''), TAT.get(n10(r['ph']), ''), wa_number(r['ph'])])
-            continue
+            key = 'S:' + n10(r['ph'])
+            urow = {'key': key, 'n': rec['n'], 'c': rec['c'], 'st': rec['st'], 'fd': rec['fd'], 'ph': rec['ph'], 'wa': rec['wa'],
+                    'src': 'S', 'form': rec['form'], 'why': r.get('why') or 'Nothing usable', 'exp': rec['exp'], 'ask': rec['ask'],
+                    'ro': list(rec['ro']), 'res': rec['res'], 'edu': r.get('edu', ''), 'yrs': rec['yrs'], 'age': rec['age'], 'ae': rec['ae'],
+                    'lang': rec['lang'], 'ad': TS.get(n10(r['ph']), ''), 'al': TSL.get(n10(r['ph']), ''), 'at': TAT.get(n10(r['ph']), '')}
+            UNSUIT.append(urow)
+            if not transfer(rec, key, urow['why']):
+                new_hidden.append([rec['n'], 'Not rated', urow['why'], urow['ad'], urow['al'], urow['at'], rec['wa']])
+                continue
+            urow['tf'] = rec['tf']
         C.append(rec)
         if n10(r['ph']): by_phone[n10(r['ph'])] = rec
 
@@ -189,8 +218,16 @@ for k, raw, email, name, entries, nk, exptag, tstat in meta:
     rec['dc'] = canon(rec['fd']) or canon(rec['c'])
     if joined: rec['joined'] = True
     if rec['lv'] == 'hide':
-        app_hidden.append(rec)
-        continue
+        key = 'A:' + k
+        urow = {'key': key, 'n': rec['n'], 'c': rec['c'], 'st': rec['st'], 'fd': rec['fd'], 'ph': rec['ph'], 'wa': rec['wa'],
+                'src': 'A', 'form': '', 'why': rec['why'] or 'Nothing usable', 'exp': rec['exp'], 'ask': rec['ask'],
+                'ro': list(rec['ro']), 'res': '', 'edu': '', 'yrs': rec['yrs'], 'age': rec['age'], 'ae': rec['ae'], 'lang': rec['lang'],
+                'ad': APPDATE.get(k, ''), 'al': '', 'at': '', 'ap': ', '.join(a[1] for a in ap)[:120]}
+        UNSUIT.append(urow)
+        if not transfer(rec, key, urow['why']):
+            app_hidden.append(rec)
+            continue
+        urow['tf'] = rec['tf']
     C.append(rec)
 
 # ---------------------------------------------------------------- language helper
@@ -430,10 +467,21 @@ for h in sheet['HIDDEN']:
     if len(phs) == 1:
         ph = next(iter(phs)); h += [TS.get(ph, ''), TSL.get(ph, ''), TAT.get(ph, ''), wa_number(ph)]
     OLD_HIDDEN.append(h)
+for h in OLD_HIDDEN:     # rated by hand before the sync existed: name and reason only, nothing to transfer
+    UNSUIT.append({'key': '', 'kind': 'old', 'n': h[0], 'tag': h[1], 'why': h[2], 'src': 'S', 'form': '', 'ro': [], 'exp': '',
+                   'ad': h[3] if len(h) > 3 else '', 'al': h[4] if len(h) > 4 else '', 'at': h[5] if len(h) > 5 else '',
+                   'wa': h[6] if len(h) > 6 else '', 'ph': ''})
+for u in UNSUIT:         # experience / salary / joining hints from the form, as on the dashboard rows
+    f = (FORM.get(n10(u.get('ph'))) or {}) if u.get('key', '').startswith('S:') else {}
+    y = u.get('yrs')
+    u['xp'] = ('<1 yr' if y < 1 else '%g yrs' % y) if isinstance(y, (int, float)) else f.get('yb', '')
+    for k in ('sal', 'nt', 'tv', 'fmcg', 'fs', 'tm'):
+        if f.get(k): u[k] = f[k]
 data = ''.join([
     jsdump('D', C), jsdump('P', POSOUT), jsdump('HIDDEN', OLD_HIDDEN + new_hidden),
     jsdump('HIDDEN_APP', [[h['n'], h.get('why') or 'Nothing usable', ', '.join(a[1] for a in h['ap'])[:120]] for h in app_hidden]),
     jsdump('NORES', no_resume), jsdump('MISSING', MISSING), jsdump('ISSUES', ISSUES), jsdump('PLAB', PLAB),
+    jsdump('UNSUIT', UNSUIT),
 ])
 open(os.path.join(H, 'data.js'), 'w').write(data)
 
@@ -442,6 +490,7 @@ lv = collections.Counter(c['lv'] for c in C)
 src = collections.Counter(c['src'] for c in C)
 print('candidates on page', len(C), dict(lv), dict(src), 'merged sheet+app', dup_merged)
 print('app hidden', len(app_hidden), ' no resume', len(no_resume))
+print('unsuitable rows', len(UNSUIT), '| transfers in overrides.json', len(OVR), '| applied', sum(1 for c in C if c.get('tf')))
 print('positions', len(POSOUT), 'seats', sum(p['seats'] for p in POSOUT))
 for p in POSOUT:
     cnt = collections.Counter(C[m[0]]['lv'] for m in p['m'])

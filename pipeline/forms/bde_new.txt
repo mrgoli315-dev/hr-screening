@@ -877,3 +877,14 @@
 10/16/2026 13:49:58|Navtesh Pawar|9987419732|Maharashtra|Satara|0-1 years|540000|600000|Yes|Immediate joiner|No|Yes|1G5V9bkO9obTow4VkZHC1scIqNZ9StBFb
 10/16/2026 13:59:31|Pavi Ganesh|8681008187|Tamil Nadu|Ranipet|4+ years|7.5|10|Yes|Immediate joiner|No|No|1mmgALkS2H6sWFl5YIfHe3nvUuOEYDfxM
 10/16/2026 14:00:36|Mahantesh sollapure Sollapure|8861445069|Karnataka|Belagavi|4+ years|4lakh|35|Yes|Immediate joiner|Yes|Yes|1IFMILSn5pTqtVWJoeKD8x7VT1hqcFb8v
+10/16/2026 14:30:17|Sumed Pawar|8554805573|Maharashtra|Amravati|0-1 years|250000|250000|Yes|Immediate joiner|Yes|Yes|14U2sQSh49MGJlJHeXJt2X_SzM8Eg3SH4
+10/16/2026 14:57:53|Yaseen Daryawardi|8237747512|Maharashtra|Sangli|4+ years|2.9|3.5|Yes|Immediate joiner|Yes|Yes|1fw7rVp78VJUZxTbRj9_gnd0RJsVbMhXs
+10/16/2026 14:59:38|Priyanshu Pande|7219087828|Maharashtra|Nagpur|2-4 years|4.15 LPA|5.50 LPA|Yes|Immediate joiner|Yes|Yes|1p-t6bEMkKvIFFnMIASqquaJnFvFMS9oZ
+10/16/2026 15:03:41|prayag dhabale|8788285576|Maharashtra|Gondia|2-4 years|450000|600000|Yes|Immediate joiner|Yes|Yes|1ZYvqbnA0j1X5XjdHuKIYmdwYyuTMXfvy
+10/16/2026 15:04:26|Pratik Gawre|9325808939|Maharashtra|Nagpur|4+ years|400000|450000|Yes|15 days|No|No|1X-ZeE0ng4HP0was3paQOmlx1wDuWXH6Y
+10/16/2026 15:20:08|mihir khankal|7066381858|Maharashtra|Satara|0-1 years|264000|350000|Yes|Immediate joiner|Yes|Yes|1ob3op2vwzPeJGipOhr9cen_XQ7WFsL_u
+10/16/2026 15:39:49|VIGNESH L|9361429161|Tamil Nadu|Vellore|2-4 years|2.8L|3.5L|Yes|Immediate joiner|No|Yes|1NmmsHvtOcwwbA63dpWXrEZPXOmAFkh8V
+10/16/2026 15:51:05|Swetha C|7397226995|Tamil Nadu|Chennai|1-2 years|4.5|5|Yes|Immediate joiner|No|Yes|1jYTp10x8pEifI0hpbcqc3sj8dfI-0GOp
+10/16/2026 15:57:36|Pravin Wankhade|7720067112|Maharashtra|Akola|4+ years|5.2LPA|5.5LPA|Yes|Immediate joiner|No|Yes|1ilSlpX57Au-oXCGWxLrLM8ep-EFmZnim
+10/16/2026 16:15:32|Dileepa D|9071266910|Karnataka|Bengaluru Urban|4+ years|6L|9L|Yes|15 days|No|Yes|18mOy1bGkJISHtHXcC4G97X3fvlgZDmUq
+10/16/2026 16:27:23|Sasikumar Sasikumar|7708801445|Tamil Nadu|Vellore|0-1 years|30000|420000|Yes|15 days|No|No|1L3NsaL-_ORyyPZXxqkaH8XLlA7-RNOT8

@@ -717,3 +717,9 @@
 7893087951|2-4 yrs|381600|600000|15 days|Yes|Yes|Yes|4-8
 8220660885|7+ yrs|5.38|6.4|15 days|Yes|No|Yes|1-3
 8660790090|7+ yrs|6|6.5|15 days|Yes|Yes|Yes|15+
+9962784222|7+ yrs|10|12|Immediate|Yes|Yes|Yes|15+
+6303255938|7+ yrs|6000000|6000000|15 days|Yes|Yes|Yes|15+
+8999028843|4-7 yrs|6|6|Immediate|Yes|Yes|Yes|9-15
+9767774351|7+ yrs|3.6|4.8|Immediate|Yes|Yes|Yes|4-8
+9989763038|2-4 yrs|400000|450000|15 days|Yes|Yes|Yes|None
+8019470768|7+ yrs|8|10|Immediate|Yes|No|No|15+

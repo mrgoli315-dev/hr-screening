@@ -684,3 +684,14 @@
 9666901707|7+ yrs|4.6|4.5|Immediate|Yes|Yes|Yes|None
 9701117309|7+ yrs|3.5|5-6|Immediate|Yes|No|Yes|1-3
 8072115538|2-4 yrs|3.8|5.5|Immediate|Yes|No|Yes|1-3
+8610038381|7+ yrs|5|5.5|Immediate|No|No|Yes|None
+9096605197|2-4 yrs|20000|20000|Immediate|Yes|Yes|Yes|1-3
+9966752909|7+ yrs|15|8|Immediate|Yes|No|Yes|9-15
+9822807193|7+ yrs|5|6|Immediate|Yes|Yes|Yes|1-3
+8788633636|0-1 yrs|3|3.5|Immediate|Yes|Yes|Yes|None
+9003728857|7+ yrs|7|9|Immediate|Yes|Yes|Yes|4-8
+9014343793|7+ yrs|35|45|15 days|Yes|Yes|Yes|4-8
+9021405248|1-2 yrs|4.2|5|Immediate|Yes|Yes|Yes|1-3
+9059227759|7+ yrs|4.8|5.5|Immediate|Yes|No|Yes|15+
+7387795581|7+ yrs|7.5|8.5|15 days|Yes|No|Yes|15+
+7709065754|7+ yrs|4.6|5|Immediate|Yes|Yes|Yes|9-15

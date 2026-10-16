@@ -669,3 +669,18 @@
 8217841278|4-7 yrs|20000|350000|Immediate|Yes|No|Yes|4-8
 7010740783|7+ yrs|4.63|5|Immediate|Yes|Yes|Yes|4-8
 9900883396|7+ yrs|4.5|5|Immediate|Yes|Yes|Yes|4-8
+8379976077|2-4 yrs|3.5|3.8|Immediate|No|No|Yes|4-8
+7411280258|7+ yrs|5.8|7|Immediate|Yes|Yes|Yes|15+
+6380581116|7+ yrs|712000|900000|15 days|Yes|No|Yes|1-3
+9791556406|1-2 yrs|300000|350000|Immediate|Yes|Yes|Yes|4-8
+9527278259|4-7 yrs|7.8|8.8|15 days|Yes|Yes|Yes|9-15
+9158211490|2-4 yrs|4.2|5|Immediate|Yes|Yes|Yes|4-8
+7097778295|2-4 yrs|2.5|5|Immediate|Yes|Yes|Yes|1-3
+9742910389|7+ yrs|5|6.5|Immediate|Yes|No|Yes|15+
+7036797709|7+ yrs|5.5|6|Immediate|Yes|Yes|Yes|None
+7799032434|7+ yrs|4|5|15 days|Yes|No|Yes|4-8
+9100140887|0-1 yrs|24000|30000|Immediate|No|Yes|Yes|1-3
+9597140517|4-7 yrs|2.5|4|15 days|Yes|Yes|Yes|4-8
+9666901707|7+ yrs|4.6|4.5|Immediate|Yes|Yes|Yes|None
+9701117309|7+ yrs|3.5|5-6|Immediate|Yes|No|Yes|1-3
+8072115538|2-4 yrs|3.8|5.5|Immediate|Yes|No|Yes|1-3

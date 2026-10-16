@@ -664,3 +664,8 @@
 9535368814|7+ yrs|420000|400000|Immediate|Yes|Yes|Yes|4-8
 9822925450|7+ yrs|5|7|Immediate|Yes|Yes|Yes|9-15
 9606016749|7+ yrs|4.2|6|15 days|Yes|Yes|Yes|1-3
+9581616057|7+ yrs|4.5|6|Immediate|Yes|No|Yes|None
+6301815276|7+ yrs|5|6|Immediate|Yes|Yes|Yes|15+
+8217841278|4-7 yrs|20000|350000|Immediate|Yes|No|Yes|4-8
+7010740783|7+ yrs|4.63|5|Immediate|Yes|Yes|Yes|4-8
+9900883396|7+ yrs|4.5|5|Immediate|Yes|Yes|Yes|4-8

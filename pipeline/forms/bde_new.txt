@@ -873,3 +873,7 @@
 10/16/2026 12:09:25|Gaurav Ambarte|9552045609|Maharashtra|Nagpur|4+ years|3.2|4.3|Yes|15 days|Yes|Yes|1hZfg4NBWsPMTtUVRBrIn0EzK7a9BibXG
 10/16/2026 12:16:52|Shaik Safder|9346934826|Telangana|Hyderabad|1-2 years|3.4|4|Yes|Immediate joiner|Yes|No|1EFgXgGzJF_iiu1A2hjfxsxQ8CBSUjq1P
 10/16/2026 12:27:15|Aniket Dayal|9637829291|Maharashtra|Sangli|4+ years|420000|500000|Yes|15 days|Yes|Yes|1rtH-uyi_4H3Hjo6zB7FK0bOs86rq-hVb
+10/16/2026 13:43:14|gokul Raj|9384233209|Tamil Nadu|Tiruvallur|2-4 years|3.5LpA|5LPA|Yes|Immediate joiner|Yes|Yes|1MSFxN_9mMDdzn4IuNvvY8EYeQGat8rr0
+10/16/2026 13:49:58|Navtesh Pawar|9987419732|Maharashtra|Satara|0-1 years|540000|600000|Yes|Immediate joiner|No|Yes|1G5V9bkO9obTow4VkZHC1scIqNZ9StBFb
+10/16/2026 13:59:31|Pavi Ganesh|8681008187|Tamil Nadu|Ranipet|4+ years|7.5|10|Yes|Immediate joiner|No|No|1mmgALkS2H6sWFl5YIfHe3nvUuOEYDfxM
+10/16/2026 14:00:36|Mahantesh sollapure Sollapure|8861445069|Karnataka|Belagavi|4+ years|4lakh|35|Yes|Immediate joiner|Yes|Yes|1IFMILSn5pTqtVWJoeKD8x7VT1hqcFb8v

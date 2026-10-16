@@ -890,3 +890,8 @@
 10/16/2026 16:27:23|Sasikumar Sasikumar|7708801445|Tamil Nadu|Vellore|0-1 years|30000|420000|Yes|15 days|No|No|1L3NsaL-_ORyyPZXxqkaH8XLlA7-RNOT8
 10/16/2026 16:54:28|SHARANA BASAVA|7619315797|Karnataka|Yadgir|1-2 years|23000|25000|Yes|Immediate joiner|Yes|Yes|1UrepgWMiYP4Mw38xx06mgXlto1GZ2UPW
 10/16/2026 16:54:35|Nivas King|8056058180|Tamil Nadu|Chengalpattu|0-1 years|3.7 LPA|4.7 LPA|Yes|Immediate joiner|Yes|No|10KExlIWNFpr0r5BxzHHi_e2rwkCBBcLL
+10/16/2026 20:14:19|Amit Bargale|8329346239|Maharashtra|Sangli|4+ years|5.50 Lac PA|5.50 Lac PA|Yes|Immediate joiner|No|Yes|1DlzJpbR46X34NN11U-oWqvc4ErztAkIw
+10/16/2026 18:58:31|Shrinivas Kalal|8618373876|Karnataka|Belagavi|4+ years|5 lPA|6 LPA|Yes|Immediate joiner|No|Yes|1MVmMIYF3Sh5-_FZ1pQvp7-BL_TQMzyjg
+10/16/2026 19:30:51|Mohammad Faisal Qureshi|8983023191|Maharashtra|Nagpur|4+ years|468000|600000|Yes|15 days|No|Yes|1Gi7OqNK4Pwgfv4Th1PXY4lNUpLGAC3wD
+10/16/2026 19:35:38|Mohammad asad|7888256361|Maharashtra|Nagpur|4+ years|500000|600000|Yes|Immediate joiner|Yes|Yes|1f6Z9bfJqylJw5sAaOWhG2nv-tr3uZCGp
+10/16/2026 20:22:31|Challa Likitha|9247440603|Karnataka|Bengaluru Urban|0-1 years|Fresher|3.4|Yes|Immediate joiner|Yes|No|1ANNIapeA9iBGkDM6SArigxlOeIQpoGE5

@@ -946,3 +946,10 @@
 10/17/2026 17:42:45|Syed Suleman|9686523161|Karnataka|Koppal|2-4 years|320000|600000|Yes|Immediate joiner|No|Yes|1u4ZqGnmMyEqbeU-JfBSDmtV6cYYSKYTN
 10/17/2026 17:47:17|Akash Hanamasagara|8550037842|Karnataka|Dakshina Kannada|2-4 years|3 LPA|4 LPA|Yes|Immediate joiner|No|Yes|1Ph2C77A0PSkdrKua7elyC-ZItKYt7W6I
 10/17/2026 18:05:14|Mohan B|8122688469|Tamil Nadu|Chennai|4+ years|6.5|7|Yes|Immediate joiner|Yes|Yes|1QwFvSwHUrHUlNG3r-qSCStkfm_vnGi7Q
+10/17/2026 18:33:43|Rushikesh Rajesh Madane|7387800712|Maharashtra|Satara|1-2 years|450000|500000|Yes|15 days|No|Yes|12DOM1MkSpxxiZTemOhvDscohlzlAM1Wz
+10/17/2026 18:51:06|Nadeem qureshi|8770703726|Madhya Pradesh|Chhindwara|4+ years|700000|700000|Yes|15 days|No|Yes|1FRqJqObNJy8cptEGzo3R3961Aj0c6i9K
+10/17/2026 19:09:31|Kavan M j|8217046978|Karnataka|Bengaluru Rural|4+ years|4|3.6|Yes|15 days|Yes|Yes|1iEEvti1W9rs8vO-w5WsuZGOo8Vg4ghom
+10/17/2026 19:13:17|SUHEB SHILEDAR|8951770166|Karnataka|Belagavi|1-2 years|3.1|4|Yes|15 days|Yes|Yes|1arm1txWpp24rIuXYOIJ9gY4wA9GLhe3B
+10/17/2026 19:17:44|Istyak Abdul Khalik Sheikh|8482971431|Maharashtra|Chandrapur|4+ years|360000|600000|Yes|Immediate joiner|Yes|Yes|1j7KGAsxn5FXFuHLIRIDf_I0CS5-c5p2X
+10/17/2026 19:49:49|Kumar|9133687494|Telangana|Medak|4+ years|4.5|5.5|Yes|Immediate joiner|No|Yes|1OP9iVEiwuBNq09LLL7gWGAF2v8IGzB1g
+10/17/2026 20:18:18|NARASIMHARAJU MG|9448632072|Karnataka|Tumakuru|4+ years|6.5|7.3|Yes|Immediate joiner|Yes|Yes|1iD8PEZ19Tm5C0AlC5s9g-aDnMzbL-zj_

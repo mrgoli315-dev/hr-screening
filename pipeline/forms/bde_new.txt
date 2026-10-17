@@ -953,3 +953,10 @@
 10/17/2026 19:17:44|Istyak Abdul Khalik Sheikh|8482971431|Maharashtra|Chandrapur|4+ years|360000|600000|Yes|Immediate joiner|Yes|Yes|1j7KGAsxn5FXFuHLIRIDf_I0CS5-c5p2X
 10/17/2026 19:49:49|Kumar|9133687494|Telangana|Medak|4+ years|4.5|5.5|Yes|Immediate joiner|No|Yes|1OP9iVEiwuBNq09LLL7gWGAF2v8IGzB1g
 10/17/2026 20:18:18|NARASIMHARAJU MG|9448632072|Karnataka|Tumakuru|4+ years|6.5|7.3|Yes|Immediate joiner|Yes|Yes|1iD8PEZ19Tm5C0AlC5s9g-aDnMzbL-zj_
+10/17/2026 20:42:50|NAVEEN KUMAR|8056528893|Tamil Nadu|Ranipet|2-4 years|360000|450000|Yes|15 days|No|Yes|15R4DkyTRM3DCkRgbkJKVmeaBJjVzUPAh
+10/17/2026 21:18:07|Ashutosh Tumbekar|8805315656|Maharashtra|Nanded|4+ years|450000|500000|Yes|15 days|No|Yes|1sNe7EF42BMvZ4wzkB4wOEGGE-FyGqh2m
+10/17/2026 21:24:27|Darshan shetty|9743937725|Karnataka|Vijayanagara|4+ years|3.6|30000|Yes|Immediate joiner|Yes|Yes|1ET-eeuX-HeaTpmkF1qUUSENMdN3hC1Po
+10/17/2026 21:40:29|Velan Rajan|9060502894|Karnataka|Mysuru|1-2 years|3.0 lpa|3.0 lpa.|Yes|15 days|No|Yes|1r6uAmcavX4ZeNe0VFRz1aC5ZoTDoaDW5
+10/17/2026 21:48:39|Mageshwaran Manokaran|9790752295|Tamil Nadu|Ranipet|4+ years|370000|500000|Yes|Immediate joiner|Yes|Yes|1VDJSinbsMC0kvE7Ag5J_pLeqcGEC0KWI
+10/17/2026 21:54:59|Akshay Ram Tirmal|8149814247|Maharashtra|Ahmednagar|4+ years|300000|500000|Yes|Immediate joiner|Yes|Yes|1Gjq4JLF3BKEGsn_2779wcX84sXnZsZSz
+10/17/2026 21:57:40|Ramchandra Rajput|9900255771|Karnataka|Belagavi|4+ years|9 lac|10 lac|Yes|15 days|Yes|Yes|1wrWHF12vpxa4W8ND4g6JA7lcH5TQQjzq

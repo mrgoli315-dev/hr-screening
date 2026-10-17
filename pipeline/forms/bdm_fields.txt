@@ -772,3 +772,12 @@
 9021358635|7+ yrs|5|5|Immediate|Yes|No|Yes|15+
 9787058719|7+ yrs|3.6|4|Immediate|Yes|Yes|Yes|4-8
 8618904602|2-4 yrs|4|4.5|Immediate|Yes|Yes|Yes|4-8
+8380000768|7+ yrs|4.5|6|15 days|Yes|Yes|Yes|15+
+8940331679|7+ yrs|6.25|7|Immediate|Yes|Yes|Yes|1-3
+9309516479|1-2 yrs|5000000|1000000|Immediate|Yes|Yes|Yes|9-15
+9908708019|7+ yrs|3.5|4|Immediate|Yes|Yes|Yes|4-8
+9894851015|7+ yrs|7|9|Immediate|Yes|Yes|Yes|15+
+8367596862|7+ yrs|30000|35000|Immediate|Yes|No|Yes|4-8
+7721050755|7+ yrs|6|8|Immediate|Yes|Yes|Yes|15+
+9604631607|7+ yrs|5.4|7.2|15 days|Yes|Yes|Yes|9-15
+9042444441|7+ yrs|3|3|Immediate|Yes|No|Yes|15+

@@ -919,3 +919,7 @@
 10/17/2026 1:24:57|Shubham Durge|8087818275|Maharashtra|Nagpur|1-2 years|₹2.5 LPA|₹3.5 LPA|Yes|15 days|Yes|Yes|1CpaeYdIewCchqcDxy9CpG9AvEXII8blB
 10/17/2026 7:22:17|Mujahid Pasha|8722837768|Karnataka|Shivamogga|4+ years|2.65|4.8|Yes|15 days|No|Yes|1U3CcN_RDWyw1cZdqdWUgNyzYaxT5-9_q
 10/17/2026 7:55:49|Shvetkumar shiwaji Rahangdale|7888223340|Maharashtra|Gondia|4+ years|3.5 LPA|4.5 LPA|Yes|Immediate joiner|Yes|Yes|1ThJRLefbTJUfgIAD7emk1RyITiu6NWpk
+10/17/2026 8:27:07|Sahil Gawali|8446493050|Maharashtra|Chhatrapati Sambhajinagar|1-2 years|2.96|3.15|Yes|15 days|No|Yes|1qf-DkzV68eZ-a0UiCjw0p0n9jNKbwUU1
+10/17/2026 9:28:24|Prema|9902966287|Karnataka|Bengaluru Rural|4+ years|28000|30000|No|Immediate joiner|Yes|Yes|1v000toaQP2nQOPdZFIq4kcRvhMscxoP-
+10/17/2026 9:41:58|Boyapothu Saikumar|8247244134|Andhra Pradesh|YSR Kadapa|2-4 years|3_4|5_6|No|15 days|Yes|No|11nmZkYT63EtNwBGh9KVC0fdPQsZIr8JJ
+10/17/2026 9:46:14|Nikhil Ashokrao Katkar|9325900590|Maharashtra|Nagpur|4+ years|273744|450000|Yes|Immediate joiner|No|Yes|1KZDTm7sBeKS87Xlcn4pjpNohg6RH8PHZ

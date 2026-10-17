@@ -812,3 +812,9 @@
 9542730341|7+ yrs|450000|600000|Immediate|Yes|Yes|Yes|15+
 8379005509|7+ yrs|6|7|15 days|Yes|Yes|Yes|15+
 7507079924|0-1 yrs|4.5|6|15 days|Yes|No|Yes|1-3
+7358854064|7+ yrs|492000|550000|Immediate|Yes|No|No|15+
+8369615515|2-4 yrs|384000|500000|Immediate|Yes|Yes|Yes|4-8
+7780406235|1-2 yrs|6|7|Immediate|Yes|No|Yes|9-15
+8523085416|7+ yrs|4|5|Immediate|Yes|Yes|Yes|15+
+9609278886|4-7 yrs|3.75|4.5|Immediate|Yes|Yes|Yes|9-15
+6304981324|4-7 yrs|3.85|4.8|15 days|Yes|No|Yes|1-3

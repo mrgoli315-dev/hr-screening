@@ -960,3 +960,5 @@
 10/17/2026 21:48:39|Mageshwaran Manokaran|9790752295|Tamil Nadu|Ranipet|4+ years|370000|500000|Yes|Immediate joiner|Yes|Yes|1VDJSinbsMC0kvE7Ag5J_pLeqcGEC0KWI
 10/17/2026 21:54:59|Akshay Ram Tirmal|8149814247|Maharashtra|Ahmednagar|4+ years|300000|500000|Yes|Immediate joiner|Yes|Yes|1Gjq4JLF3BKEGsn_2779wcX84sXnZsZSz
 10/17/2026 21:57:40|Ramchandra Rajput|9900255771|Karnataka|Belagavi|4+ years|9 lac|10 lac|Yes|15 days|Yes|Yes|1wrWHF12vpxa4W8ND4g6JA7lcH5TQQjzq
+10/17/2026 22:50:31|Anshul Borkar|7030553385|Maharashtra|Chandrapur|4+ years|3|4|Yes|Immediate joiner|Yes|Yes|1gCLqf6sRvvGyKhq6X1ilc_mbpCSZhrec
+10/17/2026 23:39:09|dhiraj jagtap|9325397727|Maharashtra|Nashik|0-1 years|21000|26000|Yes|15 days|Yes|No|1ZdxUFDp-rmlsamfFTBFwOkypgGmD-vKf

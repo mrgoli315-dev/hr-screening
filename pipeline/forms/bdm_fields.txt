@@ -802,3 +802,13 @@
 9676612111|1-2 yrs|3|3.5|Immediate|Yes|Yes|Yes|1-3
 8608890736|2-4 yrs|3.2|3.5|15 days|Yes|Yes|No|9-15
 6303420447|0-1 yrs|2.4|4.5|15 days|No|Yes|No|1-3
+8147434775|0-1 yrs|740000|840000|15 days|Yes|No|Yes|4-8
+9595959790|4-7 yrs|30000|40000|Immediate|Yes|Yes|Yes|9-15
+9420131984|7+ yrs|5|8|15 days|Yes|No|Yes|9-15
+8531840079|4-7 yrs|420000|480000|15 days|Yes|No|Yes|9-15
+8940046537|1-2 yrs|2.5|3|Immediate|Yes|Yes|Yes|1-3
+9360697156|7+ yrs|6|6.5|Immediate|Yes|Yes|Yes|4-8
+9989628874|2-4 yrs|180000|200000|Immediate|Yes|No|Yes|9-15
+9542730341|7+ yrs|450000|600000|Immediate|Yes|Yes|Yes|15+
+8379005509|7+ yrs|6|7|15 days|Yes|Yes|Yes|15+
+7507079924|0-1 yrs|4.5|6|15 days|Yes|No|Yes|1-3

@@ -935,3 +935,11 @@
 10/17/2026 13:16:05|Sooraj Ns|9677042258|Tamil Nadu|Chennai|4+ years|5|7|Yes|15 days|Yes|Yes|1cZSQAMo0DAocwNaAuOVF8Fa78JqJikIQ
 10/17/2026 13:58:22|Sudarshan Saudagar Gidde|9096958077|Maharashtra|Satara|4+ years|4.2|4.8|Yes|15 days|Yes|Yes|1ehefqVusZmcJM7C-W8i995Jbmze8y3ob
 10/17/2026 14:09:50|Mohammad Azaruddin|9518731652|Maharashtra|Chandrapur|2-4 years|456000|500000|Yes|Immediate joiner|Yes|Yes|1nLXzZcg5zXolbLxcZZEWnY3K6aClsS6u
+10/17/2026 14:28:57|Bhupendra Bagde|7758847951|Maharashtra|Nagpur|4+ years|40000|50000|Yes|Immediate joiner|Yes|Yes|1x4cv9NM9wdCIaD-_SJjqvJI3H_00MeBJ
+10/17/2026 14:44:59|Prajwal Wikey|9359021881|Maharashtra|Nagpur|0-1 years|2.4 lpa|3.0 lpa|Yes|Immediate joiner|Yes|Yes|1josFnfRwSVVGquXHGhlADcPtvMXdBgP6
+10/17/2026 14:45:21|Ravikumar|9741888479|Karnataka|Koppal|2-4 years|4.0LPA|5.50lpa|Yes|15 days|Yes|Yes|1pZbkXC7fWLHLSjwJOLtpsEp3cMAd5sMY
+10/17/2026 15:11:29|Harishankar Mishra|9356678993|Maharashtra|Mumbai City|2-4 years|3.5 LPA|4.2 LPA|Yes|15 days|Yes|Yes|1n8JSgnQ1s0V3WqOlgYfdInMtQMZ2a8F-
+10/17/2026 15:20:49|Vaibhav dehatma kolhe|8551980326|Maharashtra|Yavatmal|2-4 years|500000|700000|Yes|15 days|Yes|Yes|11bn6HxH_nHYf_B15d3EI8TRl2Y2lclNU
+10/17/2026 15:34:14|Rahul Mathapati|8296259520|Karnataka|Belagavi|1-2 years|348000|420000|Yes|Immediate joiner|No|Yes|12iEWapL255Ytscl884-OOubMlrqR851-
+10/17/2026 15:38:42|Ajay shinde|9657551558|Maharashtra|Raigad|4+ years|28000/|36000/|Yes|15 days|Yes|Yes|1Yshpl9QTOltGr3avCVpxTzXjt-qQFKIp
+10/17/2026 15:43:03|Sanjay suryavanshi|7385249309|Maharashtra|Sangli|4+ years|4.2|5|Yes|Immediate joiner|Yes|Yes|190B-RmLrkQx5E3d23qg4GkpnCZtFI8_Z

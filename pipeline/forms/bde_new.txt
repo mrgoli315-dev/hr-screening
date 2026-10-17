@@ -930,3 +930,8 @@
 10/17/2026 12:24:40|Santosh|8600240468|Maharashtra|Satara|4+ years|250000|300000|Yes|15 days|Yes|Yes|1KD4ePAC-B3EbX1i997rkzzBtz1t2bhR0
 10/17/2026 12:25:18|Vinitkumar Terdalkar|9738331826|Karnataka|Belagavi|4+ years|5LPA|5LPA|Yes|Immediate joiner|Yes|Yes|1MUx4YXkdaJMzK6I8Bm2RqNIU-zavvsGw
 10/17/2026 12:33:23|AKSHAY GAIKWAD|8625098568|Maharashtra|Nagpur|1-2 years|400000|500000|Yes|Immediate joiner|No|Yes|1fcYyKR4gl4sWVkFSrlpxHsllkYgqV6qn
+10/17/2026 12:58:29|Pramod channavar|7760859940|Karnataka|Belagavi|4+ years|3.24 lpa|4.50lpa|Yes|Immediate joiner|Yes|Yes|1tU45YD-uYZH-8gjXDlEKoMoa6Gun-yIa
+10/17/2026 12:58:35|Abhijeet Vaman Angolkar|9766666190|Maharashtra|Sangli|2-4 years|3.5 LPA|3.5 LPA|Yes|Immediate joiner|Yes|Yes|1oU2xmTUpSRd_yKJnOusR146wKn7E1RgU
+10/17/2026 13:16:05|Sooraj Ns|9677042258|Tamil Nadu|Chennai|4+ years|5|7|Yes|15 days|Yes|Yes|1cZSQAMo0DAocwNaAuOVF8Fa78JqJikIQ
+10/17/2026 13:58:22|Sudarshan Saudagar Gidde|9096958077|Maharashtra|Satara|4+ years|4.2|4.8|Yes|15 days|Yes|Yes|1ehefqVusZmcJM7C-W8i995Jbmze8y3ob
+10/17/2026 14:09:50|Mohammad Azaruddin|9518731652|Maharashtra|Chandrapur|2-4 years|456000|500000|Yes|Immediate joiner|Yes|Yes|1nLXzZcg5zXolbLxcZZEWnY3K6aClsS6u

@@ -793,3 +793,12 @@
 7708068192|7+ yrs|10|11|Immediate|Yes|Yes|Yes|15+
 9080888378|7+ yrs|6.2|7|Immediate|Yes|No|Yes|9-15
 7569268233|4-7 yrs|5|7|Immediate|Yes|Yes|Yes|4-8
+9513783990|7+ yrs|4.5|600000|Immediate|Yes|No|Yes|4-8
+9383938311|7+ yrs|1700000|1200000|Immediate|Yes|Yes|Yes|15+
+7020989011|4-7 yrs|360,000|516,000|Immediate|Yes|Yes|Yes|4-8
+9600868487|7+ yrs|5.6|6|15 days|Yes|No|Yes|1-3
+7339542859|7+ yrs|4.5|5.5|Immediate|Yes|Yes|Yes|1-3
+9067114000|0-1 yrs|2.5|3.5|Immediate|Yes|Yes|Yes|1-3
+9676612111|1-2 yrs|3|3.5|Immediate|Yes|Yes|Yes|1-3
+8608890736|2-4 yrs|3.2|3.5|15 days|Yes|Yes|No|9-15
+6303420447|0-1 yrs|2.4|4.5|15 days|No|Yes|No|1-3

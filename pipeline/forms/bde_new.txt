@@ -968,3 +968,7 @@
 10/18/2026 7:31:34|Nilesh Landge|8999644182|Maharashtra|Latur|0-1 years|5|5|Yes|Immediate joiner|Yes|Yes|1gxTQi8n1CsYzvYjtJbUL1374wXT7XFSv
 10/18/2026 8:17:28|AJITHKUMAR.G|9087207167|Tamil Nadu|Tiruvallur|4+ years|2.8 LPA|3.6 LPA|Yes|15 days|No|Yes|1cUEfVHk9rQKFxpywlCFV5KP1fMdULC3E
 10/18/2026 8:21:13|ABDUL RIZWAN|9623349083|Maharashtra|Amravati|4+ years|240000|336000|Yes|Immediate joiner|Yes|Yes|17DBf1I38y9sqKXYl4HXqQ_dM3xmwhJU0
+10/18/2026 9:01:29|Ranjit Rajendra Kale|9307920212|Maharashtra|Sangli|2-4 years|600000|600000|Yes|Immediate joiner|No|Yes|1WTbTnM21RGlkPkBv8Qe9fU8xn-P8ierU
+10/18/2026 9:48:57|Abhishek|8867333480|Karnataka|Dharwad|2-4 years|306000|450000|Yes|15 days|Yes|Yes|19KOnYDPV-4611O1W7xxifrhqXPcOk8t9
+10/18/2026 10:12:24|Akash Burde|8446684244|Maharashtra|Nagpur|2-4 years|3.60 Lac|5|Yes|15 days|Yes|Yes|1RUDgW4hYjULaucvRgHd2gmNy9i4OQW6q
+10/18/2026 10:21:28|Vinoth M.R.|7550228973|Tamil Nadu|Chennai|4+ years|5.5|As per industry standard|Yes|15 days|Yes|Yes|1vflaiVchtII5G6byzO3d5YqssvnaUH3e

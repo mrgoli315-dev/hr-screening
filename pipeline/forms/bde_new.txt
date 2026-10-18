@@ -972,3 +972,10 @@
 10/18/2026 9:48:57|Abhishek|8867333480|Karnataka|Dharwad|2-4 years|306000|450000|Yes|15 days|Yes|Yes|19KOnYDPV-4611O1W7xxifrhqXPcOk8t9
 10/18/2026 10:12:24|Akash Burde|8446684244|Maharashtra|Nagpur|2-4 years|3.60 Lac|5|Yes|15 days|Yes|Yes|1RUDgW4hYjULaucvRgHd2gmNy9i4OQW6q
 10/18/2026 10:21:28|Vinoth M.R.|7550228973|Tamil Nadu|Chennai|4+ years|5.5|As per industry standard|Yes|15 days|Yes|Yes|1vflaiVchtII5G6byzO3d5YqssvnaUH3e
+10/18/2026 10:37:42|Rahul Ridzzen|9342630760|Tamil Nadu|Tiruvallur|2-4 years|560000|560000|Yes|Immediate joiner|Yes|Yes|1EvV4ryIDXkdnCyM3q5KA9h1Penjt1TGV
+10/18/2026 10:41:37|PANKAJ PALI|7276484821|Maharashtra|Nagpur|4+ years|4.2 LPA|5.2 LPA|Yes|15 days|Yes|Yes|1D6TofJRH3fQ_2Xi06-tpMCpYpRQPK-bM
+10/18/2026 11:27:09|Simeon|9176753639|Tamil Nadu|Chengalpattu|4+ years|28000|32000|Yes|15 days|Yes|Yes|14zmkxHwls9pTn4kmhDL8Q3JrjiygJn2J
+10/18/2026 11:44:31|Rajesh ev|7904575612|Tamil Nadu|Chennai|4+ years|390000|460000|Yes|Immediate joiner|No|Yes|1oTiXjGdmLNcpGcbyfqz_LHJn6RqFop1E
+10/18/2026 12:20:56|Narramula Ajay|7673918350|Telangana|Nalgonda|2-4 years|2.8|3.5|Yes|Immediate joiner|Yes|Yes|1gFDherrTc3NToeMIICraQkXD6P1XL9r0
+10/18/2026 11:57:59|Ibrahim Basha|7010163847|Maharashtra|Satara|4+ years|₹7.0 LPA|₹7.0 LPA|Yes|15 days|No|Yes|1vxdgSSjpj9XuR5tNYHdWFv_UWOZX3Kn7
+10/18/2026 12:20:29|RANGARAJAN RAGHUNATHAN|6379051196|Tamil Nadu|Chennai|4+ years|550000|650000|Yes|Immediate joiner|Yes|Yes|1qpHgRmmOP2eG3R-AZjzKOEnSx0Al6-U1

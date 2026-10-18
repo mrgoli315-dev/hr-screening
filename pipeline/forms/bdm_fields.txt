@@ -867,3 +867,12 @@
 9561874975|4-7 yrs|3.6|5|15 days|Yes|Yes|Yes|4-8
 8275931238|0-1 yrs|2.4|3|Immediate|Yes|No|No|None
 9922242908|0-1 yrs|2.67|3.5|15 days|Yes|Yes|Yes|4-8
+9604070533|4-7 yrs|3|4|Immediate|Yes|Yes|Yes|1-3
+9112685995|2-4 yrs|2.9|3.3|Immediate|Yes|Yes|Yes|1-3
+9885544120|7+ yrs|5.6|7|Immediate|Yes|No|Yes|9-15
+9059918563|4-7 yrs|536000|800000|Immediate|Yes|No|Yes|15+
+7558266970|1-2 yrs|2,4|3|15 days|Yes|Yes|Yes|None
+8008482376|1-2 yrs|3.5|4.5|Immediate|Yes|No|Yes|4-8
+9822381611|4-7 yrs|3.6|5|Immediate|Yes|Yes|Yes|1-3
+9790484988|2-4 yrs|4.4|5.5|Immediate|Yes|No|Yes|4-8
+6303969288|2-4 yrs|560000|850000|Immediate|Yes|No|Yes|1-3

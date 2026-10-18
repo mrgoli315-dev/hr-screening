@@ -994,3 +994,8 @@
 10/18/2026 21:43:01|MOSHIN SANADI|9902420745|Karnataka|Belagavi|4+ years|3.6 Lpa|4.Lpa|Yes|Immediate joiner|Yes|Yes|19JA4Db_hBe_YtdSxXl5XK1ZAMYo_fUm6
 10/18/2026 21:49:45|Shaikh farhanuddin shaikh alimoddin|9322094167|Maharashtra|Amravati|1-2 years|3.3 lakh|4 lakh|Yes|Immediate joiner|No|Yes|1pRDM2XTxcYYmTgaI82wa-qQWb3jlpckF
 10/18/2026 22:09:59|Siddharth Dixit|9730873517|Maharashtra|Satara|0-1 years|2.4|7 LPA|Yes|Immediate joiner|No|No|1KwOJKQSlrTe2IuXfk8nQOO2CxR3bFdWw
+10/18/2026 23:04:39|Manish Kumar|6281378176|Telangana|Nalgonda|2-4 years|3.04 LPA|5 LPA|Yes|Immediate joiner|No|Yes|1YbTYnHdUPv3Kg7q9bO6eqAm3YZ56bknL
+10/18/2026 22:34:40|Pramodh manchi|7032299435|Karnataka|Bengaluru Urban|0-1 years|0|5|Yes|Immediate joiner|No|No|1viQv1QgQkpsPP2ZSv3HaIf80HFST3Y7M
+10/18/2026 22:56:39|Nitesh Dilip Ingle|8668327291|Maharashtra|Buldhana|4+ years|3.5 LPA|4 LPA|Yes|Immediate joiner|No|Yes|1bfYgiHY4AZQfd75_Fy-ep7NsSOYE-M4k
+10/18/2026 23:14:18|Sahil meshram|9860926115|Maharashtra|Nagpur|2-4 years|400000|550000|Yes|15 days|No|Yes|1SuXgUHd2SqaMWBCt3msOB0PPT1w8Z7sR
+10/18/2026 23:21:17|Vivek Sheshadri|9886723153|Karnataka|Bagalkot|0-1 years|4|4.8|Yes|Immediate joiner|No|Yes|1jmpwGw1GpijGIlFa5T9q_ttTseMnsR6-

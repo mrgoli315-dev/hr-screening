@@ -887,3 +887,14 @@
 9886468994|7+ yrs|1111111|1111111|Immediate|Yes|Yes|Yes|15+
 9949913702|7+ yrs|600000|600000|15 days|Yes|No|Yes|4-8
 8186065399|4-7 yrs|5.4|6|Immediate|Yes|No|Yes|4-8
+9676836600|7+ yrs|500000|600000|Immediate|Yes|No|Yes|4-8
+9142221115|7+ yrs|650000|800000|15 days|Yes|No|Yes|4-8
+8073961731|2-4 yrs|30000|40000|Immediate|Yes|No|Yes|15+
+9791008591|7+ yrs|3|6|Immediate|Yes|No|Yes|1-3
+9545155165|7+ yrs|7.5|9.5|15 days|Yes|No|Yes|4-8
+9866996590|2-4 yrs|2.79|3.5|15 days|Yes|No|Yes|1-3
+8838826050|7+ yrs|4.5|6|Immediate|Yes|No|No|15+
+9347763133|2-4 yrs|30000|35000|Immediate|Yes|Yes|Yes|15+
+8341849899|7+ yrs|720000|780000|15 days|Yes|Yes|Yes|15+
+6281644318|2-4 yrs|5.3|6.5|15 days|Yes|Yes|Yes|None
+8248239562|0-1 yrs|3|4|Immediate|Yes|Yes|Yes|1-3

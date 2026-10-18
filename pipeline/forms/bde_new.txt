@@ -986,3 +986,6 @@
 10/18/2026 15:40:59|Vinoth V|8883006939|Tamil Nadu|Vellore|4+ years|600000|740000|Yes|Immediate joiner|Yes|Yes|1GZ15p31bmjXmwKOKdygLQDPw4OImWbnX
 10/18/2026 16:04:37|Akshay Chandanmalagar|7058196835|Maharashtra|Chandrapur|0-1 years|2.4 LPA|3.5 LPA|Yes|Immediate joiner|Yes|Yes|1fOPJJPd9F67C_XaLRFjHbXyqd3Ex4Z5p
 10/18/2026 16:14:55|Karthick Moni|8072938216|Tamil Nadu|Chennai|4+ years|3.9|4.2|Yes|Immediate joiner|Yes|Yes|1KkQjUVp27UgfrCCmLj3JzQZVQDymciS7
+10/18/2026 16:29:27|Vignesh|6381290019|Tamil Nadu|Chennai|4+ years|3 LPA|4LPA|Yes|Immediate joiner|Yes|Yes|144nLJIRo9NVxowd1cp95HlYaggjQtAMH
+10/18/2026 16:37:09|Vijay Bhangre|9960158611|Maharashtra|Nagpur|4+ years|3.6 LPA|4.5 LPA|Yes|15 days|No|Yes|1JmPDUKbj3a2EPI0Y2dDI3FBxT8WUUeSm
+10/18/2026 17:04:13|Swapnil Nimje|9158632895|Maharashtra|Nagpur|2-4 years|3. Lac|3.5|Yes|15 days|Yes|Yes|1KpDJs2R1C0ba62vQqb0oC48B4SfTbOMt

@@ -964,3 +964,7 @@
 10/17/2026 23:39:09|dhiraj jagtap|9325397727|Maharashtra|Nashik|0-1 years|21000|26000|Yes|15 days|Yes|No|1ZdxUFDp-rmlsamfFTBFwOkypgGmD-vKf
 10/18/2026 2:56:03|Syed Iqbal Syed Sattar|9011375864|Maharashtra|Nagpur|4+ years|13.2|7|Yes|Immediate joiner|Yes|Yes|1RQVfZoRiZOurf9ja3mdQilWoEt85nv-J
 10/18/2026 2:56:25|Abhilash R|8884276787|Karnataka|Bengaluru Urban|4+ years|5.5 Lpa|6 Lpa|Yes|Immediate joiner|Yes|Yes|1iS6665YroKnSvTe5Qhc3ePcGOFFLj0l5
+10/18/2026 7:31:20|Pratap kumar javeer|8605414753|Maharashtra|Sangli|4+ years|2.16.000|3.50.000|Yes|Immediate joiner|Yes|Yes|15CZNX1iVeDMiipLi03cQLQzTRFZmtxwG
+10/18/2026 7:31:34|Nilesh Landge|8999644182|Maharashtra|Latur|0-1 years|5|5|Yes|Immediate joiner|Yes|Yes|1gxTQi8n1CsYzvYjtJbUL1374wXT7XFSv
+10/18/2026 8:17:28|AJITHKUMAR.G|9087207167|Tamil Nadu|Tiruvallur|4+ years|2.8 LPA|3.6 LPA|Yes|15 days|No|Yes|1cUEfVHk9rQKFxpywlCFV5KP1fMdULC3E
+10/18/2026 8:21:13|ABDUL RIZWAN|9623349083|Maharashtra|Amravati|4+ years|240000|336000|Yes|Immediate joiner|Yes|Yes|17DBf1I38y9sqKXYl4HXqQ_dM3xmwhJU0

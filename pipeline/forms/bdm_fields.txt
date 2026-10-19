@@ -962,3 +962,14 @@
 8072658515|7+ yrs|7|9.5|15 days|Yes|No|Yes|None
 8870180312|7+ yrs|4.6|5.2|15 days|Yes|Yes|Yes|15+
 9025013687|0-1 yrs|3.3|4|Immediate|Yes|No|Yes|9-15
+9042814267|7+ yrs|3.9|6|Immediate|Yes|No|Yes|1-3
+9060145079|4-7 yrs|3|4.5|Immediate|Yes|Yes|Yes|9-15
+7502247499|4-7 yrs|600000|700000|Immediate|Yes|No|Yes|1-3
+8983331995|2-4 yrs|360000|450000|15 days|Yes|Yes|Yes|1-3
+7030444036|4-7 yrs|5|7|15 days|Yes|No|Yes|4-8
+7020203226|2-4 yrs|3.25|4.5|Immediate|Yes|Yes|Yes|4-8
+9966156919|7+ yrs|5|6|Immediate|Yes|Yes|Yes|15+
+9373272041|7+ yrs|7.25|8|Immediate|Yes|Yes|Yes|4-8
+9959196862|4-7 yrs|4.4|6|15 days|Yes|Yes|Yes|4-8
+6381112696|4-7 yrs|480000|600000|Immediate|Yes|Yes|Yes|4-8
+7499758659|1-2 yrs|420,000|5,00,000|15 days|Yes|No|Yes|4-8

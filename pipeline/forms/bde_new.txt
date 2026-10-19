@@ -1036,3 +1036,5 @@
 10/19/2026 21:22:53|Sagar Adhagale|8956196145|Maharashtra|Ahmednagar|4+ years|5lpa|6lpa|Yes|15 days|Yes|Yes|1k0C0YMXYb9Y6w7194ndLeJwXeK8Xjh6c
 10/19/2026 21:32:15|Pharesh Nadar|7208272747|Tamil Nadu|Tirunelveli|4+ years|8LP|7 LP|Yes|Immediate joiner|No|Yes|1yC3bvd6058VklF-bfRuw6h1U0XCY6bsM
 10/19/2026 21:33:50|Bhuvanendran Selvam|7200244500|Tamil Nadu|Chennai|4+ years|3.4|4.5|Yes|15 days|Yes|No|1ibld4nDPyAC4HUtIsmyC9rbSyLK2G7l-
+10/19/2026 22:33:59|Ganesh chavan|9765980510|Maharashtra|Nashik|4+ years|3|4.5|Yes|15 days|No|Yes|1UBRDUcK5abZIcB1Da_NIcSo7HRbX4m9Q
+10/19/2026 23:40:36|Khandarkar Akshay|9604709216|Maharashtra|Buldhana|4+ years|3.5|4|Yes|Immediate joiner|Yes|Yes|1wIbQ2g2HI-7AzmRGPQhH8p71Tgxsn1Y5

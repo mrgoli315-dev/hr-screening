@@ -1009,3 +1009,10 @@
 9676549322|2-4 yrs|4|5|Immediate|Yes|Yes|Yes|1-3
 9035289507|4-7 yrs|5|8|15 days|Yes|Yes|Yes|1-3
 9666551293|0-1 yrs|3.5|4|Immediate|Yes|Yes|Yes|None
+9843533363|0-1 yrs|216000|250000|Immediate|Yes|No|Yes|None
+6303622624|2-4 yrs|3.5|26635|Immediate|Yes|Yes|Yes|1-3
+9552894498|7+ yrs|542000|700000|Immediate|Yes|Yes|Yes|9-15
+8150094436|7+ yrs|3|5|Immediate|Yes|Yes|Yes|1-3
+9767177731|7+ yrs|7|9|Immediate|Yes|No|Yes|9-15
+9500868752|1-2 yrs|5|5.5|Immediate|Yes|No|Yes|9-15
+9011603006|7+ yrs|5,00,000|6,00,000|15 days|Yes|No|Yes|15+

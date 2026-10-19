@@ -979,3 +979,10 @@
 9951960643|7+ yrs|3.6|6|15 days|Yes|Yes|Yes|15+
 9309508318|4-7 yrs|380000|450000|15 days|Yes|Yes|Yes|9-15
 7010960865|7+ yrs|5.7|6,0|15 days|Yes|Yes|Yes|4-8
+7875588172|2-4 yrs|5.75|41000|15 days|Yes|Yes|Yes|1-3
+8500117637|0-1 yrs|3.5|3.5|15 days|Yes|No|No|None
+9121287513|7+ yrs|4|6.5|Immediate|Yes|No|Yes|9-15
+9550355664|0-1 yrs|3.5|6|15 days|Yes|Yes|Yes|None
+7887664417|2-4 yrs|450000|500000|15 days|Yes|Yes|Yes|1-3
+8848078117|0-1 yrs|0|20000|Immediate|Yes|No|No|None
+9392492629|1-2 yrs|2.5|3|Immediate|Yes|Yes|Yes|1-3

@@ -1016,3 +1016,7 @@
 10/19/2026 14:07:33|Bobby Gulhane|9265537676|Maharashtra|Nagpur|1-2 years|340000|420000|Yes|15 days|No|Yes|1sH83rgGN6LrCrl65_a8coGRNdP_op35x
 10/19/2026 14:25:07|Mayur Dongre|7773939567|Maharashtra|Nagpur|0-1 years|No|260|Yes|15 days|Yes|No|12-g-INHChnu-2kLZRG0yWZXsp-YprA6j
 10/19/2026 14:26:19|Manoj Jadhav|8197489476|Karnataka|Vijayapura|4+ years|5.4|7.5|Yes|15 days|Yes|Yes|128-JPco6tRlp5i-c1SqtxgICVao_uGiW
+10/19/2026 14:37:38|DILIP V|9591324832|Karnataka|Bengaluru Urban|2-4 years|4.5|4.8|Yes|Immediate joiner|Yes|Yes|1R1smQkva-R1mSEkz_yApGHtpQcKT5UHf
+10/19/2026 16:02:41|Yogesh|9403204955|Maharashtra|Nagpur|4+ years|3.36|400000|Yes|Immediate joiner|Yes|Yes|1bAQLqIIWqLGNUR7VF1F07pxpNUnaMrm_
+10/19/2026 16:19:27|Vinoth S|6383083959|Tamil Nadu|Chennai|1-2 years|3,25,000|4,40,000|Yes|Immediate joiner|Yes|Yes|1NoENJizlORgH8INbQF_8Jr0IB_N0Pps9
+10/19/2026 16:24:24|KIRANKUMAR ANIL PAWAR|8217076600|Goa|North Goa|0-1 years|315000|410000|Yes|15 days|No|Yes|1PBcOBybwgMZfuJW9KFgxCiOrX-f7j0Os

@@ -1020,3 +1020,10 @@
 10/19/2026 16:02:41|Yogesh|9403204955|Maharashtra|Nagpur|4+ years|3.36|400000|Yes|Immediate joiner|Yes|Yes|1bAQLqIIWqLGNUR7VF1F07pxpNUnaMrm_
 10/19/2026 16:19:27|Vinoth S|6383083959|Tamil Nadu|Chennai|1-2 years|3,25,000|4,40,000|Yes|Immediate joiner|Yes|Yes|1NoENJizlORgH8INbQF_8Jr0IB_N0Pps9
 10/19/2026 16:24:24|KIRANKUMAR ANIL PAWAR|8217076600|Goa|North Goa|0-1 years|315000|410000|Yes|15 days|No|Yes|1PBcOBybwgMZfuJW9KFgxCiOrX-f7j0Os
+10/19/2026 16:29:02|Mullai vendan|7871270402|Tamil Nadu|Chennai|4+ years|3.0LPA|4.0LPA|Yes|Immediate joiner|Yes|Yes|12rFj3xwHqSzEDTRVwFep_ROQs5boWa0a
+10/19/2026 17:04:12|Mangesh Kodape|8928930120|Maharashtra|Nagpur|2-4 years|2.8|4|Yes|Immediate joiner|Yes|Yes|1nR6VBO8a_4zMEeZUCVskZpkW4_lP3K6V
+10/19/2026 17:11:30|Ibrahim Basha|7538802580|Tamil Nadu|Ranipet|4+ years|₹7.0 LPA|₹7.5 LPA|Yes|Immediate joiner|No|Yes|1SFg_courhJ-sVQYRPpclGSJ5cTfN28ET
+10/19/2026 17:19:56|Mohammed Moozamil|9025172290|Tamil Nadu|Chennai|0-1 years|3|3|Yes|Immediate joiner|Yes|Yes|1XuXogYFSkd9Bi_93XB-igRbD9bcXfklR
+10/19/2026 17:34:43|Manikandan S|8838459621|Tamil Nadu|Chennai|1-2 years|4.5 LPA|6 LPA|Yes|15 days|No|Yes|1ynJnIZOQWEpml_2gTJEOKU4adJjTCb8l
+10/19/2026 17:37:31|Praveen Mirajkar|8904895812|Karnataka|Belagavi|4+ years|30K|4L|Yes|Immediate joiner|Yes|Yes|1II2PF2XVSAYccUOEB3KfwHyIH4YbickM
+10/19/2026 18:21:35|Prakash T|9611834858|Karnataka|Bengaluru Rural|4+ years|35000|B D|Yes|Immediate joiner|Yes|Yes|1Hg-H-JEtqyX7XBj1KOOVdF10z6VBiCA_

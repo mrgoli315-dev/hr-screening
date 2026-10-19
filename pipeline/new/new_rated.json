@@ -48350,5 +48350,98 @@
 "why": "",
 "fid": "1g6CmvzMlo-sgGZfZRuFUtDHO2QKgd4NM",
 "edu": "B.Sc 2012"
+},
+{
+"ph": "7904936988",
+"src": "BDE",
+"n": "Mukundhan T",
+"c": "Chennai",
+"fd": "Chennai",
+"st": "Tamil Nadu",
+"age": 32,
+"ae": "",
+"yrs": 4,
+"lang": "Tamil (likely), English",
+"ro": [
+"BDE",
+"FE",
+"LAUNCH"
+],
+"lv": "check",
+"exp": "B.Com graduate; resume lists only 'JRM' at Janalakshmi Financial Services (microfinance), no duties given. Form claims 4+ yrs, FMCG and field sales, but resume doesn't show it.",
+"ctc": "4 LPA → 4 LPA",
+"ask": "What did you do at Janalakshmi, and what FMCG outlet-level sales work have you done?",
+"why": "",
+"fid": "1GtjrTBiuRUTWaNcRaZPQt9g8J4EE7Mpm",
+"edu": "B.Com (Information System Management) 2016"
+},
+{
+"ph": "7305765884",
+"src": "BDE",
+"n": "Syed Hussain Sk",
+"c": "Chennai",
+"fd": "Chennai",
+"st": "Tamil Nadu",
+"age": null,
+"ae": "",
+"yrs": null,
+"lang": "Tamil (likely)",
+"ro": [
+"BDE"
+],
+"lv": "hide",
+"exp": "Attached resume is for Ismail Syed, a 2026 BCS final-year fresher with no work history. The form claims 4+ yrs FMCG field sales, which the file does not show.",
+"ctc": "₹2.8 LPA → ₹3.5 LPA",
+"ask": "Wrong resume uploaded? Ask for his own CV with FMCG field sales employers and outlet work.",
+"why": "Resume name (Ismail Syed) and phone (7780128836) do not match the form, and it shows no work experience. Likely wrong file. Re-request the correct CV.",
+"fid": "1eFWoN5Z-8BOHzetlmTtzd-jqy556CjWO",
+"edu": "BCS (pursuing, 2026)"
+},
+{
+"ph": "8778985380",
+"src": "MBA",
+"n": "Sheik Bathusha",
+"c": "Chennai",
+"fd": "Erode",
+"st": "Tamil Nadu",
+"age": null,
+"ae": "~32",
+"yrs": 11,
+"lang": "Tamil (likely), English",
+"ro": [
+"BDM",
+"ASM",
+"OPS"
+],
+"lv": "check",
+"exp": "Area Sales Exec & Ops at Five Star Chicken (CPF) managing outlets, audits; Restaurant Manager at Rebel Foods Chennai since 2014 (staff, inventory, budgets).",
+"ctc": "4.2 LPA → 4.8 LPA",
+"ask": "Is your area role outlet-level secondary selling or only managing company outlets?",
+"why": "",
+"fid": "1jhHgYnviMbJd0fK60YfgCYLq3WfyVTSP",
+"edu": "Diploma in Hotel Management 2014"
+},
+{
+"ph": "9030444469",
+"src": "MBA",
+"n": "Ramesh Kumar",
+"c": "Guntur",
+"fd": "Krishna",
+"st": "Andhra Pradesh",
+"age": null,
+"ae": "~38",
+"yrs": 9,
+"lang": "Telugu, English, Hindi, Tamil",
+"ro": [
+"DISP",
+"PUR"
+],
+"lv": "strong",
+"exp": "PIL Italica depot incharge (10k sqft, FIFO/FEFO, 5-10 vehicles/day, 15 staff); Suguna Foods warehouse officer (25 staff, POs, GRN); earlier transport/fleet roles in cargo firms.",
+"ctc": "4.8L → 5.5L",
+"ask": "Why did you leave PIL Italica in Aug 2026, and can you join immediately?",
+"why": "",
+"fid": "1ms7Sxtu6DrJzSMVgBVvn93WWV9rG2LPa",
+"edu": "B.Com 2011"
 }
 ]

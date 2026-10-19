@@ -949,3 +949,16 @@
 7708519296|7+ yrs|600000|600000|Immediate|Yes|No|Yes|15+
 7893882232|7+ yrs|3.25|6|15 days|Yes|Yes|Yes|4-8
 8880918882|7+ yrs|4.5|6|15 days|Yes|Yes|Yes|4-8
+7019139736|2-4 yrs|4|6|15 days|Yes|No|Yes|None
+9676350022|4-7 yrs|500000|500000|Immediate|Yes|Yes|Yes|1-3
+8805588217|7+ yrs|6.5|7|Immediate|Yes|No|Yes|9-15
+9994909095|7+ yrs|6.3|10|Immediate|Yes|Yes|Yes|15+
+6383669767|2-4 yrs|2.6|5|Immediate|Yes|No|Yes|4-8
+9603241234|2-4 yrs|3.36|4.2|Immediate|Yes|No|Yes|4-8
+8608637777|7+ yrs|700000|800000|Immediate|No|No|Yes|15+
+8421028389|7+ yrs|500000|650000|Immediate|Yes|No|Yes|15+
+9067594239|2-4 yrs|296000|45000|15 days|Yes|Yes|Yes|1-3
+9900989908|7+ yrs|3, 80|5|Immediate|Yes|Yes|Yes|15+
+8072658515|7+ yrs|7|9.5|15 days|Yes|No|Yes|None
+8870180312|7+ yrs|4.6|5.2|15 days|Yes|Yes|Yes|15+
+9025013687|0-1 yrs|3.3|4|Immediate|Yes|No|Yes|9-15

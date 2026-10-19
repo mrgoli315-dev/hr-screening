@@ -1004,3 +1004,6 @@
 10/19/2026 5:23:32|Abdul Rehan|9752370555|Madhya Pradesh|Burhanpur|2-4 years|3.45|5|Yes|Immediate joiner|No|Yes|1OzovWanw7zmLgBRUv6SFLPaFBuvMB3Mt
 10/19/2026 6:28:56|Aijaz shaikh|7410102610|Maharashtra|Sangli|2-4 years|3.5 LPA|4.0 LPA|Yes|Immediate joiner|Yes|Yes|1_wYA1I6R_dx4TKz0e0D5w6MYwdriyFUR
 10/19/2026 7:22:01|Ratneshwar Dnyaneshwar mahamuni|9503339956|Maharashtra|Satara|4+ years|24000034000|340000|Yes|Immediate joiner|No|Yes|1RrPXH72Z0L3jnA7btk0Ze-LpnLX5uEzX
+10/19/2026 8:44:38|Ashutosh Jadhav|8421778457|Maharashtra|Sangli|4+ years|2.4|3.4|Yes|Immediate joiner|Yes|Yes|1ClSQ8DRizKDsO3SVhqum8jwttgjMWhbQ
+10/19/2026 9:01:02|Pravin Hiremath|7795452724|Karnataka|Belagavi|4+ years|12|12|Yes|Immediate joiner|No|Yes|1SEtPKGkUz_4zl5h0UTJ8IOQ0JkBFRbfc
+10/19/2026 9:53:33|Moni|9025817983|Tamil Nadu|Tiruvallur|2-4 years|4.6 LPA|5 LPA|Yes|Immediate joiner|Yes|No|1l-YpPTt9_6zywdwu4xkJAYBxbi-1bbl_

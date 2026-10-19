@@ -943,3 +943,9 @@
 8092812731|7+ yrs|5.5|6.5|Immediate|Yes|No|Yes|15+
 9940442693|1-2 yrs|3.7|4.5|Immediate|Yes|Yes|Yes|1-3
 9922110339|2-4 yrs|2.6|4|15 days|Yes|Yes|Yes|9-15
+6380897071|7+ yrs|12.8|13.5|Immediate|Yes|Yes|Yes|15+
+9640872073|7+ yrs|2000000|2500000|Immediate|Yes|No|Yes|9-15
+7098989001|7+ yrs|5.2|7|15 days|Yes|No|Yes|4-8
+7708519296|7+ yrs|600000|600000|Immediate|Yes|No|Yes|15+
+7893882232|7+ yrs|3.25|6|15 days|Yes|Yes|Yes|4-8
+8880918882|7+ yrs|4.5|6|15 days|Yes|Yes|Yes|4-8

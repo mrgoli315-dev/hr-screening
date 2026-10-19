@@ -1002,3 +1002,10 @@
 8341311357|7+ yrs|4.5|5.5|Immediate|Yes|No|Yes|4-8
 8722295848|4-7 yrs|380000|500000|15 days|Yes|No|Yes|15+
 7200314757|1-2 yrs|2.5|3.5|15 days|Yes|No|Yes|9-15
+6309337178|0-1 yrs|3.4|5.5|Immediate|Yes|Yes|Yes|1-3
+9701414008|2-4 yrs|400000|500000|15 days|Yes|Yes|Yes|4-8
+8688932663|2-4 yrs|4.75|6|Immediate|Yes|No|Yes|1-3
+9370735443|7+ yrs|60000|70000|Immediate|Yes|Yes|Yes|15+
+9676549322|2-4 yrs|4|5|Immediate|Yes|Yes|Yes|1-3
+9035289507|4-7 yrs|5|8|15 days|Yes|Yes|Yes|1-3
+9666551293|0-1 yrs|3.5|4|Immediate|Yes|Yes|Yes|None

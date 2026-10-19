@@ -996,3 +996,9 @@
 7708751911|7+ yrs|700000|700000|Immediate|Yes|Yes|Yes|9-15
 8790111064|2-4 yrs|3.5|4.5|Immediate|Yes|No|Yes|4-8
 9405245418|7+ yrs|8.4|8.4|15 days|Yes|Yes|Yes|15+
+9573158977|2-4 yrs|2.4|4.5|Immediate|Yes|No|Yes|4-8
+9975799207|4-7 yrs|550000|700000|Immediate|Yes|Yes|Yes|4-8
+9604248911|2-4 yrs|3.6|4.8|15 days|Yes|Yes|Yes|1-3
+8341311357|7+ yrs|4.5|5.5|Immediate|Yes|No|Yes|4-8
+8722295848|4-7 yrs|380000|500000|15 days|Yes|No|Yes|15+
+7200314757|1-2 yrs|2.5|3.5|15 days|Yes|No|Yes|9-15

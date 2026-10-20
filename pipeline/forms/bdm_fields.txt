@@ -1029,3 +1029,15 @@
 9823148129|4-7 yrs|6|7|Immediate|Yes|Yes|Yes|1-3
 8838804063|2-4 yrs|4.2|5.4|Immediate|Yes|Yes|Yes|4-8
 7795474679|0-1 yrs|2.5|3.5|Immediate|Yes|Yes|Yes|None
+8712233305|2-4 yrs|4.5|6|Immediate|Yes|Yes|Yes|9-15
+9952494942|7+ yrs|350000|4.5|Immediate|Yes|Yes|Yes|4-8
+6303632709|0-1 yrs|3.5|5|Immediate|Yes|No|Yes|None
+9100303459|4-7 yrs|4.5|5|Immediate|Yes|No|Yes|15+
+9618797777|7+ yrs|520000|570000|Immediate|Yes|Yes|Yes|15+
+8762588999|4-7 yrs|4|5|Immediate|Yes|Yes|Yes|1-3
+9629910759|1-2 yrs|2.5|3|Immediate|Yes|Yes|Yes|4-8
+7411368112|2-4 yrs|.|.|Immediate|Yes|No|Yes|4-8
+7871766240|7+ yrs|8.95|12|Immediate|Yes|No|Yes|15+
+7993463044|0-1 yrs|2.35|3.8|Immediate|Yes|No|Yes|None
+9994553786|7+ yrs|3.5|400000|Immediate|Yes|Yes|Yes|1-3
+9384486181|4-7 yrs|300000|450000|Immediate|Yes|No|Yes|9-15

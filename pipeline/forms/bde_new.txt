@@ -1076,3 +1076,6 @@
 10/20/2026 22:24:59|Arun Kumar|8123263002|Karnataka|Bengaluru Urban|4+ years|4.5lpa|5.lpa|No|Immediate joiner|Yes|No|1wzTnFI1FOLDjOTAcIctGFAO8q6c1Z-sb
 10/20/2026 23:53:12|Saurabh Rajesh Nimje|7972274330|Maharashtra|Nagpur|2-4 years|20000|25000|Yes|Immediate joiner|Yes|Yes|1Y0hAxjFXleUfiDUNP0STkTD81Gl8mBQ6
 10/21/2026 0:15:43|SANDIP Magdum|8856950953|Maharashtra|Sangli|0-1 years|39000|45000|Yes|15 days|Yes|Yes|1tUkN2kf_oQtrO4I2SXKAlusm09ypDepT
+10/21/2026 1:04:53|Uday metre|9611888088|Karnataka|Bengaluru Urban|0-1 years|3.5|4.5|Yes|Immediate joiner|Yes|Yes|1M_7Yx6NvqH35GiWgZ9S6mb81hpAuRyQN
+10/21/2026 1:08:21|DHANASEKARAN V|8939491963|Tamil Nadu|Chennai|4+ years|480000|550000|No|Immediate joiner|No|Yes|18Lt1rV_c6WW1FFygyLOkcUwx3mpdbQ0s
+10/21/2026 1:27:58|RAJU BARGE|9146531591|Maharashtra|Nanded|4+ years|5.5|6.5|Yes|15 days|No|Yes|1rqhYCSMYI7zJTIgI6ztFeBddMGpScYyw

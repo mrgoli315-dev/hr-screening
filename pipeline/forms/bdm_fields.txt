@@ -1019,3 +1019,6 @@
 8778985380|2-4 yrs|4.2|4.8|15 days|Yes|Yes|Yes|4-8
 9030444469|7+ yrs|4.8|5.5|Immediate|Yes|Yes|Yes|15+
 9440662241|7+ yrs|4.5|5.5|Immediate|Yes|Yes|Yes|15+
+7671024754|4-7 yrs|4.5|5|Immediate|Yes|Yes|Yes|None
+7569319009|4-7 yrs|4|5|15 days|Yes|Yes|Yes|4-8
+8424986634|4-7 yrs|10|12|Immediate|Yes|No|No|9-15

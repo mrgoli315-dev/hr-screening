@@ -1051,3 +1051,6 @@
 10/20/2026 12:24:10|Ravindra|8421918331|Maharashtra|Nagpur|2-4 years|540000|660000|Yes|Immediate joiner|No|Yes|1jwN0y92uw4Wv2iirVVxEukIuSMB6UkQw
 10/20/2026 12:32:57|Nikhil Raghunandan|7975934394|Maharashtra|Nagpur|0-1 years|10k|20k|No|Immediate joiner|No|No|1G20lLD8o1YKbp1pzrVpE_lv5yKaSKtfN
 10/20/2026 12:40:52|THIRUMAL|8056000621|Tamil Nadu|Chennai|4+ years|450000|50000|Yes|15 days|Yes|Yes|1PxnI03ZjANiQFz-zcNcyb_DHfoWZcpQJ
+10/20/2026 13:25:59|SARAVANAN V|9500867038|Tamil Nadu|Salem|4+ years|4LPA|6LPA|Yes|15 days|No|No|1mIyVymO1JQmZ78kkcWZlGHzQYKA6EACJ
+10/20/2026 13:42:41|Prashant Mahajan|9112331008|Maharashtra|Kolhapur|4+ years|4.5|4.5 lakh|Yes|Immediate joiner|No|Yes|1ukKkA55P0OfRPA6_nUqMC5xMneycNqTt
+10/20/2026 14:25:01|Shahab Lappe|8147369598|Karnataka|Belagavi|2-4 years|360000|480000|Yes|15 days|Yes|Yes|1RvnJeW5tV1rLJKN0JxHrM9oRnn61i0iV

@@ -1067,3 +1067,10 @@
 10/20/2026 17:28:21|Sachin Mishra|9730225760|Maharashtra|Nagpur|2-4 years|3lpa|8|Yes|15 days|No|Yes|1WYnogzssw9Z0CBQbdfPQ1KvGCDwVCQKu
 10/20/2026 19:20:51|Aditya Anand Kolarkar|9766876706|Maharashtra|Nagpur|4+ years|5|5|Yes|Immediate joiner|Yes|Yes|1lzcKtclusmoDQkX59Q8LnyqGQZSvSQH1
 10/20/2026 20:02:49|Sridhara sv Sridhara Sv|9986838206|Karnataka|Tumakuru|4+ years|4.3|5.5|Yes|15 days|Yes|Yes|1d4JtXQVJlsm83nk0F1-MQhwqIxoCGavK
+10/20/2026 21:00:15|Manjunatheshwara RT|7353493220|Karnataka|Chitradurga|4+ years|360000|430000|Yes|15 days|Yes|Yes|1xc5TKqhUkXcpmZGyqRhfL9hgNImYlXS9
+10/20/2026 21:03:31|V C Dharanesh|9121613147|Andhra Pradesh|Chittoor|4+ years|6LPA|7LPA|Yes|Immediate joiner|No|Yes|1L9AEkoML1P_gg6Eka6DaEb_24Sh5ZaaH
+10/20/2026 21:03:59|Swapnil Tanaji Dhond|7709518351|Maharashtra|Satara|2-4 years|3.60 lack|5 lack|Yes|Immediate joiner|Yes|Yes|1ayX0RRKL9AloCBHNv1iKo0qo1i1Pzqm7
+10/20/2026 21:05:33|FEROZ KHAN|9730771097|Maharashtra|Nagpur|4+ years|5.8|6 lakhs per annum|Yes|Immediate joiner|Yes|Yes|1DE9roPR7YBcmLsLxo_IQ3ckI7fo7aQ5F
+10/20/2026 21:33:28|k saravanan|9791898577|Tamil Nadu|Thanjavur|4+ years|6.5laxsh|7.5 to 8laxsh|Yes|15 days|No|No|17su0jTh0Ws34_zE6R-yGZLXLhRhM5tXE
+10/20/2026 21:41:58|Rajesh|6309719330|Karnataka|Bengaluru Rural|2-4 years|3.8|4|Yes|15 days|No|Yes|1B203sDBHftJs0a6oIutspEhTw1AU78_w
+10/20/2026 22:24:59|Arun Kumar|8123263002|Karnataka|Bengaluru Urban|4+ years|4.5lpa|5.lpa|No|Immediate joiner|Yes|No|1wzTnFI1FOLDjOTAcIctGFAO8q6c1Z-sb

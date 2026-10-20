@@ -1059,3 +1059,9 @@
 10/20/2026 15:36:14|Sai Kumar|7892855852|Karnataka|Bengaluru Urban|2-4 years|NA|35000|Yes|Immediate joiner|Yes|Yes|1JqL_xJ-DovEsj9RB2tF2VaItyeL3Un1g
 10/20/2026 16:02:13|Amit ramesh sakpal|9975930839|Maharashtra|Satara|4+ years|3.5 lpa|4.5lpa|Yes|Immediate joiner|Yes|Yes|1Kxb_wUA7JpiiHsKvOR8MJabLIOUsOcaY
 10/20/2026 16:11:32|Naresh|9444583097|Tamil Nadu|Chennai|4+ years|4.80  L|5 L|Yes|Immediate joiner|No|Yes|1traXRv-REJjEejSDxz29LyU-THW4jvbr
+10/20/2026 16:35:44|Sugumar|9123537952|Tamil Nadu|Cuddalore|2-4 years|3.6 lpa|4 lpa|Yes|15 days|Yes|Yes|1n5953C4HoT0HhIF5R3fMRv24tr6Sqf9H
+10/20/2026 16:37:29|PRASAD MARUTI MAJUKAR|8050273740|Karnataka|Belagavi|4+ years|2.89|3.60+|Yes|15 days|No|Yes|1WQLIqRIUMmyH_L5OqHQZMYF0izEu4VW_
+10/20/2026 16:44:10|Navaneeth E|9740355566|Karnataka|Shivamogga|4+ years|4.5LPA|5.5 LPA|Yes|Immediate joiner|No|Yes|1bqY9bfBT_WyMaI5y75hHOS3PX6V4HpGP
+10/20/2026 16:54:50|Pratik Gaikwad|8999074518|Maharashtra|Nagpur|4+ years|5|6|Yes|15 days|Yes|Yes|1eMhPifR5OpmIz6zJQL8ukleOa73xHJ6M
+10/20/2026 17:27:35|Gaurav kubde|7276977748|Maharashtra|Nagpur|1-2 years|2.5L|4L|Yes|Immediate joiner|No|Yes|10Y__oK9nXxIULJ1re2oUooW495_sDX4k
+10/20/2026 17:28:21|Sachin Mishra|9730225760|Maharashtra|Nagpur|2-4 years|3lpa|8|Yes|15 days|No|Yes|1WYnogzssw9Z0CBQbdfPQ1KvGCDwVCQKu

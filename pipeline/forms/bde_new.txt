@@ -1065,3 +1065,5 @@
 10/20/2026 16:54:50|Pratik Gaikwad|8999074518|Maharashtra|Nagpur|4+ years|5|6|Yes|15 days|Yes|Yes|1eMhPifR5OpmIz6zJQL8ukleOa73xHJ6M
 10/20/2026 17:27:35|Gaurav kubde|7276977748|Maharashtra|Nagpur|1-2 years|2.5L|4L|Yes|Immediate joiner|No|Yes|10Y__oK9nXxIULJ1re2oUooW495_sDX4k
 10/20/2026 17:28:21|Sachin Mishra|9730225760|Maharashtra|Nagpur|2-4 years|3lpa|8|Yes|15 days|No|Yes|1WYnogzssw9Z0CBQbdfPQ1KvGCDwVCQKu
+10/20/2026 19:20:51|Aditya Anand Kolarkar|9766876706|Maharashtra|Nagpur|4+ years|5|5|Yes|Immediate joiner|Yes|Yes|1lzcKtclusmoDQkX59Q8LnyqGQZSvSQH1
+10/20/2026 20:02:49|Sridhara sv Sridhara Sv|9986838206|Karnataka|Tumakuru|4+ years|4.3|5.5|Yes|15 days|Yes|Yes|1d4JtXQVJlsm83nk0F1-MQhwqIxoCGavK

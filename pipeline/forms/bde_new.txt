@@ -1054,3 +1054,8 @@
 10/20/2026 13:25:59|SARAVANAN V|9500867038|Tamil Nadu|Salem|4+ years|4LPA|6LPA|Yes|15 days|No|No|1mIyVymO1JQmZ78kkcWZlGHzQYKA6EACJ
 10/20/2026 13:42:41|Prashant Mahajan|9112331008|Maharashtra|Kolhapur|4+ years|4.5|4.5 lakh|Yes|Immediate joiner|No|Yes|1ukKkA55P0OfRPA6_nUqMC5xMneycNqTt
 10/20/2026 14:25:01|Shahab Lappe|8147369598|Karnataka|Belagavi|2-4 years|360000|480000|Yes|15 days|Yes|Yes|1RvnJeW5tV1rLJKN0JxHrM9oRnn61i0iV
+10/20/2026 15:25:05|Thamarai Selvan|9385625061|Tamil Nadu|Coimbatore|1-2 years|1.8LPA|2.5LPA|Yes|15 days|Yes|Yes|184fgHx08dQwPJBChCKnuzjeBuAtaBc4n
+10/20/2026 15:31:45|S Anand|9600004556|Tamil Nadu|Kancheepuram|4+ years|4.8|5.5|Yes|Immediate joiner|Yes|Yes|1CunbWalx5ImKqnwr_w2-vUVOjpAus9_6
+10/20/2026 15:36:14|Sai Kumar|7892855852|Karnataka|Bengaluru Urban|2-4 years|NA|35000|Yes|Immediate joiner|Yes|Yes|1JqL_xJ-DovEsj9RB2tF2VaItyeL3Un1g
+10/20/2026 16:02:13|Amit ramesh sakpal|9975930839|Maharashtra|Satara|4+ years|3.5 lpa|4.5lpa|Yes|Immediate joiner|Yes|Yes|1Kxb_wUA7JpiiHsKvOR8MJabLIOUsOcaY
+10/20/2026 16:11:32|Naresh|9444583097|Tamil Nadu|Chennai|4+ years|4.80  L|5 L|Yes|Immediate joiner|No|Yes|1traXRv-REJjEejSDxz29LyU-THW4jvbr

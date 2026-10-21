@@ -1079,3 +1079,4 @@
 10/21/2026 1:04:53|Uday metre|9611888088|Karnataka|Bengaluru Urban|0-1 years|3.5|4.5|Yes|Immediate joiner|Yes|Yes|1M_7Yx6NvqH35GiWgZ9S6mb81hpAuRyQN
 10/21/2026 1:08:21|DHANASEKARAN V|8939491963|Tamil Nadu|Chennai|4+ years|480000|550000|No|Immediate joiner|No|Yes|18Lt1rV_c6WW1FFygyLOkcUwx3mpdbQ0s
 10/21/2026 1:27:58|RAJU BARGE|9146531591|Maharashtra|Nanded|4+ years|5.5|6.5|Yes|15 days|No|Yes|1rqhYCSMYI7zJTIgI6ztFeBddMGpScYyw
+10/21/2026 6:55:35|Imran Abbas Jamadar|9356828660|Maharashtra|Kolhapur|0-1 years|-|-|Yes|Immediate joiner|No|No|1rY19Ppx_HOa6A2rrLrgbaW5jAz5qY_vC

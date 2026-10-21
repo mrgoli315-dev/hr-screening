@@ -1196,3 +1196,4 @@
 9194919432|4-7 yrs|2.4|4|Immediate|Yes|No|Yes|None
 7449000478|7+ yrs|4.8|6|15 days|Yes|Yes|Yes|4-8
 9841559958|0-1 yrs|20000|24000|Immediate|Yes|No|Yes|None
+8600313098|2-4 yrs|2.6|3.1|15 days|Yes|Yes|Yes|None

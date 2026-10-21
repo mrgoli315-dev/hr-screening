@@ -1082,3 +1082,6 @@
 10/21/2026 6:55:35|Imran Abbas Jamadar|9356828660|Maharashtra|Kolhapur|0-1 years|-|-|Yes|Immediate joiner|No|No|1rY19Ppx_HOa6A2rrLrgbaW5jAz5qY_vC
 10/21/2026 9:09:09|Y RAMESH|8748837867|Karnataka|Ballari|0-1 years|250000|350000|Yes|Immediate joiner|Yes|Yes|1zQc5XJtbulCFM_W24gSjRsqTNzbaEy5a
 10/21/2026 9:29:37|Mallikarjun Inamdar|9535570713|Karnataka|Belagavi|4+ years|4.5 LPA|5 LPA|Yes|Immediate joiner|No|Yes|1r0r8kR-qXOco3QqrX3KsyU9B0BI1ymed
+10/21/2026 10:50:00|Harshwardhan|8600813725|Maharashtra|Solapur|1-2 years|4.5|5.5|Yes|15 days|Yes|Yes|189fW1pA81KHbRx8BCdiD2pFb8vUhVqmM
+10/21/2026 10:58:44|Balachandar|8056162641|Tamil Nadu|Chennai|4+ years|3.6LPA|4.2LPA|Yes|Immediate joiner|Yes|Yes|1Ey2LU1x8maFRRBHd_3NU9ICszn-qrqAa
+10/21/2026 11:33:44|Aryan Jitendra Pawar|9022409508|Maharashtra|Satara|1-2 years|5 lpa|6 lpa|Yes|Immediate joiner|No|Yes|1HTzl1v7wSlVctyG5YtaI2lDK2rNZhz3Z

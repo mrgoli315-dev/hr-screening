@@ -1176,3 +1176,12 @@
 9381704968|1-2 yrs|250000|300000|Immediate|Yes|Yes|No|1-3
 9566066124|7+ yrs|4.2|5.4|Immediate|Yes|No|Yes|15+
 9966647499|7+ yrs|3.7|5|Immediate|Yes|No|Yes|9-15
+9959538627|2-4 yrs|3.12|5|15 days|Yes|Yes|Yes|4-8
+7299079907|7+ yrs|5|7|15 days|Yes|No|Yes|9-15
+9150501384|2-4 yrs|2.8|3.5|Immediate|Yes|Yes|Yes|15+
+9346293470|7+ yrs|5,50,000|6,50,000|15 days|Yes|No|Yes|1-3
+9398056172|1-2 yrs|2.5|3|Immediate|Yes|No|Yes|None
+9363910342|2-4 yrs|6|8|Immediate|Yes|Yes|Yes|4-8
+9538748433|7+ yrs|33000|40000|15 days|Yes|Yes|Yes|4-8
+9637784093|7+ yrs|4.4|5|15 days|Yes|Yes|Yes|1-3
+9699714471|7+ yrs|5.79|6.25|15 days|Yes|Yes|Yes|15+

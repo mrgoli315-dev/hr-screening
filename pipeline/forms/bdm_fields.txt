@@ -1185,3 +1185,6 @@
 9538748433|7+ yrs|33000|40000|15 days|Yes|Yes|Yes|4-8
 9637784093|7+ yrs|4.4|5|15 days|Yes|Yes|Yes|1-3
 9699714471|7+ yrs|5.79|6.25|15 days|Yes|Yes|Yes|15+
+9100386070|4-7 yrs|5.4|6.5|Immediate|Yes|Yes|Yes|None
+9962108582|7+ yrs|7.5|7.5|Immediate|Yes|Yes|Yes|4-8
+8660385550|7+ yrs|7|8|Immediate|Yes|No|Yes|4-8

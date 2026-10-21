@@ -1087,3 +1087,5 @@
 10/21/2026 11:33:44|Aryan Jitendra Pawar|9022409508|Maharashtra|Satara|1-2 years|5 lpa|6 lpa|Yes|Immediate joiner|No|Yes|1HTzl1v7wSlVctyG5YtaI2lDK2rNZhz3Z
 10/21/2026 14:10:19|Devika M|9884075415|Tamil Nadu|Kancheepuram|4+ years|576000|6.5|Yes|15 days|No|No|1uBLVka6Y6Gx676LmYWCs5v_0NMaDl0Xa
 10/21/2026 15:42:09|Saran P|9962411521|Tamil Nadu|Chennai|1-2 years|3.24|3.4|Yes|Immediate joiner|Yes|Yes|1yGyZuSLHo5uRRSX2NYLWv7iODJ6MrETq
+10/21/2026 19:28:29|Karthikeyan S|8838080200|Tamil Nadu|Tiruvallur|4+ years|3.5|4.4|Yes|15 days|No|Yes|1j2RW_lfOO4DJ-mFemKuB6DKKn3UfAiNX
+10/21/2026 20:02:02|Jayaram Nayak|6363004654|Karnataka|Dharwad|4+ years|3.6 LPA|4.3LPA|Yes|Immediate joiner|Yes|Yes|1TyDP5lZXlxsT7dKfxhJRFYI78eX_GPNL

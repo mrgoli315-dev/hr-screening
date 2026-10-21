@@ -1197,3 +1197,10 @@
 7449000478|7+ yrs|4.8|6|15 days|Yes|Yes|Yes|4-8
 9841559958|0-1 yrs|20000|24000|Immediate|Yes|No|Yes|None
 8600313098|2-4 yrs|2.6|3.1|15 days|Yes|Yes|Yes|None
+9922596122|7+ yrs|10|12|Immediate|Yes|Yes|Yes|9-15
+9688242827|1-2 yrs|4|6|15 days|Yes|Yes|Yes|4-8
+9492616011|0-1 yrs|5.5|6|Immediate|Yes|No|Yes|9-15
+9324115554|7+ yrs|1300000|1000000|Immediate|Yes|No|Yes|4-8
+8801374624|7+ yrs|9|10|15 days|Yes|Yes|Yes|9-15
+7010130944|7+ yrs|600000|800000|15 days|Yes|Yes|Yes|15+
+9843561465|4-7 yrs|550000|850000|Immediate|Yes|Yes|Yes|4-8

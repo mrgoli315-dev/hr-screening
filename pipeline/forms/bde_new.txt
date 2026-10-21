@@ -1090,3 +1090,7 @@
 10/21/2026 19:28:29|Karthikeyan S|8838080200|Tamil Nadu|Tiruvallur|4+ years|3.5|4.4|Yes|15 days|No|Yes|1j2RW_lfOO4DJ-mFemKuB6DKKn3UfAiNX
 10/21/2026 20:02:02|Jayaram Nayak|6363004654|Karnataka|Dharwad|4+ years|3.6 LPA|4.3LPA|Yes|Immediate joiner|Yes|Yes|1TyDP5lZXlxsT7dKfxhJRFYI78eX_GPNL
 10/21/2026 20:41:24|Shaik Inthiyaz|7013576848|Karnataka|Bengaluru Rural|2-4 years|300000|400000-450000|Yes|Immediate joiner|No|No|1QJieQuLoA_DpA5DYojkkXun_0ApoI05l
+10/21/2026 22:43:35|Santhosh|8310886965|Karnataka|Bengaluru Urban|4+ years|5.8|7|Yes|Immediate joiner|Yes|Yes|1jqWGx7iptOgBGycU5-0Rh17-xOrr1pcG
+10/21/2026 23:33:40|Shrikant Patil|8884964670|Karnataka|Belagavi|2-4 years|4.5|5|Yes|15 days|Yes|Yes|1dJWN9LjOklxZGrC93PB-bpvdHe6YjYRF
+10/22/2026 0:07:38|Hardik Anigol|8549977795|Karnataka|Belagavi|0-1 years|2.9|3|Yes|Immediate joiner|Yes|Yes|1op9ZSQyd_z0HcwGqfWxyrlyX7gasdUuJ
+10/22/2026 0:35:59|Sandeep Kumar m|9380354074|Karnataka|Bengaluru Rural|0-1 years|240000|360000|Yes|Immediate joiner|No|No|1eFz_-C4KPpoaheI2Jm-a6cx0Xo42AQIq

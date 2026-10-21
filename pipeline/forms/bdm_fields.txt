@@ -1161,3 +1161,18 @@
 9894631031|4-7 yrs|3.6|6|15 days|Yes|Yes|Yes|1-3
 9620972060|7+ yrs|17|17|Immediate|Yes|Yes|Yes|1-3
 9137868651|7+ yrs|8,58,000|1,029,000|Immediate|Yes|Yes|Yes|15+
+6305877288|7+ yrs|600000|750000|Immediate|Yes|No|Yes|4-8
+8248976811|2-4 yrs|3|5|15 days|Yes|No|Yes|9-15
+8605949491|7+ yrs|480000|540000|Immediate|Yes|Yes|Yes|1-3
+6302706637|4-7 yrs|4.3|5|Immediate|Yes|Yes|Yes|4-8
+7845567553|4-7 yrs|700000|700000|Immediate|Yes|No|No|None
+8072463515|2-4 yrs|450000|600000|15 days|Yes|No|Yes|1-3
+7892715056|7+ yrs|8.4|8.5|Immediate|Yes|Yes|Yes|15+
+8465923501|2-4 yrs|3.8|4.2|Immediate|Yes|Yes|Yes|9-15
+7339438181|2-4 yrs|5.52|6.6|15 days|Yes|No|Yes|4-8
+9182049974|1-2 yrs|2.8|3.5|15 days|Yes|No|Yes|None
+7207019285|0-1 yrs|4.5|4.5|Immediate|Yes|No|Yes|4-8
+9860352944|7+ yrs|350000|500000|Immediate|Yes|Yes|Yes|4-8
+9381704968|1-2 yrs|250000|300000|Immediate|Yes|Yes|No|1-3
+9566066124|7+ yrs|4.2|5.4|Immediate|Yes|No|Yes|15+
+9966647499|7+ yrs|3.7|5|Immediate|Yes|No|Yes|9-15

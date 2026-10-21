@@ -1080,3 +1080,5 @@
 10/21/2026 1:08:21|DHANASEKARAN V|8939491963|Tamil Nadu|Chennai|4+ years|480000|550000|No|Immediate joiner|No|Yes|18Lt1rV_c6WW1FFygyLOkcUwx3mpdbQ0s
 10/21/2026 1:27:58|RAJU BARGE|9146531591|Maharashtra|Nanded|4+ years|5.5|6.5|Yes|15 days|No|Yes|1rqhYCSMYI7zJTIgI6ztFeBddMGpScYyw
 10/21/2026 6:55:35|Imran Abbas Jamadar|9356828660|Maharashtra|Kolhapur|0-1 years|-|-|Yes|Immediate joiner|No|No|1rY19Ppx_HOa6A2rrLrgbaW5jAz5qY_vC
+10/21/2026 9:09:09|Y RAMESH|8748837867|Karnataka|Ballari|0-1 years|250000|350000|Yes|Immediate joiner|Yes|Yes|1zQc5XJtbulCFM_W24gSjRsqTNzbaEy5a
+10/21/2026 9:29:37|Mallikarjun Inamdar|9535570713|Karnataka|Belagavi|4+ years|4.5 LPA|5 LPA|Yes|Immediate joiner|No|Yes|1r0r8kR-qXOco3QqrX3KsyU9B0BI1ymed

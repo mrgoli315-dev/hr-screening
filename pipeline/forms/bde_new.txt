@@ -1095,3 +1095,5 @@
 10/22/2026 0:07:38|Hardik Anigol|8549977795|Karnataka|Belagavi|0-1 years|2.9|3|Yes|Immediate joiner|Yes|Yes|1op9ZSQyd_z0HcwGqfWxyrlyX7gasdUuJ
 10/22/2026 0:35:59|Sandeep Kumar m|9380354074|Karnataka|Bengaluru Rural|0-1 years|240000|360000|Yes|Immediate joiner|No|No|1eFz_-C4KPpoaheI2Jm-a6cx0Xo42AQIq
 10/22/2026 2:18:31|Shekhar nikam|9405553558|Maharashtra|Sangli|4+ years|7|5|Yes|Immediate joiner|No|No|1idp_sEsz-Nm2U5nZ17g6uxgBsab1Tswz
+10/22/2026 10:55:34|BHIMARAO KALLAPPA MAGADUM|8095436001|Karnataka|Belagavi|4+ years|3 lakh|3.5 lakh|Yes|15 days|Yes|Yes|11gHSqz5JKA9oR__b6z_lE3VJ9SQW44D4
+10/22/2026 12:31:52|Vikas Jinagond|9113936280|Karnataka|Belagavi|4+ years|2|2.5|Yes|Immediate joiner|No|Yes|1nISgjcmH5wvXFhXFlE_EbKoMpvwsX2lq

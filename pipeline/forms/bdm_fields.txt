@@ -1250,3 +1250,5 @@
 7492958870|0-1 yrs|2.4|3.4|Immediate|Yes|No|No|None
 9404077990|7+ yrs|480000|640000|Immediate|Yes|No|Yes|9-15
 7036968912|7+ yrs|25000|30000|Immediate|Yes|Yes|Yes|15+
+9163809773|7+ yrs|0|0|15 days|Yes|Yes|Yes|9-15
+7670901760|7+ yrs|7.2|8|Immediate|Yes|No|Yes|15+

@@ -1252,3 +1252,6 @@
 7036968912|7+ yrs|25000|30000|Immediate|Yes|Yes|Yes|15+
 9163809773|7+ yrs|0|0|15 days|Yes|Yes|Yes|9-15
 7670901760|7+ yrs|7.2|8|Immediate|Yes|No|Yes|15+
+8667573228|7+ yrs|2.65|3.5|15 days|Yes|No|Yes|15+
+9284104309|2-4 yrs|5.5|7|Immediate|Yes|Yes|Yes|9-15
+7396958875|1-2 yrs|4|5.5|Immediate|Yes|Yes|Yes|9-15

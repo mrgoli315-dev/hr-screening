@@ -1107,3 +1107,5 @@
 10/22/2026 23:54:13|Rahul chauhan|7219230797|Maharashtra|Nagpur|4+ years|3.5 LPA|4.5 LPA|Yes|Immediate joiner|Yes|Yes|16FrkwQvI_IKUfd-FqvXrnusKWT4f1eRz
 10/23/2026 9:16:05|Sandeep Sathawane|8805133332|Maharashtra|Nagpur|4+ years|7.5 lac|9 lac|Yes|15 days|No|Yes|1-Il2RKGjZvHwAqBMzworNwFWfZKQPY2l
 10/23/2026 11:25:40|Praveenkumar S|7867853726|Tamil Nadu|Chennai|1-2 years|4|6lpa|Yes|Immediate joiner|No|Yes|1KGO1DLEaJFFR8gBcgpZpeuFJcN9Y3WKL
+10/23/2026 12:58:06|Kandaswamy C|7094859574|Tamil Nadu|Chennai|4+ years|600000|700000|Yes|15 days|No|Yes|1WKdg5EpyeQ8H_-gAHcR5OfaNkh9ILGIh
+10/23/2026 13:11:51|Nithish S|8073696603|Karnataka|Mysuru|1-2 years|3.5 LPA|5 LPA|Yes|15 days|Yes|Yes|1L8_H-8BjnQIhJIAGxAgILhHqwxPx5dYp

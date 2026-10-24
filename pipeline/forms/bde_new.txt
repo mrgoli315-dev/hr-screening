@@ -1113,3 +1113,8 @@
 10/24/2026 6:49:30|Prafull Dhumal|9370105924|Maharashtra|Satara|2-4 years|3.60 lakh|4 lakh|Yes|Immediate joiner|Yes|Yes|1OOgf7Wxl1Ua4HPbWoxdXx5lfqZ2jldIp
 10/24/2026 7:53:50|Rohit Tanaji Naiknavare|9763912480|Maharashtra|Sangli|4+ years|3.5|4.5|Yes|Immediate joiner|No|Yes|1CWrBSJVSz70WisPpvO5WvJEb5SnFlBD4
 10/24/2026 8:24:18|Sagar G Solanki|7559413280|Maharashtra|Buldhana|0-1 years|2.81|3.6|Yes|Immediate joiner|No|Yes|1mm653L6VY6ex3f2G6IDgVkXMXihWy9_Q
+10/24/2026 8:30:24|Prakash laxmanChavan|9920089668|Maharashtra|Satara|4+ years|3|4|Yes|Immediate joiner|Yes|Yes|1z-PykJg3F12gY9aXx3jTAuqSD1zrHnya
+10/24/2026 8:36:22|ganesh jadhav|9527634751|Maharashtra|Satara|4+ years|4lack|4.5 lack|Yes|Immediate joiner|Yes|Yes|1CS4rlgmRBFXhsUoMy9Z74aUK1iI8pdSH
+10/24/2026 8:51:07|Datta khude|9404668709|Maharashtra|Satara|4+ years|20|4.8|Yes|15 days|Yes|Yes|19OfrG77BjSw0S35k9fk1zjWx_R_H59cZ
+10/24/2026 9:11:40|Rajalingam M|8681820462|Tamil Nadu|Kancheepuram|4+ years|6.08|7|Yes|Immediate joiner|No|No|1or84hWXdBmKcagWKDN57PSor_mYchqLg
+10/24/2026 10:25:25|Suraj Zagade|8796108387|Maharashtra|Satara|4+ years|500000|550000|Yes|15 days|Yes|Yes|194xKO4HFHiDBBtY-gHwlZTcWotDl7yPx

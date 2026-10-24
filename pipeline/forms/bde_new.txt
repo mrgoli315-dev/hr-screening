@@ -1121,3 +1121,4 @@
 10/24/2026 10:36:49|SHAIK ABDUL RAJAK|7036259724|Andhra Pradesh|Bapatla|2-4 years|350000|450000|Yes|15 days|No|Yes|1EhL1oeQCGtepBlVClGvFKmjC3oJN6kNg
 10/24/2026 10:45:36|MEDI SANDEEP KUMAR|9912038337|Telangana|Nalgonda|0-1 years|1.8|3|Yes|Immediate joiner|No|Yes|11Fu_bHUnwPg7hLZrLe4vV6xrF6piJr6h
 10/24/2026 11:15:30|Aniket Jagtap|8485038187|Maharashtra|Satara|4+ years|3.2|4.2|Yes|Immediate joiner|Yes|Yes|1aHVt7yYvnaYpCSNyAmO64CbdtYgrA32Z
+10/24/2026 18:41:25|MUTHYALA SAIPRASAD|7286847389|Telangana|Kamareddy|2-4 years|3 LPA|4 LPA|Yes|15 days|Yes|Yes|1sZs7b7NdCpuaHQoAGc95gDtSLjVDUCuX

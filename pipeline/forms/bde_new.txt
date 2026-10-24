@@ -1122,3 +1122,4 @@
 10/24/2026 10:45:36|MEDI SANDEEP KUMAR|9912038337|Telangana|Nalgonda|0-1 years|1.8|3|Yes|Immediate joiner|No|Yes|11Fu_bHUnwPg7hLZrLe4vV6xrF6piJr6h
 10/24/2026 11:15:30|Aniket Jagtap|8485038187|Maharashtra|Satara|4+ years|3.2|4.2|Yes|Immediate joiner|Yes|Yes|1aHVt7yYvnaYpCSNyAmO64CbdtYgrA32Z
 10/24/2026 18:41:25|MUTHYALA SAIPRASAD|7286847389|Telangana|Kamareddy|2-4 years|3 LPA|4 LPA|Yes|15 days|Yes|Yes|1sZs7b7NdCpuaHQoAGc95gDtSLjVDUCuX
+10/24/2026 20:31:37|Dhiraj Dhanaji Gurav|8625884700|Maharashtra|Sangli|1-2 years|242000|300000|Yes|Immediate joiner|Yes|Yes|1izqFlLI-bo250gd-I7zKfP1DOWLJ3hRZ

@@ -56106,5 +56106,52 @@
 "why": "Attached file is a bus ticket, not a resume; no relevant work shown",
 "fid": "12ILplbagU-1xqaRjaves_e4jA6riRw6I",
 "edu": ""
+},
+{
+"ph": "8793653908",
+"src": "BDE",
+"n": "Kiran Suryakant Yadav",
+"c": "Pune",
+"fd": "Satara",
+"st": "Maharashtra",
+"age": null,
+"ae": "",
+"yrs": 4,
+"lang": "Marathi (likely)",
+"ro": [
+"BDE",
+"LAUNCH"
+],
+"lv": "check",
+"exp": "File is a Just Dial appointment letter (Jul 2023), not a resume: Certified Internet Consultant, Sales, posted Satara. Form claims FMCG and field sales.",
+"ctc": "3.7 → 4.2 LPA (form)",
+"ask": "Send full resume: which FMCG firms, outlet-level work, and current employer?",
+"why": "",
+"fid": "1BzjiFwDACQOTCEbH8MSLOfMXuB0Y8nNX",
+"edu": ""
+},
+{
+"ph": "9146171715",
+"src": "BDE",
+"n": "Prasad Y Gawde",
+"c": "Kolhapur",
+"fd": "Kolhapur",
+"st": "Maharashtra",
+"age": null,
+"ae": "~40",
+"yrs": 18,
+"lang": "English, Hindi, Marathi, Kannada, Konkani",
+"ro": [
+"BDM",
+"BDE",
+"LAUNCH"
+],
+"lv": "check",
+"exp": "Hotel manager (Kolhapur); Maruti NEXA team leader of 5 RMs (car sales); Destiny Car dealer team leader; US Army base billeting/front office. No outlet-level FMCG sales.",
+"ctc": "3 lakh → 5 lakh",
+"ask": "Any field/outlet sales done? Why move from hotel to FMCG beat work?",
+"why": "",
+"fid": "1lF4Bwu4piBscXQIJ0gARz4pnttKHOxPg",
+"edu": "Diploma in Automobiles"
 }
 ]

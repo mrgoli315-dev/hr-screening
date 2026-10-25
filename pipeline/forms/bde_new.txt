@@ -1129,3 +1129,5 @@
 10/25/2026 2:23:41|Karthik|9080740960|Tamil Nadu|Chennai|4+ years|800000|Good in industry|Yes|Immediate joiner|Yes|Yes|1iY83DHic_Q7zrdwuA0GM74FEsIbyXTEs
 10/25/2026 3:40:38|Sunil Vithal Bichkule|9561232103|Maharashtra|Satara|4+ years|30000|35000|Yes|15 days|Yes|Yes|1EmAJLLsvVgzwur92OEAeTTgb0qiLTU7X
 10/25/2026 4:12:49|Mithilesh Kolhatkar|9284305336|Maharashtra|Sangli|4+ years|3.6|5.2|No|15 days|No|Yes|1fmfAksHbZl7nOn0fy0XpG7RMdEQZNqzO
+10/25/2026 6:05:03|rupnadh parepelli|7013108406|Telangana|Suryapet|4+ years|4.6|5.2|Yes|Immediate joiner|No|Yes|19daNw8SxiZJpwaPMsgMO14bUJCf9DOhu
+10/25/2026 6:08:48|Prabhuraje Chavan|8624092823|Maharashtra|Satara|4+ years|400000|450000|Yes|Immediate joiner|Yes|Yes|1EDLE68w-Fzzrhb8Mgs2ctmvBYDHHTKq_

@@ -1156,3 +1156,7 @@
 10/25/2026 16:58:16|Sajid Patel|9822111698|Maharashtra|Satara|0-1 years|3.lakh|4.lakh|Yes|15 days|Yes|Yes|1ckojZzYk7AHaacvq0SqDF5DOa94zPUnN
 10/25/2026 17:05:03|Dharani Thangavel|9514528986|Tamil Nadu|Chennai|4+ years|5L|7L|Yes|Immediate joiner|No|Yes|1jBZ0BXkzI8oIeBsXc9TSUOd3jjAHWP4w
 10/25/2026 17:38:19|Sachin Tupe|8097690848|Maharashtra|Thane|4+ years|380000|6 lack|Yes|Immediate joiner|Yes|Yes|1Pz1Z7oS2IWhYDsZD8Kgv_eqA_3fL4Y_V
+10/25/2026 19:04:30|ABHAY PAWAR|9657601896|Maharashtra|Pune|2-4 years|384000|500000|Yes|15 days|Yes|No|1WvEtCl9Aow3i3u8R0BHDoARIqEpML5Wx
+10/25/2026 19:13:08|Telagmalla chanti babu|8143688421|Telangana|Nalgonda|2-4 years|5.3lpa|6.0lpa|Yes|Immediate joiner|No|Yes|1YXqFyYeC9-3AXoD0xFNRVtH7SKyylxeL
+10/25/2026 20:08:22|Jiyauddin Tajuddin Mulla|9309278886|Maharashtra|Kolhapur|4+ years|3.8|4.25|Yes|Immediate joiner|Yes|Yes|1UT6rLhEFahqOfXuCilE188EP7SFmpgoe
+10/25/2026 20:16:55|Prasanth Krishnasamy|9080559571|Tamil Nadu|Chennai|0-1 years|360000|370000|Yes|Immediate joiner|No|Yes|17aNrjm5ad7GEZmaMy-ayJvY1bxyyWChM

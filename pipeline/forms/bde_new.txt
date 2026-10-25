@@ -1160,3 +1160,7 @@
 10/25/2026 19:13:08|Telagmalla chanti babu|8143688421|Telangana|Nalgonda|2-4 years|5.3lpa|6.0lpa|Yes|Immediate joiner|No|Yes|1YXqFyYeC9-3AXoD0xFNRVtH7SKyylxeL
 10/25/2026 20:08:22|Jiyauddin Tajuddin Mulla|9309278886|Maharashtra|Kolhapur|4+ years|3.8|4.25|Yes|Immediate joiner|Yes|Yes|1UT6rLhEFahqOfXuCilE188EP7SFmpgoe
 10/25/2026 20:16:55|Prasanth Krishnasamy|9080559571|Tamil Nadu|Chennai|0-1 years|360000|370000|Yes|Immediate joiner|No|Yes|17aNrjm5ad7GEZmaMy-ayJvY1bxyyWChM
+10/25/2026 20:23:33|Akib Mirza|9594148506|Maharashtra|Dhule|4+ years|4.5|20% hike|Yes|15 days|Yes|Yes|1Q75twbhO-98v2hGn4rdTA4aEaj0Ex0Uj
+10/25/2026 20:40:40|S Suhel|9392244843|Andhra Pradesh|Sri Sathya Sai|0-1 years|0|400000|Yes|Immediate joiner|No|No|1FPG77mCQaF4WlP7mLqSUV4JZElALAam_
+10/25/2026 21:18:55|Dinny xavier|9094111102|Tamil Nadu|Chennai|4+ years|500000|500000|Yes|Immediate joiner|Yes|Yes|1Fw6e-CVCEXTy0P2qzZztDAqeJJnq45ts
+10/25/2026 22:09:30|Mahipal Reddy|6305603206|Telangana|Yadadri Bhuvanagiri|1-2 years|4|4.5|Yes|15 days|No|Yes|1WqowcUNDYTW2gEnfRDb-x9lfrmpK2dcG

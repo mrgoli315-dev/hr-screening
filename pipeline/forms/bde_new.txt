@@ -1164,3 +1164,6 @@
 10/25/2026 20:40:40|S Suhel|9392244843|Andhra Pradesh|Sri Sathya Sai|0-1 years|0|400000|Yes|Immediate joiner|No|No|1FPG77mCQaF4WlP7mLqSUV4JZElALAam_
 10/25/2026 21:18:55|Dinny xavier|9094111102|Tamil Nadu|Chennai|4+ years|500000|500000|Yes|Immediate joiner|Yes|Yes|1Fw6e-CVCEXTy0P2qzZztDAqeJJnq45ts
 10/25/2026 22:09:30|Mahipal Reddy|6305603206|Telangana|Yadadri Bhuvanagiri|1-2 years|4|4.5|Yes|15 days|No|Yes|1WqowcUNDYTW2gEnfRDb-x9lfrmpK2dcG
+10/25/2026 23:05:56|Sanjay desai|9765048218|Maharashtra|Satara|2-4 years|8|9|Yes|15 days|Yes|Yes|1y193DMlD1t8Ixdl3TDoCmc14Y9ow12PG
+10/25/2026 23:57:26|M.suresh|8838023491|Tamil Nadu|Chennai|2-4 years|400000|500000|Yes|Immediate joiner|No|Yes|1cyCatqGIJdW-YSgsZdhu87VWS8PUnkv1
+10/26/2026 0:18:24|S Mohamed Baisul|7010405596|Tamil Nadu|Chennai|4+ years|5.4|5.6|Yes|15 days|Yes|Yes|14qAB2HnQROKwo85uaSRf_2kiR7IlS2ad

@@ -1152,3 +1152,7 @@
 10/25/2026 14:56:47|M.ARAVIND|6309142648|Telangana|Hyderabad|4+ years|4.2|5|Yes|15 days|Yes|Yes|1fY1T6OX8qdRBj1w9Xqd70s-QztYGlPP0
 10/25/2026 15:14:55|Yogesh Dilip Tate|8149432851|Maharashtra|Kolhapur|0-1 years|2.16|3|Yes|15 days|No|No|18haGq-VA2HO8dYE-mmHSxTArQv6bAvh2
 10/25/2026 16:06:29|S. BALAKRISHNAN|8760369000|Tamil Nadu|Cuddalore|4+ years|384000|65000|Yes|Immediate joiner|Yes|Yes|1UcJ9PHROa4vL7l176BGG_Pwrk4NgoorB
+10/25/2026 16:34:58|NIKHIL KEDAR|9309144042|Maharashtra|Akola|0-1 years|3|3.8|Yes|15 days|No|Yes|1DDWxVhnxZGFn0ofLtFcQXpcGN6fjBXh_
+10/25/2026 16:58:16|Sajid Patel|9822111698|Maharashtra|Satara|0-1 years|3.lakh|4.lakh|Yes|15 days|Yes|Yes|1ckojZzYk7AHaacvq0SqDF5DOa94zPUnN
+10/25/2026 17:05:03|Dharani Thangavel|9514528986|Tamil Nadu|Chennai|4+ years|5L|7L|Yes|Immediate joiner|No|Yes|1jBZ0BXkzI8oIeBsXc9TSUOd3jjAHWP4w
+10/25/2026 17:38:19|Sachin Tupe|8097690848|Maharashtra|Thane|4+ years|380000|6 lack|Yes|Immediate joiner|Yes|Yes|1Pz1Z7oS2IWhYDsZD8Kgv_eqA_3fL4Y_V

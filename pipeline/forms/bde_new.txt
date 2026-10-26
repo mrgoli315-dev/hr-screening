@@ -1177,3 +1177,10 @@
 10/26/2026 7:30:09|Suresh S|7200094671|Tamil Nadu|Chennai|0-1 years|350000|450000|Yes|Immediate joiner|No|Yes|15hDnLl0qO65PsVQGB0pfCjmn4zKyyHlC
 10/26/2026 7:56:47|Godasi akhi|7675093103|Telangana|Warangal|0-1 years|5|6|Yes|Immediate joiner|No|No|1lW9GBO0KV7cIPF9v69J0RjxF4neeBhz-
 10/26/2026 10:18:03|Yash Sudhir Jadhav|9175722680|Maharashtra|Satara|0-1 years|2.5|4|Yes|Immediate joiner|Yes|No|1vevPTupf6H4oTimc2j0ou5C5dKgUoCUm
+10/26/2026 10:45:07|G THARUN|6281907839|Andhra Pradesh|Chittoor|0-1 years|2.4LPA|3.0LPA|Yes|Immediate joiner|Yes|Yes|1YzThSEYqq4etGgJYQ1vbHCWxDZs8P5oL
+10/26/2026 11:04:43|Thulasiram s|6369434976|Tamil Nadu|Tiruvallur|0-1 years|2.3LPA|3.0LPA|Yes|Immediate joiner|No|Yes|1_6OX9CEifVf8GUzEYowic5vWET2FPlRO
+10/26/2026 11:08:07|Kura Gopi|9177111945|Telangana|Nalgonda|4+ years|3|Above 6 laks|Yes|Immediate joiner|Yes|Yes|1_sliR3q-6EfMkcnUqX3Y6C5RTiI41sTE
+10/26/2026 11:17:51|Rajkumar|9791870994|Tamil Nadu|Cuddalore|4+ years|3.6|4 above|Yes|Immediate joiner|Yes|Yes|1adCGwHkIwoA9RjwRXWMtFAIaANFu9ydN
+10/26/2026 11:53:24|Mohan T|8190953668|Tamil Nadu|Tiruvallur|0-1 years|200000|250000|Yes|Immediate joiner|Yes|Yes|1g5bhhXzS0Ndegy1iDvt0lLayzybE0GVQ
+10/26/2026 12:16:22|Amol Balaso Kalaskar|9372283866|Maharashtra|Satara|2-4 years|3.75|4.3|Yes|Immediate joiner|Yes|Yes|1kJ0qiNTNRWIzRkNRyiBgAQrn_UqunVVF
+10/26/2026 12:20:06|Mahesh Mohan Pawar|8999073223|Maharashtra|Satara|4+ years|640000/-|700000/-|Yes|15 days|No|Yes|1wuTJ6-QFmUYFnxlMnJk730NIYdZfJFMN

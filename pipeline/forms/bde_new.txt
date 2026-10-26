@@ -1184,3 +1184,7 @@
 10/26/2026 11:53:24|Mohan T|8190953668|Tamil Nadu|Tiruvallur|0-1 years|200000|250000|Yes|Immediate joiner|Yes|Yes|1g5bhhXzS0Ndegy1iDvt0lLayzybE0GVQ
 10/26/2026 12:16:22|Amol Balaso Kalaskar|9372283866|Maharashtra|Satara|2-4 years|3.75|4.3|Yes|Immediate joiner|Yes|Yes|1kJ0qiNTNRWIzRkNRyiBgAQrn_UqunVVF
 10/26/2026 12:20:06|Mahesh Mohan Pawar|8999073223|Maharashtra|Satara|4+ years|640000/-|700000/-|Yes|15 days|No|Yes|1wuTJ6-QFmUYFnxlMnJk730NIYdZfJFMN
+10/26/2026 13:07:45|Farhan Ahamed M|6382849917|Tamil Nadu|Chennai|0-1 years|₹3.12|₹4.5|Yes|Immediate joiner|No|No|1EIa8gJRUZUReG5J6FrUrrtwWqeXRdCl5
+10/26/2026 13:21:06|Lalusumanth Mamuduru|9640029340|Andhra Pradesh|Sri Potti Sriramulu Nellore|1-2 years|0|0|No|15 days|Yes|Yes|1l5uiy3fXdIArhph9g5fqO3ueNKb1-T5z
+10/26/2026 13:55:13|AVINASH SURESH GODSE|9552496841|Maharashtra|Satara|1-2 years|300000|425000|Yes|15 days|Yes|Yes|1pBuLDNv-mfL87n2phb6myGGTNIYWqqRf
+10/26/2026 14:14:10|Lingala Vamshi|9381857045|Telangana|Warangal|0-1 years|3.4 lac|5 lac|Yes|Immediate joiner|Yes|Yes|14bprg2DoN3FUFSvN6APflYAILCzOVMFv

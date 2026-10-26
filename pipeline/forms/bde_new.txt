@@ -1172,3 +1172,7 @@
 10/26/2026 1:16:31|Ramesh N|8939019721|Tamil Nadu|Tiruvallur|2-4 years|3.25|3.6|Yes|Immediate joiner|Yes|Yes|1Z_tVFxuLDW51MFkByJgBWnhgbCLAKYmp
 10/26/2026 1:50:54|Mugeshkumar M|6374574795|Tamil Nadu|Chennai|0-1 years|3 LPA|3.5 LPA|Yes|Immediate joiner|No|Yes|1n5cGNesaoJyHCRXegdl9I5AgF-9CPIU0
 10/26/2026 6:05:48|S Vijayakumar|9003186904|Tamil Nadu|Chennai|4+ years|3.6 LPA|4.8 LPA|Yes|15 days|No|No|12YW4At802yGcT_2aIdmmED9GrLH33Fff
+10/26/2026 6:52:11|Amol Devidas Waghmare|9766441833|Maharashtra|Pune|4+ years|3.0 LPA|4.0LPA|Yes|Immediate joiner|Yes|Yes|1r8swrBVw5OvZ8W6GmlWu7m0W5rRJEc7W
+10/26/2026 7:01:24|Muthu Selvan|9444082990|Tamil Nadu|Chennai|4+ years|6 PA|12 Lakh|Yes|15 days|No|Yes|1s4SgM4t_oDx2IpeBdtklQmst3II9X1S2
+10/26/2026 7:30:09|Suresh S|7200094671|Tamil Nadu|Chennai|0-1 years|350000|450000|Yes|Immediate joiner|No|Yes|15hDnLl0qO65PsVQGB0pfCjmn4zKyyHlC
+10/26/2026 7:56:47|Godasi akhi|7675093103|Telangana|Warangal|0-1 years|5|6|Yes|Immediate joiner|No|No|1lW9GBO0KV7cIPF9v69J0RjxF4neeBhz-

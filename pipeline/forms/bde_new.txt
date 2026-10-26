@@ -1171,3 +1171,4 @@
 10/26/2026 1:06:38|GIRI dharan B|8870708835|Tamil Nadu|Tiruvallur|0-1 years|2.8|4.2|Yes|Immediate joiner|No|Yes|1VDgATOibZ8mV6VT_QZ9QBxypnXlQQiDw
 10/26/2026 1:16:31|Ramesh N|8939019721|Tamil Nadu|Tiruvallur|2-4 years|3.25|3.6|Yes|Immediate joiner|Yes|Yes|1Z_tVFxuLDW51MFkByJgBWnhgbCLAKYmp
 10/26/2026 1:50:54|Mugeshkumar M|6374574795|Tamil Nadu|Chennai|0-1 years|3 LPA|3.5 LPA|Yes|Immediate joiner|No|Yes|1n5cGNesaoJyHCRXegdl9I5AgF-9CPIU0
+10/26/2026 6:05:48|S Vijayakumar|9003186904|Tamil Nadu|Chennai|4+ years|3.6 LPA|4.8 LPA|Yes|15 days|No|No|12YW4At802yGcT_2aIdmmED9GrLH33Fff

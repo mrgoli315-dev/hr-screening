@@ -1190,3 +1190,15 @@
 10/26/2026 14:14:10|Lingala Vamshi|9381857045|Telangana|Warangal|0-1 years|3.4 lac|5 lac|Yes|Immediate joiner|Yes|Yes|14bprg2DoN3FUFSvN6APflYAILCzOVMFv
 10/26/2026 15:41:58|Kushalav reddy Vutkuri|6302454042|Telangana|Rangareddy|2-4 years|3.8|4.5|Yes|Immediate joiner|No|Yes|1P1Eqm7FgDSKUl-4c6pTpoA3AV-IcDsiK
 10/26/2026 16:27:17|Viji|9043249200|Tamil Nadu|Tiruvannamalai|4+ years|6.5 laksh|7 laksh|Yes|Immediate joiner|Yes|Yes|137zxdZKXkjFl5BVy-5CrWlS5kUyukvU7
+10/26/2026 16:49:32|Mandath Sravani|7780135819|Telangana|Nalgonda|2-4 years|300000|380000|Yes|Immediate joiner|No|Yes|1bOoj6flKv1sU1KKzt-wbNRvqYriYyVxO
+10/26/2026 16:49:45|Venna shiva Reddy|7995498633|Telangana|Nalgonda|0-1 years|3.0 LPA|4.5 LPA|Yes|Immediate joiner|No|Yes|1fsEm8KEU8bbbeV-ygeNZ_RrTyR0nxNsV
+10/26/2026 17:18:03|Pankaj kumar|8072134246|Tamil Nadu|Chennai|4+ years|32000|35000|Yes|Immediate joiner|Yes|Yes|1beTfJFWtvseepvikcgSw32CYT3f1n3un
+10/26/2026 18:27:20|Ponugoti manjunadha|9652723654|Telangana|Nalgonda|0-1 years|264000|356000|Yes|Immediate joiner|No|Yes|16DVRHwfE0rcUlUZb1iOSWv5McyK5id7A
+10/26/2026 18:35:54|Vishal Chandgude|7020022620|Maharashtra|Pune|2-4 years|5lpa|5.5lpa|Yes|15 days|Yes|Yes|1pFcJoquf78aDKjmq3RKSd1mWNk7B6Zv9
+10/26/2026 18:38:02|Prathmesh Pawar|7620698278|Maharashtra|Satara|2-4 years|37000|50000|Yes|Immediate joiner|Yes|Yes|1TdUn0xDVlGz5u4aOl1TGJsnKgqFKmrOh
+10/26/2026 18:47:37|Suraj Waghe|7498080582|Maharashtra|Pune|4+ years|3.5 lpa|4.0Lpa|Yes|Immediate joiner|No|Yes|1iWEqTOxxOwzy3GJ5TEbEHa7Fn6VbjNyF
+10/26/2026 18:50:09|SANDESH_MANE|9175861994|Maharashtra|Pune|4+ years|3.5|4|Yes|Immediate joiner|Yes|Yes|1mUJmbSeUqVUA-tB5tCUPZ-PzvZBrOyx_
+10/26/2026 19:09:16|Nikhil Ashok Kamble|9623532522|Maharashtra|Satara|4+ years|8|8|Yes|Immediate joiner|Yes|Yes|1ZBl1QQzwhBCwbeQdYH14YKWs-ZB85d4i
+10/26/2026 19:27:45|Kodela Vinod|9550696967|Telangana|Yadadri Bhuvanagiri|0-1 years|3.6|4.8|Yes|Immediate joiner|No|No|1ma28E4IKkxpHY4ZJusMhPiUZxSpDUlh0
+10/26/2026 19:30:28|panneer selvam|9710750716|Tamil Nadu|Chennai|4+ years|480000|500000|Yes|Immediate joiner|Yes|Yes|1GkdLIcut5Df5TcNwJzhqDZx8AQZWXkFb
+10/26/2026 19:34:07|Challa Ashok|9121037615|Telangana|Hyderabad|4+ years|350000 LPA|500000LPA|Yes|Immediate joiner|Yes|Yes|1JZtwoxoqL2RAaMqmLtuIif8c5em-nPir

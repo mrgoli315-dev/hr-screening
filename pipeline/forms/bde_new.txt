@@ -1257,3 +1257,9 @@
 10/27/2026 19:18:04|Nitin Suryawanshi|8459299352|Maharashtra|Pune|4+ years|350000|450000|Yes|Immediate joiner|Yes|Yes|1ieP995S7mrFmG7VErcAayJkvOjt7QT8u
 10/27/2026 19:46:42|Saquib Temrikar|9860021845|Maharashtra|Nashik|1-2 years|4.3|4.9|Yes|Immediate joiner|Yes|Yes|1ml731fa_iyLhIH1s9R0d0Ghopic2CXfU
 10/27/2026 20:18:19|Akshay Patil|7385736666|Maharashtra|Satara|4+ years|3.64|4.2|Yes|Immediate joiner|No|Yes|1j-HCGDAoVPwYaSY-G3K3XojNzNyy9Il6
+10/27/2026 20:57:05|Vaibhav Nikumbh|7775907335|Maharashtra|Nashik|4+ years|400000|5.5|Yes|15 days|No|Yes|1K__IfErLjGv87rCcX2P_f6TCGVh7zPN9
+10/27/2026 21:05:26|Siva arasan|6381343405|Tamil Nadu|Thoothukudi|4+ years|4.2 LPA|4.8 LPA|Yes|15 days|No|Yes|11NiNLOmeCUFatjzk18sJ9jv_7wwowVcv
+10/27/2026 21:08:57|Rajaram Deshmukh|9975040154|Maharashtra|Satara|4+ years|3.8|4.5|Yes|15 days|No|Yes|1oHj-nuKdVAh7UoebWL6QPE-KnxdQcmw8
+10/27/2026 21:12:21|Dabbeta Naresh|9505034197|Telangana|Siddipet|4+ years|5LPA|6.5LPA|Yes|15 days|Yes|Yes|16IZBFYGAuQfEhqStFYT4FLhOoVUins6l
+10/27/2026 22:29:30|Bipin Kamble|8928271001|Maharashtra|Sangli|4+ years|6.5|8.5|Yes|Immediate joiner|Yes|Yes|1815gd03VNFocPqtzWf5VgtrE6vLCnHnX
+10/27/2026 22:34:12|KALIKAR VEERENDHAR RAO|6304926702|Telangana|Nalgonda|0-1 years|200000|396000|Yes|15 days|No|No|1hTTxk0jgjPOdHcgI30UyWmXI0xJ7Iaf7

@@ -1238,3 +1238,11 @@
 10/27/2026 12:21:11|Sreekanth Thotakura|9515932638|Telangana|Yadadri Bhuvanagiri|0-1 years|3.4|4.5|Yes|Immediate joiner|No|Yes|1F7bycIU7yr2xdwNNbhFZkT5YhPhNLNRy
 10/27/2026 12:28:57|Abhishek|9449818787|Karnataka|Shivamogga|4+ years|2.5 LPA|3.5 LPA|Yes|Immediate joiner|No|Yes|1pNErnOpbjyztIjreRdXFejtDdJkJHbCH
 10/27/2026 12:33:18|Tejas Phad|8180007387|Maharashtra|Beed|4+ years|4. 20LPA|5.5|Yes|15 days|Yes|Yes|1i13mScWgG6FHmxo1ewvQ3M7-f1kfBFQB
+10/27/2026 13:31:22|Jagadeeshwar J|9676221599|Telangana|Hanumakonda|1-2 years|4.3|4.6|Yes|Immediate joiner|No|Yes|14513KAJMx-Au1eyHT-2PmvSbWxV_w7lr
+10/27/2026 13:37:33|Mohanbabu S|6369763244|Tamil Nadu|Tiruvallur|1-2 years|2.6lpa|3.5lpa|Yes|Immediate joiner|No|Yes|1rogeHcezxWlSuUPRYy8F1ZQYyVBTIxEV
+10/27/2026 13:46:49|Jaganmohan Kandluru|7306964705|Andhra Pradesh|YSR Kadapa|4+ years|4 lpa|5 lpa|Yes|Immediate joiner|Yes|Yes|1tpTldVh-pgRh4xkc5itFLvzED78xkgnE
+10/27/2026 13:47:03|Sumit|8605122339|Maharashtra|Pune|4+ years|510000|550009|Yes|Immediate joiner|Yes|Yes|1DjVnHHCBQPIHg3Hb0seiUT9fn-3VRpJe
+10/27/2026 13:48:41|Aadil Shaikh|7058755959|Maharashtra|Solapur|4+ years|450000|585000|Yes|Immediate joiner|No|Yes|1yUGtZVOeIKc9b2YbgV151EJzcIm6yG3I
+10/27/2026 14:00:54|Gudeboina Narendar|8008751197|Telangana|Nalgonda|0-1 years|3|4|Yes|Immediate joiner|No|Yes|14wjeli8ikvpJCxFFu3ti13YW8eajrc-J
+10/27/2026 14:24:04|sabir mulla|7767805081|Maharashtra|Satara|4+ years|9|9|No|15 days|Yes|Yes|1aWD8rhebm6cr5syLlcJo8PbMpW_iIoRZ
+10/27/2026 14:36:16|Pravina More|9881961393|Maharashtra|Satara|2-4 years|3.7k|4.k|Yes|Immediate joiner|No|Yes|1X-yqNpvPfF5vF2F-mMKPuRVw1VtsIqsi

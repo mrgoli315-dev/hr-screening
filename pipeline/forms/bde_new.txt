@@ -1226,3 +1226,7 @@
 10/27/2026 7:38:57|Sunil Jain|9092946969|Tamil Nadu|Chennai|4+ years|5|5|Yes|Immediate joiner|No|Yes|1Uhc32UNPamAH9FFWhJw04v1ttzlgeeFL
 10/27/2026 8:25:04|Akash Adake|9359373169|Maharashtra|Satara|2-4 years|3.5 lpa|5 lpa|No|15 days|No|No|1yyEadac28oHflW1VCXFYMcsmf5Xre2bD
 10/27/2026 8:27:43|NEPOLEAN Y|6382351058|Tamil Nadu|Tiruvallur|4+ years|4lakh|5.5lakh|Yes|15 days|No|Yes|1vyMeBih4GFdg1SMOHUFx3ft_HfAT127z
+10/27/2026 8:33:43|Sathish R|8637642292|Tamil Nadu|Chennai|4+ years|630000|6300000|Yes|15 days|Yes|Yes|1TA9ohu6Fz07TvScGdhFb8CRItoJm8-c6
+10/27/2026 8:36:04|Pravin Kalbande|7507103342|Maharashtra|Nanded|0-1 years|0|350000|Yes|Immediate joiner|Yes|Yes|1c4FXjKm6qWA2z-FnWE2GxCsQXBY-cZ2r
+10/27/2026 8:36:44|Sachin Ritto|7094326368|Tamil Nadu|Kancheepuram|2-4 years|500000|600000|Yes|Immediate joiner|No|Yes|1Babe6ja-crzuzZMVnM7szvMeCS21qn8j
+10/27/2026 10:09:31|Ragul R|8072536729|Tamil Nadu|Chennai|4+ years|6.02LPA|8LPA|Yes|Immediate joiner|No|Yes|1CSJ-vsF1qhRfB_qTNWrYR1GOZZJQYu57

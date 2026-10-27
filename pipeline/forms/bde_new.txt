@@ -1230,3 +1230,11 @@
 10/27/2026 8:36:04|Pravin Kalbande|7507103342|Maharashtra|Nanded|0-1 years|0|350000|Yes|Immediate joiner|Yes|Yes|1c4FXjKm6qWA2z-FnWE2GxCsQXBY-cZ2r
 10/27/2026 8:36:44|Sachin Ritto|7094326368|Tamil Nadu|Kancheepuram|2-4 years|500000|600000|Yes|Immediate joiner|No|Yes|1Babe6ja-crzuzZMVnM7szvMeCS21qn8j
 10/27/2026 10:09:31|Ragul R|8072536729|Tamil Nadu|Chennai|4+ years|6.02LPA|8LPA|Yes|Immediate joiner|No|Yes|1CSJ-vsF1qhRfB_qTNWrYR1GOZZJQYu57
+10/27/2026 11:18:28|Itharaju Jangaiah|9347615476|Telangana|Nalgonda|2-4 years|352000|5 lakhs|Yes|15 days|Yes|Yes|1UPg83MQjU1yU5fQPg33YLiaD0cbGV8i4
+10/27/2026 10:57:46|ANIKET RAVINDRA KULKARNI|8275128591|Maharashtra|Pune|2-4 years|4.2LPA|6LPA|Yes|Immediate joiner|No|Yes|1v-9SHcpeW0GEgd32tEUBFPPhkoikkx7J
+10/27/2026 11:53:25|Sanjay desai|9765048210|Maharashtra|Satara|2-4 years|8|9|Yes|Immediate joiner|Yes|Yes|1CHxsvXIhSiB4ZnL50fmvgpgFs1FvQVac
+10/27/2026 11:59:02|Kalpesh Patel|9821286655|Maharashtra|Mumbai City|2-4 years|29000|34000|Yes|Immediate joiner|Yes|Yes|1ogCpZL6-GpJEN7fmSKjCNyy5qv1xlNJI
+10/27/2026 12:01:17|Dilli Babu|9150314271|Tamil Nadu|Tiruvallur|2-4 years|400000|500000|Yes|15 days|No|Yes|1-cxZ0kXo3GxGpOs_OKV_2RL8OnqKRhK9
+10/27/2026 12:21:11|Sreekanth Thotakura|9515932638|Telangana|Yadadri Bhuvanagiri|0-1 years|3.4|4.5|Yes|Immediate joiner|No|Yes|1F7bycIU7yr2xdwNNbhFZkT5YhPhNLNRy
+10/27/2026 12:28:57|Abhishek|9449818787|Karnataka|Shivamogga|4+ years|2.5 LPA|3.5 LPA|Yes|Immediate joiner|No|Yes|1pNErnOpbjyztIjreRdXFejtDdJkJHbCH
+10/27/2026 12:33:18|Tejas Phad|8180007387|Maharashtra|Beed|4+ years|4. 20LPA|5.5|Yes|15 days|Yes|Yes|1i13mScWgG6FHmxo1ewvQ3M7-f1kfBFQB

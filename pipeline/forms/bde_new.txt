@@ -1265,3 +1265,4 @@
 10/27/2026 22:34:12|KALIKAR VEERENDHAR RAO|6304926702|Telangana|Nalgonda|0-1 years|200000|396000|Yes|15 days|No|No|1hTTxk0jgjPOdHcgI30UyWmXI0xJ7Iaf7
 10/27/2026 22:42:53|Rahul Kolekar|9511737254|Maharashtra|Kolhapur|4+ years|325000|450000|Yes|15 days|Yes|Yes|19lPniEApmLKPl-L1xwKd24sb3jGe7tSe
 10/27/2026 23:37:24|Mahesh Burri|9705566039|Telangana|Nalgonda|0-1 years|3.2|4|Yes|Immediate joiner|No|Yes|1NdpKJkm4R0657hb6SmBotebL3hGJ-e8B
+10/28/2026 2:23:16|Balaji|9444918994|Tamil Nadu|Chennai|4+ years|4,80,000|5,00,000|Yes|Immediate joiner|No|No|1L5xBlSd0lRLqW8WLpsRgRFkE15AHLlA1

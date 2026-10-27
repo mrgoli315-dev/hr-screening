@@ -1254,3 +1254,6 @@
 10/27/2026 17:29:26|sasi kumar|8122149429|Tamil Nadu|Dindigul|4+ years|4.2|4.8|Yes|Immediate joiner|Yes|Yes|1eyfN4H1o-DEEx9Q5KsZFXtgpdKPvJmJj
 10/27/2026 18:00:41|Kannan B|9710214033|Tamil Nadu|Tiruvallur|4+ years|23000|35000|Yes|Immediate joiner|No|Yes|18Uowfo5GXho8b1QREe9RsYbsZJ9AbE0W
 10/27/2026 18:36:56|sudesh murkute|9011957321|Maharashtra|Kolhapur|0-1 years|2.2LPA|2.5LPA|Yes|Immediate joiner|No|No|1C0d3viiYuAB5ldKEcPvcg6ibAGzfd5SL
+10/27/2026 19:18:04|Nitin Suryawanshi|8459299352|Maharashtra|Pune|4+ years|350000|450000|Yes|Immediate joiner|Yes|Yes|1ieP995S7mrFmG7VErcAayJkvOjt7QT8u
+10/27/2026 19:46:42|Saquib Temrikar|9860021845|Maharashtra|Nashik|1-2 years|4.3|4.9|Yes|Immediate joiner|Yes|Yes|1ml731fa_iyLhIH1s9R0d0Ghopic2CXfU
+10/27/2026 20:18:19|Akshay Patil|7385736666|Maharashtra|Satara|4+ years|3.64|4.2|Yes|Immediate joiner|No|Yes|1j-HCGDAoVPwYaSY-G3K3XojNzNyy9Il6

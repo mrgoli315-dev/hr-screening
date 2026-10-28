@@ -1343,3 +1343,6 @@
 10/29/2026 0:02:27|Ganesh Kharat|9892321070|Maharashtra|Mumbai Suburban|4+ years|400000|550000|Yes|15 days|Yes|Yes|1X77ca1CZ_MgNv2d72pKv-lIT0RR0u7oG
 10/29/2026 0:23:48|AvinashMadhuRajkundal|9665557529|Maharashtra|Akola|4+ years|2.8 LPA|4.0LPA|Yes|15 days|Yes|Yes|1BAif6sh_miMK3JgErO-uXiOf7N1PS-jU
 10/29/2026 0:34:11|Akshay Ruikar|9309586400|Maharashtra|Akola|4+ years|3|3.5|Yes|Immediate joiner|No|Yes|1s-bdR66a-wi_LogtRRryIYAJVSaWpXM_
+10/29/2026 0:59:31|SACHIN RAUT|9006090014|Maharashtra|Akola|4+ years|250000|450000|Yes|15 days|No|Yes|16FWNqxn-GSuVwlkn8s4tW8donRHw0mTs
+10/29/2026 1:12:36|BALA|9003668354|Tamil Nadu|Chennai|4+ years|5.5|6.5|Yes|15 days|No|No|1IC5e9EV-whUve0IN7MJP6shPEq6FwRUW
+10/29/2026 1:41:22|Amit Narayan Dubey|9172767778|Maharashtra|Mumbai City|4+ years|8.27 LPA|9.75 LPA|Yes|Immediate joiner|Yes|Yes|1CcDoPpPh4-SEvoBHA9lqspHyaK2hVo-W

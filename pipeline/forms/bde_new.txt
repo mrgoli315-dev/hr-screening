@@ -1346,3 +1346,4 @@
 10/29/2026 0:59:31|SACHIN RAUT|9006090014|Maharashtra|Akola|4+ years|250000|450000|Yes|15 days|No|Yes|16FWNqxn-GSuVwlkn8s4tW8donRHw0mTs
 10/29/2026 1:12:36|BALA|9003668354|Tamil Nadu|Chennai|4+ years|5.5|6.5|Yes|15 days|No|No|1IC5e9EV-whUve0IN7MJP6shPEq6FwRUW
 10/29/2026 1:41:22|Amit Narayan Dubey|9172767778|Maharashtra|Mumbai City|4+ years|8.27 LPA|9.75 LPA|Yes|Immediate joiner|Yes|Yes|1CcDoPpPh4-SEvoBHA9lqspHyaK2hVo-W
+10/29/2026 2:53:29|Akash bhandekar|9175223711|Maharashtra|Solapur|2-4 years|3 lakh|5.5|Yes|Immediate joiner|No|Yes|1TUj_yUNJKj5vqcbLtD_moUZf6Aoe-2Us

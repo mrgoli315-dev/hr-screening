@@ -1286,3 +1286,20 @@
 10/28/2026 14:35:01|Ravi wayal|8087949626|Maharashtra|Buldhana|0-1 years|510000|550000|Yes|15 days|Yes|Yes|1nbn0H0jHYbq49v0jrjoDrC_-jnziiRAt
 10/28/2026 14:37:21|Nilesh nawle|9822487282|Maharashtra|Akola|0-1 years|200000|400000|Yes|15 days|Yes|Yes|1eFTctE2Uvk41JkuuCYmUpAqF4MH-Sf-m
 10/28/2026 14:42:03|Kiran p hirdekar|8956655777|Maharashtra|Kolhapur|4+ years|500000|450000|Yes|Immediate joiner|Yes|Yes|1Xy7Y664LMjlJNzDno_YDRzitel8NGP_z
+10/28/2026 14:47:42|SHIVA PAWAR|8805491209|Maharashtra|Akola|1-2 years|3,50,000|5,00,000|Yes|15 days|No|Yes|15Kp7osaIa551O0sxl3d9gpa4dq-Y-IZR
+10/28/2026 14:47:59|Sayyed Tarique yusuf|7709054007|Maharashtra|Akola|4+ years|6 lpa|7 lpa|Yes|Immediate joiner|Yes|Yes|1ZmoPG83rwM4Q9uoLeejYvT8i_40jDoGG
+10/28/2026 14:54:45|SYED UMAIRODDIN SYED SHAFIODDIN|9112474394|Maharashtra|Akola|4+ years|2|3.5|Yes|15 days|No|Yes|1nyTCaZBXp-Nf6sPanlIjAN6psh7O2cix
+10/28/2026 15:00:43|Faizanoddin aminoddin shekh|8830088783|Maharashtra|Akola|2-4 years|3.2 lpa|4lpa|Yes|15 days|Yes|Yes|14FfFj3BDmtJ3DBwOgRpo7U7UF9kAGL_p
+10/28/2026 15:03:29|Chris Irish|7709889639|Maharashtra|Akola|1-2 years|3.36|6.5|Yes|Immediate joiner|Yes|Yes|1Ha5zPp6F361Br5hBarTWIXExl4Nznj04
+10/28/2026 15:51:05|Onkar Mahadik|8087256024|Maharashtra|Kolhapur|4+ years|600000|700000|Yes|15 days|Yes|Yes|1-hYx42Dt8RXRMNFNVFWq_90y1yvruJot
+10/28/2026 16:02:33|Hrushikesh Ingle|9975880089|Maharashtra|Akola|2-4 years|5 lakh|6 lakh|Yes|15 days|No|Yes|1pF41AEuMuMb6fuKltb4dbKXXNmB-S8-Y
+10/28/2026 16:02:43|Vignesh Vicky|8098214263|Tamil Nadu|Ranipet|4+ years|5.2|6|Yes|15 days|No|No|1Rn5x6tZd3ly9_eAvNpRTbiU1uJzw5U7K
+10/28/2026 16:13:34|Ashish Pande|6281512143|Maharashtra|Akola|4+ years|400000|450000|Yes|15 days|No|Yes|1egMi3mCEDaHTYJEdOWFtu5IT_XkCLdId
+10/28/2026 16:21:52|Pramod Kailasrao Wakte|8888455265|Maharashtra|Akola|4+ years|5.5 LPA|6.5 LPA|Yes|15 days|Yes|Yes|1BhKPCFNS4HcynoNNLZb4mi7qIBBVclMz
+10/28/2026 16:26:00|Rushabh Deshmukh|9284579951|Maharashtra|Akola|4+ years|2.5|3.6|Yes|15 days|Yes|Yes|1N6-Owsv7qR0y-JbkPxV6Jb1LaNVc1K9c
+10/28/2026 16:26:55|Ganesh Sahadeo Dethe|9011453317|Maharashtra|Akola|0-1 years|4.80 LPA|5.50 LPA|Yes|Immediate joiner|Yes|Yes|1CTRKtH39oieYrvLZU4bFfNBGet6O7uAr
+10/28/2026 16:28:57|Abdul Sadique Ansari|9423313244|Maharashtra|Akola|4+ years|4 LPA|5.50 LPA|Yes|15 days|No|Yes|1HNNNJFecK_hcfa4lNJzgiw0VyUFwIUkz
+10/28/2026 16:30:57|Harish Akhatkar|9922031225|Maharashtra|Akola|4+ years|25000|35000|Yes|Immediate joiner|No|Yes|11KRRpB0cOXKDh_FagwnKRVEoIJWcOE0I
+10/28/2026 16:31:48|Chandran M|9791172179|Tamil Nadu|Chengalpattu|4+ years|2.4|3|Yes|Immediate joiner|Yes|Yes|118JsAQg0_qVnZWzbiLBzz5PEVLK4IIZ1
+10/28/2026 16:32:30|Sankarganesh V|9361045033|Tamil Nadu|Chennai|1-2 years|2.8|4.5|Yes|15 days|No|No|17KV6df4mv_H-JpC0PHneSPesG_sUMFxP
+10/28/2026 16:33:01|Bommapala Ganesh|9618005843|Telangana|Nalgonda|2-4 years|3|3.8|Yes|Immediate joiner|Yes|Yes|1MLQxvzZmRCWUFdqKmxa68xul9rfSp0Ji

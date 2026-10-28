@@ -1326,3 +1326,12 @@
 10/28/2026 20:25:44|Shoaib Khan|8180884493|Maharashtra|Akola|4+ years|2.4|3|Yes|Immediate joiner|Yes|Yes|1HlxZtCP5XRyrCBQkZnLvnKlNY0cB7Ipi
 10/28/2026 20:31:02|Tanveer khan|9022098915|Maharashtra|Buldhana|2-4 years|2.4 lpa|4.6|Yes|Immediate joiner|Yes|Yes|1dzCG4RONoMouHkrbTSJzE6od75DHIvXH
 10/28/2026 20:45:41|Tanmay Joshi|9579894591|Maharashtra|Akola|4+ years|4.5|5.5|Yes|15 days|Yes|Yes|1v441vqyWC9eWDOD7UdpclKOJ95Pzjufr
+10/28/2026 21:05:48|Satyam Sonavale|8080989920|Maharashtra|Satara|4+ years|5 lpa|6 lpa|Yes|15 days|Yes|Yes|1Y54ITGmZtyfH6KLAq5ay_4rGUbvI4JW3
+10/28/2026 21:29:58|amol kawale|9284994094|Maharashtra|Pune|4+ years|4.8 per annum|6 per annum|Yes|Immediate joiner|Yes|Yes|1P6ky67lpGugXWvkHQKtz1Ww7mTTwnqXm
+10/28/2026 21:36:30|Dadaso Shivaji gaikwad|9503881365|Maharashtra|Satara|2-4 years|264000|275000|Yes|Immediate joiner|Yes|Yes|1G75i80wPENiuw300cw029ewejBOKDcBw
+10/28/2026 21:42:20|Rakesh Rawal|7040147838|Maharashtra|Pune|2-4 years|4.5|6.5|Yes|15 days|Yes|Yes|1V4RRsuNZwTMRVvpk1wulYkmFHxOVTeLB
+10/28/2026 22:00:29|KUNAL CHANDRKANT HIVASE|8788446060|Maharashtra|Washim|2-4 years|18000|16000|Yes|Immediate joiner|Yes|Yes|1HUVBqXRfgdBvrVXwTYVfyGCc3H6LYGzn
+10/28/2026 22:12:08|Parag Balapure|9834926885|Maharashtra|Akola|4+ years|420000|480000|Yes|Immediate joiner|No|Yes|1gU4h7gn2jiYQVyA0IRsHsOrys3Q4rCCG
+10/28/2026 22:01:07|Jagankumar|9345532004|Tamil Nadu|Chennai|4+ years|5|6|Yes|Immediate joiner|Yes|Yes|1PCYzCRvD4f1pRBy3dg9NbkRgQN8EdKGY
+10/28/2026 22:39:17|Gurmukh Jagyasi|9112853808|Maharashtra|Akola|0-1 years|390000|396000|Yes|Immediate joiner|Yes|Yes|1n1L5-9ON4o7Oxhx6s_DlbRjYbN9DnaME
+10/28/2026 22:45:37|Shashikant Pandey|7517387466|Maharashtra|Akola|0-1 years|NA|2.8|Yes|Immediate joiner|No|Yes|1P7Zr8ApgxtM9CKvQjISXYL4PQhkn6B_r

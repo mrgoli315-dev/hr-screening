@@ -1335,3 +1335,11 @@
 10/28/2026 22:01:07|Jagankumar|9345532004|Tamil Nadu|Chennai|4+ years|5|6|Yes|Immediate joiner|Yes|Yes|1PCYzCRvD4f1pRBy3dg9NbkRgQN8EdKGY
 10/28/2026 22:39:17|Gurmukh Jagyasi|9112853808|Maharashtra|Akola|0-1 years|390000|396000|Yes|Immediate joiner|Yes|Yes|1n1L5-9ON4o7Oxhx6s_DlbRjYbN9DnaME
 10/28/2026 22:45:37|Shashikant Pandey|7517387466|Maharashtra|Akola|0-1 years|NA|2.8|Yes|Immediate joiner|No|Yes|1P7Zr8ApgxtM9CKvQjISXYL4PQhkn6B_r
+10/28/2026 23:14:54|Abhishek Tripathi|9373432049|Maharashtra|Pune|4+ years|6 LPA|7lac LPA|Yes|15 days|No|Yes|1iWUc4FrhZvEgbMYCJ-t5HN94ED7rWxDJ
+10/28/2026 23:20:36|Gaurav Wankhade|9325713162|Maharashtra|Akola|2-4 years|3|3.5|Yes|15 days|Yes|Yes|1_3Cl0EJSv3D3OtTbA2uHtE6x-Iw24jx9
+10/28/2026 23:22:06|John Peter|9972655719|Tamil Nadu|Chennai|4+ years|4.5LPA|5 LPA|Yes|15 days|No|No|1VBegWQdMw020xkGTkOslEp5RStCb1h6e
+10/28/2026 23:38:42|Shilpa Bodhe|9860646816|Maharashtra|Amravati|4+ years|3.7|4.8|Yes|15 days|Yes|Yes|17pm2OO0Qk_s6dp_y3cf2C7QES5bkMvrJ
+10/28/2026 23:55:32|Iyyappan V|9361301603|Tamil Nadu|Chennai|1-2 years|3.2|5|Yes|Immediate joiner|Yes|Yes|1W9FufQFnxKZhheiH3F4M_mtPS4gfoDgU
+10/29/2026 0:02:27|Ganesh Kharat|9892321070|Maharashtra|Mumbai Suburban|4+ years|400000|550000|Yes|15 days|Yes|Yes|1X77ca1CZ_MgNv2d72pKv-lIT0RR0u7oG
+10/29/2026 0:23:48|AvinashMadhuRajkundal|9665557529|Maharashtra|Akola|4+ years|2.8 LPA|4.0LPA|Yes|15 days|Yes|Yes|1BAif6sh_miMK3JgErO-uXiOf7N1PS-jU
+10/29/2026 0:34:11|Akshay Ruikar|9309586400|Maharashtra|Akola|4+ years|3|3.5|Yes|Immediate joiner|No|Yes|1s-bdR66a-wi_LogtRRryIYAJVSaWpXM_

@@ -1280,3 +1280,9 @@
 10/28/2026 12:12:18|Majid Shaikh|9356814265|Maharashtra|Latur|0-1 years|3.25lpa|400000lpa|Yes|Immediate joiner|No|Yes|1NjUfVhqzQymSKGUhmjoFCyLRSBtt4h_t
 10/28/2026 12:49:57|Pratik Dipak Kadam|9028850219|Maharashtra|Pune|2-4 years|2.6 LPA|4.5 LPA|Yes|15 days|No|Yes|1_CdIC7Pws_u5Iz-LDLMiLo_LGaq2_SOA
 10/28/2026 12:53:39|Rahul Kamble|8605896968|Maharashtra|Satara|4+ years|350|420000|Yes|15 days|No|Yes|1bNIlPlOmzOwsZq8oyB2KGdORv5Xb53vH
+10/28/2026 13:19:41|Anand Kumar G V|8096058652|Telangana|Nalgonda|4+ years|350000|400000|Yes|Immediate joiner|Yes|Yes|1yUgXC4JwGlQ74cRwwU062xP9pucHdkmB
+10/28/2026 14:24:18|Naresh D|9080458408|Tamil Nadu|Tiruvallur|4+ years|432000|480000|Yes|Immediate joiner|Yes|Yes|1fe-KxbOmV-_Is7HBVKzVSn9KYwXZowXW
+10/28/2026 14:33:21|Stanley GM|9884685524|Tamil Nadu|Tiruvallur|0-1 years|3|3.5|Yes|Immediate joiner|No|Yes|1q_y30vrYqWjpM0UBopq4QkVAMwXVE2Ie
+10/28/2026 14:35:01|Ravi wayal|8087949626|Maharashtra|Buldhana|0-1 years|510000|550000|Yes|15 days|Yes|Yes|1nbn0H0jHYbq49v0jrjoDrC_-jnziiRAt
+10/28/2026 14:37:21|Nilesh nawle|9822487282|Maharashtra|Akola|0-1 years|200000|400000|Yes|15 days|Yes|Yes|1eFTctE2Uvk41JkuuCYmUpAqF4MH-Sf-m
+10/28/2026 14:42:03|Kiran p hirdekar|8956655777|Maharashtra|Kolhapur|4+ years|500000|450000|Yes|Immediate joiner|Yes|Yes|1Xy7Y664LMjlJNzDno_YDRzitel8NGP_z

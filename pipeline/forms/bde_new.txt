@@ -1273,3 +1273,10 @@
 10/28/2026 9:40:26|Ayila sravan Kumar|9000828442|Telangana|Nalgonda|1-2 years|3|4|Yes|15 days|No|Yes|1tGVx98wYh_pl5fOobpmJr2vlYv6QszCZ
 10/28/2026 9:44:26|Lokeshwaran|8838724985|Tamil Nadu|Chennai|2-4 years|4.2LPA|5LPA|No|15 days|Yes|Yes|1WqgOcxdXdv_w3aB5qjzRuIBHQRqm9Gl2
 10/28/2026 10:09:45|Aaron H|9042477923|Tamil Nadu|Tiruvallur|4+ years|4.8|5.5|Yes|Immediate joiner|Yes|Yes|1CpgP7ttnAbdpyE-kzW17MR8nOGJTP_T-
+10/28/2026 10:48:29|Munish Kannan|8248062928|Tamil Nadu|Thanjavur|4+ years|360000|360000|Yes|15 days|No|Yes|1N27gwkkQ_Rbb9qAwCX1jD9t2o7hEqTrS
+10/28/2026 11:02:37|Pawar|9168437654|Maharashtra|Solapur|4+ years|6 lakh|6.60 lakh|Yes|Immediate joiner|Yes|Yes|1VjFGaB8UcEuc5ojIxTxLsTh2JV7aI-_X
+10/28/2026 11:28:25|Theneniyan J S|9841894920|Tamil Nadu|Tiruvallur|0-1 years|3 LPA|5 LPA|Yes|15 days|No|No|1CHUWpZ-O9t0kK4ChHlBwWNkmUpuGcJJT
+10/28/2026 11:38:12|Anup Saha|7020486327|Maharashtra|Chandrapur|4+ years|4.2|5|Yes|Immediate joiner|No|Yes|1NStXLbyV4GNG125u5W4wxCwDzlglbk04
+10/28/2026 12:12:18|Majid Shaikh|9356814265|Maharashtra|Latur|0-1 years|3.25lpa|400000lpa|Yes|Immediate joiner|No|Yes|1NjUfVhqzQymSKGUhmjoFCyLRSBtt4h_t
+10/28/2026 12:49:57|Pratik Dipak Kadam|9028850219|Maharashtra|Pune|2-4 years|2.6 LPA|4.5 LPA|Yes|15 days|No|Yes|1_CdIC7Pws_u5Iz-LDLMiLo_LGaq2_SOA
+10/28/2026 12:53:39|Rahul Kamble|8605896968|Maharashtra|Satara|4+ years|350|420000|Yes|15 days|No|Yes|1bNIlPlOmzOwsZq8oyB2KGdORv5Xb53vH

@@ -1303,3 +1303,15 @@
 10/28/2026 16:31:48|Chandran M|9791172179|Tamil Nadu|Chengalpattu|4+ years|2.4|3|Yes|Immediate joiner|Yes|Yes|118JsAQg0_qVnZWzbiLBzz5PEVLK4IIZ1
 10/28/2026 16:32:30|Sankarganesh V|9361045033|Tamil Nadu|Chennai|1-2 years|2.8|4.5|Yes|15 days|No|No|17KV6df4mv_H-JpC0PHneSPesG_sUMFxP
 10/28/2026 16:33:01|Bommapala Ganesh|9618005843|Telangana|Nalgonda|2-4 years|3|3.8|Yes|Immediate joiner|Yes|Yes|1MLQxvzZmRCWUFdqKmxa68xul9rfSp0Ji
+10/28/2026 16:48:50|Prathamesh Ravindra Sonone|7057534050|Maharashtra|Akola|4+ years|5|5.5|Yes|Immediate joiner|No|Yes|1m_qTN-AqQBbvGH9QI73Lr7SUdPpL21Hf
+10/28/2026 16:54:57|Naveen Kumar T|7305772808|Tamil Nadu|Tiruvallur|2-4 years|4.5|5|Yes|Immediate joiner|No|Yes|18lCZeEf4rnssSxz24FFE7dRYcrxzekIS
+10/28/2026 17:19:48|Sheikh Azhar|9175711552|Maharashtra|Nanded|4+ years|30000|400000|Yes|15 days|Yes|Yes|1VFkvHkeRD0V-vjqIocCydP2JuWcAONRu
+10/28/2026 17:21:57|Swapnil Belsare|9156046500|Maharashtra|Akola|0-1 years|2.4|3.6|Yes|Immediate joiner|No|Yes|1cLOv6BL3TqVyMaA5T5Cmg5IAlVjt307u
+10/28/2026 17:24:46|Imran|7708675565|Tamil Nadu|Ranipet|1-2 years|4 Lpa|5 Lpa|Yes|Immediate joiner|Yes|Yes|1ZeW4Rs939wKBZqypmC65R5I2JxstMb0Q
+10/28/2026 17:43:52|Thanesh M|9345889361|Tamil Nadu|Chennai|4+ years|400000|600000|Yes|Immediate joiner|No|No|1ryJVOILIXNHX-w6T3dKQFLBLiu-LTnKZ
+10/28/2026 17:47:32|Sandip ajay|7249544961|Maharashtra|Solapur|0-1 years|288000|350000|Yes|15 days|No|Yes|1L8kgcDhfOVu66xXhAAOtmJMDFP5tko7U
+10/28/2026 18:02:32|Sachin Chhatansing Chavan|8788408284|Maharashtra|Akola|4+ years|4|4|Yes|Immediate joiner|Yes|Yes|1d78aptnnmmRwXX81-oqbNklCUGlUe4PA
+10/28/2026 18:21:27|Logeshwaran G|8270524211|Tamil Nadu|Namakkal|1-2 years|1.6 LPA|3.5 LPA|No|Immediate joiner|Yes|No|1GR-ruxbV-j-RwibwgKjos4exX5MCXSZa
+10/28/2026 18:31:04|Ashvin Prabhakar Pathak|7875602211|Maharashtra|Akola|2-4 years|260000|400000|Yes|Immediate joiner|Yes|Yes|1SNaTMa4-1UDze_anIqNmydptOeDprHG9
+10/28/2026 18:36:37|PRATHMESH CHATURKAR|9021896755|Maharashtra|Akola|4+ years|₹3.2 LPA|₹2.5 LPA to ₹3 LPA|Yes|Immediate joiner|Yes|Yes|1SR4FaoPZ5Pa9y-_t9TaUhV5wMUxc1k2J
+10/28/2026 18:48:20|Yogesh dilip Shewale|9623292828|Maharashtra|Pune|2-4 years|27000|35000|Yes|Immediate joiner|No|Yes|1CJVwlmidY3fR65q3-n5ElABoyCXl0r-6

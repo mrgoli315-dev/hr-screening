@@ -1347,3 +1347,5 @@
 10/29/2026 1:12:36|BALA|9003668354|Tamil Nadu|Chennai|4+ years|5.5|6.5|Yes|15 days|No|No|1IC5e9EV-whUve0IN7MJP6shPEq6FwRUW
 10/29/2026 1:41:22|Amit Narayan Dubey|9172767778|Maharashtra|Mumbai City|4+ years|8.27 LPA|9.75 LPA|Yes|Immediate joiner|Yes|Yes|1CcDoPpPh4-SEvoBHA9lqspHyaK2hVo-W
 10/29/2026 2:53:29|Akash bhandekar|9175223711|Maharashtra|Solapur|2-4 years|3 lakh|5.5|Yes|Immediate joiner|No|Yes|1TUj_yUNJKj5vqcbLtD_moUZf6Aoe-2Us
+10/29/2026 7:44:10|Abdul Gafoor|8072802398|Tamil Nadu|Ranipet|4+ years|4 LPA|5 LPA|Yes|Immediate joiner|Yes|Yes|1wPX8kQygA1vB6x-7cDWoffAo9Mi1KSh6
+10/29/2026 8:33:59|J.Joe Pius|6374125806|Tamil Nadu|Chennai|0-1 years|1.8 lakh|2.1 lakh|Yes|Immediate joiner|No|Yes|1yU-BMjQ8Z1V4te2cH7XuOA7xj4-61EBK

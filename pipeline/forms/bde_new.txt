@@ -1360,3 +1360,9 @@
 10/29/2026 9:33:38|Bhushan Rathod|8830128242|Maharashtra|Yavatmal|1-2 years|20000|40000|Yes|15 days|No|Yes|1MznPMyQtpXTedrfTocfEJervq4-2Fs47
 10/29/2026 9:50:50|Abdul Mohid|8983393333|Maharashtra|Akola|2-4 years|3|4.5|Yes|15 days|No|Yes|1XWsaKqlnC8vjA2lPX1V8EA-jpOHruSaN
 10/29/2026 9:51:40|Ajay Popat Daunde|8600667334|Maharashtra|Satara|1-2 years|2.4LPA|3.0LPA|Yes|15 days|Yes|No|125Y1ol42qRKMUOI0Zb5w4FZoPerAFnQS
+10/29/2026 11:02:29|Purushottam Kute|9011304200|Maharashtra|Wardha|4+ years|350000|400000|Yes|Immediate joiner|No|Yes|1EBhFhdA4mc_wxNwH0bulFWNh6eYMFIN4
+10/29/2026 11:05:09|Dinesh T|9677990473|Tamil Nadu|Ranipet|4+ years|5 LPA|6 LPA|Yes|15 days|No|Yes|1hhQ9s6PvS4DOMtEyXjsPMxf_9n4XmG5k
+10/29/2026 11:12:47|Amol kale|8007762111|Maharashtra|Akola|4+ years|25000|360000|Yes|Immediate joiner|Yes|Yes|14hrx7P2RUFCipdZJeU82HkM6d3qVupl3
+10/29/2026 11:18:02|Sabbineni Abhilash|9949870860|Telangana|Nalgonda|4+ years|360000|450000|Yes|15 days|No|Yes|1MRL3AaWk71NFMCBdM7dDods4r81rBKrN
+10/29/2026 11:24:37|Mayur Tale|9021610393|Maharashtra|Akola|0-1 years|3.5|4|Yes|Immediate joiner|No|Yes|13dtVtTu1nunmx23j1H9JsLE4tU-qw3an
+10/29/2026 11:28:00|Ajaysingh Thakur|8888688952|Maharashtra|Akola|4+ years|380000/-|420000/-|Yes|Immediate joiner|Yes|Yes|1rsviEZfYEVLankzgFBWvx6EGBWXSyGUZ

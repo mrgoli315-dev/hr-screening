@@ -1349,3 +1349,14 @@
 10/29/2026 2:53:29|Akash bhandekar|9175223711|Maharashtra|Solapur|2-4 years|3 lakh|5.5|Yes|Immediate joiner|No|Yes|1TUj_yUNJKj5vqcbLtD_moUZf6Aoe-2Us
 10/29/2026 7:44:10|Abdul Gafoor|8072802398|Tamil Nadu|Ranipet|4+ years|4 LPA|5 LPA|Yes|Immediate joiner|Yes|Yes|1wPX8kQygA1vB6x-7cDWoffAo9Mi1KSh6
 10/29/2026 8:33:59|J.Joe Pius|6374125806|Tamil Nadu|Chennai|0-1 years|1.8 lakh|2.1 lakh|Yes|Immediate joiner|No|Yes|1yU-BMjQ8Z1V4te2cH7XuOA7xj4-61EBK
+10/29/2026 8:47:09|Abrar khan Rahim Khan|7620632232|Maharashtra|Buldhana|4+ years|2.5|4|Yes|Immediate joiner|No|Yes|19yoazUtmL1uB6JPk66Mzd6f38LGcfv5P
+10/29/2026 8:48:46|Jagankumar R|9790073318|Tamil Nadu|Tiruvannamalai|4+ years|5.04|7.5|Yes|Immediate joiner|No|No|1kB_a8gitQ2lAUZpnvTMlstvcUINIcq4n
+10/29/2026 8:50:07|Mohit Banne|9503203992|Maharashtra|Akola|4+ years|3.8LPA|5LPA|Yes|Immediate joiner|No|Yes|1dX5xo5olWYf_LPpp5AG0I6-EoVHcB70w
+10/29/2026 9:06:57|Nitin jadhav|9168365794|Maharashtra|Sangli|2-4 years|3.6|4.8|Yes|Immediate joiner|Yes|Yes|1hc2lZusVTup5b58SLJ3O6ksZZjNSu1DM
+10/29/2026 9:08:14|Sai Kumar|8688854954|Telangana|Bhadradri Kothagudem|4+ years|4.5|6|Yes|Immediate joiner|Yes|Yes|1no0ZI5J6baqosltQZXYP3f15z-7aQeR_
+10/29/2026 9:15:08|Akshay Kole|9834019575|Maharashtra|Sangli|4+ years|4000000|550000 to 600000|Yes|Immediate joiner|Yes|Yes|1F56p2JTWJ1InwwNVsul0SqW-ABr52-mC
+10/29/2026 9:22:23|प्रवीण पाटील|8928390890|Maharashtra|Buldhana|4+ years|3.7|4|Yes|Immediate joiner|No|Yes|1FiLnljvt499XRgIUPi5zZ95NlNu3tT6w
+10/29/2026 9:28:46|Mahesh reddy jonnalagadda|8828057640|Telangana|Nalgonda|4+ years|₹12.0 LPA|₹ 8.0 LPA|Yes|Immediate joiner|Yes|Yes|1ITKV_cbYRoxMhhYmwWdhL2gDZXc3ZD8R
+10/29/2026 9:33:38|Bhushan Rathod|8830128242|Maharashtra|Yavatmal|1-2 years|20000|40000|Yes|15 days|No|Yes|1MznPMyQtpXTedrfTocfEJervq4-2Fs47
+10/29/2026 9:50:50|Abdul Mohid|8983393333|Maharashtra|Akola|2-4 years|3|4.5|Yes|15 days|No|Yes|1XWsaKqlnC8vjA2lPX1V8EA-jpOHruSaN
+10/29/2026 9:51:40|Ajay Popat Daunde|8600667334|Maharashtra|Satara|1-2 years|2.4LPA|3.0LPA|Yes|15 days|Yes|No|125Y1ol42qRKMUOI0Zb5w4FZoPerAFnQS

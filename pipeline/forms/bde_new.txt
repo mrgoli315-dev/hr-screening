@@ -1373,3 +1373,12 @@
 10/30/2026 20:08:58|Mohammad Atique|8237345441|Maharashtra|Akola|4+ years|3lc|4|Yes|15 days|Yes|Yes|1o3Ax63wOQ_MLwlUmdSPCcSeC0hUvMXN0
 10/30/2026 20:35:41|Ramachandra Devendra Badiger|9513176775|Karnataka|Belagavi|4+ years|430000|600000|Yes|Immediate joiner|No|Yes|1AEaOUVSwiUMXOP_JQvq1GZoav4kAFTYm
 10/30/2026 20:46:23|Abhay Vanjari|9850958717|Maharashtra|Satara|4+ years|200000/-|400000/-|Yes|15 days|No|Yes|1R1v3a4hCX04cD8-hkrmV11hPz8uI1E5S
+10/30/2026 21:02:57|Siddharth Khadatkar|9970135673|Maharashtra|Akola|4+ years|3 LPA|4 LPA|Yes|Immediate joiner|Yes|Yes|1efajon8--ufeWWKVVfnwnZfBTHk90Mh-
+10/30/2026 21:29:06|Subash kumar|7904501778|Tamil Nadu|Krishnagiri|4+ years|4.5|5.3|Yes|Immediate joiner|Yes|Yes|1ljcKYbYooyUO6piQp9cVXOjS20NV9M8W
+10/30/2026 21:30:54|Piyush Chopade|7843029452|Maharashtra|Buldhana|2-4 years|3.6|4|Yes|15 days|No|Yes|1G9iBsnEcntGEatzlpdD8c90CC-fi0IdP
+10/30/2026 21:38:14|Kamesh R|8428035221|Tamil Nadu|Vellore|1-2 years|2.7lpa|4.5lpa|Yes|Immediate joiner|No|Yes|1Gay_ZRDWz_p-46uHUdiaYfPPFVpoH2k2
+10/30/2026 21:52:47|Umeshkumar Mandhare|9270989799|Maharashtra|Satara|4+ years|9|12|Yes|Immediate joiner|Yes|Yes|17zsr4ylinSxAs4pXrd0h0hoZW3zpq6hD
+10/30/2026 22:24:24|Dinesh Kumar S|9629071057|Tamil Nadu|Ranipet|2-4 years|3,60,000|5,00,000|Yes|Immediate joiner|No|No|1_lYRqi8fujJcVupz-nMEdGAMeA5AwKwB
+10/30/2026 22:28:38|SRIDHAR.S|7448406511|Tamil Nadu|Vellore|2-4 years|240000|300000|Yes|15 days|Yes|Yes|1hH7TBrsc0PXA-IW7iU-qqN_oW2nSe0mi
+10/30/2026 22:29:43|Somanath H Timmannavar|8951832654|Karnataka|Belagavi|4+ years|6.0 LPA|6.0 LPA|Yes|Immediate joiner|No|Yes|1rMYj_gNJmBf6d0w3Z7tXeZrsPptBuoSq
+10/30/2026 22:36:02|vadiraj kulkarni|9187337524|Karnataka|Raichur|0-1 years|4 lac|5lac|Yes|Immediate joiner|Yes|Yes|1iFJ2TXUDk-NahQKpk02Zjm71qqgQ-Enb

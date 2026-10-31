@@ -1419,3 +1419,9 @@
 10/31/2026 16:00:20|Asif aslam mulla|9604936313|Maharashtra|Kolhapur|2-4 years|2.5|3.5|Yes|Immediate joiner|No|Yes|1MR4lKwt71ZG8fbu2A5k6PDCmEiVWwV4n
 10/31/2026 16:06:29|Adam Joseph|9518989802|Maharashtra|Pune|4+ years|6|7|Yes|Immediate joiner|No|Yes|1dZDlwROQwksU0IutafXbt1mxpyVbQQXY
 10/31/2026 16:20:19|Shesh Lal|9695341359|Uttar Pradesh|Kaushambi|2-4 years|420000|600000|Yes|Immediate joiner|No|Yes|1dCYTrMVJKSfej8FGo68tvNyJTlO3GuuN
+10/31/2026 16:44:06|Shubham Chopade|7972049121|Maharashtra|Akola|4+ years|300000|400000|Yes|15 days|Yes|Yes|1VqSLta8lrUJ0hryqM10-vFtdScNkz7nf
+10/31/2026 17:16:23|SATHISH R|7092981757|Tamil Nadu|Ranipet|2-4 years|3.8 LPA|480000|Yes|15 days|No|Yes|1yuw9DXSfrbWttrSIiQCiCT1QCLi_BWF9
+10/31/2026 17:20:23|Vijayan An|9940364043|Tamil Nadu|Chennai|1-2 years|3.9|4.4|Yes|15 days|No|Yes|1e8pf7lm-1_wxWDiFgAY5s7Ssza1Hjbyx
+10/31/2026 17:43:01|Praful bhagwan|9028791143|Maharashtra|Nandurbar|1-2 years|1|1|Yes|Immediate joiner|No|No|1Q6IK-KgvQMyRfvDa-Qb1Vuj-MRV9VAPv
+10/31/2026 18:08:58|Syed rizwan|9607313763|Maharashtra|Akola|1-2 years|240000|350000|Yes|Immediate joiner|No|Yes|1eXiFhDGMSnDdyTBpydd-CBWd8LnUjgQX
+10/31/2026 18:09:20|Ganesh Yadav|9359037615|Maharashtra|Akola|2-4 years|2.2 lac|3 lac|Yes|15 days|Yes|Yes|1uOmfgWW0msWsoKwJLoxemBj6a3wUD3RE

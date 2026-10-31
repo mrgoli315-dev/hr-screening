@@ -1395,3 +1395,10 @@
 10/31/2026 8:18:54|Suraj Namdev Rajpure|9096871479|Maharashtra|Satara|2-4 years|2.8|3.6|Yes|15 days|No|Yes|1976WjnWegSRc-Sjl79RcMUTRORiCyGXL
 10/31/2026 8:27:52|Datta Sarangdhar Borde|8830341528|Maharashtra|Akola|4+ years|7.2|7|Yes|Immediate joiner|No|Yes|1Rp3joXklZzBQFuvhh_p_DsT_a7RHkzuJ
 10/31/2026 8:28:51|Girish p|7892889879|Karnataka|Belagavi|4+ years|42000|45000|Yes|Immediate joiner|Yes|Yes|1xXuMCMc8XtVuI8sKGpCgUt6PQ7jcD7VP
+10/31/2026 9:28:11|Mujewar Altaf Gafar|9307853069|Maharashtra|Latur|0-1 years|2.6|4|Yes|Immediate joiner|No|Yes|1i4_GPpLNHZEsED7BpTG3Up0txQNF8-ui
+10/31/2026 9:43:32|Aditya Mahalle|9011391016|Maharashtra|Akola|0-1 years|2.19 lpa|4.50 LPA|Yes|Immediate joiner|No|Yes|12YmYyezmje5sagktmd-DQHg2llzWnOCL
+10/31/2026 9:49:38|Yogesh Lahudas Landage|7387538153|Maharashtra|Satara|4+ years|4,00,000|5,50,000|Yes|15 days|No|Yes|1crR3F22jEBU3WW232qOcjNH_vKduc8EE
+10/31/2026 9:51:42|Shailesh Misal|7276038456|Maharashtra|Pune|4+ years|3lpa|300000|Yes|Immediate joiner|Yes|Yes|1bDBE0roGcLQzYmj9eyWqi6q0njoXDQg4
+10/31/2026 10:01:13|LAKSHMI KANDHAN|8610252956|Tamil Nadu|Tiruchirappalli|4+ years|685000|750000|Yes|Immediate joiner|Yes|Yes|1VhvM0uCFgxIHfnl1yOX6U_w-GEufscLp
+10/31/2026 10:04:41|Harishchandra Sharad Patil|9767108879|Maharashtra|Jalgaon|4+ years|360000|400000|Yes|15 days|No|Yes|1OrdK5Ml1rvmqJYY_uwVBQHXFA_3PH4Rv
+10/31/2026 10:12:01|Bipin Yadav|7052059227|Uttar Pradesh|Mau|0-1 years|3.5lpa|4.8LPA|Yes|Immediate joiner|No|Yes|17UnViDpWaVY6qLbI9vHRve3q-6WPTsDn

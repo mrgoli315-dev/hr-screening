@@ -1388,3 +1388,10 @@
 10/31/2026 0:08:48|Sakthivel|8608937229|Tamil Nadu|Vellore|4+ years|6 lpa|7 lpa|Yes|15 days|Yes|Yes|1E38gUShUBHLgVtHBy6DDB5CMCdee8_i9
 10/31/2026 0:40:35|Rohit Bhagvat Salunkhe|9561466006|Maharashtra|Satara|4+ years|360000|500000|Yes|15 days|Yes|Yes|1FRsjZMpYdL9a66HLtgR8ogOdsVlv1Zk9
 10/31/2026 4:02:13|Praful Hiwale|8149724045|Maharashtra|Buldhana|4+ years|2.4|3.2|Yes|Immediate joiner|No|Yes|1f9sZskMNKkq2RsimY5a1zF_UBRD7Dnjm
+10/31/2026 7:31:53|Iranna J|9844234947|Karnataka|Belagavi|0-1 years|2.5|3|Yes|15 days|No|Yes|16cQMKEgQklW-NVxWDJFZdtSkAvBJDyj7
+10/31/2026 7:45:02|Vinayak Nigade|9834172093|Maharashtra|Kolhapur|4+ years|3.5|5|Yes|Immediate joiner|No|Yes|1CUzD8d6Wncs0VyZ6W2knBj89ddx593yp
+10/31/2026 8:12:43|Ramachandra kolkar|8550035175|Karnataka|Belagavi|4+ years|6.5 LPA|10 LPA|Yes|15 days|Yes|Yes|1uyaxjUROixeUkW-2q1YQlxPFBIzkzONg
+10/31/2026 8:13:54|Shanmukh doddagoudar|9164215603|Karnataka|Belagavi|4+ years|2.8lack|3 lpa|Yes|Immediate joiner|Yes|Yes|1AF4JAn0SGHHNTTU1wxJajOHB3DUtBG9E
+10/31/2026 8:18:54|Suraj Namdev Rajpure|9096871479|Maharashtra|Satara|2-4 years|2.8|3.6|Yes|15 days|No|Yes|1976WjnWegSRc-Sjl79RcMUTRORiCyGXL
+10/31/2026 8:27:52|Datta Sarangdhar Borde|8830341528|Maharashtra|Akola|4+ years|7.2|7|Yes|Immediate joiner|No|Yes|1Rp3joXklZzBQFuvhh_p_DsT_a7RHkzuJ
+10/31/2026 8:28:51|Girish p|7892889879|Karnataka|Belagavi|4+ years|42000|45000|Yes|Immediate joiner|Yes|Yes|1xXuMCMc8XtVuI8sKGpCgUt6PQ7jcD7VP

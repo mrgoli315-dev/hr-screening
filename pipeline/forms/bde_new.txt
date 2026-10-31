@@ -1411,3 +1411,11 @@
 10/31/2026 13:40:52|Vaishnav Dadarao Thakare|7666280320|Maharashtra|Akola|2-4 years|3.6|5|Yes|15 days|Yes|Yes|13DJ2FvWyCTkPyQ7-H-X5Zn5uoTZ_amzZ
 10/31/2026 14:06:24|Suraj Deepak Mane|7892781043|Karnataka|Belagavi|4+ years|4.5|6|Yes|15 days|Yes|Yes|1tCzHKZAFhwDLVkRBEEOWakBYq-nSxDL7
 10/31/2026 14:18:33|Santosh Saheta|7620042614|Maharashtra|Pune|2-4 years|5.4|6.4|Yes|15 days|No|Yes|1DzUjE4qRJP_x80V8JeiedUR2sh7gEIJg
+10/31/2026 14:57:15|Supriya J|8438319617|Tamil Nadu|Tiruvallur|4+ years|300000|350000|No|Immediate joiner|No|No|1IqAmggEMruZQH97ZNXHu981c1jxS29vN
+10/31/2026 15:04:12|𝓟𝓻𝓮𝓶 Dugalwar|9834893097|Maharashtra|Thane|0-1 years|0|4.5|Yes|Immediate joiner|No|No|1352JqUfVlI4yNaTAPP_sOKhDONjSxR3k
+10/31/2026 15:25:46|Aditya Rahate|7447660225|Maharashtra|Nagpur|4+ years|3.3|4.5|Yes|Immediate joiner|No|Yes|1E5PUXWrRgPulsmaR3-FNzEAqV3Jtkzn_
+10/31/2026 15:40:18|Justin B|7358497928|Tamil Nadu|Chengalpattu|4+ years|3.6|4.2|Yes|Immediate joiner|No|Yes|1G_YW4WpwuR92UcQ7t7yGeoU4cvkipYOp
+10/31/2026 15:42:38|Siddeshwar|9361403894|Tamil Nadu|Kancheepuram|2-4 years|5.25|6|Yes|15 days|No|Yes|1zBDzeWfubRT0T_5o9bBBl5vHslkJkv0W
+10/31/2026 16:00:20|Asif aslam mulla|9604936313|Maharashtra|Kolhapur|2-4 years|2.5|3.5|Yes|Immediate joiner|No|Yes|1MR4lKwt71ZG8fbu2A5k6PDCmEiVWwV4n
+10/31/2026 16:06:29|Adam Joseph|9518989802|Maharashtra|Pune|4+ years|6|7|Yes|Immediate joiner|No|Yes|1dZDlwROQwksU0IutafXbt1mxpyVbQQXY
+10/31/2026 16:20:19|Shesh Lal|9695341359|Uttar Pradesh|Kaushambi|2-4 years|420000|600000|Yes|Immediate joiner|No|Yes|1dCYTrMVJKSfej8FGo68tvNyJTlO3GuuN

@@ -1449,3 +1449,7 @@
 11/1/2026 0:03:09|GAJJELA SHEKHAR|6305904002|Telangana|Kamareddy|4+ years|4.2|5.4|Yes|Immediate joiner|No|Yes|17auZVqwEcncZHGpXwCaDGG7vkc2STaMA
 11/1/2026 0:08:57|Swapnil satish mayekar|8669057513|Maharashtra|Satara|4+ years|1200000|1500000|Yes|15 days|No|Yes|16xUdfi0cY4pCdhPszepyZdjiLMvYC3E9
 11/1/2026 0:41:20|Mandar mahadeo Ghewar|8007699997|Maharashtra|Akola|4+ years|4|40000|Yes|Immediate joiner|Yes|Yes|1P1SLfbZAUB5IjDy85biwOLK2qvD3XK9p
+11/1/2026 1:00:46|Lavu Gawade|9167602957|Maharashtra|Thane|2-4 years|6lpa|7lpa|Yes|Immediate joiner|No|Yes|1UC14zokQppfxCKdhUKnlmyz9d_UDiPTo
+11/1/2026 1:18:55|Faheemkhan|6363136007|Karnataka|Belagavi|4+ years|955000|1200000|Yes|Immediate joiner|No|Yes|1Vm-p2qc4hgD2vtaN8xUA7i3RwF9rRxL8
+11/1/2026 1:25:24|BARGUNAN R|7845545464|Tamil Nadu|Ramanathapuram|4+ years|300000|400000|Yes|15 days|No|Yes|1nY5dQUOXYfm_u23GzS6M9xElNTRbGm0V
+11/1/2026 1:55:19|Saipun Babulal Shaikh|8888484852|Maharashtra|Pune|4+ years|5.82LPA|5.82LPA|Yes|Immediate joiner|No|Yes|1hHZHbY2mIT5OVvp0YW8Nee9GBzN45bEH

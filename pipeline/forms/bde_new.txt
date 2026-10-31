@@ -1437,3 +1437,15 @@
 10/31/2026 21:31:17|Deepak Sahani|8081452897|Uttar Pradesh|Gorakhpur|0-1 years|2.8 LPA|3.5 LPA|Yes|Immediate joiner|No|Yes|1P9GlEt9R-smyomNCBJaafnYTVd8f9h9N
 10/31/2026 21:54:50|Omkar Patil|9503051251|Maharashtra|Kolhapur|2-4 years|3.00 LPA|7 LPA|Yes|15 days|Yes|Yes|1KB85VsOGV30xUBHiw1ElDbJalovRgH2u
 10/31/2026 21:55:12|arun kumar|8098467318|Tamil Nadu|Kancheepuram|0-1 years|3LPA|3.5LPA|Yes|Immediate joiner|No|No|15F0_5pHGOAEk6thC9ug_P4rHkoBybud1
+10/31/2026 22:56:12|Bhavesh Bhagde|9156542879|Maharashtra|Akola|2-4 years|3Lpa|4 Lpa|Yes|Immediate joiner|Yes|Yes|1CnnwrZAyr1snDPszcH_Ft45WU0B8fUic
+10/31/2026 23:06:39|Poovarasan M|9597474594|Tamil Nadu|Krishnagiri|4+ years|4.5|5.1|Yes|15 days|No|Yes|1Ui_y8gvYr4E1PTYmm9TN-WIhHqZvBsbG
+10/31/2026 23:10:10|Sangram Bhagat|7020835252|Maharashtra|Satara|4+ years|596000|700000|Yes|15 days|Yes|Yes|13dXlfv4QipfuPEw3_2NlXsKQebaS7ujh
+10/31/2026 23:12:15|꧁🥀𝕭𝖆𝖌𝖆𝖛𝖆𝖙𝖍𝖎🐾♥️ ꧁🥀𝕭𝖆𝖌𝖆𝖛𝖆𝖙𝖍𝖎🐾♥️|6379595030|Tamil Nadu|Vellore|0-1 years|384000|480000|Yes|Immediate joiner|Yes|Yes|17mZZ1fjS4OdIaJlh-0Zcw--I9FBbwI73
+10/31/2026 23:28:40|Ashish Sonone|8329336831|Maharashtra|Akola|1-2 years|2.0LPA|3.10LPA|Yes|Immediate joiner|No|Yes|1UwxYAvtnF384iYTvs9kjxkB556lGretp
+10/31/2026 23:29:48|Mahender Boddupally|7981883370|Telangana|Nalgonda|0-1 years|Fresher|3.5|Yes|Immediate joiner|No|Yes|1ml503pXdlrCrqyq2FvsHPiXGSdGCcjsH
+10/31/2026 23:31:04|Ravi gupta|9369339049|Uttar Pradesh|Lakhimpur Kheri|4+ years|320000|400000|Yes|Immediate joiner|Yes|Yes|1Al6iHk4ZPYI_bmMHHw31QvuZtTF6Ztz1
+10/31/2026 23:51:49|karan Kadam|8073805661|Karnataka|Belagavi|4+ years|390000|450000|Yes|Immediate joiner|Yes|Yes|1g9AwnG_kcfRL0JcI2TnynwyFIw1RgCUB
+10/31/2026 23:59:56|Saheer Mujawar|9739352193|Karnataka|Belagavi|4+ years|6 LPA|6.6 LPA|Yes|15 days|Yes|Yes|1-8zuye0BuTzf8-0_0iuItJUacAIZ3Xjz
+11/1/2026 0:03:09|GAJJELA SHEKHAR|6305904002|Telangana|Kamareddy|4+ years|4.2|5.4|Yes|Immediate joiner|No|Yes|17auZVqwEcncZHGpXwCaDGG7vkc2STaMA
+11/1/2026 0:08:57|Swapnil satish mayekar|8669057513|Maharashtra|Satara|4+ years|1200000|1500000|Yes|15 days|No|Yes|16xUdfi0cY4pCdhPszepyZdjiLMvYC3E9
+11/1/2026 0:41:20|Mandar mahadeo Ghewar|8007699997|Maharashtra|Akola|4+ years|4|40000|Yes|Immediate joiner|Yes|Yes|1P1SLfbZAUB5IjDy85biwOLK2qvD3XK9p

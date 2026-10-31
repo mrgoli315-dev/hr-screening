@@ -1425,3 +1425,8 @@
 10/31/2026 17:43:01|Praful bhagwan|9028791143|Maharashtra|Nandurbar|1-2 years|1|1|Yes|Immediate joiner|No|No|1Q6IK-KgvQMyRfvDa-Qb1Vuj-MRV9VAPv
 10/31/2026 18:08:58|Syed rizwan|9607313763|Maharashtra|Akola|1-2 years|240000|350000|Yes|Immediate joiner|No|Yes|1eXiFhDGMSnDdyTBpydd-CBWd8LnUjgQX
 10/31/2026 18:09:20|Ganesh Yadav|9359037615|Maharashtra|Akola|2-4 years|2.2 lac|3 lac|Yes|15 days|Yes|Yes|1uOmfgWW0msWsoKwJLoxemBj6a3wUD3RE
+10/31/2026 19:27:16|Sakthivel|8778667683|Tamil Nadu|Tirupathur|0-1 years|18000|21000|Yes|Immediate joiner|No|Yes|16nZxEB_EmZtzd0260mfZaXwxvYYXFl5O
+10/31/2026 19:43:44|Mallappa|7090602501|Karnataka|Belagavi|4+ years|480000|520000|Yes|Immediate joiner|Yes|Yes|1136vuRKGvR6A6d38UMoKQfw3HiJ1nsd4
+10/31/2026 19:57:56|abishek|6369757034|Tamil Nadu|Chennai|2-4 years|4.2|4.4|Yes|Immediate joiner|No|Yes|1HOrZQ_O0mnOyPChYVsYVUUKaJ9IPJXK8
+10/31/2026 19:59:36|Mr.Baban Bhate|9900982091|Karnataka|Belagavi|4+ years|4.5|5.5|Yes|Immediate joiner|Yes|Yes|1-rEHFTqOHKi5VJaH5JyHgY3YfaR9h5zr
+10/31/2026 20:14:55|Vidyadhar sarang|9820505958|Goa|North Goa|4+ years|7 Lpa|8 lpa|Yes|Immediate joiner|No|Yes|1Rc3xkmhdLbnxHdTQdhnbhIMtVz4xYvXQ

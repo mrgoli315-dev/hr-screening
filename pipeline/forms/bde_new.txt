@@ -1430,3 +1430,10 @@
 10/31/2026 19:57:56|abishek|6369757034|Tamil Nadu|Chennai|2-4 years|4.2|4.4|Yes|Immediate joiner|No|Yes|1HOrZQ_O0mnOyPChYVsYVUUKaJ9IPJXK8
 10/31/2026 19:59:36|Mr.Baban Bhate|9900982091|Karnataka|Belagavi|4+ years|4.5|5.5|Yes|Immediate joiner|Yes|Yes|1-rEHFTqOHKi5VJaH5JyHgY3YfaR9h5zr
 10/31/2026 20:14:55|Vidyadhar sarang|9820505958|Goa|North Goa|4+ years|7 Lpa|8 lpa|Yes|Immediate joiner|No|Yes|1Rc3xkmhdLbnxHdTQdhnbhIMtVz4xYvXQ
+10/31/2026 20:49:24|Mohamad Nadeem|7666845710|Maharashtra|Amravati|1-2 years|2.4|1.5|Yes|Immediate joiner|Yes|Yes|1GIRMvg3JXEXqT-vX0QN_q-i8sPbw6R2x
+10/31/2026 21:00:28|Chidambar Kulkarni|7875981737|Karnataka|Belagavi|4+ years|1500000|800000|Yes|Immediate joiner|No|Yes|1B-sZ1g772YB_V7oo5p4NvjOHUSTwfkob
+10/31/2026 21:13:53|Shahjad Ahmad Gourve|8237581426|Maharashtra|Akola|0-1 years|385000|As per Company Norms|Yes|15 days|No|Yes|1Fy87WrIPJwsmf_4ijnxTAUDPAsHzwwCx
+10/31/2026 21:28:57|Om Patil|9421693549|Maharashtra|Satara|0-1 years|3|5|Yes|Immediate joiner|No|Yes|1ryXGEj4anWMcHg8GRQ_2c8R2GVZUgAW6
+10/31/2026 21:31:17|Deepak Sahani|8081452897|Uttar Pradesh|Gorakhpur|0-1 years|2.8 LPA|3.5 LPA|Yes|Immediate joiner|No|Yes|1P9GlEt9R-smyomNCBJaafnYTVd8f9h9N
+10/31/2026 21:54:50|Omkar Patil|9503051251|Maharashtra|Kolhapur|2-4 years|3.00 LPA|7 LPA|Yes|15 days|Yes|Yes|1KB85VsOGV30xUBHiw1ElDbJalovRgH2u
+10/31/2026 21:55:12|arun kumar|8098467318|Tamil Nadu|Kancheepuram|0-1 years|3LPA|3.5LPA|Yes|Immediate joiner|No|No|15F0_5pHGOAEk6thC9ug_P4rHkoBybud1

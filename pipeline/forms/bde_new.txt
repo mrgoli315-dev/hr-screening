@@ -1461,3 +1461,13 @@
 11/1/2026 10:16:25|Manjunath MN|6361834545|Karnataka|Davanagere|4+ years|5.5|7|Yes|Immediate joiner|No|Yes|1MiK69_-PoK1AuuKGcwALGo1JPJjFGAgv
 11/1/2026 10:18:01|Somnath Vibhute|8080251315|Maharashtra|Solapur|2-4 years|240000|300000|Yes|Immediate joiner|Yes|Yes|1yfUrxX838-7F50GbVTL5pfmyfdrIkqkZ
 11/1/2026 10:41:40|Sathish Kumar|8610536927|Tamil Nadu|Chennai|4+ years|4.0 lpa|6.0 lpa|Yes|15 days|Yes|Yes|1fheB5ChBOwY1Azi9HGmCTedwvsm6rDlv
+11/1/2026 10:44:21|Shreyas Jadhav|7757989565|Maharashtra|Thane|4+ years|6 lac|8 lac|Yes|Immediate joiner|No|Yes|18lDJ4dfO16anRmbedX3KPoY8fL1igfWT
+11/1/2026 11:08:10|Yogesh pal|7385776409|Maharashtra|Akola|2-4 years|30000|30000|Yes|15 days|Yes|Yes|14o9Ylzda1xHifet8wkb7htl0x6qpNzjf
+11/1/2026 11:16:30|VINAYAK TAKKEKAR|8971155712|Karnataka|Belagavi|4+ years|4.5|6|Yes|15 days|No|Yes|1wW55nt1qxZHER2tAa7dMsqkegpT8L5KJ
+11/1/2026 11:29:36|AMAN SINGH|7219620695|Maharashtra|Palghar|4+ years|3.8|4.5|Yes|Immediate joiner|No|Yes|1vujIXSdd42a8EsMf93CDCE1cZUf5YObb
+11/1/2026 11:49:10|Chetan malagi|8123169375|Karnataka|Belagavi|4+ years|500000|600000|Yes|Immediate joiner|Yes|Yes|10PqraD_uP3qXy5efbzoDjRQYOONEak7w
+11/1/2026 11:50:52|VISHAL RATHOD|9834301113|Maharashtra|Akola|1-2 years|3.5|4|Yes|15 days|No|Yes|1rb_vyI1MglnhPD6XAfAi2fktS03hSIkk
+11/1/2026 12:08:57|Yogesh Tanaji Satpute|8999212116|Maharashtra|Pune|4+ years|7.0LPA|9.0 LPA|Yes|15 days|Yes|Yes|15oHD8Z1vkVTiJUcZJFWQvpcI7wsbFZA8
+11/1/2026 12:46:10|Naveen Saminathan|7200057393|Tamil Nadu|Tiruppur|4+ years|18000|25000|Yes|Immediate joiner|Yes|Yes|1zg-_UhjOnzuF5Sr8qvgMcjb8nlDYAouF
+11/1/2026 12:57:34|Mukesh Engineer|7276444996|Maharashtra|Thane|4+ years|3.5|450000|Yes|Immediate joiner|Yes|Yes|12vs0iVwcFlhEJvEihXX0s1xpBXIiflOP
+11/1/2026 12:58:55|Johnson M|8015596984|Tamil Nadu|Chennai|4+ years|1200000|1500000|Yes|Immediate joiner|Yes|Yes|1DxXg5cBXigoxqJu3xNY6fvQh_buAspdJ

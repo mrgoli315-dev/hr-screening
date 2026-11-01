@@ -1454,3 +1454,6 @@
 11/1/2026 1:25:24|BARGUNAN R|7845545464|Tamil Nadu|Ramanathapuram|4+ years|300000|400000|Yes|15 days|No|Yes|1nY5dQUOXYfm_u23GzS6M9xElNTRbGm0V
 11/1/2026 1:55:19|Saipun Babulal Shaikh|8888484852|Maharashtra|Pune|4+ years|5.82LPA|5.82LPA|Yes|Immediate joiner|No|Yes|1hHZHbY2mIT5OVvp0YW8Nee9GBzN45bEH
 11/1/2026 2:46:03|Mohammad Arshad|7498936341|Maharashtra|Akola|2-4 years|3.5|4 lac|Yes|15 days|Yes|Yes|1kIwuVoX5HrGAKXna9nClDFkEqpTrmtlM
+11/1/2026 5:32:37|Satheesh|9600421182|Andhra Pradesh|Tirupati|4+ years|3.8|4.8|Yes|Immediate joiner|Yes|Yes|1G02_puQZYe3O5QfqBStmctwSCTz-fvKe
+11/1/2026 6:29:29|Shaikh Allahbaksh|9923547861|Maharashtra|Ahmednagar|4+ years|1000000|1200000|Yes|15 days|Yes|Yes|1ttw67mAgU8hdDfYa2TX5KH11X4qjc602
+11/1/2026 6:52:14|ashwin Dhande|9309854537|Maharashtra|Akola|4+ years|2.2 pa|3.0.|Yes|Immediate joiner|No|Yes|1ybmWvrKeMWvOOpTGQS7jw_6zxy0-x4QH

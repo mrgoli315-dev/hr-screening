@@ -1478,3 +1478,9 @@
 11/1/2026 13:44:46|Naresh jadhaav|9960216756|Maharashtra|Nashik|4+ years|25000|28000|Yes|Immediate joiner|Yes|Yes|1iP2jdKXbDyRrcwy0lKqf7OIlwY7CkOEI
 11/1/2026 13:59:52|Navez Alam|9880714107|Karnataka|Dharwad|4+ years|3.9|4.2|Yes|15 days|Yes|Yes|10JbQD2tJYgvya05363xj3HhB9zTbXamz
 11/1/2026 14:13:05|Siddesha s|6366637905|Karnataka|Hassan|4+ years|4.3|5.5|Yes|Immediate joiner|No|Yes|1G8PHjnfdDbRkGGMla4UE7wzU40MROhxr
+11/1/2026 14:50:32|Mahantesh Malagi|9632829994|Karnataka|Dharwad|4+ years|480000|600000|Yes|Immediate joiner|Yes|Yes|1751kBvBwUO_NXTth21liAUptCJZpWA7j
+11/1/2026 15:27:12|Nipun Deshmukh|9970692999|Maharashtra|Akola|0-1 years|₹2.4 LPA|₹3.0 LPA|No|Immediate joiner|No|Yes|1mAYr6XdQYkSOyf4kjtrHuUoJ39SZMLrM
+11/1/2026 15:33:09|Nandan Malve|7875115069|Maharashtra|Akola|4+ years|4|6|Yes|Immediate joiner|Yes|Yes|1xZjlDZT24q2gO8FIHjPwgI5uQxcWNxRo
+11/1/2026 15:34:09|Thilipan K|8015373381|Tamil Nadu|Chennai|4+ years|624000|700000|Yes|15 days|Yes|Yes|1XUUUMhijWTq3a-OG4zPGq732J0TdOSuS
+11/1/2026 15:35:45|Gokul Pandey|8600388671|Maharashtra|Akola|2-4 years|330000|400000|Yes|Immediate joiner|Yes|Yes|1g2Y3TCN8InrNUap5ibZvV0liYlFnVQEH
+11/1/2026 15:46:36|Gajanan Kumar Patil|8530637005|Maharashtra|Sangli|2-4 years|3 LPA|3.5 LPA|Yes|15 days|Yes|Yes|1SOIftPfGyN2RdFUquAL1yWCdSDlkvGs9

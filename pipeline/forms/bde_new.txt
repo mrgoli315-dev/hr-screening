@@ -1457,3 +1457,7 @@
 11/1/2026 5:32:37|Satheesh|9600421182|Andhra Pradesh|Tirupati|4+ years|3.8|4.8|Yes|Immediate joiner|Yes|Yes|1G02_puQZYe3O5QfqBStmctwSCTz-fvKe
 11/1/2026 6:29:29|Shaikh Allahbaksh|9923547861|Maharashtra|Ahmednagar|4+ years|1000000|1200000|Yes|15 days|Yes|Yes|1ttw67mAgU8hdDfYa2TX5KH11X4qjc602
 11/1/2026 6:52:14|ashwin Dhande|9309854537|Maharashtra|Akola|4+ years|2.2 pa|3.0.|Yes|Immediate joiner|No|Yes|1ybmWvrKeMWvOOpTGQS7jw_6zxy0-x4QH
+11/1/2026 8:41:18|Samir khan|8657907098|Maharashtra|Akola|4+ years|4.20 LPA|5.5|Yes|15 days|Yes|Yes|1QKMViIvLVCl2pyIpxBsdNzb-GoS9e5b-
+11/1/2026 10:16:25|Manjunath MN|6361834545|Karnataka|Davanagere|4+ years|5.5|7|Yes|Immediate joiner|No|Yes|1MiK69_-PoK1AuuKGcwALGo1JPJjFGAgv
+11/1/2026 10:18:01|Somnath Vibhute|8080251315|Maharashtra|Solapur|2-4 years|240000|300000|Yes|Immediate joiner|Yes|Yes|1yfUrxX838-7F50GbVTL5pfmyfdrIkqkZ
+11/1/2026 10:41:40|Sathish Kumar|8610536927|Tamil Nadu|Chennai|4+ years|4.0 lpa|6.0 lpa|Yes|15 days|Yes|Yes|1fheB5ChBOwY1Azi9HGmCTedwvsm6rDlv

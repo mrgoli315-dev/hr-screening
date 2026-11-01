@@ -1471,3 +1471,10 @@
 11/1/2026 12:46:10|Naveen Saminathan|7200057393|Tamil Nadu|Tiruppur|4+ years|18000|25000|Yes|Immediate joiner|Yes|Yes|1zg-_UhjOnzuF5Sr8qvgMcjb8nlDYAouF
 11/1/2026 12:57:34|Mukesh Engineer|7276444996|Maharashtra|Thane|4+ years|3.5|450000|Yes|Immediate joiner|Yes|Yes|12vs0iVwcFlhEJvEihXX0s1xpBXIiflOP
 11/1/2026 12:58:55|Johnson M|8015596984|Tamil Nadu|Chennai|4+ years|1200000|1500000|Yes|Immediate joiner|Yes|Yes|1DxXg5cBXigoxqJu3xNY6fvQh_buAspdJ
+11/1/2026 13:11:26|SENTHILPANDIYAN|6380997344|Tamil Nadu|Ranipet|1-2 years|350000|500000|Yes|Immediate joiner|Yes|Yes|1m2l2PA50qZDYtBvkp-6YSzuUZFu6XNEi
+11/1/2026 13:16:48|Sathish|6381437232|Tamil Nadu|Kancheepuram|4+ years|3.2LPA|4.8LPA|Yes|15 days|Yes|No|1cTKk1TJe2ahHTO6fkY6xi9QrMQb1sVA5
+11/1/2026 13:17:31|Lavudya Naveen|7981551225|Telangana|Mahabubabad|2-4 years|360000|500000|Yes|Immediate joiner|Yes|Yes|1_xkkCcLseG7Q3tZ0Zp6jTOlIQQ9XK1LB
+11/1/2026 13:35:49|Swanand parsad borkar|9405041288|Maharashtra|Raigad|0-1 years|4.8 LPA|6.LPA|Yes|Immediate joiner|No|Yes|1GxH8mgM35Vc1Kr9SuT0Wkr4sqeSIpoDk
+11/1/2026 13:44:46|Naresh jadhaav|9960216756|Maharashtra|Nashik|4+ years|25000|28000|Yes|Immediate joiner|Yes|Yes|1iP2jdKXbDyRrcwy0lKqf7OIlwY7CkOEI
+11/1/2026 13:59:52|Navez Alam|9880714107|Karnataka|Dharwad|4+ years|3.9|4.2|Yes|15 days|Yes|Yes|10JbQD2tJYgvya05363xj3HhB9zTbXamz
+11/1/2026 14:13:05|Siddesha s|6366637905|Karnataka|Hassan|4+ years|4.3|5.5|Yes|Immediate joiner|No|Yes|1G8PHjnfdDbRkGGMla4UE7wzU40MROhxr

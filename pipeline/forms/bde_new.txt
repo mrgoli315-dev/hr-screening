@@ -1489,3 +1489,8 @@
 11/1/2026 17:31:36|Akshay Deshmukh|9011264237|Maharashtra|Satara|4+ years|6|6|Yes|Immediate joiner|Yes|Yes|1kn16CcLjd-5qgFkonCSjRNo22WlK30xy
 11/1/2026 17:54:17|kiran waghmare|9822627572|Maharashtra|Pune|4+ years|475000|50000|Yes|15 days|Yes|Yes|1TJXF7h0vLbxQ8h6ZXWjMaTI0Vt2T_jXj
 11/1/2026 18:38:46|Vaibhav khandare|9028942197|Maharashtra|Akola|4+ years|3LPA|4.5LPA|Yes|15 days|No|Yes|1XmT3vyc4ScmfUY7P1RPxUDoh6yJ9BpfA
+11/1/2026 18:57:34|Arpit Gaikwad|7249185811|Karnataka|Belagavi|0-1 years|None|4 LPA|Yes|Immediate joiner|No|No|1w0gPWyN1F-FdKGuQwlsDgRrsp9rv_481
+11/1/2026 19:18:33|Amit jadhav|9881123949|Maharashtra|Satara|2-4 years|18000|25000|Yes|15 days|Yes|Yes|1AsZJ21-dU8mAtgI36tUAs8Lm1bMIsUlh
+11/1/2026 19:45:38|Jiyavudheen|7358310729|Puducherry|Puducherry|4+ years|960000|600000|Yes|Immediate joiner|Yes|Yes|1tRcgX3cWahewCI-DG_WANtiSdWNr6o4S
+11/1/2026 19:54:35|Datta Shinganwad|9923812813|Maharashtra|Nanded|4+ years|6.5|8.5|Yes|15 days|Yes|Yes|1g6q1VXYGSCZCKnVndPOqaF6RKDWJbWdK
+11/1/2026 20:04:19|Prashant|8867837658|Karnataka|Belagavi|4+ years|530000|600000|Yes|Immediate joiner|Yes|Yes|1WQuTq1-VpE87zQJfvIFS9PF1WEU7Cmx0

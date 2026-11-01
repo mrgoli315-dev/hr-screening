@@ -1500,3 +1500,9 @@
 11/1/2026 21:50:59|Muddsar sardar hakim|7276232324|Maharashtra|Kolhapur|1-2 years|3.6|4|Yes|Immediate joiner|No|No|1wr3f51IhF5xQrrPqxTXjbdEZX3jDzsrK
 11/1/2026 21:56:24|Sagar Mokal|7998714714|Maharashtra|Raigad|4+ years|452000|522000|Yes|15 days|Yes|Yes|1N6v_NetdFPfclgydILKpJb3ETT9TXQmu
 11/1/2026 21:59:03|Arsalan Khan|6361658323|Karnataka|Belagavi|0-1 years|20000|25000|Yes|15 days|No|No|1ADzO8AAaeqtMqQHSGJxUH7VfwAeLphN7
+11/1/2026 22:30:14|Seetha Raman s|9840922146|Tamil Nadu|Chennai|2-4 years|4.5|5|Yes|Immediate joiner|Yes|Yes|1PkhUZPbz97KQdnWxau8S851okDUz-FM3
+11/1/2026 23:22:13|Anil KISANGIRI GOSAVI|9112135137|Maharashtra|Satara|4+ years|660000|750000|Yes|Immediate joiner|Yes|Yes|1W_1OWOyuDti3ekaP3nDUwEiRXf_aTQG0
+11/1/2026 23:36:58|Tanay Dhankhede|9356643917|Maharashtra|Akola|0-1 years|Na|5.0 lpa|Yes|Immediate joiner|No|No|1yfIN8dhI3GwnkgrHpA7hYr41fX409hhZ
+11/1/2026 23:57:00|Roshan Raikar|7795563680|Karnataka|Belagavi|1-2 years|40,000|50,000 to 60,000|Yes|Immediate joiner|No|Yes|1KquWcV9vK1zGYp5akq8Cmf9kN-xlXrmy
+11/1/2026 23:59:11|Srithar A|7708709381|Tamil Nadu|Chennai|4+ years|3.5|4.5|Yes|Immediate joiner|Yes|Yes|1uL_VQli2DjeURQ0HxtYZ4z1oqOP8kJLC
+11/2/2026 0:21:42|Wasim kotwal|9008555731|Karnataka|Belagavi|4+ years|7 LPA|7 LPA|Yes|15 days|No|Yes|1KczL2IgNKLqtsqvD0w5PGXIoOaEn38_D

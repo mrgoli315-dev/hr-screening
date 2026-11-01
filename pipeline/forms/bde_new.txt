@@ -1494,3 +1494,9 @@
 11/1/2026 19:45:38|Jiyavudheen|7358310729|Puducherry|Puducherry|4+ years|960000|600000|Yes|Immediate joiner|Yes|Yes|1tRcgX3cWahewCI-DG_WANtiSdWNr6o4S
 11/1/2026 19:54:35|Datta Shinganwad|9923812813|Maharashtra|Nanded|4+ years|6.5|8.5|Yes|15 days|Yes|Yes|1g6q1VXYGSCZCKnVndPOqaF6RKDWJbWdK
 11/1/2026 20:04:19|Prashant|8867837658|Karnataka|Belagavi|4+ years|530000|600000|Yes|Immediate joiner|Yes|Yes|1WQuTq1-VpE87zQJfvIFS9PF1WEU7Cmx0
+11/1/2026 20:47:27|Hemant|8618634472|Karnataka|Belagavi|4+ years|4.2|5|Yes|Immediate joiner|No|Yes|1Cq3pVPvZw6BRE5cfVpDMzSyN8nL9Q7qG
+11/1/2026 21:16:33|Murugan A S|9944283659|Tamil Nadu|Tirupathur|2-4 years|4.5|6|Yes|Immediate joiner|No|No|1mawAfhuuzeEDFil_fnybUMH_6rsBNF_f
+11/1/2026 21:24:32|shankar sawant|8970358532|Karnataka|Belagavi|4+ years|4,20,000|7,00,000|Yes|Immediate joiner|Yes|Yes|1gnGjgogljogT7bH73gr9CCKZCntXRfWl
+11/1/2026 21:50:59|Muddsar sardar hakim|7276232324|Maharashtra|Kolhapur|1-2 years|3.6|4|Yes|Immediate joiner|No|No|1wr3f51IhF5xQrrPqxTXjbdEZX3jDzsrK
+11/1/2026 21:56:24|Sagar Mokal|7998714714|Maharashtra|Raigad|4+ years|452000|522000|Yes|15 days|Yes|Yes|1N6v_NetdFPfclgydILKpJb3ETT9TXQmu
+11/1/2026 21:59:03|Arsalan Khan|6361658323|Karnataka|Belagavi|0-1 years|20000|25000|Yes|15 days|No|No|1ADzO8AAaeqtMqQHSGJxUH7VfwAeLphN7

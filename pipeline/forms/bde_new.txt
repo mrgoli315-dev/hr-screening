@@ -1508,3 +1508,6 @@
 11/2/2026 0:21:42|Wasim kotwal|9008555731|Karnataka|Belagavi|4+ years|7 LPA|7 LPA|Yes|15 days|No|Yes|1KczL2IgNKLqtsqvD0w5PGXIoOaEn38_D
 11/2/2026 0:47:50|Shrishail Kashinath Bhange|7666172687|Maharashtra|Solapur|0-1 years|2.5|4.5|Yes|Immediate joiner|Yes|Yes|184x64UdXVfINLkyP71Sl5FMHy7ONkLvN
 11/2/2026 4:01:01|Karan Garge|7774897217|Maharashtra|Akola|0-1 years|300000|500000|Yes|Immediate joiner|No|No|1Wb6y6BUkQr-0Oz0L6IlGjGOPhfsePLIT
+11/2/2026 6:10:48|Kaviyarasan K|9025283501|Tamil Nadu|Dindigul|1-2 years|2.5L|5L|Yes|Immediate joiner|No|No|198bmEXR8z57MLl-lWPEQXwZ7qaFqyfF3
+11/2/2026 6:39:20|Sachin Mahorkar|9511626279|Maharashtra|Washim|2-4 years|2.5LPA|3.0LPA|Yes|15 days|Yes|Yes|19Kg1Duhs7L931vN5o3tUcu_-mfmT3PYF
+11/2/2026 7:01:58|Akhand Mishra|8827098784|Madhya Pradesh|Chhindwara|2-4 years|450000|540000|Yes|15 days|Yes|Yes|19iYX28M_ifVZgHYjSo46_v6Mhyob4Kzd

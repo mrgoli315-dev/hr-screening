@@ -1521,3 +1521,13 @@
 11/2/2026 10:42:06|Naveed desai|7406064592|Karnataka|Belagavi|0-1 years|20000|35000|Yes|15 days|Yes|No|1EXNk-kezNRXj_H3MYkjuNy1sDNEMVmGW
 11/2/2026 10:44:27|sumit. Yande|7020980543|Maharashtra|Washim|4+ years|30000|40000|Yes|Immediate joiner|Yes|Yes|1TxI6JRYU3GA8UjmGMnbB4P0gpFmqkYiw
 11/2/2026 10:46:01|Mohammed saleem.N|9655065912|Tamil Nadu|Ranipet|0-1 years|2.5 LPA|4.8 LPA|No|15 days|No|No|1w0DuhGHetUB0Oer9flbe1ZEzfSHBSaz6
+11/2/2026 11:01:10|Akshay Survase|9325771198|Maharashtra|Pune|2-4 years|3 LPA|4.50 LPA|Yes|Immediate joiner|Yes|Yes|1el1VHVC7msHOZvKlCiAeMe-H4feKxAiW
+11/2/2026 11:02:22|Aravindha kannan k|8056017961|Tamil Nadu|Chennai|2-4 years|4.5|5 to 5.5|Yes|Immediate joiner|No|No|16QtSkf4YoZKTSzQTEVNTz_mp0t3XKEeX
+11/2/2026 11:20:46|Senthil|8778828585|Tamil Nadu|Vellore|4+ years|5.36|6|Yes|15 days|Yes|Yes|11zTERXJj4ENHlRjxHoZPMDWD73epmr0Q
+11/2/2026 11:28:43|Kunal Nrupnarayan|8766514902|Maharashtra|Thane|0-1 years|41000|45000|Yes|15 days|No|Yes|1qrXyhNeGmz9iHbIxxNUCqZCDTPlKfsFi
+11/2/2026 11:42:16|Tushar Naik|6361583580|Karnataka|Belagavi|0-1 years|24000|30000|No|Immediate joiner|Yes|Yes|1OUtYmG1HZ7D1_zQ_4QOAQConNXxUP_aJ
+11/2/2026 12:04:25|Karthick.k|9940994212|Tamil Nadu|Madurai|4+ years|5,04,000|6,00,000|No|15 days|Yes|Yes|1x6lFJOEaN_cHlt99w5wbZbMoI_XdsPMh
+11/2/2026 12:10:37|Shivaraj Chiniwal|9513467060|Karnataka|Belagavi|1-2 years|2.8|3.5|Yes|Immediate joiner|No|Yes|1VO-sgaiSQR8f97vnVoW7mJdKidFkG2pI
+11/2/2026 12:12:10|Sachinsam|7603873390|Tamil Nadu|Erode|1-2 years|3.25|4|No|Immediate joiner|No|Yes|1LQLwRFTxyAX-jRM-3CImi46O4GGxtwVN
+11/2/2026 12:17:43|Mandar Shintre|9975434481|Maharashtra|Kolhapur|0-1 years|2.4LPA|4LPA|Yes|Immediate joiner|Yes|Yes|1BxKR01S7LFoBTgmWRjdlrd-nggcUnyTO
+11/2/2026 12:22:17|Mahesh Eshuram|7386700856|Telangana|Nalgonda|4+ years|3.6LPA|5LPA|Yes|15 days|No|Yes|1ooTbRE9V3fq2LeJ06MUUJWJJ-i6aaZV3

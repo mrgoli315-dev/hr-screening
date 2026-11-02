@@ -1531,3 +1531,10 @@
 11/2/2026 12:12:10|Sachinsam|7603873390|Tamil Nadu|Erode|1-2 years|3.25|4|No|Immediate joiner|No|Yes|1LQLwRFTxyAX-jRM-3CImi46O4GGxtwVN
 11/2/2026 12:17:43|Mandar Shintre|9975434481|Maharashtra|Kolhapur|0-1 years|2.4LPA|4LPA|Yes|Immediate joiner|Yes|Yes|1BxKR01S7LFoBTgmWRjdlrd-nggcUnyTO
 11/2/2026 12:22:17|Mahesh Eshuram|7386700856|Telangana|Nalgonda|4+ years|3.6LPA|5LPA|Yes|15 days|No|Yes|1ooTbRE9V3fq2LeJ06MUUJWJJ-i6aaZV3
+11/2/2026 13:26:32|T.Mohammed saqib|9789242059|Tamil Nadu|Tirupathur|2-4 years|2.4|3|Yes|Immediate joiner|No|No|1DY7OzE-dhHRvOlnDnb07RyRqh0ppDGs-
+11/2/2026 13:37:00|Abdul kazi|9449947412|Karnataka|Belagavi|4+ years|420000|450000|No|Immediate joiner|Yes|Yes|1UWwYBb2VX3KLa8-lN7d2nYnMlI2Vlzsx
+11/2/2026 14:00:56|THANGA RAJ|9750230684|Tamil Nadu|Tiruvallur|0-1 years|20000|2.5l|Yes|Immediate joiner|No|No|1uD1UFQI-b1wagQWCP51SkljB3iUkmPGi
+11/2/2026 14:24:41|Raju kukadolli|9482409848|Karnataka|Belagavi|4+ years|7.35 lakh|8.50.lakh|Yes|Immediate joiner|No|Yes|1D7KUvpcvy5juFgNBHa_otG9B8yx6cT84
+11/2/2026 14:26:27|Prasanna Kulkarni|9008221232|Karnataka|Dharwad|4+ years|3|3.9|Yes|Immediate joiner|No|Yes|1yNbaEWtumpE1SW7cA5j_PW7UftGtskto
+11/2/2026 14:27:01|Sathish B|9087423869|Tamil Nadu|Chennai|1-2 years|4.4Lpa|5LPA|Yes|15 days|No|Yes|1yFmLgoC8EJD-nhXCR-vTJvPFnWqeH56u
+11/2/2026 14:28:21|Rishikesh Anandrao Thombare|8485073430|Maharashtra|Satara|2-4 years|2.5 lpa|3.6 lpa|Yes|Immediate joiner|No|No|1u18Q3AKbpWCwyLqotZJA5C6u7JfOyXkw

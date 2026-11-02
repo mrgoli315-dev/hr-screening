@@ -1561,3 +1561,7 @@
 11/2/2026 20:18:26|Veera Kumar|7777939767|Telangana|Nalgonda|1-2 years|4.2|5|Yes|15 days|No|Yes|1aH2DYtcxnemD45fmjqQjj83LKmWjA6B8
 11/2/2026 20:20:33|Sairam|7358930162|Tamil Nadu|Chennai|4+ years|25|28|No|Immediate joiner|No|No|1AsQvG851RQQA98s2fwfMZIp1I1RB-xFY
 11/2/2026 20:25:50|KarthikM|9789010630|Tamil Nadu|Kancheepuram|2-4 years|3|3.2|Yes|Immediate joiner|No|Yes|1VruOF5BsZuY0l9mEFfMh5XIsZxg3h8Nx
+11/2/2026 21:14:21|Ashraf Hippargi|7249051654|Maharashtra|Kolhapur|4+ years|3,00,000|4,00,000|Yes|15 days|Yes|Yes|1DwfRTEq-4l1LZa2-89MGUsfrHwlvcQdr
+11/2/2026 21:22:01|Mahammad ishaq kotawal|7757930687|Karnataka|Belagavi|4+ years|250000|300000|Yes|15 days|Yes|Yes|1gnBkaWU1Oj-9cpoduzhUQK-w-vwYo7Yb
+11/2/2026 21:28:29|Manjunath Singri|7483388401|Karnataka|Belagavi|4+ years|4.2|5|Yes|Immediate joiner|Yes|Yes|1lT_tkybpYXouHsR472jpk6sRlvjFCIbB
+11/2/2026 22:38:30|Jeeva|7339103828|Tamil Nadu|Vellore|2-4 years|27000|324,000|Yes|Immediate joiner|Yes|Yes|19hbRq7qg4aC2Fw-lDG19ZYilgnK0E1fb

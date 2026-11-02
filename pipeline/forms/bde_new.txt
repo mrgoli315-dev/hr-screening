@@ -1511,3 +1511,6 @@
 11/2/2026 6:10:48|Kaviyarasan K|9025283501|Tamil Nadu|Dindigul|1-2 years|2.5L|5L|Yes|Immediate joiner|No|No|198bmEXR8z57MLl-lWPEQXwZ7qaFqyfF3
 11/2/2026 6:39:20|Sachin Mahorkar|9511626279|Maharashtra|Washim|2-4 years|2.5LPA|3.0LPA|Yes|15 days|Yes|Yes|19Kg1Duhs7L931vN5o3tUcu_-mfmT3PYF
 11/2/2026 7:01:58|Akhand Mishra|8827098784|Madhya Pradesh|Chhindwara|2-4 years|450000|540000|Yes|15 days|Yes|Yes|19iYX28M_ifVZgHYjSo46_v6Mhyob4Kzd
+11/2/2026 7:20:18|Omkar Salunkhe|7975664668|Karnataka|Belagavi|4+ years|4.5|5|Yes|15 days|Yes|Yes|1gUgF7sc4--aWtATtsU3fDk7uoTtgsxXR
+11/2/2026 8:04:24|Mahesh Mukinda Hadole|8605717253|Maharashtra|Akola|4+ years|4.2|5.5|Yes|Immediate joiner|No|Yes|1JG5Fw8L_zrrZVKKLX2Vf3thIjUwogK0H
+11/2/2026 8:20:56|RAJU SHRIRANG JADHAV|9970882435|Maharashtra|Satara|1-2 years|27000|35000|Yes|Immediate joiner|Yes|Yes|1X2XLXwk4oGqpIihpjROg3rO-LatjuVTL

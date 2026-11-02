@@ -1571,3 +1571,5 @@
 11/3/2026 0:17:52|AKASH PREMSINGH RAJPUT|9372079593|Maharashtra|Thane|4+ years|5|7|Yes|15 days|Yes|Yes|1f2r5zp3AupePu5wpRJDEQXzGMaIaSr9U
 11/3/2026 0:26:53|Rahul Chavan|7769869999|Maharashtra|Pune|4+ years|5.5|Na|Yes|Immediate joiner|No|Yes|1EO6OMY-gHS8TzFql3nuULa8aUP-pdl98
 11/3/2026 0:30:21|Shlok Pathak|8605276485|Maharashtra|Akola|0-1 years|3.5|4.5 to 5|Yes|15 days|No|Yes|1FOdZJvfYWTbOISFTuB0MSavWI5GXlRNd
+11/3/2026 1:09:59|Vengatesh|9787157946|Tamil Nadu|Ranipet|2-4 years|8|6|Yes|Immediate joiner|Yes|Yes|1rqnygnN74hLH5MmJzZlaOzvVxUeVdvnk
+11/3/2026 1:10:48|Rajapandian B|6381419785|Tamil Nadu|Virudhunagar|0-1 years|2.64|3.6|Yes|15 days|No|Yes|1hBSL7vNGcPmpifXbWGK-S7Nwha5MKBiS

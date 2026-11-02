@@ -1565,3 +1565,9 @@
 11/2/2026 21:22:01|Mahammad ishaq kotawal|7757930687|Karnataka|Belagavi|4+ years|250000|300000|Yes|15 days|Yes|Yes|1gnBkaWU1Oj-9cpoduzhUQK-w-vwYo7Yb
 11/2/2026 21:28:29|Manjunath Singri|7483388401|Karnataka|Belagavi|4+ years|4.2|5|Yes|Immediate joiner|Yes|Yes|1lT_tkybpYXouHsR472jpk6sRlvjFCIbB
 11/2/2026 22:38:30|Jeeva|7339103828|Tamil Nadu|Vellore|2-4 years|27000|324,000|Yes|Immediate joiner|Yes|Yes|19hbRq7qg4aC2Fw-lDG19ZYilgnK0E1fb
+11/2/2026 22:55:53|Dinesh mule|8197176019|Karnataka|Belagavi|1-2 years|2.5|3.5|Yes|15 days|No|No|1p7dVDy0ChBfEVgR7m1p6GVN04TUNffmj
+11/2/2026 23:16:08|Mohammad Ahtesham Mohammad Ajaz|9503339122|Maharashtra|Akola|1-2 years|240000|400000|Yes|Immediate joiner|No|Yes|1juBqGFRBDfnZgAoJXo0useCMHidNB5io
+11/2/2026 23:24:59|Niraj VijaySingh Thakur|8999925335|Maharashtra|Akola|4+ years|2.7|3|Yes|Immediate joiner|No|Yes|1jTOP-rr_P4cFdsupa2CWLyZpQvPUDIYu
+11/3/2026 0:17:52|AKASH PREMSINGH RAJPUT|9372079593|Maharashtra|Thane|4+ years|5|7|Yes|15 days|Yes|Yes|1f2r5zp3AupePu5wpRJDEQXzGMaIaSr9U
+11/3/2026 0:26:53|Rahul Chavan|7769869999|Maharashtra|Pune|4+ years|5.5|Na|Yes|Immediate joiner|No|Yes|1EO6OMY-gHS8TzFql3nuULa8aUP-pdl98
+11/3/2026 0:30:21|Shlok Pathak|8605276485|Maharashtra|Akola|0-1 years|3.5|4.5 to 5|Yes|15 days|No|Yes|1FOdZJvfYWTbOISFTuB0MSavWI5GXlRNd

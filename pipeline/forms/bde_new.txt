@@ -1542,3 +1542,11 @@
 11/2/2026 16:10:14|Radhakrishnan D|7871095164|Tamil Nadu|Chennai|0-1 years|30000|37000|Yes|Immediate joiner|Yes|No|1Vh5H4swcYa90ytEUpSWj4-lLsGZkK832
 11/2/2026 16:30:27|Mohammed Wajahath|9342906855|Tamil Nadu|Tiruvallur|4+ years|₹3.0 LPA|₹5.0 LPA|Yes|15 days|No|No|11cpnGHbW7ndgGYni_uuYN_4x2O0zdcK6
 11/2/2026 16:35:43|RUTHRAN T|9087369841|Tamil Nadu|Chennai|4+ years|34000|30000|Yes|Immediate joiner|No|Yes|1NJJcFhERvhblnPztoZCk3b-NGSFywtlr
+11/2/2026 17:11:36|Abiraj M|9688987090|Tamil Nadu|Chennai|2-4 years|3.4|4|Yes|Immediate joiner|No|Yes|1ZXynQ1HQ_8cIEgen_oySYsSkBJP8WCnJ
+11/2/2026 17:26:06|Bhanudas Madiwal|8767633040|Maharashtra|Solapur|2-4 years|240000|400000|Yes|Immediate joiner|No|Yes|1QBGCUiKs4Zsa9n16ub-woVoHTm54Z8ET
+11/2/2026 17:28:27|Pruthviraj Mane|9561447964|Maharashtra|Satara|0-1 years|400000|500000|Yes|Immediate joiner|Yes|No|1tMKhDKl-3bpSJ52-6cxYaUcps8B8BJmB
+11/2/2026 18:07:02|Yogesvaran M|8438340641|Tamil Nadu|Viluppuram|0-1 years|2 LPA|3 LPA|Yes|Immediate joiner|No|No|1vcyQkwA_NHedtGxNK9VWFBCI9_O2qMba
+11/2/2026 18:38:27|Pratik kaninde|9356749842|Maharashtra|Pune|2-4 years|3.5|4.5+|Yes|Immediate joiner|Yes|Yes|1TVLBwS3lr2xhIpADEVeGeeG3m5hZJYYl
+11/2/2026 18:52:23|Santhosh  Vallamdasu|7989695854|Telangana|Nalgonda|4+ years|4.5 LPA|5.5 LPA|Yes|Immediate joiner|No|Yes|1_Vsjh2a7mScA6boePqQez8s13biMbEYp
+11/2/2026 18:58:46|Nilesh suryawanshi|9096914414|Maharashtra|Pune|1-2 years|333000|450000|Yes|15 days|No|Yes|1qGqodKU8LRg-fSNpoKV8zkwLYihTJ973
+11/2/2026 19:03:35|Yousuf Sherief|9787298949|Tamil Nadu|Vellore|0-1 years|3|4|Yes|Immediate joiner|Yes|No|1pRmYmtN2ewp9djVcd7hCCrJHsJHUjWIK

@@ -1583,3 +1583,10 @@
 11/3/2026 10:04:41|Ramanath Talekar|9008016333|Karnataka|Belagavi|4+ years|420000|35000|Yes|15 days|Yes|Yes|1FI8lWd_WwzNyXhvN5h8Mkwu-TH6yegOO
 11/3/2026 10:05:41|Rahul Chavan|9768983939|Maharashtra|Satara|4+ years|320448|350000|Yes|Immediate joiner|Yes|Yes|1AeLstZpYUwhmjFymCrjP3XHOorH5iw8v
 11/3/2026 10:27:23|Pavan Desai|8951131028|Karnataka|Belagavi|4+ years|3lak|E g 3lak|No|Immediate joiner|Yes|Yes|1GVPH_jauLjB1-TLl4Y4R57py_dWWc0OG
+11/3/2026 10:59:30|Shubham Basavaraj Shetter|9980197672|Karnataka|Belagavi|2-4 years|3.5|5.5|Yes|15 days|No|Yes|1smf6F4SMKUVCCDAQeSLoCtVUEVln7lmG
+11/3/2026 11:14:53|Sagar mahesh sharma|8888116625|Maharashtra|Akola|0-1 years|360000|420000|Yes|15 days|No|Yes|1ZQ3OBb9JPWRJsFTFa55wHwcXJuXe_UNZ
+11/3/2026 11:32:49|Rahul Bhalerao|9168268061|Maharashtra|Buldhana|0-1 years|3.95|4.5|Yes|Immediate joiner|No|Yes|1YF2RM1k_fsUyyQKywkKnKoJHTT7ocRmV
+11/3/2026 11:35:43|Abi Yuvaraj|9962849226|Tamil Nadu|Chennai|4+ years|6.5|6.5|Yes|Immediate joiner|No|Yes|1EdBi_Q6xMembrsiVXUojaAUzwZAHUL8f
+11/3/2026 12:06:09|Naveen kumar|6369222402|Tamil Nadu|Chengalpattu|2-4 years|3.5|4.5|Yes|Immediate joiner|No|No|1D2yxAvlcM1FkVgIhp3juB6DXXE4HE0at
+11/3/2026 12:48:01|Naren|6380262290|Tamil Nadu|Ranipet|4+ years|4.5lpa|5.5 lpa|Yes|15 days|Yes|No|1BWhTZZ7ZOMsOXDiQeqwxi7cmJzFaL2Nw
+11/3/2026 12:51:33|Vishal Yadav|9209969462|Maharashtra|Satara|0-1 years|2.4|3|Yes|Immediate joiner|No|Yes|1NAmQiDC89T2VVNvDSc6BARu2Bdo3Zmrt

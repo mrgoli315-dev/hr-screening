@@ -1573,3 +1573,13 @@
 11/3/2026 0:30:21|Shlok Pathak|8605276485|Maharashtra|Akola|0-1 years|3.5|4.5 to 5|Yes|15 days|No|Yes|1FOdZJvfYWTbOISFTuB0MSavWI5GXlRNd
 11/3/2026 1:09:59|Vengatesh|9787157946|Tamil Nadu|Ranipet|2-4 years|8|6|Yes|Immediate joiner|Yes|Yes|1rqnygnN74hLH5MmJzZlaOzvVxUeVdvnk
 11/3/2026 1:10:48|Rajapandian B|6381419785|Tamil Nadu|Virudhunagar|0-1 years|2.64|3.6|Yes|15 days|No|Yes|1hBSL7vNGcPmpifXbWGK-S7Nwha5MKBiS
+11/3/2026 9:02:16|Abhijit Shinde|9657451447|Maharashtra|Satara|4+ years|3.85|4.5|Yes|Immediate joiner|Yes|No|1lIOb76JV-oLKY3sYsSMsO5igEZ9-Tc5X
+11/3/2026 9:31:15|Rajesh krishna Patil|9561538470|Maharashtra|Kolhapur|4+ years|4.6|6|Yes|15 days|Yes|Yes|1cc-Fiq1stPbKBRv3V_cYGgmUDVF2AJbt
+11/3/2026 9:31:58|Sourabh Galande|7721990120|Maharashtra|Pune|2-4 years|4,07,000|420000|Yes|Immediate joiner|Yes|Yes|1ZfOSEnbdpS-y5Z6JiW4NzmCROwqoW_wy
+11/3/2026 9:51:10|Praful gajanan wanare|9284823116|Maharashtra|Akola|2-4 years|7|6|Yes|Immediate joiner|Yes|Yes|1W2SlMmpHWRFOZdnI-GXDLN0Zkii7xxYZ
+11/3/2026 9:52:02|Pranit Karwate|9146381479|Maharashtra|Akola|1-2 years|2.7|4.8|Yes|15 days|Yes|No|1-F50NV1RyyATYNF9GlvLvkDhTkqvTqpV
+11/3/2026 10:01:00|Kunal mohan gurav|9764037177|Maharashtra|Satara|2-4 years|30000|40000|Yes|Immediate joiner|Yes|Yes|1hErkUl-NOuT6CYKI05xJ6pSZ-LUbnufg
+11/3/2026 10:01:04|Mohit pramod Naik|8806853967|Maharashtra|Satara|4+ years|4.9|5.5|Yes|Immediate joiner|No|Yes|1ADFbDyIbzsYxpWRBqDlnbtlj_hqqaJuE
+11/3/2026 10:04:41|Ramanath Talekar|9008016333|Karnataka|Belagavi|4+ years|420000|35000|Yes|15 days|Yes|Yes|1FI8lWd_WwzNyXhvN5h8Mkwu-TH6yegOO
+11/3/2026 10:05:41|Rahul Chavan|9768983939|Maharashtra|Satara|4+ years|320448|350000|Yes|Immediate joiner|Yes|Yes|1AeLstZpYUwhmjFymCrjP3XHOorH5iw8v
+11/3/2026 10:27:23|Pavan Desai|8951131028|Karnataka|Belagavi|4+ years|3lak|E g 3lak|No|Immediate joiner|Yes|Yes|1GVPH_jauLjB1-TLl4Y4R57py_dWWc0OG

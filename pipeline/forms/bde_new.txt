@@ -1590,3 +1590,4 @@
 11/3/2026 12:06:09|Naveen kumar|6369222402|Tamil Nadu|Chengalpattu|2-4 years|3.5|4.5|Yes|Immediate joiner|No|No|1D2yxAvlcM1FkVgIhp3juB6DXXE4HE0at
 11/3/2026 12:48:01|Naren|6380262290|Tamil Nadu|Ranipet|4+ years|4.5lpa|5.5 lpa|Yes|15 days|Yes|No|1BWhTZZ7ZOMsOXDiQeqwxi7cmJzFaL2Nw
 11/3/2026 12:51:33|Vishal Yadav|9209969462|Maharashtra|Satara|0-1 years|2.4|3|Yes|Immediate joiner|No|Yes|1NAmQiDC89T2VVNvDSc6BARu2Bdo3Zmrt
+11/3/2026 14:03:00|Sumeet morabad|7353361989|Karnataka|Belagavi|4+ years|25000|30000|Yes|Immediate joiner|No|Yes|1K5ofI9TAh8T6h98BBcNpWnEALbt8T92v

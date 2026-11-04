@@ -341,6 +341,20 @@ td.why>b{color:var(--red)}
 #pgApps .fig.good b{color:var(--green)}
 #pgApps .fig.bad b{color:var(--red)}
 #pgApps h3{margin:20px 0 2px;font-size:17px}
+.msel{position:relative}
+.msel-btn{font:inherit;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:7px 30px 7px 10px;background:var(--surface);color:var(--fg);min-height:36px;cursor:pointer;text-align:left;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:relative}
+.msel-btn::after{content:"";position:absolute;right:11px;top:50%;width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg)}
+.msel-btn.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);font-weight:700}
+.msel-pop{position:absolute;top:calc(100% + 4px);left:0;z-index:20;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);min-width:280px;max-width:min(360px,90vw);padding:6px}
+.msel-tools{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:4px 6px 6px}
+.msel-tools input{font:inherit;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:6px 9px;background:var(--surface);color:var(--fg);flex:1;min-width:0}
+.msel-list{max-height:300px;overflow:auto}
+.msel-list label{display:flex;gap:8px;align-items:center;padding:6px 8px;font-size:13px;cursor:pointer;border-radius:6px}
+.msel-list label:hover{background:var(--sunk)}
+.msel-list label span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.msel-list label small{color:var(--muted);font-variant-numeric:tabular-nums}
+.msel-list input{accent-color:var(--accent);margin:0}
+.msel-none{color:var(--muted);font-size:13px;padding:8px;margin:0}
 #pgApps table.dist{min-width:760px}
 #pgApps table.dist th,#pgApps table.dist td{padding:9px 10px}
 #pgApps table.dist td.num,#pgApps table.dist th.num{text-align:right;font-variant-numeric:tabular-nums}
@@ -453,10 +467,16 @@ td.why>b{color:var(--red)}
     <div class="rday"><span class="flabel">Show</span><div class="tabs" id="aDays" role="group" aria-label="Choose a day"></div><select id="aDaySel" aria-label="Pick a day"></select></div>
     <div class="figs" id="aFigs"></div>
     <h3>By district</h3>
-    <p class="sub">For the chosen day. District as the candidate entered it on the form. Pick a state or search; click a column to sort.</p>
+    <p class="sub">For the chosen day. District as the candidate entered it on the form. Pick a state, tick one or more districts; click a column to sort.</p>
     <div class="ufilters">
       <select id="aDSt" aria-label="State"></select>
-      <input type="search" id="aDQ" placeholder="Search district" aria-label="Search district">
+      <div class="msel" id="aDistSel">
+        <button type="button" class="msel-btn" id="aDistBtn" aria-haspopup="true" aria-expanded="false">All districts</button>
+        <div class="msel-pop" id="aDistPop" hidden>
+          <div class="msel-tools"><input type="search" id="aDistFind" placeholder="Find in list" aria-label="Find a district in the list" hidden><button type="button" class="lnk" id="aDistClear">Clear</button></div>
+          <div class="msel-list" id="aDistList" role="group" aria-label="Districts"></div>
+        </div>
+      </div>
     </div>
     <div class="tablebox">
       <table class="dist">
@@ -1198,7 +1218,7 @@ let APPS=null,aLoad="";
 const A_COLL=new Intl.Collator(undefined,{numeric:true,sensitivity:"base"});   // one collator: ~100x faster than localeCompare with options
 // daily report (v1.9): the chosen day ("0" today, "1" yesterday, "" all days, or YYYY-MM-DD), district table state,
 // and lookups built once after the sheet file loads: phone -> dashboard record / set-aside record / not-usable entry
-let aDay="0",aDSt="",aDQ="",aDSort="people",aDDir=-1,A_LK=null,A_DAYS=null;
+let aDay="0",aDSt="",aDists=new Set(),aDistFind="",aDSort="people",aDDir=-1,A_LK=null,A_DAYS=null;   // aDists: districts ticked in the multi-select
 const A_DSORTS=["st","fd","people","suit","strong","medium","check","fit","unfit","nomark"];
 const p10=s=>String(s||"").replace(/\D/g,"").slice(-10);
 const aDayKey=v=>{if(!v)return "";if(v==="0"||v==="1"){const t=new Date();t.setDate(t.getDate()-(+v));return t.toLocaleDateString("en-CA")}return v};
@@ -1240,8 +1260,17 @@ function renderReport(){
   const sts=[...stN.keys()].filter(Boolean).sort();if(aDSt&&!stN.has(aDSt))sts.push(aDSt);
   $("#aDSt").innerHTML=[["","All states ("+N(s.people)+")"],...sts.map(x=>[x,x+" ("+N(stN.get(x)||0)+")"])].map(([v,l])=>`<option value="${esc(v)}"${v===aDSt?" selected":""}>${esc(l)}</option>`).join("");
   $("#aDSt").classList.toggle("on",!!aDSt);
-  const q=aDQ.trim().toLowerCase();
-  const list=all.filter(e=>(!aDSt||e.st===aDSt)&&(!q||e.fd.toLowerCase().includes(q)||e.st.toLowerCase().includes(q)));
+  // district multi-select: the districts of the chosen state (or all), with people counts; ticked ones filter the table
+  const inSt=all.filter(e=>!aDSt||e.st===aDSt);
+  const dN=new Map();for(const e of inSt){if(e.fd)dN.set(e.fd,(dN.get(e.fd)||0)+e.people)}
+  for(const x of aDists)if(!dN.has(x))aDists.delete(x);          // a tick that no longer exists on this day/state is dropped
+  const dnames=[...dN.keys()].sort(A_COLL.compare),fq=aDistFind.trim().toLowerCase();
+  const lst=$("#aDistList"),top=lst.scrollTop;
+  lst.innerHTML=dnames.filter(x=>!fq||x.toLowerCase().includes(fq)).map(x=>`<label><input type="checkbox" value="${esc(x)}"${aDists.has(x)?" checked":""}><span>${esc(x)}</span><small>${N(dN.get(x))}</small></label>`).join("")||`<p class="msel-none">${dnames.length?"No district matches.":"No districts on this day."}</p>`;
+  lst.scrollTop=top;
+  $("#aDistFind").hidden=dnames.length<=12;
+  const btn=$("#aDistBtn");btn.textContent=aDists.size===0?"All districts":aDists.size===1?[...aDists][0]:aDists.size+" districts";btn.classList.toggle("on",aDists.size>0);
+  const list=inSt.filter(e=>!aDists.size||aDists.has(e.fd));
   const k2=aDSort,dir=aDDir;
   list.sort((a,b)=>{const c=(k2==="st"||k2==="fd")?A_COLL.compare(a[k2]||"￿",b[k2]||"￿")*dir:(a[k2]-b[k2])*dir;return c||(b.people-a.people)||A_COLL.compare(a.st,b.st)||A_COLL.compare(a.fd,b.fd)});
   const num=v=>`<td class="num${v?"":" z"}">${N(v)}</td>`;
@@ -1325,8 +1354,14 @@ function init(){
   [["uSt",v=>uSt=v],["uTf",v=>uTf=v],["uSrc",v=>uSrc=v],["uDate",v=>uDate=v]].forEach(([id,f])=>$("#"+id).addEventListener("change",e=>{f(e.target.value);uShown=PAGE;renderUnsuit()}));
   $("#uMore").onclick=()=>{uShown+=PAGE;renderUnsuit()};
   $("#aDaySel").addEventListener("change",e=>{if(e.target.value){aDay=e.target.value;save();renderApps()}});
-  $("#aDSt").addEventListener("change",e=>{aDSt=e.target.value;renderReport()});
-  $("#aDQ").addEventListener("input",()=>{aDQ=$("#aDQ").value;renderReport()});
+  $("#aDSt").addEventListener("change",e=>{aDSt=e.target.value;aDists.clear();renderReport()});
+  const dOpen=o=>{$("#aDistPop").hidden=!o;$("#aDistBtn").setAttribute("aria-expanded",o?"true":"false");if(o&&!$("#aDistFind").hidden)$("#aDistFind").focus()};
+  $("#aDistBtn").onclick=()=>dOpen($("#aDistPop").hidden);
+  $("#aDistList").addEventListener("change",e=>{const c=e.target;if(c&&c.type==="checkbox"){if(c.checked)aDists.add(c.value);else aDists.delete(c.value);renderReport()}});
+  $("#aDistFind").addEventListener("input",()=>{aDistFind=$("#aDistFind").value;renderReport()});
+  $("#aDistClear").onclick=()=>{aDists.clear();aDistFind="";$("#aDistFind").value="";renderReport()};
+  document.addEventListener("click",e=>{if(!$("#aDistPop").hidden&&!$("#aDistSel").contains(e.target))dOpen(false)});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#aDistPop").hidden){dOpen(false);e.stopPropagation()}},true);
   document.querySelectorAll("#pgApps th button[data-dsort]").forEach(b=>b.onclick=()=>{const k=b.dataset.dsort;if(aDSort===k)aDDir=-aDDir;else{aDSort=k;aDDir=(k==="st"||k==="fd")?1:-1}save();renderReport()});
   $("#tHr").innerHTML=$("#vHr").innerHTML;$("#tHr").onchange=()=>{$("#tHrOther").hidden=$("#tHr").value!=="__other"};
   $("#tLv").querySelectorAll("button").forEach(b=>b.onclick=()=>{if(!tCur)return;tCur.lv=b.dataset.lv;paintTransfer()});

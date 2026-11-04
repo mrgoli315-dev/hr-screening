@@ -194,7 +194,7 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   not-usable counts are noted under it), Strong, Medium, Check, Marked fit, Marked unfit (Fit/Unfit marks, live from
   Supabase; a person with any Fit mark counts as fit). People matched by phone; HR-app-only people are not in this report.
 - **By district** table for that day: In sheet, In Claude (suitable), Strong, Medium, Check, Fit, Unfit, Not marked,
-  with a state list, district search and click-to-sort. The v1.8 row-by-row table (search, filters, pages, CSV) was
+  with a state list, a district multi-select (tick any number of districts; counts shown) and click-to-sort. The v1.8 row-by-row table (search, filters, pages, CSV) was
   removed from this page: the requirement is the report; the Dashboard and Daily leads list the people.
 - Everything is computed in the browser from `applications.json` plus the data already in the page; no pipeline,
   Supabase or Vercel change. Upgrade from v1.8: replace `pipeline/v3/page.tpl.html` and `README.md`, then run a sync.

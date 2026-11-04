@@ -477,10 +477,11 @@ td.why>b{color:var(--red)}
           <th><button type="button" data-dsort="fd">District</button></th>
           <th class="num"><button type="button" data-dsort="people">In sheet</button></th>
           <th class="num"><button type="button" data-dsort="claude">In Claude</button></th>
+          <th class="num"><button type="button" data-dsort="suit">Suitable</button></th>
+          <th class="num"><button type="button" data-dsort="aside">Unsuitable</button></th>
           <th class="num"><button type="button" data-dsort="strong">Strong</button></th>
           <th class="num"><button type="button" data-dsort="medium">Medium</button></th>
           <th class="num"><button type="button" data-dsort="check">Check</button></th>
-          <th class="num"><button type="button" data-dsort="aside">Set aside</button></th>
           <th class="num"><button type="button" data-dsort="fit">Fit</button></th>
           <th class="num"><button type="button" data-dsort="unfit">Unfit</button></th>
           <th class="num"><button type="button" data-dsort="nomark">Not marked</button></th>
@@ -1221,18 +1222,19 @@ const A_COLL=new Intl.Collator(undefined,{numeric:true,sensitivity:"base"});   /
 // daily report (v1.9): the chosen day ("0" today, "1" yesterday, "" all days, or YYYY-MM-DD), district table state,
 // and lookups built once after the sheet file loads: phone -> dashboard record / set-aside record / not-usable entry
 let aDay="0",aDSt="",aDQ="",aDSort="people",aDDir=-1,A_LK=null,A_DAYS=null;
-const A_DSORTS=["st","fd","people","claude","strong","medium","check","aside","fit","unfit","nomark"];
+const A_DSORTS=["st","fd","people","claude","suit","aside","strong","medium","check","fit","unfit","nomark"];
 const p10=s=>String(s||"").replace(/\D/g,"").slice(-10);
 const aDayKey=v=>{if(!v)return "";if(v==="0"||v==="1"){const t=new Date();t.setDate(t.getDate()-(+v));return t.toLocaleDateString("en-CA")}return v};
 const dayOK=o=>{const k=aDayKey(aDay);return !k||o.d===k};
 function aStats(rows){
   // one pass over a day's sheet rows: distinct people, matched by phone to what Claude and the recruiters did
-  const seen=new Set(),s={rows:rows.length,people:0,claude:0,strong:0,medium:0,check:0,wait:0,aside:0,unusable:0,fit:0,unfit:0,nomark:0};
+  // suit = Strong + Medium + Check (on the dashboard); aside = Claude found nothing for any role (Unsuitable page)
+  const seen=new Set(),s={rows:rows.length,people:0,claude:0,suit:0,strong:0,medium:0,check:0,wait:0,aside:0,unusable:0,fit:0,unfit:0,nomark:0};
   for(const o of rows){
     const p=o.ph; if(p.length===10){if(seen.has(p))continue;seen.add(p)}
     s.people++; if(p.length!==10)continue;
     const d=A_LK.d.get(p);
-    if(d){s.claude++;if(d.lv in s)s[d.lv]++;const m=A_VM[vkey(d)];if(m==="fit")s.fit++;else if(m==="unfit")s.unfit++;else s.nomark++}
+    if(d){s.claude++;if(d.lv in s)s[d.lv]++;if(d.lv==="strong"||d.lv==="medium"||d.lv==="check")s.suit++;const m=A_VM[vkey(d)];if(m==="fit")s.fit++;else if(m==="unfit")s.unfit++;else s.nomark++}
     else if(A_LK.u.has(p)){s.claude++;s.aside++}
     else if(A_LK.h.has(p)){s.claude++;s.unusable++}
   }
@@ -1251,7 +1253,8 @@ function renderReport(){
   const s=aStats(rows);
   const card=(n,l,sub,cls)=>`<div class="fig${cls?" "+cls:""}"><span>${l}</span><b>${N(n)}</b><span>${sub}</span></div>`;
   $("#aFigs").innerHTML=card(s.people,"New in sheet",`${N(s.rows)} form row${s.rows===1?"":"s"}`)+card(s.claude,"In Claude",`matched by phone${s.wait?` · ${N(s.wait)} waiting`:""}${s.unusable?` · ${N(s.unusable)} not usable`:""}`)
-    +card(s.strong,"Strong","call first")+card(s.medium,"Medium","one gap")+card(s.check,"Check","needs one call")+card(s.aside,"Set aside","unsuitable resumes")
+    +card(s.suit,"Suitable",`Strong ${N(s.strong)} · Medium ${N(s.medium)} · Check ${N(s.check)}`,"good")+card(s.aside,"Unsuitable","nothing for any open role","bad")
+    +card(s.strong,"Strong","call first")+card(s.medium,"Medium","one gap")+card(s.check,"Check","needs one call")
     +card(s.fit,"Marked fit","by recruiters","good")+card(s.unfit,"Marked unfit","by recruiters","bad");
   // by district
   const g=new Map();for(const o of rows){const k=o.st+"\t"+o.fd;let e=g.get(k);if(!e){e={st:o.st,fd:o.fd,rows:[]};g.set(k,e)}e.rows.push(o)}
@@ -1265,8 +1268,8 @@ function renderReport(){
   const k2=aDSort,dir=aDDir;
   list.sort((a,b)=>{const c=(k2==="st"||k2==="fd")?A_COLL.compare(a[k2]||"￿",b[k2]||"￿")*dir:(a[k2]-b[k2])*dir;return c||(b.people-a.people)||A_COLL.compare(a.st,b.st)||A_COLL.compare(a.fd,b.fd)});
   const num=v=>`<td class="num${v?"":" z"}">${N(v)}</td>`;
-  $("#aDistRows").innerHTML=list.length?list.map(e=>`<tr><td>${esc(e.st)||"—"}</td><td>${esc(e.fd)||"—"}</td>${num(e.people)}${num(e.claude)}${num(e.strong)}${num(e.medium)}${num(e.check)}${num(e.aside)}${num(e.fit)}${num(e.unfit)}${num(e.nomark)}</tr>`).join("")
-    :`<tr><td colspan="11" class="empty">${rows.length?"No district matches.":"No applications on this day."}</td></tr>`;
+  $("#aDistRows").innerHTML=list.length?list.map(e=>`<tr><td>${esc(e.st)||"—"}</td><td>${esc(e.fd)||"—"}</td>${num(e.people)}${num(e.claude)}${num(e.suit)}${num(e.aside)}${num(e.strong)}${num(e.medium)}${num(e.check)}${num(e.fit)}${num(e.unfit)}${num(e.nomark)}</tr>`).join("")
+    :`<tr><td colspan="12" class="empty">${rows.length?"No district matches.":"No applications on this day."}</td></tr>`;
   document.querySelectorAll("#pgApps th button[data-dsort]").forEach(b=>b.setAttribute("aria-sort",b.dataset.dsort===aDSort?(aDDir>0?"ascending":"descending"):"none"));
 }
 async function loadApps(){
@@ -1291,7 +1294,7 @@ function renderApps(){
   if(!APPS){
     const err=aLoad.startsWith("error");
     $("#aFigs").innerHTML=`<div class="fig"><span>Sheet data</span><b>…</b><span>${err?`could not load (${esc(aLoad.slice(7))}). <button type="button" class="lnk" id="aRetry">Try again</button>`:"loading…"}</span></div>`;
-    $("#aDistRows").innerHTML=`<tr><td colspan="11" class="empty">${err?"Could not load the sheet data.":"Loading the sheet data…"}</td></tr>`;
+    $("#aDistRows").innerHTML=`<tr><td colspan="12" class="empty">${err?"Could not load the sheet data.":"Loading the sheet data…"}</td></tr>`;
     const b=$("#aRetry");if(b)b.onclick=()=>{aLoad="";renderApps()};
     if(!aLoad)loadApps();
     return;

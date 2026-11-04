@@ -192,7 +192,9 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   last 60 days that have form rows. Eight cards for the chosen day: New in sheet (people; form rows underneath),
   In Claude (matched by phone to the dashboard, the Unsuitable list or the not-usable list), Strong, Medium, Check,
   Set aside, Marked fit, Marked unfit (Fit/Unfit marks, live from Supabase; a person with any Fit mark counts as fit).
-- **By district** table for that day: In sheet, In Claude, Strong, Medium, Check, Set aside, Fit, Unfit, Not marked,
+- Suitable = Strong + Medium + Check (on the dashboard); Unsuitable = Claude found nothing for any open role (the
+  Unsuitable page). People who came only through the HR app have no sheet row and are not in this report.
+- **By district** table for that day: In sheet, In Claude, Suitable, Unsuitable, Strong, Medium, Check, Fit, Unfit, Not marked,
   with a state list, district search and click-to-sort. The v1.8 row-by-row table (search, filters, pages, CSV) was
   removed from this page: the requirement is the report; the Dashboard and Daily leads list the people.
 - Everything is computed in the browser from `applications.json` plus the data already in the page; no pipeline,

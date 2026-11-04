@@ -189,12 +189,11 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
 
 ## v1.9 — Reports: the All applications page as a daily report
 - The page is now called **Reports** in the menu. It opens on **today**: Today / Yesterday / All days buttons and a "Pick a day" list of the
-  last 60 days that have form rows. Eight cards for the chosen day: New in sheet (people; form rows underneath),
-  In Claude (matched by phone to the dashboard, the Unsuitable list or the not-usable list), Strong, Medium, Check,
-  Set aside, Marked fit, Marked unfit (Fit/Unfit marks, live from Supabase; a person with any Fit mark counts as fit).
-- Suitable = Strong + Medium + Check (on the dashboard); Unsuitable = Claude found nothing for any open role (the
-  Unsuitable page). People who came only through the HR app have no sheet row and are not in this report.
-- **By district** table for that day: In sheet, In Claude, Suitable, Unsuitable, Strong, Medium, Check, Fit, Unfit, Not marked,
+  last 60 days that have form rows. Seven cards for the chosen day: New in sheet (people; form rows underneath),
+  In Claude (how many of them Claude found suitable = Strong + Medium + Check; the unsuitable, waiting and
+  not-usable counts are noted under it), Strong, Medium, Check, Marked fit, Marked unfit (Fit/Unfit marks, live from
+  Supabase; a person with any Fit mark counts as fit). People matched by phone; HR-app-only people are not in this report.
+- **By district** table for that day: In sheet, In Claude (suitable), Strong, Medium, Check, Fit, Unfit, Not marked,
   with a state list, district search and click-to-sort. The v1.8 row-by-row table (search, filters, pages, CSV) was
   removed from this page: the requirement is the report; the Dashboard and Daily leads list the people.
 - Everything is computed in the browser from `applications.json` plus the data already in the page; no pipeline,

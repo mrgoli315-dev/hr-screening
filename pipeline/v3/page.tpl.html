@@ -464,9 +464,7 @@ td.why>b{color:var(--red)}
           <th><button type="button" data-dsort="st">State</button></th>
           <th><button type="button" data-dsort="fd">District</button></th>
           <th class="num"><button type="button" data-dsort="people">In sheet</button></th>
-          <th class="num"><button type="button" data-dsort="claude">In Claude</button></th>
-          <th class="num"><button type="button" data-dsort="suit">Suitable</button></th>
-          <th class="num"><button type="button" data-dsort="aside">Unsuitable</button></th>
+          <th class="num"><button type="button" data-dsort="suit">In Claude</button></th>
           <th class="num"><button type="button" data-dsort="strong">Strong</button></th>
           <th class="num"><button type="button" data-dsort="medium">Medium</button></th>
           <th class="num"><button type="button" data-dsort="check">Check</button></th>
@@ -1201,7 +1199,7 @@ const A_COLL=new Intl.Collator(undefined,{numeric:true,sensitivity:"base"});   /
 // daily report (v1.9): the chosen day ("0" today, "1" yesterday, "" all days, or YYYY-MM-DD), district table state,
 // and lookups built once after the sheet file loads: phone -> dashboard record / set-aside record / not-usable entry
 let aDay="0",aDSt="",aDQ="",aDSort="people",aDDir=-1,A_LK=null,A_DAYS=null;
-const A_DSORTS=["st","fd","people","claude","suit","aside","strong","medium","check","fit","unfit","nomark"];
+const A_DSORTS=["st","fd","people","suit","strong","medium","check","fit","unfit","nomark"];
 const p10=s=>String(s||"").replace(/\D/g,"").slice(-10);
 const aDayKey=v=>{if(!v)return "";if(v==="0"||v==="1"){const t=new Date();t.setDate(t.getDate()-(+v));return t.toLocaleDateString("en-CA")}return v};
 const dayOK=o=>{const k=aDayKey(aDay);return !k||o.d===k};
@@ -1231,8 +1229,8 @@ function renderReport(){
   $("#aDaySel").classList.toggle("on",!!key&&isDay(aDay));
   const s=aStats(rows);
   const card=(n,l,sub,cls)=>`<div class="fig${cls?" "+cls:""}"><span>${l}</span><b>${N(n)}</b><span>${sub}</span></div>`;
-  $("#aFigs").innerHTML=card(s.people,"New in sheet",`${N(s.rows)} form row${s.rows===1?"":"s"}`)+card(s.claude,"In Claude",`matched by phone${s.wait?` · ${N(s.wait)} waiting`:""}${s.unusable?` · ${N(s.unusable)} not usable`:""}`)
-    +card(s.suit,"Suitable",`Strong ${N(s.strong)} · Medium ${N(s.medium)} · Check ${N(s.check)}`,"good")+card(s.aside,"Unsuitable","nothing for any open role","bad")
+  $("#aFigs").innerHTML=card(s.people,"New in sheet",`${N(s.rows)} form row${s.rows===1?"":"s"}`)
+    +card(s.suit,"In Claude",`suitable: Strong ${N(s.strong)} · Medium ${N(s.medium)} · Check ${N(s.check)}${s.aside?` · ${N(s.aside)} unsuitable`:""}${s.wait?` · ${N(s.wait)} waiting`:""}${s.unusable?` · ${N(s.unusable)} not usable`:""}`)
     +card(s.strong,"Strong","call first")+card(s.medium,"Medium","one gap")+card(s.check,"Check","needs one call")
     +card(s.fit,"Marked fit","by recruiters","good")+card(s.unfit,"Marked unfit","by recruiters","bad");
   // by district
@@ -1247,8 +1245,8 @@ function renderReport(){
   const k2=aDSort,dir=aDDir;
   list.sort((a,b)=>{const c=(k2==="st"||k2==="fd")?A_COLL.compare(a[k2]||"￿",b[k2]||"￿")*dir:(a[k2]-b[k2])*dir;return c||(b.people-a.people)||A_COLL.compare(a.st,b.st)||A_COLL.compare(a.fd,b.fd)});
   const num=v=>`<td class="num${v?"":" z"}">${N(v)}</td>`;
-  $("#aDistRows").innerHTML=list.length?list.map(e=>`<tr><td>${esc(e.st)||"—"}</td><td>${esc(e.fd)||"—"}</td>${num(e.people)}${num(e.claude)}${num(e.suit)}${num(e.aside)}${num(e.strong)}${num(e.medium)}${num(e.check)}${num(e.fit)}${num(e.unfit)}${num(e.nomark)}</tr>`).join("")
-    :`<tr><td colspan="12" class="empty">${rows.length?"No district matches.":"No applications on this day."}</td></tr>`;
+  $("#aDistRows").innerHTML=list.length?list.map(e=>`<tr><td>${esc(e.st)||"—"}</td><td>${esc(e.fd)||"—"}</td>${num(e.people)}${num(e.suit)}${num(e.strong)}${num(e.medium)}${num(e.check)}${num(e.fit)}${num(e.unfit)}${num(e.nomark)}</tr>`).join("")
+    :`<tr><td colspan="10" class="empty">${rows.length?"No district matches.":"No applications on this day."}</td></tr>`;
   document.querySelectorAll("#pgApps th button[data-dsort]").forEach(b=>b.setAttribute("aria-sort",b.dataset.dsort===aDSort?(aDDir>0?"ascending":"descending"):"none"));
 }
 async function loadApps(){
@@ -1273,7 +1271,7 @@ function renderApps(){
   if(!APPS){
     const err=aLoad.startsWith("error");
     $("#aFigs").innerHTML=`<div class="fig"><span>Sheet data</span><b>…</b><span>${err?`could not load (${esc(aLoad.slice(7))}). <button type="button" class="lnk" id="aRetry">Try again</button>`:"loading…"}</span></div>`;
-    $("#aDistRows").innerHTML=`<tr><td colspan="12" class="empty">${err?"Could not load the sheet data.":"Loading the sheet data…"}</td></tr>`;
+    $("#aDistRows").innerHTML=`<tr><td colspan="10" class="empty">${err?"Could not load the sheet data.":"Loading the sheet data…"}</td></tr>`;
     const b=$("#aRetry");if(b)b.onclick=()=>{aLoad="";renderApps()};
     if(!aLoad)loadApps();
     return;

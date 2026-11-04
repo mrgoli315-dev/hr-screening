@@ -28,6 +28,8 @@ jobs:
       BDE_GID: ${{ vars.BDE_GID }}
       MBA_SHEET_ID: ${{ vars.MBA_SHEET_ID }}
       MBA_GID: ${{ vars.MBA_GID }}
+      NAUKRI_SHEET_ID: ${{ vars.NAUKRI_SHEET_ID }}
+      NAUKRI_GID: ${{ vars.NAUKRI_GID }}
       CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
       RUN_ID: run-${{ github.run_id }}-${{ github.run_attempt }}
     steps:

@@ -2,16 +2,19 @@
 """Naukri leads (v1.10): write public/naukri.json for the page's "Naukri leads" tab.
 Run after sheets_export.py (step 7 of the sync; local/serve.py runs it too).
 
-Source: pipeline/sheets/naukri_latest.json  ({"values": [[header...], [row...], ...]}) - the "Naukri leads"
-Google Sheet that the Gmail Apps Script fills from Naukri's application e-mails (one row per application).
-Columns are found by header name, so the sheet's column order does not matter. Until that sheet exists the
-file is written with no rows and the tab shows "No Naukri leads yet".
+Source, in this order of preference:
+  work/naukri_rows.json                 the "Naukri leads" Google Sheet as fetch.py downloaded it this run
+                                        (GitHub variable NAUKRI_SHEET_ID); it is also saved as the copy below
+  pipeline/sheets/naukri_latest.json    the saved copy ({"values": [[header...], [row...], ...]}), used locally
+Columns are found by header name, so the sheet's column order does not matter. Until the sheet is configured
+the file is written with no rows and the tab shows "No Naukri leads yet".
 
 Output: {"cols": [...], "rows": [[...], ...], "latest": "YYYY-MM-DD HH:MM:SS", "count": n}
 """
 import json, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FRESH = os.path.join(ROOT, 'work', 'naukri_rows.json')
 SRC = os.path.join(ROOT, 'pipeline', 'sheets', 'naukri_latest.json')
 OUT = os.path.join(ROOT, 'public', 'naukri.json')
 
@@ -67,10 +70,18 @@ def phone10(s):
 
 
 def main():
-    rows_out = []
+    rows_out, where = [], 'none yet (empty file)'
+    if os.path.exists(FRESH):                       # this run's download: keep a copy for local runs and git history
+        rows = json.load(open(FRESH, encoding='utf-8'))
+        values = rows if isinstance(rows, list) else rows.get('values', [])
+        os.makedirs(os.path.dirname(SRC), exist_ok=True)
+        with open(SRC, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({'values': values}, f, ensure_ascii=False)
+        where = 'work/naukri_rows.json (saved to pipeline/sheets/naukri_latest.json)'
     if os.path.exists(SRC):
         d = json.load(open(SRC, encoding='utf-8'))
         values = d.get('values', []) if isinstance(d, dict) else d
+        if where.startswith('none'): where = 'pipeline/sheets/naukri_latest.json'
         if values:
             header = [norm(h) for h in values[0]]
             idx = {}
@@ -94,7 +105,7 @@ def main():
     text = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
     with open(OUT, 'w', encoding='utf-8', newline='\n') as f:
         f.write(text)
-    print('public/naukri.json', len(rows_out), 'rows', len(text), 'bytes;', 'source: ' + ('pipeline/sheets/naukri_latest.json' if os.path.exists(SRC) else 'none yet (empty file)'))
+    print('public/naukri.json', len(rows_out), 'rows', len(text), 'bytes; source:', where)
 
 
 if __name__ == '__main__':

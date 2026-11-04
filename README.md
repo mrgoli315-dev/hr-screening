@@ -203,14 +203,18 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
 - Fifth button in the menu, **Naukri leads**: one row per application received through the Naukri recruiter portal,
   with search (name, phone, e-mail, location, role, company, skills), filters (job applied for, location, applied
   period, notice period, resume), sortable columns, pages of 25/50/100/200 rows and a CSV download of the filtered rows.
-- Data: `public/naukri.json`, written by `pipeline/naukri_export.py` (sync step 7, after `sheets_export.py`) from the
-  "Naukri leads" Google Sheet saved as `pipeline/sheets/naukri_latest.json`. Columns are found by header name:
-  Timestamp, Name, Phone, Email, Current location, Preferred location, Designation, Company, Experience, Current CTC,
-  Notice period, Education, Key skills, Job title, Resume link. Until that sheet is connected the tab says
-  "No Naukri leads yet". The sheet is to be filled by a Gmail Apps Script from Naukri's "Receive responses over email"
-  mails (each job posting → Advanced options → Receive responses over email → mrgolisoda2026@gmail.com).
-- Upgrade from v1.9: replace `pipeline/v3/page.tpl.html`, `.github/workflows/sync.yml`, `local/serve.py`, `README.md`;
-  add `pipeline/naukri_export.py`. Then run a sync.
+- Data: the "Naukri leads" Google Sheet, read by every sync like the BDE and MBA sheets. Set the GitHub variable
+  `NAUKRI_SHEET_ID` to the sheet's ID (the long text between `/d/` and `/edit` in its URL) and, only if the leads are
+  not on the first tab, `NAUKRI_GID` to that tab's `gid=` number. The sheet must be readable by the bridge account
+  (mrgolisoda2026@gmail.com): share it with that account as Viewer if it belongs to someone else.
+  `pipeline/fetch.py` downloads it, `pipeline/naukri_export.py` (step 7) saves a copy as
+  `pipeline/sheets/naukri_latest.json` and writes `public/naukri.json`. Columns are found by header name (first row):
+  Timestamp / Applied on, Name, Phone / Mobile, Email, Current location / Location, Preferred location, Designation,
+  Company, Experience, Current CTC / CTC, Notice period, Education / Qualification, Key skills / Skills,
+  Job title / Applied for, Resume link / Resume. Name and Phone are required; the rest may be missing.
+  Until the variable is set the tab says "No Naukri leads yet".
+- Upgrade from v1.9: replace `pipeline/v3/page.tpl.html`, `pipeline/fetch.py`, `.github/workflows/sync.yml`,
+  `local/serve.py`, `README.md`; add `pipeline/naukri_export.py`; set `NAUKRI_SHEET_ID`. Then run a sync.
 
 ## Test locally before pushing (v1.7)
 ```

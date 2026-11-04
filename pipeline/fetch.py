@@ -38,3 +38,10 @@ if mba.lower() != 'none':
     save('mba_rows.json', mba, os.environ.get('MBA_GID'))
 else:
     print('MBA sheet switched off (MBA_SHEET_ID=none)')
+# v1.10: the Naukri leads sheet (GitHub variable NAUKRI_SHEET_ID; NAUKRI_GID if the leads are not on the first tab).
+# Read like the others; naukri_export.py turns it into public/naukri.json for the "Naukri leads" tab.
+naukri = (os.environ.get('NAUKRI_SHEET_ID') or '').strip()
+if naukri and naukri.lower() != 'none':
+    save('naukri_rows.json', naukri, os.environ.get('NAUKRI_GID'))
+else:
+    print('Naukri sheet not configured (set the GitHub variable NAUKRI_SHEET_ID)')

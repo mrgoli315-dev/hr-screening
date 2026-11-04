@@ -187,8 +187,8 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   add `pipeline/sheets_export.py`. No Supabase SQL and no Vercel change. Then Actions → sync → Run workflow (the run
   creates `public/applications.json`). Do NOT upload `public/index.html`.
 
-## v1.9 — All applications as a daily report
-- The All applications page opens on **today**: Today / Yesterday / All days buttons and a "Pick a day" list of the
+## v1.9 — Reports: the All applications page as a daily report
+- The page is now called **Reports** in the menu. It opens on **today**: Today / Yesterday / All days buttons and a "Pick a day" list of the
   last 60 days that have form rows. Eight cards for the chosen day: New in sheet (people; form rows underneath),
   In Claude (matched by phone to the dashboard, the Unsuitable list or the not-usable list), Strong, Medium, Check,
   Set aside, Marked fit, Marked unfit (Fit/Unfit marks, live from Supabase; a person with any Fit mark counts as fit).

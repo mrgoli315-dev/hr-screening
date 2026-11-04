@@ -467,7 +467,7 @@ td.why>b{color:var(--red)}
   </div>
 
   <div id="pgApps" hidden>
-    <h2 class="pgtitle">All applications</h2>
+    <h2 class="pgtitle">Reports</h2>
     <p class="sub">What came in through the Google Sheets on a day and what happened to it: Claude's rating, resumes set aside, Fit / Unfit marks. Refreshed by every sync; marks are live.</p>
     <div class="rday"><span class="flabel">Show</span><div class="tabs" id="aDays" role="group" aria-label="Choose a day"></div><select id="aDaySel" aria-label="Pick a day"></select></div>
     <div class="figs" id="aFigs"></div>
@@ -1413,7 +1413,7 @@ function aGoto(p){aPg=p;renderApps();try{$("#aSum").scrollIntoView({block:"start
 /* ---------- routing ---------- */
 function renderMenu(){
   const p0=page,d0=curDate; page="leads";curDate="0"; const today=cnt(D,inDate)+cnt(HIDDEN,hidIn); page=p0;curDate=d0;
-  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button><button type="button" data-pg="apps" aria-current="${page==="apps"?"page":"false"}" title="Every row of the Google Sheets: search, filter, page through.">All applications${APPS?`<small>${APPS.length}</small>`:""}</button>`;
+  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button><button type="button" data-pg="apps" aria-current="${page==="apps"?"page":"false"}" title="Daily report from the Google Sheets: what came in, Claude's rating, marks; every row searchable.">Reports${APPS?`<small>${APPS.length}</small>`:""}</button>`;
   $("#menu").querySelectorAll("button").forEach(b=>b.onclick=()=>{page=b.dataset.pg;shown=PAGE;lShown=PAGE;save();go();window.scrollTo({top:0})});
 }
 function go(){

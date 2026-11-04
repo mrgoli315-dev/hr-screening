@@ -1591,3 +1591,10 @@
 11/3/2026 12:48:01|Naren|6380262290|Tamil Nadu|Ranipet|4+ years|4.5lpa|5.5 lpa|Yes|15 days|Yes|No|1BWhTZZ7ZOMsOXDiQeqwxi7cmJzFaL2Nw
 11/3/2026 12:51:33|Vishal Yadav|9209969462|Maharashtra|Satara|0-1 years|2.4|3|Yes|Immediate joiner|No|Yes|1NAmQiDC89T2VVNvDSc6BARu2Bdo3Zmrt
 11/3/2026 14:03:00|Sumeet morabad|7353361989|Karnataka|Belagavi|4+ years|25000|30000|Yes|Immediate joiner|No|Yes|1K5ofI9TAh8T6h98BBcNpWnEALbt8T92v
+11/4/2026 19:10:47|Amol chavan|7972015620|Maharashtra|Pune|4+ years|50000|60000|Yes|15 days|Yes|Yes|1MVEZaxFBhn7TuBDJizr9FTq14Sc5-hJl
+11/4/2026 19:11:28|Hrutwik Shenware|9552794822|Maharashtra|Akola|0-1 years|4.8 LPA|6 LPA|Yes|Immediate joiner|Yes|Yes|1peNXLZN6quIEaXT6salunV9y2zrZdPfA
+11/4/2026 19:15:32|Shriram jadhav|9619955425|Maharashtra|Thane|0-1 years|5.5|7|Yes|Immediate joiner|Yes|No|10Nvj3zA7FFbSseaK1W9nCAz53rgXPrc2
+11/4/2026 19:20:36|Hari Prasad|9052528815|Andhra Pradesh|Chittoor|4+ years|2.1lpc|2.5lpc|Yes|Immediate joiner|No|Yes|1LZNLOUZysaWFfIaxlGSgeNEDTpGJdpJx
+11/4/2026 19:59:35|Gokul|9940194329|Tamil Nadu|Chennai|4+ years|3.8|4.3|Yes|Immediate joiner|Yes|Yes|1_7wH8ZHAeJ-40ILF0D5n_lvjuznv2dTZ
+11/4/2026 20:19:50|t.vijay bhaskar|8790106555|Andhra Pradesh|Chittoor|0-1 years|2.4|3.o|Yes|Immediate joiner|Yes|Yes|1Aybgd1iAfueuYHwLORV5RBnOjjN-FP0I
+11/4/2026 20:23:08|Mayur Arun Jadhav|7620869354|Maharashtra|Satara|4+ years|600000|800000|Yes|Immediate joiner|No|Yes|1B4BUQKIJjvMsPDoBM6t1roE1nY7hQtQV

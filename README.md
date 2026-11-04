@@ -171,7 +171,7 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   `.github/workflows/sync.yml`, `pipeline/update.py`, `README.md`; add `pipeline/overrides.py` and `pipeline/app/overrides.json`
   (content `{}`). No Supabase SQL and no Vercel change. Then Actions → sync → Run workflow. Do NOT upload `public/index.html`.
 
-## v1.8 — All applications: every Google Sheet row
+## v1.8 — All applications: every Google Sheet row (replaced by the v1.9 Reports page below)
 - Fourth button in the menu, **All applications**: every row of the BDE, BDM and MBA sheets as submitted (one row per form
   entry; someone who applied twice is listed twice), with search (name, phone, e-mail, district, state), filters
   (sheet, state, district, applied period, FMCG, field sales, ready to travel, notice period, resume attached), sortable
@@ -193,8 +193,8 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   In Claude (matched by phone to the dashboard, the Unsuitable list or the not-usable list), Strong, Medium, Check,
   Set aside, Marked fit, Marked unfit (Fit/Unfit marks, live from Supabase; a person with any Fit mark counts as fit).
 - **By district** table for that day: In sheet, In Claude, Strong, Medium, Check, Set aside, Fit, Unfit, Not marked,
-  with a state list, district search and click-to-sort. Clicking a district row lists those people in the
-  "Every row" table underneath, which keeps its search, filters, sorting, pages and CSV download.
+  with a state list, district search and click-to-sort. The v1.8 row-by-row table (search, filters, pages, CSV) was
+  removed from this page: the requirement is the report; the Dashboard and Daily leads list the people.
 - Everything is computed in the browser from `applications.json` plus the data already in the page; no pipeline,
   Supabase or Vercel change. Upgrade from v1.8: replace `pipeline/v3/page.tpl.html` and `README.md`, then run a sync.
 

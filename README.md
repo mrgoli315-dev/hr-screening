@@ -187,6 +187,17 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   add `pipeline/sheets_export.py`. No Supabase SQL and no Vercel change. Then Actions → sync → Run workflow (the run
   creates `public/applications.json`). Do NOT upload `public/index.html`.
 
+## v1.9 — All applications as a daily report
+- The All applications page opens on **today**: Today / Yesterday / All days buttons and a "Pick a day" list of the
+  last 60 days that have form rows. Eight cards for the chosen day: New in sheet (people; form rows underneath),
+  In Claude (matched by phone to the dashboard, the Unsuitable list or the not-usable list), Strong, Medium, Check,
+  Set aside, Marked fit, Marked unfit (Fit/Unfit marks, live from Supabase; a person with any Fit mark counts as fit).
+- **By district** table for that day: In sheet, In Claude, Strong, Medium, Check, Set aside, Fit, Unfit, Not marked,
+  with a state list, district search and click-to-sort. Clicking a district row lists those people in the
+  "Every row" table underneath, which keeps its search, filters, sorting, pages and CSV download.
+- Everything is computed in the browser from `applications.json` plus the data already in the page; no pipeline,
+  Supabase or Vercel change. Upgrade from v1.8: replace `pipeline/v3/page.tpl.html` and `README.md`, then run a sync.
+
 ## Test locally before pushing (v1.7)
 ```
 python local/serve.py            the page at http://127.0.0.1:8765 with a local stand-in for Supabase (data in work/local_db.json)

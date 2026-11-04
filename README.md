@@ -199,6 +199,19 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
 - Everything is computed in the browser from `applications.json` plus the data already in the page; no pipeline,
   Supabase or Vercel change. Upgrade from v1.8: replace `pipeline/v3/page.tpl.html` and `README.md`, then run a sync.
 
+## v1.10 — Naukri leads tab
+- Fifth button in the menu, **Naukri leads**: one row per application received through the Naukri recruiter portal,
+  with search (name, phone, e-mail, location, role, company, skills), filters (job applied for, location, applied
+  period, notice period, resume), sortable columns, pages of 25/50/100/200 rows and a CSV download of the filtered rows.
+- Data: `public/naukri.json`, written by `pipeline/naukri_export.py` (sync step 7, after `sheets_export.py`) from the
+  "Naukri leads" Google Sheet saved as `pipeline/sheets/naukri_latest.json`. Columns are found by header name:
+  Timestamp, Name, Phone, Email, Current location, Preferred location, Designation, Company, Experience, Current CTC,
+  Notice period, Education, Key skills, Job title, Resume link. Until that sheet is connected the tab says
+  "No Naukri leads yet". The sheet is to be filled by a Gmail Apps Script from Naukri's "Receive responses over email"
+  mails (each job posting → Advanced options → Receive responses over email → mrgolisoda2026@gmail.com).
+- Upgrade from v1.9: replace `pipeline/v3/page.tpl.html`, `.github/workflows/sync.yml`, `local/serve.py`, `README.md`;
+  add `pipeline/naukri_export.py`. Then run a sync.
+
 ## Test locally before pushing (v1.7)
 ```
 python local/serve.py            the page at http://127.0.0.1:8765 with a local stand-in for Supabase (data in work/local_db.json)

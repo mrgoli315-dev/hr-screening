@@ -371,6 +371,28 @@ td.why>b{color:var(--red)}
 #pgApps table.dist tr.pick{cursor:pointer}
 #pgApps table.dist tr.pick:hover td{background:var(--sunk)}
 #pgApps table.dist tr.on td{background:var(--accent-soft)}
+/* Naukri leads (v1.10) */
+#pgNaukri .ufilters select{max-width:230px}
+#pgNaukri .tablebox{margin-top:10px}
+#pgNaukri table{min-width:1180px}
+#pgNaukri th button{font:inherit;text-transform:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;white-space:nowrap}
+#pgNaukri th button[aria-sort]:not([aria-sort="none"]){color:var(--accent)}
+#pgNaukri th button::after{content:"";display:inline-block;width:0;margin-left:4px}
+#pgNaukri th button[aria-sort="ascending"]::after{content:"▲"}
+#pgNaukri th button[aria-sort="descending"]::after{content:"▼"}
+#pgNaukri td{font-size:13px}
+#pgNaukri td .nm{font-weight:700}
+#pgNaukri td .sub2{display:block;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+#pgNaukri td.when{white-space:nowrap;font-variant-numeric:tabular-nums}
+#pgNaukri td.skills{max-width:34ch;font-size:12.5px}
+#pgNaukri td.skills .sub2{overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;margin-top:10px;color:var(--muted);font-size:12.5px}
+.pager .pgbtns{display:flex;align-items:center;gap:4px}
+.pager button{font:inherit;font-weight:700;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--accent);border-radius:8px;padding:6px 11px;cursor:pointer;min-width:36px}
+.pager button:disabled{color:var(--muted);opacity:.45;cursor:default}
+.pager .pgnum{font-weight:700;color:var(--fg);padding:0 8px;font-variant-numeric:tabular-nums}
+.pager select{font:inherit;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:var(--surface);color:var(--fg)}
+.pager .lnk{font-weight:700}
 </style>
 </head>
 <body>
@@ -471,6 +493,48 @@ td.why>b{color:var(--red)}
     </div>
     <div class="showmore" id="uMoreBox" hidden><button id="uMore">Show more</button></div>
     <p class="legend">"Roles considered" are the roles Claude weighed before deciding the resume did not fit. A transfer replaces that rating with the level and roles you choose; Claude's reason stays visible on the dashboard row.</p>
+  </div>
+
+  <div id="pgNaukri" hidden>
+    <h2 class="pgtitle">Naukri leads</h2>
+    <p class="sub">Applications received through the Naukri recruiter portal, one row per application, as Naukri sends them in the application e-mail. Filled automatically once the e-mail flow is connected; refreshed by every sync.</p>
+    <div class="ufilters" id="nFilters">
+      <input type="search" id="nQ" placeholder="Search name, phone, e-mail, location, role, company, skills…" aria-label="Search Naukri leads">
+      <select id="nJob" aria-label="Job applied for"></select>
+      <select id="nLoc" aria-label="Current location"></select>
+      <select id="nDate" aria-label="Applied"></select>
+      <select id="nNt" aria-label="Notice period"></select>
+      <select id="nRes" aria-label="Resume"></select>
+      <button type="button" class="lnk" id="nClear">Clear filters</button>
+    </div>
+    <p class="fsum" id="nSum"></p>
+    <div class="tablebox">
+      <table>
+        <thead><tr>
+          <th><button type="button" data-sort="ts">Applied</button></th>
+          <th><button type="button" data-sort="n">Name &amp; contact</button></th>
+          <th><button type="button" data-sort="loc">Location</button></th>
+          <th><button type="button" data-sort="desig">Current role</button></th>
+          <th><button type="button" data-sort="yrsn">Experience</button></th>
+          <th><button type="button" data-sort="ctcn">Current CTC</button></th>
+          <th><button type="button" data-sort="nt">Notice</button></th>
+          <th>Skills · education</th>
+          <th><button type="button" data-sort="job">Applied for</button></th>
+          <th>Resume</th>
+        </tr></thead>
+        <tbody id="nRows"></tbody>
+      </table>
+    </div>
+    <div class="pager" id="nPager" hidden>
+      <span id="nRange"></span>
+      <div class="pgbtns">
+        <button type="button" id="nFirst" title="First page">«</button><button type="button" id="nPrev" title="Previous page">‹</button>
+        <span class="pgnum" id="nPgNum"></span>
+        <button type="button" id="nNext" title="Next page">›</button><button type="button" id="nLast" title="Last page">»</button>
+      </div>
+      <span><label>Rows per page <select id="nSize"><option>25</option><option>50</option><option>100</option><option>200</option></select></label> · <button type="button" class="lnk" id="nCsv">Download CSV (filtered rows)</button></span>
+    </div>
+    <p class="legend">Someone who also applied through a Google Form is matched by phone on the Dashboard and counted once there.</p>
   </div>
 
   <div id="pgApps" hidden>
@@ -1329,16 +1393,102 @@ function renderApps(){
   renderReport();
 }
 
+/* ---------- Naukri leads (v1.10) ----------
+   The rows live in naukri.json (written by pipeline/naukri_export.py from the "Naukri leads" sheet at every sync).
+   Fetched the first time the tab is opened; each row gets one lowercase search string and a few sort keys once;
+   filter, sort and page then run in one pass per render. */
+let NK=null,nLoad="",nRowsCache=null,nQ="",nSort="ts",nDir=-1,nPg=1,nSize=50,nTimer=0;
+const NF={job:"",loc:"",date:"",nt:"",res:""};
+const N_SORTS=["ts","n","loc","desig","yrsn","ctcn","nt","job"];
+const nYears=v=>{const m=String(v||"").match(/\d+(\.\d+)?/);return m?+m[0]:null};
+const nMoney=v=>{const s=String(v||"").toLowerCase().replace(/[,₹\s]|rs\.?|inr|\/-|p\.?a\.?/g,"");const m=s.match(/\d+(\.\d+)?/);if(!m)return null;const n=+m[0],r=s.slice(m.index+m[0].length);if(r.startsWith("l"))return n;if(r.startsWith("k"))return n*12/100;if(n>=100000)return n/100000;if(n>=1000)return n*12/100000;if(n<100)return n;return null};
+const nNtKind=v=>{const s=String(v||"").toLowerCase();return !s?"":/immediate|serving|0 ?day|^0$/.test(s)?"imm":"later"};
+const nDateOK=(o,v=NF.date)=>{const s=o.d;if(!v)return true;if(v==="none")return !isDay(s);if(!isDay(s))return false;const a=DAYS(s);return v==="old"?a>30:v==="0"?a<=0:v==="1"?a===1:a<=+v};
+async function loadNaukri(){
+  if(NK||nLoad==="busy")return;
+  nLoad="busy";
+  try{
+    const r=await fetch("naukri.json",{cache:"no-cache"});
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    const j=await r.json();
+    NK=j.rows.map(a=>{const o={};j.cols.forEach((c,i)=>o[c]=a[i]||"");o.d=o.ts.slice(0,10);o.tk=o.ts.slice(11,16);o.ntk=nNtKind(o.nt);o.yrsn=nYears(o.yrs);o.ctcn=nMoney(o.ctc);o.q=[o.n,o.ph,o.em,o.loc,o.ploc,o.desig,o.co,o.skills,o.job,o.edu].join(" ").toLowerCase();return o});
+    NK.meta={latest:j.latest||"",count:j.count||NK.length};
+    nLoad="";
+  }catch(e){nLoad="error: "+((e&&e.message)||e)}
+  renderMenu();if(page==="naukri")renderNaukri();
+}
+function nRow(o){
+  const wa=o.ph.length===10?"91"+o.ph:"";
+  const tel=o.ph?`<a href="tel:+91${esc(o.ph)}">${esc(o.ph)}</a>`:"";
+  const waL=wa?`${tel?" · ":""}<a href="https://wa.me/${wa}?text=${encodeURIComponent(`Hi ${o.n}, greetings from the HR team at MR.GOLISODA (South Asian Foods Corporation) about your application on Naukri.`)}" target="_blank" rel="noopener">WhatsApp</a>`:"";
+  const em=o.em?`<span class="sub2"><a href="mailto:${esc(o.em)}">${esc(o.em)}</a></span>`:"";
+  const when=isDay(o.d)?fmtDate(o.d)+(o.tk?`<span class="sub2">${fmtTime(o.tk)}</span>`:""):esc(o.ts);
+  return `<tr><td class="when">${when}</td><td><span class="nm">${esc(o.n)||"—"}</span><span class="sub2">${tel}${waL}</span>${em}</td><td>${esc(o.loc)}${o.ploc?`<span class="sub2">prefers ${esc(o.ploc)}</span>`:""}</td><td>${esc(o.desig)}${o.co?`<span class="sub2">${esc(o.co)}</span>`:""}</td><td>${esc(o.yrs)}</td><td>${esc(o.ctc)}</td><td>${esc(o.nt)}</td><td class="skills">${esc(o.skills)}${o.edu?`<span class="sub2">${esc(o.edu)}</span>`:""}</td><td>${esc(o.job)}</td><td>${o.res?`<a href="${esc(o.res)}" target="_blank" rel="noopener">Open</a>`:'<span class="sub2">none</span>'}</td></tr>`;
+}
+function renderNaukri(){
+  const host=$("#nRows"),N=v=>(+v).toLocaleString("en-IN");
+  if(!NK){
+    host.innerHTML=`<tr><td colspan="10" class="empty">${nLoad.startsWith("error")?`Could not load the Naukri leads (${esc(nLoad.slice(7))}). <button type="button" class="lnk" id="nRetry">Try again</button>`:"Loading the Naukri leads…"}</td></tr>`;
+    $("#nSum").textContent="";$("#nPager").hidden=true;
+    const b=$("#nRetry");if(b)b.onclick=()=>{nLoad="";renderNaukri()};
+    if(!nLoad)loadNaukri();
+    return;
+  }
+  const t=nQ.trim().toLowerCase();
+  const inQ=o=>!t||o.q.includes(t);
+  // one pass: which of the 5 filters each row passes; a row counts for an option of filter k when all others pass
+  const FK=["job","loc","date","nt","res"];
+  const flags=o=>[!NF.job||o.job===NF.job,!NF.loc||o.loc===NF.loc,nDateOK(o),!NF.nt||o.ntk===NF.nt,!NF.res||(NF.res==="yes")===!!o.res];
+  const live=[];for(const o of NK){if(!inQ(o))continue;const f=flags(o);let n=0;for(const b of f)if(b)n++;live.push([o,f,n])}
+  const okBut=(e,k)=>e[2]===5||(e[2]===4&&!e[1][k]);
+  const tally=(key,skip)=>{const k=FK.indexOf(skip),m=new Map();for(const e of live){if(okBut(e,k)){const v=e[0][key];m.set(v,(m.get(v)||0)+1)}}return m};
+  const sum=m=>{let s=0;m.forEach(n=>s+=n);return s};
+  const opt=(m,v,l)=>[v,l+" ("+(m.get(v)||0)+")"];
+  const sel=(id,cur,opts)=>{const el=$("#"+id);el.innerHTML=opts.map(([v,l])=>`<option value="${esc(v)}"${v===cur?" selected":""}>${esc(l)}</option>`).join("");el.classList.toggle("on",!!cur)};
+  const names=(m,cur)=>{const k=[...m.keys()].filter(Boolean);if(cur&&!m.has(cur))k.push(cur);return k.sort(A_COLL.compare)};
+  let m=tally("job","job");sel("nJob",NF.job,[["","All jobs ("+sum(m)+")"],...names(m,NF.job).map(s=>opt(m,s,s))]);
+  m=tally("loc","loc");sel("nLoc",NF.loc,[["","All locations ("+sum(m)+")"],...names(m,NF.loc).map(s=>opt(m,s,s))]);
+  sel("nDate",NF.date,[["","Applied any time"],...[["0","Today"],["1","Yesterday"],["7","Last 7 days"],["30","Last 30 days"],["old","Older than 30 days"],["none","No date"]].map(([v,l])=>[v,l+" ("+cnt(live,e=>okBut(e,2)&&nDateOK(e[0],v))+")"])]);
+  m=tally("ntk","nt");sel("nNt",NF.nt,[["","Notice: any"],opt(m,"imm","Immediate / serving"),opt(m,"later","Has a notice period")]);
+  m=new Map();for(const e of live){if(okBut(e,4)){const v=e[0].res?"yes":"no";m.set(v,(m.get(v)||0)+1)}}sel("nRes",NF.res,[["","Resume: any"],opt(m,"yes","Resume attached"),opt(m,"no","No resume")]);
+  const rows=live.filter(e=>e[2]===5).map(e=>e[0]);
+  const k=nSort,dir=nDir,newest=(a,b)=>a.ts<b.ts?1:a.ts>b.ts?-1:0;
+  rows.sort((a,b)=>{let x=a[k],y=b[k],c;if(k==="yrsn"||k==="ctcn"){c=((x==null?-1:x)-(y==null?-1:y))*dir}else if(k==="ts"){c=newest(b,a)*dir}else{x=x||"";y=y||"";c=(!x)-(!y)||A_COLL.compare(x,y)*dir}return c||newest(a,b)});
+  nRowsCache=rows;
+  const total=rows.length,pages=Math.max(1,Math.ceil(total/nSize));
+  if(nPg>pages)nPg=pages;if(nPg<1)nPg=1;
+  const from=(nPg-1)*nSize,slice=rows.slice(from,from+nSize),M=NK.meta||{};
+  $("#nSum").innerHTML=NK.length?`<b>${N(total)}</b> of ${N(NK.length)} Naukri lead${NK.length===1?"":"s"}${M.latest&&isDay(M.latest.slice(0,10))?` · latest ${fmtDate(M.latest.slice(0,10))}${M.latest.length>15?" "+fmtTime(M.latest.slice(11,16)):""}`:""}`:"";
+  host.innerHTML=slice.length?slice.map(nRow).join(""):`<tr><td colspan="10" class="empty">${NK.length?"No lead matches these filters.":"No Naukri leads yet. They appear here once the Naukri application e-mails are connected."}</td></tr>`;
+  $("#nPager").hidden=!total;
+  $("#nRange").textContent=total?`Rows ${N(from+1)}–${N(Math.min(from+nSize,total))} of ${N(total)}`:"";
+  $("#nPgNum").textContent=`Page ${N(nPg)} of ${N(pages)}`;
+  $("#nFirst").disabled=$("#nPrev").disabled=nPg<=1;$("#nNext").disabled=$("#nLast").disabled=nPg>=pages;
+  $("#nSize").value=String(nSize);
+  document.querySelectorAll("#pgNaukri th button[data-sort]").forEach(b=>b.setAttribute("aria-sort",b.dataset.sort===nSort?(nDir>0?"ascending":"descending"):"none"));
+}
+function naukriCsv(){
+  if(!nRowsCache)return;
+  const H=["Applied","Name","Phone","Email","Current location","Preferred location","Designation","Company","Experience","Current CTC","Notice period","Education","Key skills","Job applied for","Resume"];
+  const K=["ts","n","ph","em","loc","ploc","desig","co","yrs","ctc","nt","edu","skills","job","res"];
+  const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+  const csv=[H.map(q).join(",")].concat(nRowsCache.map(o=>K.map(k=>q(o[k])).join(","))).join("\r\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"}));
+  a.download="naukri-leads-"+new Date().toISOString().slice(0,10)+".csv";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+function nGoto(p){nPg=p;renderNaukri();try{$("#nSum").scrollIntoView({block:"start"})}catch(e){}}
+
 /* ---------- routing ---------- */
 function renderMenu(){
   const p0=page,d0=curDate; page="leads";curDate="0"; const today=cnt(D,inDate)+cnt(HIDDEN,hidIn); page=p0;curDate=d0;
-  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button><button type="button" data-pg="apps" aria-current="${page==="apps"?"page":"false"}" title="Daily report from the Google Sheets: what came in, Claude's rating, marks; every row searchable.">Reports${APPS?`<small>${APPS.length}</small>`:""}</button>`;
+  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button><button type="button" data-pg="apps" aria-current="${page==="apps"?"page":"false"}" title="Daily report from the Google Sheets: what came in, Claude's rating, marks; every row searchable.">Reports${APPS?`<small>${APPS.length}</small>`:""}</button><button type="button" data-pg="naukri" aria-current="${page==="naukri"?"page":"false"}" title="Applications received through the Naukri recruiter portal.">Naukri leads${NK?`<small>${NK.length}</small>`:""}</button>`;
   $("#menu").querySelectorAll("button").forEach(b=>b.onclick=()=>{page=b.dataset.pg;shown=PAGE;lShown=PAGE;save();go();window.scrollTo({top:0})});
 }
 function go(){
   F=page==="leads"?FL:FD;
   renderMenu();
-  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";$("#pgUnsuit").hidden=page!=="unsuit";$("#pgApps").hidden=page!=="apps";
+  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";$("#pgUnsuit").hidden=page!=="unsuit";$("#pgApps").hidden=page!=="apps";$("#pgNaukri").hidden=page!=="naukri";
+  if(page==="naukri"){renderNaukri();try{if(location.hash.slice(1)!=="naukri")history.replaceState(null,"","#naukri")}catch(e){}return;}
   if(page==="unsuit"){renderUnsuit();try{if(location.hash.slice(1)!=="unsuit")history.replaceState(null,"","#unsuit")}catch(e){}return;}
   if(page==="apps"){renderApps();try{if(location.hash.slice(1)!=="apps")history.replaceState(null,"","#apps")}catch(e){}return;}
   const host=page==="leads"?$("#lFilters"):$("#dFilters");
@@ -1353,11 +1503,11 @@ function go(){
   if(view==="positions")renderPositions();else if(view==="candidates")renderCandidates();else renderAttention();
   try{if(location.hash.slice(1)!==view)history.replaceState(null,"","#"+view)}catch(e){}
 }
-function save(){try{localStorage.setItem("hf3",JSON.stringify({page,view,curSt,curRole,curLv,curSrc,curDate,lLv,lSrc,FD,FL,A:{aDay,aDSort,aDDir}}))}catch(e){}}
+function save(){try{localStorage.setItem("hf3",JSON.stringify({page,view,curSt,curRole,curLv,curSrc,curDate,lLv,lSrc,FD,FL,A:{aDay,aDSort,aDDir},NKS:{NF,nSort,nDir,nSize}}))}catch(e){}}
 function init(){
-  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads","unsuit","apps"].includes(v.page))page=v.page;if(v.A&&typeof v.A==="object"){if(typeof v.A.aDay==="string"&&(["","0","1"].includes(v.A.aDay)||isDay(v.A.aDay)))aDay=v.A.aDay;if(A_DSORTS.includes(v.A.aDSort))aDSort=v.A.aDSort;if(v.A.aDDir===1||v.A.aDDir===-1)aDDir=v.A.aDDir}if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
-  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(h==="unsuit")page="unsuit";else if(h==="apps")page="apps";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
-  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(x==="unsuit"&&page!=="unsuit"){page="unsuit";go()}else if(x==="apps"&&page!=="apps"){page="apps";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
+  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads","unsuit","apps","naukri"].includes(v.page))page=v.page;if(v.NKS&&typeof v.NKS==="object"){const s=v.NKS.NF||{};for(const k of Object.keys(NF)){if(typeof s[k]==="string")NF[k]=s[k]}if(N_SORTS.includes(v.NKS.nSort))nSort=v.NKS.nSort;if(v.NKS.nDir===1||v.NKS.nDir===-1)nDir=v.NKS.nDir;if([25,50,100,200].includes(v.NKS.nSize))nSize=v.NKS.nSize}if(v.A&&typeof v.A==="object"){if(typeof v.A.aDay==="string"&&(["","0","1"].includes(v.A.aDay)||isDay(v.A.aDay)))aDay=v.A.aDay;if(A_DSORTS.includes(v.A.aDSort))aDSort=v.A.aDSort;if(v.A.aDDir===1||v.A.aDDir===-1)aDDir=v.A.aDDir}if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
+  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(h==="unsuit")page="unsuit";else if(h==="apps")page="apps";else if(h==="naukri")page="naukri";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
+  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(x==="unsuit"&&page!=="unsuit"){page="unsuit";go()}else if(x==="apps"&&page!=="apps"){page="apps";go()}else if(x==="naukri"&&page!=="naukri"){page="naukri";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
   renderFigs();
   $("#q").addEventListener("input",()=>{shown=PAGE;renderCandidates()});
   $("#telugu").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
@@ -1375,6 +1525,14 @@ function init(){
   [["uSt",v=>uSt=v],["uTf",v=>uTf=v],["uSrc",v=>uSrc=v],["uDate",v=>uDate=v]].forEach(([id,f])=>$("#"+id).addEventListener("change",e=>{f(e.target.value);uShown=PAGE;renderUnsuit()}));
   $("#uMore").onclick=()=>{uShown+=PAGE;renderUnsuit()};
   $("#aDaySel").addEventListener("change",e=>{if(e.target.value){aDay=e.target.value;save();renderApps()}});
+  // Naukri leads (v1.10)
+  $("#nQ").addEventListener("input",()=>{clearTimeout(nTimer);nTimer=setTimeout(()=>{nQ=$("#nQ").value;nPg=1;renderNaukri()},150)});
+  [["nJob","job"],["nLoc","loc"],["nDate","date"],["nNt","nt"],["nRes","res"]].forEach(([id,k])=>$("#"+id).addEventListener("change",e=>{NF[k]=e.target.value;nPg=1;save();renderNaukri()}));
+  $("#nClear").onclick=()=>{for(const k of Object.keys(NF))NF[k]="";nQ="";$("#nQ").value="";nPg=1;save();renderNaukri()};
+  $("#nFirst").onclick=()=>nGoto(1);$("#nPrev").onclick=()=>nGoto(nPg-1);$("#nNext").onclick=()=>nGoto(nPg+1);$("#nLast").onclick=()=>nGoto(1e9);
+  $("#nSize").addEventListener("change",e=>{nSize=+e.target.value||50;nPg=1;save();renderNaukri()});
+  $("#nCsv").onclick=naukriCsv;
+  document.querySelectorAll("#pgNaukri th button[data-sort]").forEach(b=>b.onclick=()=>{const k=b.dataset.sort;if(nSort===k)nDir=-nDir;else{nSort=k;nDir=(k==="ts"||k==="yrsn"||k==="ctcn")?-1:1}nPg=1;save();renderNaukri()});
   $("#aDSt").addEventListener("change",e=>{aDSt=e.target.value;aDists.clear();renderReport()});
   const dOpen=o=>{$("#aDistPop").hidden=!o;$("#aDistBtn").setAttribute("aria-expanded",o?"true":"false");if(o&&!$("#aDistFind").hidden)$("#aDistFind").focus()};
   $("#aDistBtn").onclick=()=>dOpen($("#aDistPop").hidden);

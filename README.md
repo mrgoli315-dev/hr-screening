@@ -22,7 +22,7 @@ public/config.js             your Supabase URL + anon key  <-- edit once
 apps-script/Code.gs          Google Apps Script bridge (reads sheets + resumes as the sheet owner)
 pipeline/gdrive.py           talks to the bridge (or to a service account)
 pipeline/fetch.py            reads the sheets
-pipeline/rate.py             rates resumes with the Claude API
+pipeline/rate.py             rates resumes with the Claude API (how it works: docs/CLAUDE_SCREENING.md)
 pipeline/update.py, v3/...   unchanged scripts from the Claude version
 pipeline/runs.py             writes sync status for the page
 pipeline/overrides.py        reads the Unsuitable → dashboard transfers from Supabase into pipeline/app/overrides.json (v1.7)
@@ -170,6 +170,22 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
 - Upgrade from v1.6: replace `pipeline/v3/build.py`, `pipeline/v3/page.tpl.html`, `public/claude-shim.js`, `public/activity-log.js`,
   `.github/workflows/sync.yml`, `pipeline/update.py`, `README.md`; add `pipeline/overrides.py` and `pipeline/app/overrides.json`
   (content `{}`). No Supabase SQL and no Vercel change. Then Actions → sync → Run workflow. Do NOT upload `public/index.html`.
+
+## v1.8 — All applications: every Google Sheet row
+- Fourth button in the menu, **All applications**: every row of the BDE, BDM and MBA sheets as submitted (one row per form
+  entry; someone who applied twice is listed twice), with search (name, phone, e-mail, district, state), filters
+  (sheet, state, district, applied period, FMCG, field sales, ready to travel, notice period, resume attached), sortable
+  columns, pages of 25/50/100/200 rows and "Download CSV" of the filtered rows. Each row has the phone (tap to call),
+  WhatsApp, e-mail, the resume link and whatever HR typed in the sheet's status columns (older BDE rows).
+- The rows are not inside the page. Every sync writes them to `public/applications.json` (`pipeline/sheets_export.py`,
+  step 7 after `publish.py`), about 0.5 MB, 140 KB over the wire; the page fetches it the first time the tab is opened
+  and keeps it in memory, so the Dashboard loads exactly as before. Filtering, sorting and paging run in the browser in
+  a few milliseconds for a few thousand rows. Edits made in the sheet (for example a status typed next to an old row)
+  show after the next sync, because the file is built from the full sheet download, not from the append-only copies.
+- The BDM sheet is no longer downloaded by `fetch.py`, so its rows come from the saved copy `pipeline/sheets/bdm_latest.json`.
+- Upgrade from v1.7: replace `pipeline/v3/page.tpl.html`, `.github/workflows/sync.yml`, `local/serve.py`, `README.md`;
+  add `pipeline/sheets_export.py`. No Supabase SQL and no Vercel change. Then Actions → sync → Run workflow (the run
+  creates `public/applications.json`). Do NOT upload `public/index.html`.
 
 ## Test locally before pushing (v1.7)
 ```

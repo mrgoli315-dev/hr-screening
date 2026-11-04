@@ -93,6 +93,7 @@ jobs:
         run: |
           python pipeline/update.py build
           python pipeline/publish.py
+          python pipeline/sheets_export.py      # v1.8: every sheet row -> public/applications.json ("All applications" tab)
 
       - name: 8 - save and deploy
         run: |

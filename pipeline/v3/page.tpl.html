@@ -326,6 +326,33 @@ td.why>b{color:var(--red)}
 .vseg button[aria-pressed="true"].lv-medium{border-color:var(--yellow);background:var(--yellow-soft);color:var(--yellow)}
 .vseg button[aria-pressed="true"].lv-strong{border-color:var(--green);background:var(--green-soft);color:var(--green)}
 .vchips button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+/* all applications: every Google Sheet row (v1.8) */
+#pgApps .ufilters select{max-width:220px}
+#pgApps .tablebox{margin-top:10px}
+#pgApps table{min-width:1180px}
+#pgApps th button{font:inherit;text-transform:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;white-space:nowrap}
+#pgApps th button[aria-sort]:not([aria-sort="none"]){color:var(--accent)}
+#pgApps th button::after{content:"";display:inline-block;width:0;margin-left:4px}
+#pgApps th button[aria-sort="ascending"]::after{content:"▲"}
+#pgApps th button[aria-sort="descending"]::after{content:"▼"}
+#pgApps td{font-size:13px}
+#pgApps td .nm{font-weight:700}
+#pgApps td .sub2{display:block;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+#pgApps td.when{white-space:nowrap;font-variant-numeric:tabular-nums}
+#pgApps td.form{font-size:12.5px;white-space:nowrap}
+#pgApps td.form .no{color:var(--red)}
+#pgApps td.stat{max-width:26ch}
+#pgApps .pill.src{background:var(--sunk);color:var(--muted)}
+#pgApps .pill.src.BDE{background:var(--accent-soft);color:var(--accent)}
+#pgApps .pill.src.MBA{background:var(--green-soft);color:var(--green)}
+#pgApps .pill.src.BDM{background:var(--yellow-soft);color:var(--yellow)}
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 14px;margin-top:10px;color:var(--muted);font-size:12.5px}
+.pager .pgbtns{display:flex;align-items:center;gap:4px}
+.pager button{font:inherit;font-weight:700;font-size:13px;border:1px solid var(--line);background:var(--surface);color:var(--accent);border-radius:8px;padding:6px 11px;cursor:pointer;min-width:36px}
+.pager button:disabled{color:var(--muted);opacity:.45;cursor:default}
+.pager .pgnum{font-weight:700;color:var(--fg);padding:0 8px;font-variant-numeric:tabular-nums}
+.pager select{font:inherit;font-size:13px;border:1px solid var(--line);border-radius:8px;padding:5px 8px;background:var(--surface);color:var(--fg)}
+.pager .lnk{font-weight:700}
 </style>
 
 <div class="wrap">
@@ -424,6 +451,51 @@ td.why>b{color:var(--red)}
     <div class="showmore" id="uMoreBox" hidden><button id="uMore">Show more</button></div>
     <p class="legend">"Roles considered" are the roles Claude weighed before deciding the resume did not fit. A transfer replaces that rating with the level and roles you choose; Claude's reason stays visible on the dashboard row.</p>
   </div>
+
+  <div id="pgApps" hidden>
+    <h2 class="pgtitle">All applications</h2>
+    <p class="sub">Every row of the Google Sheets as submitted, one row per form entry (someone who applied twice is listed twice). Refreshed by every sync. The Dashboard shows the same people after Claude's rating.</p>
+    <div class="ufilters" id="aFilters">
+      <input type="search" id="aQ" placeholder="Search name, phone, e-mail, district, state…" aria-label="Search applications">
+      <select id="aSrc" aria-label="Sheet"></select>
+      <select id="aSt" aria-label="State"></select>
+      <select id="aDist" aria-label="District"></select>
+      <select id="aDate" aria-label="Applied"></select>
+      <select id="aFmcg" aria-label="FMCG experience"></select>
+      <select id="aFs" aria-label="Field sales experience"></select>
+      <select id="aTv" aria-label="Ready to travel"></select>
+      <select id="aNt" aria-label="Notice period"></select>
+      <select id="aRes" aria-label="Resume"></select>
+      <button type="button" class="lnk" id="aClear">Clear filters</button>
+    </div>
+    <p class="fsum" id="aSum"></p>
+    <div class="tablebox">
+      <table>
+        <thead><tr>
+          <th><button type="button" data-sort="ts">Applied</button></th>
+          <th><button type="button" data-sort="n">Name &amp; contact</button></th>
+          <th><button type="button" data-sort="src">Sheet</button></th>
+          <th><button type="button" data-sort="fd">Location</button></th>
+          <th><button type="button" data-sort="yrs">Experience</button></th>
+          <th><button type="button" data-sort="ctcn">Salary (now → asks)</button></th>
+          <th>Form answers</th>
+          <th>Resume</th>
+          <th><button type="button" data-sort="stat">Sheet status</button></th>
+        </tr></thead>
+        <tbody id="aRows"></tbody>
+      </table>
+    </div>
+    <div class="pager" id="aPager" hidden>
+      <span id="aRange"></span>
+      <div class="pgbtns">
+        <button type="button" id="aFirst" title="First page">«</button><button type="button" id="aPrev" title="Previous page">‹</button>
+        <span class="pgnum" id="aPgNum"></span>
+        <button type="button" id="aNext" title="Next page">›</button><button type="button" id="aLast" title="Last page">»</button>
+      </div>
+      <span><label>Rows per page <select id="aSize"><option>25</option><option>50</option><option>100</option><option>200</option></select></label> · <button type="button" class="lnk" id="aCsv">Download CSV (filtered rows)</button></span>
+    </div>
+    <p class="legend">"Sheet status" is whatever HR typed in the sheet's status columns (older BDE rows). Form answers: travel · notice period · FMCG · field sales, as the applicant answered them.</p>
+  </div>
 </div>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -435,7 +507,7 @@ td.why>b{color:var(--red)}
     <div class="vchips" id="vChips"></div>
     <label>Reason (required)<textarea id="vReason" maxlength="600" placeholder="Pick a quick reason above or type your own"></textarea></label>
     <p class="vme" id="vMe" hidden>Marked by <b id="vMeWho"></b> <span class="pnote">(your Claude sign-in — recorded with the mark)</span></p>
-    <label id="vHrLab">Marked by<select id="vHr"><option value="">Choose your name</option><option>Amreen</option><option>Shakina</option><option>Radhi</option><option>Chandru</option><option>Aziz</option><option value="__other">Someone else…</option></select></label>
+    <label id="vHrLab">Marked by<select id="vHr"><option value="">Choose your name</option><option data-email="Kiruthikavellaichamy@gmail.com">Kiruthika</option><option>Shakina</option><option>Radhi</option><option>Chandru</option><option>Aziz</option><option value="__other">Someone else…</option></select></label>
     <input type="text" id="vHrOther" placeholder="Your name" hidden maxlength="40">
     <p class="vlast" id="vLast"></p>
     <p class="verr" id="vErr" hidden></p>
@@ -1139,17 +1211,116 @@ document.addEventListener("click",e=>{const b=e.target.closest("[data-vi]");if(!
 
 function bindNames(root){root.querySelectorAll(".nm[data-i]").forEach(b=>b.onclick=()=>openDrawer(+b.dataset.i))}
 
+/* ---------- all applications: every Google Sheet row (v1.8) ----------
+   The rows live in applications.json (written by pipeline/sheets_export.py at every sync), not in this page:
+   the file is fetched the first time the tab is opened and kept in memory. Each row gets one lowercase search
+   string and a few normalised keys once; filter, sort and page then run in one pass per render. */
+let APPS=null,aLoad="",aRowsCache=null,aQ="",aSort="ts",aDir=-1,aPg=1,aSize=50,aTimer=0;
+const AF={src:"",st:"",fd:"",date:"",fmcg:"",fs:"",tv:"",nt:"",res:""};
+const A_SORTS=["ts","n","src","fd","yrs","ctcn","stat"];
+const A_COLL=new Intl.Collator(undefined,{numeric:true,sensitivity:"base"});   // one collator: ~100x faster than localeCompare with options
+const yn=v=>{const s=String(v||"").trim().toLowerCase();return s.startsWith("y")?"yes":s.startsWith("n")?"no":""};
+const ntKind=v=>{const s=String(v||"").toLowerCase();return !s?"":/immediate/.test(s)?"imm":"later"};
+const money=v=>{const s=String(v||"").toLowerCase().replace(/[,₹\s]|rs\.?|inr|\/-/g,"");const m=s.match(/\d+(\.\d+)?/);if(!m)return null;const n=+m[0],r=s.slice(m.index+m[0].length);if(r.startsWith("l"))return n;if(r.startsWith("k"))return n*12/100;if(n>=100000)return n/100000;if(n>=1000)return n*12/100000;if(n<100)return n;return null};
+const aDateOK=(o,v=AF.date)=>{const s=o.d;if(!v)return true;if(v==="none")return !isDay(s);if(!isDay(s))return false;const a=DAYS(s);return v==="old"?a>30:v==="0"?a<=0:v==="1"?a===1:a<=+v};
+async function loadApps(){
+  if(APPS||aLoad==="busy")return;
+  aLoad="busy";
+  try{
+    const r=await fetch("applications.json",{cache:"no-cache"});
+    if(!r.ok)throw new Error("HTTP "+r.status);
+    const j=await r.json();
+    APPS=j.rows.map(a=>{const o={};j.cols.forEach((c,i)=>o[c]=a[i]||"");o.d=o.ts.slice(0,10);o.tk=o.ts.slice(11,16);o.fm=yn(o.fmcg);o.fsk=yn(o.fs);o.tvk=yn(o.tv);o.ntk=ntKind(o.nt);o.ctcn=money(o.ctc);o.q=[o.n,o.ph,o.em,o.fd,o.st,o.stat,o.resu].join(" ").toLowerCase();return o});
+    APPS.meta={latest:j.latest||"",counts:j.counts||{}};
+    aLoad="";
+  }catch(e){aLoad="error: "+((e&&e.message)||e)}
+  renderMenu();if(page==="apps")renderApps();
+}
+function appRow(o){
+  const wa=o.ph.length===10?"91"+o.ph:"";
+  const tel=o.ph?`<a href="tel:+91${esc(o.ph)}">${esc(o.ph)}</a>`:"";
+  const waL=wa?`${tel?" · ":""}<a href="https://wa.me/${wa}?text=${encodeURIComponent(`Hi ${o.n}, greetings from the HR team at MR.GOLISODA (South Asian Foods Corporation) about your job application.`)}" target="_blank" rel="noopener">WhatsApp</a>`:"";
+  const em=o.em?`<span class="sub2"><a href="mailto:${esc(o.em)}">${esc(o.em)}</a></span>`:"";
+  const no=k=>k==="no"?' class="no"':"";
+  const form=[o.tv?`travel <b${no(o.tvk)}>${esc(o.tv)}</b>`:"",o.nt?`notice <b>${esc(o.nt)}</b>`:"",o.fmcg?`FMCG <b${no(o.fm)}>${esc(o.fmcg)}</b>`:"",o.fs?`field sales <b${no(o.fsk)}>${esc(o.fs)}</b>`:""].filter(Boolean).join("<br>");
+  const sal=(o.ctc||o.ectc)?esc(o.ctc||"?")+" → "+esc(o.ectc||"?"):"";
+  const xp=[o.yrs,o.tm&&o.tm.toLowerCase()!=="none"?"team "+o.tm:""].filter(Boolean).map(esc).join("<br>");
+  const when=isDay(o.d)?fmtDate(o.d)+(o.tk?`<span class="sub2">${fmtTime(o.tk)}</span>`:""):esc(o.ts);
+  return `<tr><td class="when">${when}</td><td><span class="nm">${esc(o.n)||"—"}</span><span class="sub2">${tel}${waL}</span>${em}</td><td><span class="pill src ${esc(o.src)}">${esc(o.src)}</span></td><td>${esc(o.fd)}${o.st?`<span class="sub2">${esc(o.st)}</span>`:""}</td><td>${xp}</td><td>${sal}</td><td class="form">${form}</td><td>${o.res?`<a href="${esc(o.res)}" target="_blank" rel="noopener">Open</a>`:'<span class="sub2">none</span>'}</td><td class="stat">${esc(o.stat)}${o.resu?`<span class="sub2">${esc(o.resu)}</span>`:""}</td></tr>`;
+}
+function renderApps(){
+  const host=$("#aRows"),N=v=>(+v).toLocaleString("en-IN");
+  if(!APPS){
+    host.innerHTML=`<tr><td colspan="9" class="empty">${aLoad.startsWith("error")?`Could not load the sheet data (${esc(aLoad.slice(7))}). <button type="button" class="lnk" id="aRetry">Try again</button>`:"Loading the sheet data…"}</td></tr>`;
+    $("#aSum").textContent="";$("#aPager").hidden=true;
+    const b=$("#aRetry");if(b)b.onclick=()=>{aLoad="";renderApps()};
+    if(!aLoad)loadApps();
+    return;
+  }
+  const t=aQ.trim().toLowerCase();
+  const inQ=o=>!t||o.q.includes(t);
+  // One pass over the rows: for each row, which of the 9 filters it passes. A row is shown when all pass; it counts
+  // towards an option of filter k when every filter except k passes. Facet counts then cost one cheap loop each.
+  const FK=["src","st","fd","date","fmcg","fs","tv","nt","res"];
+  const flags=o=>[!AF.src||o.src===AF.src,!AF.st||o.st===AF.st,!AF.fd||o.fd===AF.fd,aDateOK(o),!AF.fmcg||o.fm===AF.fmcg,!AF.fs||o.fsk===AF.fs,!AF.tv||o.tvk===AF.tv,!AF.nt||o.ntk===AF.nt,!AF.res||(AF.res==="yes")===!!o.res];
+  const live=[];                       // rows that pass the search; [row, flags, number of filters passed]
+  for(const o of APPS){if(!inQ(o)){continue}const f=flags(o);let n=0;for(const b of f)if(b)n++;live.push([o,f,n])}
+  const okBut=(e,k)=>e[2]===9||(e[2]===8&&!e[1][k]);
+  const tally=(key,skip)=>{const k=FK.indexOf(skip),m=new Map();for(const e of live){if(okBut(e,k)){const v=e[0][key];m.set(v,(m.get(v)||0)+1)}}return m};
+  const sum=m=>{let s=0;m.forEach(n=>s+=n);return s};
+  const opt=(m,v,l)=>[v,l+" ("+(m.get(v)||0)+")"];
+  const sel=(id,cur,opts)=>{const el=$("#"+id);el.innerHTML=opts.map(([v,l])=>`<option value="${esc(v)}"${v===cur?" selected":""}>${esc(l)}</option>`).join("");el.classList.toggle("on",!!cur)};
+  const names=(m,cur)=>{const k=[...m.keys()].filter(Boolean);if(cur&&!m.has(cur))k.push(cur);return k.sort()};
+  let m=tally("src","src");sel("aSrc",AF.src,[["","All sheets ("+sum(m)+")"],opt(m,"BDE","BDE form"),opt(m,"BDM","BDM form"),opt(m,"MBA","MBA form")]);
+  m=tally("st","st");sel("aSt",AF.st,[["","All states ("+sum(m)+")"],...names(m,AF.st).map(s=>opt(m,s,s))]);
+  m=tally("fd","fd");sel("aDist",AF.fd,[["","All districts ("+sum(m)+")"],...names(m,AF.fd).map(s=>opt(m,s,s))]);
+  sel("aDate",AF.date,[["","Applied any time"],...[["0","Today"],["1","Yesterday"],["7","Last 7 days"],["30","Last 30 days"],["old","Older than 30 days"],["none","No date"]].map(([v,l])=>[v,l+" ("+cnt(live,e=>okBut(e,3)&&aDateOK(e[0],v))+")"])]);
+  m=tally("fm","fmcg");sel("aFmcg",AF.fmcg,[["","FMCG: any"],opt(m,"yes","FMCG yes"),opt(m,"no","FMCG no")]);
+  m=tally("fsk","fs");sel("aFs",AF.fs,[["","Field sales: any"],opt(m,"yes","Field sales yes"),opt(m,"no","Field sales no")]);
+  m=tally("tvk","tv");sel("aTv",AF.tv,[["","Travel: any"],opt(m,"yes","Ready to travel"),opt(m,"no","Not ready to travel")]);
+  m=tally("ntk","nt");sel("aNt",AF.nt,[["","Notice: any"],opt(m,"imm","Immediate joiner"),opt(m,"later","Has a notice period")]);
+  m=new Map();for(const e of live){if(okBut(e,8)){const v=e[0].res?"yes":"no";m.set(v,(m.get(v)||0)+1)}}sel("aRes",AF.res,[["","Resume: any"],opt(m,"yes","Resume attached"),opt(m,"no","No resume")]);
+  const rows=live.filter(e=>e[2]===9).map(e=>e[0]);
+  const k=aSort,dir=aDir;
+  const newest=(a,b)=>a.ts<b.ts?1:a.ts>b.ts?-1:0;   // plain string compare: the ts key is YYYY-MM-DD HH:MM:SS
+  rows.sort((a,b)=>{let x=a[k],y=b[k],c;if(k==="ctcn"){c=((x==null?-1:x)-(y==null?-1:y))*dir}else if(k==="ts"){c=newest(b,a)*dir}else{x=x||"";y=y||"";c=(!x)-(!y)||A_COLL.compare(x,y)*dir}return c||newest(a,b)});   // blanks last whichever way
+  aRowsCache=rows;
+  const total=rows.length,pages=Math.max(1,Math.ceil(total/aSize));
+  if(aPg>pages)aPg=pages;if(aPg<1)aPg=1;
+  const from=(aPg-1)*aSize,slice=rows.slice(from,from+aSize);
+  const M=APPS.meta||{},c=M.counts||{};
+  $("#aSum").innerHTML=`<b>${N(total)}</b> of ${N(APPS.length)} applications · ${["BDE","BDM","MBA"].filter(s=>c[s]).map(s=>N(c[s])+" "+s).join(" · ")}${M.latest&&isDay(M.latest.slice(0,10))?` · latest ${fmtDate(M.latest.slice(0,10))}${M.latest.length>15?" "+fmtTime(M.latest.slice(11,16)):""}`:""}`;
+  host.innerHTML=slice.length?slice.map(appRow).join(""):`<tr><td colspan="9" class="empty">No application matches these filters.</td></tr>`;
+  $("#aPager").hidden=!total;
+  $("#aRange").textContent=total?`Rows ${N(from+1)}–${N(Math.min(from+aSize,total))} of ${N(total)}`:"";
+  $("#aPgNum").textContent=`Page ${N(aPg)} of ${N(pages)}`;
+  $("#aFirst").disabled=$("#aPrev").disabled=aPg<=1;$("#aNext").disabled=$("#aLast").disabled=aPg>=pages;
+  $("#aSize").value=String(aSize);
+  document.querySelectorAll("#pgApps th button[data-sort]").forEach(b=>b.setAttribute("aria-sort",b.dataset.sort===aSort?(aDir>0?"ascending":"descending"):"none"));
+}
+function appsCsv(){
+  if(!aRowsCache)return;
+  const H=["Sheet","Applied","Name","Phone","Email","State","District","Experience","Team managed","Current CTC","Expected CTC","Ready to travel","Notice period","FMCG","Field sales","Resume","Status","Result"];
+  const K=["src","ts","n","ph","em","st","fd","yrs","tm","ctc","ectc","tv","nt","fmcg","fs","res","stat","resu"];
+  const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+  const csv=[H.map(q).join(",")].concat(aRowsCache.map(o=>K.map(k=>q(o[k])).join(","))).join("\r\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["﻿"+csv],{type:"text/csv;charset=utf-8"}));
+  a.download="applications-"+new Date().toISOString().slice(0,10)+".csv";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+function aGoto(p){aPg=p;renderApps();try{$("#aSum").scrollIntoView({block:"start"})}catch(e){}}
+
 /* ---------- routing ---------- */
 function renderMenu(){
   const p0=page,d0=curDate; page="leads";curDate="0"; const today=cnt(D,inDate)+cnt(HIDDEN,hidIn); page=p0;curDate=d0;
-  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button>`;
+  $("#menu").innerHTML=`<button type="button" data-pg="dash" aria-current="${page==="dash"?"page":"false"}">Dashboard</button><button type="button" data-pg="leads" aria-current="${page==="leads"?"page":"false"}">Daily leads<small>${today} today</small></button><button type="button" data-pg="unsuit" aria-current="${page==="unsuit"?"page":"false"}" title="Resumes Claude set aside. Transfer the ones that should be on the dashboard.">Unsuitable<small>${uOpen()}</small></button><button type="button" data-pg="apps" aria-current="${page==="apps"?"page":"false"}" title="Every row of the Google Sheets: search, filter, page through.">All applications${APPS?`<small>${APPS.length}</small>`:""}</button>`;
   $("#menu").querySelectorAll("button").forEach(b=>b.onclick=()=>{page=b.dataset.pg;shown=PAGE;lShown=PAGE;save();go();window.scrollTo({top:0})});
 }
 function go(){
   F=page==="leads"?FL:FD;
   renderMenu();
-  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";$("#pgUnsuit").hidden=page!=="unsuit";
+  $("#pgDash").hidden=page!=="dash";$("#pgLeads").hidden=page!=="leads";$("#pgUnsuit").hidden=page!=="unsuit";$("#pgApps").hidden=page!=="apps";
   if(page==="unsuit"){renderUnsuit();try{if(location.hash.slice(1)!=="unsuit")history.replaceState(null,"","#unsuit")}catch(e){}return;}
+  if(page==="apps"){renderApps();try{if(location.hash.slice(1)!=="apps")history.replaceState(null,"","#apps")}catch(e){}return;}
   const host=page==="leads"?$("#lFilters"):$("#dFilters");
   host.appendChild($("#stateRow"));host.appendChild($("#pfilters"));host.appendChild($("#fsum"));
   if(page==="leads"){
@@ -1162,11 +1333,11 @@ function go(){
   if(view==="positions")renderPositions();else if(view==="candidates")renderCandidates();else renderAttention();
   try{if(location.hash.slice(1)!==view)history.replaceState(null,"","#"+view)}catch(e){}
 }
-function save(){try{localStorage.setItem("hf3",JSON.stringify({page,view,curSt,curRole,curLv,curSrc,curDate,lLv,lSrc,FD,FL}))}catch(e){}}
+function save(){try{localStorage.setItem("hf3",JSON.stringify({page,view,curSt,curRole,curLv,curSrc,curDate,lLv,lSrc,FD,FL,A:{AF,aSort,aDir,aSize}}))}catch(e){}}
 function init(){
-  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads","unsuit"].includes(v.page))page=v.page;if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
-  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(h==="unsuit")page="unsuit";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
-  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(x==="unsuit"&&page!=="unsuit"){page="unsuit";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
+  try{const v=JSON.parse(localStorage.getItem("hf3")||"{}");if(["positions","candidates","attention"].includes(v.view))view=v.view;if(["dash","leads","unsuit","apps"].includes(v.page))page=v.page;if(v.A&&typeof v.A==="object"){const s=v.A.AF||{};for(const k of Object.keys(AF)){if(typeof s[k]==="string")AF[k]=s[k]}if(A_SORTS.includes(v.A.aSort))aSort=v.A.aSort;if(v.A.aDir===1||v.A.aDir===-1)aDir=v.A.aDir;if([25,50,100,200].includes(v.A.aSize))aSize=v.A.aSize}if(typeof v.lLv==="string"&&(!v.lLv||v.lLv==="hide"||LV[v.lLv]))lLv=v.lLv;if(["","S","A"].includes(v.lSrc))lSrc=v.lSrc;if(typeof v.curSt==="string")curSt=v.curSt;if(ROLES[v.curRole])curRole=v.curRole;if(LV[v.curLv])curLv=v.curLv;if(["","S","A"].includes(v.curSrc))curSrc=v.curSrc;if(typeof v.curDate==="string"&&(v.curDate in DATEF||isDay(v.curDate)||/^(\d{4}-\d{2}-\d{2})?\.\.(\d{4}-\d{2}-\d{2})?$/.test(v.curDate)))curDate=v.curDate;for(const [src,dst] of [[v.FD||v.F,FD],[v.FL,FL]]){if(src&&typeof src==="object"){for(const k of Object.keys(dst)){if(k in src)dst[k]=src[k]} if(dst.pos&&!POS_TYPE[dst.pos])dst.pos="";}}}catch(e){}
+  const h=location.hash.slice(1); if(h==="leads")page="leads";else if(h==="unsuit")page="unsuit";else if(h==="apps")page="apps";else if(["positions","candidates","attention"].includes(h)){page="dash";view=h;}
+  window.addEventListener("hashchange",()=>{const x=location.hash.slice(1);if(x==="leads"&&page!=="leads"){page="leads";go()}else if(x==="unsuit"&&page!=="unsuit"){page="unsuit";go()}else if(x==="apps"&&page!=="apps"){page="apps";go()}else if(["positions","candidates","attention"].includes(x)&&(page!=="dash"||view!==x)){page="dash";view=x;go()}});
   renderFigs();
   $("#q").addEventListener("input",()=>{shown=PAGE;renderCandidates()});
   $("#telugu").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
@@ -1183,6 +1354,14 @@ function init(){
   $("#uQ").addEventListener("input",()=>{uQ=$("#uQ").value;uShown=PAGE;renderUnsuit()});
   [["uSt",v=>uSt=v],["uTf",v=>uTf=v],["uSrc",v=>uSrc=v],["uDate",v=>uDate=v]].forEach(([id,f])=>$("#"+id).addEventListener("change",e=>{f(e.target.value);uShown=PAGE;renderUnsuit()}));
   $("#uMore").onclick=()=>{uShown+=PAGE;renderUnsuit()};
+  // all applications (v1.8)
+  $("#aQ").addEventListener("input",()=>{clearTimeout(aTimer);aTimer=setTimeout(()=>{aQ=$("#aQ").value;aPg=1;renderApps()},150)});
+  [["aSrc","src"],["aSt","st"],["aDist","fd"],["aDate","date"],["aFmcg","fmcg"],["aFs","fs"],["aTv","tv"],["aNt","nt"],["aRes","res"]].forEach(([id,k])=>$("#"+id).addEventListener("change",e=>{AF[k]=e.target.value;if(k==="st")AF.fd="";aPg=1;save();renderApps()}));
+  $("#aClear").onclick=()=>{for(const k of Object.keys(AF))AF[k]="";aQ="";$("#aQ").value="";aPg=1;save();renderApps()};
+  $("#aFirst").onclick=()=>aGoto(1);$("#aPrev").onclick=()=>aGoto(aPg-1);$("#aNext").onclick=()=>aGoto(aPg+1);$("#aLast").onclick=()=>aGoto(1e9);
+  $("#aSize").addEventListener("change",e=>{aSize=+e.target.value||50;aPg=1;save();renderApps()});
+  $("#aCsv").onclick=appsCsv;
+  document.querySelectorAll("#pgApps th button[data-sort]").forEach(b=>b.onclick=()=>{const k=b.dataset.sort;if(aSort===k)aDir=-aDir;else{aSort=k;aDir=(k==="ts"||k==="ctcn")?-1:1}aPg=1;save();renderApps()});
   $("#tHr").innerHTML=$("#vHr").innerHTML;$("#tHr").onchange=()=>{$("#tHrOther").hidden=$("#tHr").value!=="__other"};
   $("#tLv").querySelectorAll("button").forEach(b=>b.onclick=()=>{if(!tCur)return;tCur.lv=b.dataset.lv;paintTransfer()});
   $("#tCancel").onclick=closeTransfer;$("#tscrim").onclick=closeTransfer;$("#tSave").onclick=saveTransfer;

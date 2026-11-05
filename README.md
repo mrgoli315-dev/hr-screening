@@ -241,6 +241,16 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
 - Upgrade from v1.11: replace `pipeline/v3/page.tpl.html`, `.github/workflows/sync.yml`, `local/serve.py`, `README.md`;
   add `pipeline/tracker_export.py`. Then run a sync.
 
+## v1.13 — Reports: date range and PDF download
+- **Date range**: next to Today / Yesterday / All days / Pick a day there are now "from" and "to" dates; either side
+  may be left empty. The cards and the district table follow the range, and it is remembered like the other choices.
+- **Download PDF**: a button in the same row saves the report as it is on screen (period, state and district
+  filters, the seven figures, the open positions from hr-tracker and the full district table with totals) as
+  `hr-report-<period>.pdf`. The PDF is built in the browser with jsPDF and AutoTable, fetched from cdnjs the first
+  time the button is used; if that download is blocked the page falls back to the browser's print dialog, where
+  "Save as PDF" gives the same report (only the Reports section prints).
+- Upgrade from v1.12: replace `pipeline/v3/page.tpl.html` and `README.md`, then rebuild (or wait for the next sync).
+
 ## Test locally before pushing (v1.7)
 ```
 python local/serve.py            the page at http://127.0.0.1:8765 with a local stand-in for Supabase (data in work/local_db.json)

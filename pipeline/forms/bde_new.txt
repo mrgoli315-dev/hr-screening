@@ -1615,3 +1615,7 @@
 11/5/2026 10:09:59|Sham dinesh|7538842273|Tamil Nadu|Ranipet|0-1 years|3.7|4.5|Yes|Immediate joiner|No|Yes|11ZwCPqzlBxWga3ph9Q3uAdnWhu9hyQOu
 11/5/2026 10:21:16|Yuvaraj Nerli|7411856382|Karnataka|Belagavi|0-1 years|0|4.5|No|Immediate joiner|No|No|1g2wWAkJ8tVpfsqIXqHWF9K9wFkrVtnUd
 11/5/2026 10:53:11|Basu Chuni|8050005321|Karnataka|Belagavi|4+ years|3 lack|4 lack|Yes|Immediate joiner|Yes|Yes|1r4eVH3dS1cAIcWjl-fhR1tSzq1f5ox0l
+11/5/2026 11:25:07|Omkar Dharmendra Sonawane|9890332503|Maharashtra|Pune|0-1 years|2.75|3|Yes|Immediate joiner|No|Yes|1e6UrfoQBhbUAR7nRJyrg7fgaRLavRib7
+11/5/2026 11:34:28|Tejas|9322531671|Maharashtra|Washim|1-2 years|2.8 LPA|3.5 LPA|Yes|Immediate joiner|Yes|Yes|1QKrd-J1fbeKMRSufSUo4U_nSTtkOAmri
+11/5/2026 12:17:31|Bathula Vikram|9550028275|Telangana|Warangal|1-2 years|3.8|4.5|Yes|15 days|No|Yes|1CTGmIVkda9iNtBu17AvO_nV3-G6nsgEv
+11/5/2026 13:10:08|Vinod reddy|8686850030|Telangana|Nalgonda|4+ years|3.9|4.3|Yes|15 days|No|Yes|1YHt1QPdNGLHW0VZ8M3jSoyUHAD-VrIRp

@@ -1612,3 +1612,6 @@
 11/5/2026 7:13:40|Viraj maske|8378870005|Maharashtra|Satara|4+ years|3.6|5lac|Yes|15 days|Yes|Yes|1sxxKLZt-exBVJ2dV6n7AGwhkRk8ZQP1_
 11/5/2026 7:19:49|Nagarajan K|9620483025|Tamil Nadu|Krishnagiri|4+ years|1000000|1100000|Yes|Immediate joiner|No|No|160zYaSgHLHuJWzzYLjRdBXhxKNOqcVj9
 11/5/2026 7:54:16|nikhil sunhara|9823408686|Maharashtra|Jalna|4+ years|2.9 Lpa|3.5 lpa|Yes|Immediate joiner|Yes|Yes|1Q92PbWL_6aEA4n5GEV1wJVrL66kPKsj5
+11/5/2026 10:09:59|Sham dinesh|7538842273|Tamil Nadu|Ranipet|0-1 years|3.7|4.5|Yes|Immediate joiner|No|Yes|11ZwCPqzlBxWga3ph9Q3uAdnWhu9hyQOu
+11/5/2026 10:21:16|Yuvaraj Nerli|7411856382|Karnataka|Belagavi|0-1 years|0|4.5|No|Immediate joiner|No|No|1g2wWAkJ8tVpfsqIXqHWF9K9wFkrVtnUd
+11/5/2026 10:53:11|Basu Chuni|8050005321|Karnataka|Belagavi|4+ years|3 lack|4 lack|Yes|Immediate joiner|Yes|Yes|1r4eVH3dS1cAIcWjl-fhR1tSzq1f5ox0l

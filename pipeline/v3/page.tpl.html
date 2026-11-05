@@ -408,7 +408,6 @@ td.why>b{color:var(--red)}
       <label class="sel">Position<select id="fPos"></select></label>
       <label class="sel">City<select id="fCity"></select></label>
       <label class="sel">Recruiter<select id="fRec"></select></label>
-      <label class="sel">Status<select id="fStat"></select></label>
       <label class="sel">Health<select id="fHealth"></select></label>
       <label class="sel">Posted<select id="fPosted"></select></label>
       <label class="chk"><input type="checkbox" id="fPrio"> Priority only</label>
@@ -641,7 +640,7 @@ const lastAd=d=>d.al||d.ad||"";
 const inDate=d=>{if(page!=="leads"||!curDate)return true;if(curDate==="old")return !lastAd(d)||DAYS(lastAd(d))>30;return dateOK(d.ad)||(!!d.al&&dateOK(d.al))};
 const hidIn=h=>{if(page!=="leads"||!curDate)return false;const f=h[3]||"",l=h[4]||"";if(curDate==="old")return !!(l||f)&&DAYS(l||f)>30;return dateOK(f)||dateOK(l)};
 const byNew=(a,b)=>lastAd(b).localeCompare(lastAd(a));
-const FD={dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false}, FL={dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false};
+const FD={dept:"",pos:"",city:"",rec:"",health:"",posted:"",prio:false}, FL={dept:"",pos:"",city:"",rec:"",health:"",posted:"",prio:false};
 let F=FD;   // dashboard and Daily leads keep their own position filters
 const openCards=new Set(), cardLv={}, ROWS_SHOWN=8;
 const $=s=>document.querySelector(s);
@@ -656,9 +655,19 @@ const POS_TYPE={BDE:"BDE",BDM:"BDM",SH:"State Head",FM:"Franchise Manager",FE:"F
 const POS_ORDER=Object.keys(POS_TYPE);
 const POSTED={"":"Any time","7":"Last 7 days","30":"Last 30 days","90":"Last 90 days","old":"Older than 30 days"};
 function postedOK(p){ if(!F.posted) return true; const a=DAYS(p.opened); return F.posted==="old"?a>30:a<=+F.posted; }
-function posPass(p,skip){ return (!curSt||p.st===curSt)&&(skip==="dept"||!F.dept||p.dept===F.dept)&&(skip==="pos"||!F.pos||p.role===F.pos)&&(skip==="city"||!F.city||cityOf(p)===F.city)&&(skip==="rec"||!F.rec||p.owner===F.rec)&&(skip==="stat"||!F.stat||(F.stat==="Open"?!/Temporarily/.test(p.status):/Temporarily/.test(p.status)))&&(skip==="health"||!F.health||p.health===F.health)&&(skip==="posted"||postedOK(p))&&(!F.prio||!!p.prio); }
-const anyPF=()=>!!(F.dept||F.pos||F.city||F.rec||F.stat||F.health||F.posted||F.prio);
-const inPosF=d=>{if(!anyPF())return true;if(page!=="leads")return (d.pos||[]).some(id=>PBY[id]&&posPass(PBY[id]));const p=d.pp&&PBY[d.pp];return !!(p&&!/mark Filled/.test(p.note)&&posPass(p))};
+// v1.11: the Health dropdown also takes the screening marks. On the Dashboard's Positions view "Fit" / "Unfit" / "Untouched"
+// describe the position (a matched candidate marked Fit; marks but no Fit; no marks at all). On Daily leads and the
+// Candidates view they describe the listed person's own marks ("Untouched" = nobody has acted on that lead yet).
+const MARKS={fit:"Fit",unfit:"Unfit",none:"Untouched"};
+const hMark=()=>MARKS[F.health]?F.health:"";               // Health set to a mark option, else ""
+const posHealth=()=>page==="dash"&&view==="positions";      // where a mark option judges positions, not people
+const otherPF=()=>!!(F.dept||F.pos||F.city||F.rec||F.posted||F.prio);
+const anyPosF=()=>otherPF()||!!(F.health&&!hMark());         // filters that judge the position itself
+const healthOK=p=>{if(!F.health)return true;const m=hMark();if(!m)return p.health===F.health;return posHealth()?posMark(p)===m:true};
+function posPass(p,skip){ return (!curSt||p.st===curSt)&&(skip==="dept"||!F.dept||p.dept===F.dept)&&(skip==="pos"||!F.pos||p.role===F.pos)&&(skip==="city"||!F.city||cityOf(p)===F.city)&&(skip==="rec"||!F.rec||p.owner===F.rec)&&(skip==="health"||healthOK(p))&&(skip==="posted"||postedOK(p))&&(!F.prio||!!p.prio); }
+const anyPF=()=>!!(F.dept||F.pos||F.city||F.rec||F.health||F.posted||F.prio);
+const inPosF=d=>{const m=hMark();if(m&&!posHealth()&&markOf(d)!==m)return false;if(!anyPosF())return true;if(page!=="leads")return (d.pos||[]).some(id=>PBY[id]&&posPass(PBY[id]));const p=d.pp&&PBY[d.pp];return !!(p&&!/mark Filled/.test(p.note)&&posPass(p))};
+const markOpts=(countOf)=>Object.entries(MARKS).map(([v,l])=>[v,l+" ("+countOf(v)+")"]);
 function fillSel(id,key,opts){ const el=$("#"+id); const cur=F[key]; el.innerHTML=opts.map(([v,l])=>`<option value="${esc(v)}"${v===cur?" selected":""}>${esc(l)}</option>`).join(""); el.classList.toggle("on",!!cur); }
 function renderPFLeads(){
   // on Daily leads the dropdowns follow the leads: only departments / positions / cities / recruiters that the
@@ -673,12 +682,14 @@ function renderPFLeads(){
   sel("fPos","pos","All positions",p=>p.role,POS_ORDER);
   sel("fCity","city","All cities",cityOf);
   sel("fRec","rec","All recruiters",p=>p.owner);
-  const stat=p=>/Temporarily/.test(p.status)?"Temporarily closed":"Open"; sel("fStat","stat","Any status",stat);
-  sel("fHealth","health","Any health",p=>p.health);
+  // Health: the position's health, then the lead's own marks (what you would see after picking that option)
+  const hv=opts("health",p=>p.health).map(v=>[v,v+" ("+lead_cnt("health",p=>p.health,v)+")"]);
+  const okP=d=>!otherPF()||posOf(d).some(p=>posPass(p,"health"));
+  fillSel("fHealth","health",[["","Any health ("+lead_cnt("health")+")"],...hv,...markOpts(v=>cnt(leads,d=>okP(d)&&markOf(d)===v))]);
   fillSel("fPosted","posted",Object.entries(POSTED).map(([v,l])=>[v,v?l:l+" ("+lead_cnt("posted")+")"]));
   $("#fPrio").checked=!!F.prio;
   const shownN=LIVE_P.filter(p=>posPass(p)).length;
-  $("#fsum").innerHTML=anyPF()?`Showing leads who fit <b>${shownN}</b> of ${LIVE_P.length} positions`:"";
+  $("#fsum").innerHTML=anyPosF()?`Showing leads who fit <b>${shownN}</b> of ${LIVE_P.length} positions`:(hMark()?`Showing ${hMark()==="none"?"untouched leads only (no Fit / Unfit mark yet)":"leads marked "+MARKS[hMark()]+" only"}`:"");
   $("#pfilters").hidden=false;
 }
 function renderPF(){
@@ -690,12 +701,17 @@ function renderPF(){
   a=base("pos"); fillSel("fPos","pos",[["","All positions ("+a.length+")"],...POS_ORDER.filter(k=>a.some(p=>p.role===k)).map(k=>[k,POS_TYPE[k]+" ("+count(a,p=>p.role,k)+")"])]);
   a=base("city"); fillSel("fCity","city",[["","All cities ("+a.length+")"],...uniq(a,cityOf).map(v=>[v,v+" ("+count(a,cityOf,v)+")"])]);
   a=base("rec"); fillSel("fRec","rec",[["","All recruiters ("+a.length+")"],...uniq(a,p=>p.owner).map(v=>[v,v+" ("+count(a,p=>p.owner,v)+")"])]);
-  a=base("stat"); const op=a.filter(p=>!/Temporarily/.test(p.status)).length; fillSel("fStat","stat",[["","Any status ("+a.length+")"],["Open","Open ("+op+")"],["Temporarily closed","Temporarily closed ("+(a.length-op)+")"]]);
-  a=base("health"); fillSel("fHealth","health",[["","Any health ("+a.length+")"],...["Stuck","Slipping","On target","Temporarily closed"].map(v=>[v,v+" ("+count(a,p=>p.health,v)+")"]).filter(x=>!/\(0\)$/.test(x[1]))]);
+  a=base("health");
+  const hv=["Stuck","Slipping","On target","Temporarily closed"].map(v=>[v,v+" ("+count(a,p=>p.health,v)+")"]).filter(x=>!/\(0\)$/.test(x[1]));
+  // mark options: positions on the Positions view; on the Candidates view the people themselves (within the current chips)
+  const candOK=d=>inSt(d)&&inRole(d,curRole)&&inLv(d)&&inSrc(d)&&(!otherPF()||(d.pos||[]).some(id=>PBY[id]&&posPass(PBY[id],"health")));
+  const mk=view==="positions"?markOpts(v=>count(a,posMark,v)):markOpts(v=>cnt(D,d=>candOK(d)&&markOf(d)===v));
+  fillSel("fHealth","health",[["","Any health ("+a.length+")"],...hv,...mk]);
   a=base("posted"); fillSel("fPosted","posted",Object.entries(POSTED).map(([v,l])=>[v,v?l:l+" ("+a.length+")"]));
   $("#fPrio").checked=!!F.prio;
   const shownN=LIVE_P.filter(p=>posPass(p)).length;
-  $("#fsum").innerHTML=(page==="leads"||view==="candidates")?(anyPF()?`Showing ${page==="leads"?"leads":"candidates"} who fit <b>${shownN}</b> of ${LIVE_P.length} positions`:""):(anyPF()||curSt?`Showing <b>${shownN}</b> of ${LIVE_P.length} positions`:"");
+  const markSum=hMark()?`Showing ${hMark()==="none"?"untouched candidates only (no Fit / Unfit mark yet)":"candidates marked "+MARKS[hMark()]+" only"}`:"";
+  $("#fsum").innerHTML=view==="candidates"?(anyPosF()?`Showing candidates who fit <b>${shownN}</b> of ${LIVE_P.length} positions`:markSum):(anyPF()||curSt?`Showing <b>${shownN}</b> of ${LIVE_P.length} positions`:"");
   $("#pfilters").hidden=page==="dash"&&view==="attention";
 }
 
@@ -1146,8 +1162,11 @@ const VCHIPS={fit:["FMCG secondary sales","Shop-to-shop field work","Lives in th
 const vkey=d=>d.src==="A"?"A:"+d.k:"S:"+String(d.ph||"").replace(/\D/g,"").slice(-10);
 const vdocId=(d,pid)=>vkey(d)+"~"+(pid||"any");
 function verdictOf(d,pid){return VER[vdocId(d,pid)]||(pid&&pid!=="any"?VER[vdocId(d,"any")]:null)||null}
-let VMARK=new Set();
+let VMARK=new Set(), VMFIT=new Set(), PMARK={};
 const anyMark=d=>VMARK.has(vkey(d));
+const markOf=d=>{const k=vkey(d);return VMFIT.has(k)?"fit":VMARK.has(k)?"unfit":"none"};           // the person's own marks, any position
+const posMark=p=>PMARK[p.id]||"none";                                                               // marks on the position's matched candidates
+function buildPosMarks(){PMARK={};P.forEach(p=>{let m="none";for(const x of p.m||[]){const v=verdictOf(D[x[0]],p.id);if(v){if(v.verdict==="fit"){m="fit";break}m="unfit"}}PMARK[p.id]=m})}
 const MARKED_DIV=n=>`<div class="mdiv">Already marked — ${n}. Unmarked people stay on top.</div>`;
 function vHtml(i,pid){
   if(!VDB) return "";
@@ -1158,7 +1177,9 @@ function vHtml(i,pid){
 function vBox(i,pid){return `<span class="vbx" data-vbox="${i}|${pid}">${vHtml(i,pid)}</span>`}
 function refreshVerdicts(){
   VMARK=new Set(Object.keys(VER).map(k=>k.split("~")[0]));
-  if(document.body.dataset.ready){ if(page==="apps"){if(APPS)renderApps()}else if(page==="leads")renderLeads();else if(view==="positions")renderPositions();else if(view==="candidates")renderCandidates(); }
+  VMFIT=new Set(Object.keys(VER).filter(k=>VER[k]&&VER[k].verdict==="fit").map(k=>k.split("~")[0]));
+  buildPosMarks();
+  if(document.body.dataset.ready){ if(page==="apps"){if(APPS)renderApps()}else{renderPF();if(page==="leads")renderLeads();else if(view==="positions")renderPositions();else if(view==="candidates")renderCandidates();} }
   document.querySelectorAll("[data-vbox]").forEach(el=>{const [i,pid]=el.dataset.vbox.split("|");el.innerHTML=vHtml(+i,pid);const row=el.closest(".mrow");if(row){const v=verdictOf(D[+i],pid);row.classList.toggle("vd-unfit",!!v&&v.verdict==="unfit")}});
   const vs=Object.values(VER), f=vs.filter(v=>v.verdict==="fit").length;
   const bar=$("#vbar");
@@ -1494,12 +1515,12 @@ function init(){
   $("#onlynew").addEventListener("change",()=>{shown=PAGE;renderCandidates()});
   $("#showMore").onclick=()=>{shown+=PAGE;renderCandidates()};
   $("#lMore").onclick=()=>{lShown+=PAGE;renderLeads()};
-  [["fDept","dept"],["fPos","pos"],["fCity","city"],["fRec","rec"],["fStat","stat"],["fHealth","health"],["fPosted","posted"]].forEach(([id,k])=>$("#"+id).addEventListener("change",e=>{F[k]=e.target.value;shown=PAGE;save();go();}));
+  [["fDept","dept"],["fPos","pos"],["fCity","city"],["fRec","rec"],["fHealth","health"],["fPosted","posted"]].forEach(([id,k])=>$("#"+id).addEventListener("change",e=>{F[k]=e.target.value;shown=PAGE;save();go();}));
   $("#fPrio").addEventListener("change",e=>{F.prio=e.target.checked;shown=PAGE;save();go();});
   $("#dOne").addEventListener("change",e=>{curDate=e.target.value||"";shown=PAGE;save();go();});
   const dRange=()=>{const a=$("#dFrom").value,b=$("#dTo").value;curDate=(a||b)?a+".."+b:"";shown=PAGE;save();go();};
   $("#dFrom").addEventListener("change",dRange);$("#dTo").addEventListener("change",dRange);
-  $("#fClear").onclick=()=>{Object.assign(F,{dept:"",pos:"",city:"",rec:"",stat:"",health:"",posted:"",prio:false});curSt="";curDist="";if(page==="leads"){curDate="";lLv="";lSrc=""}shown=PAGE;lShown=PAGE;save();go();};
+  $("#fClear").onclick=()=>{Object.assign(F,{dept:"",pos:"",city:"",rec:"",health:"",posted:"",prio:false});curSt="";curDist="";if(page==="leads"){curDate="";lLv="";lSrc=""}shown=PAGE;lShown=PAGE;save();go();};
   $("#uQ").addEventListener("input",()=>{uQ=$("#uQ").value;uShown=PAGE;renderUnsuit()});
   [["uSt",v=>uSt=v],["uTf",v=>uTf=v],["uSrc",v=>uSrc=v],["uDate",v=>uDate=v]].forEach(([id,f])=>$("#"+id).addEventListener("change",e=>{f(e.target.value);uShown=PAGE;renderUnsuit()}));
   $("#uMore").onclick=()=>{uShown+=PAGE;renderUnsuit()};

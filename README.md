@@ -216,6 +216,17 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
 - Upgrade from v1.9: replace `pipeline/v3/page.tpl.html`, `pipeline/fetch.py`, `.github/workflows/sync.yml`,
   `local/serve.py`, `README.md`; add `pipeline/naukri_export.py`; set `NAUKRI_SHEET_ID`. Then run a sync.
 
+## v1.11 — Health filter takes the screening marks; Status filter removed
+- Dashboard and Daily leads: the **Health** dropdown now also offers **Fit**, **Unfit** and **Untouched** below the
+  position health values. On the Dashboard's Positions view they describe the position: Fit = a matched candidate is
+  marked Fit; Unfit = marks exist but none is Fit; Untouched = nobody has marked any of its candidates yet. On Daily
+  leads and the Candidates view they describe the listed person: marked Fit (any position), marked Unfit only, or
+  untouched (no Fit / Unfit mark yet — no action taken). Counts in the dropdown are what you will see after picking
+  the option; they refresh as marks arrive.
+- The **Status** dropdown (Open / Temporarily closed) is gone from both tabs; "Temporarily closed" is still available
+  as a Health value.
+- Upgrade from v1.10: replace `pipeline/v3/page.tpl.html` and `README.md`, then rebuild (or wait for the next sync).
+
 ## Test locally before pushing (v1.7)
 ```
 python local/serve.py            the page at http://127.0.0.1:8765 with a local stand-in for Supabase (data in work/local_db.json)

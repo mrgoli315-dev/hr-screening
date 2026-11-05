@@ -1625,3 +1625,5 @@
 11/5/2026 14:34:22|GARADALA SAIBABA|8328476696|Andhra Pradesh|Ananthapuramu|4+ years|4 lakh|5.5 lakh|Yes|Immediate joiner|Yes|Yes|1JHlNtNOAW8jCIDUSNy-IsoAIGUt_EcDn
 11/5/2026 15:36:24|Ramesh|9952110231|Tamil Nadu|Vellore|4+ years|384000|420000|Yes|15 days|Yes|Yes|1aqhOLK6p5sZ3hdHGWatoZtM1tGGB-jfr
 11/5/2026 15:47:34|VIJAYKUMAR BILAVAR|8892706683|Karnataka|Belagavi|4+ years|340000|450000|Yes|Immediate joiner|No|Yes|1q648k-BcmzX3zkmyOf1hrEP6qlfXi8CK
+11/5/2026 18:05:46|Rushikesh Wankhede|9096516565|Maharashtra|Akola|0-1 years|3.6|4.2|Yes|Immediate joiner|Yes|Yes|1xcKJ9ePZafuTTjesugPRW2dvF509CL-1
+11/5/2026 18:21:06|suryadevara laxman|9030914837|Telangana|Suryapet|4+ years|300000|4800000|Yes|15 days|No|Yes|1PuqLx3BMKfPxzrV0xZxd_ZjBpSGi5j49

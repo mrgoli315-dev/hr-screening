@@ -363,6 +363,7 @@ td.why>b{color:var(--red)}
 .msel-list label span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .msel-list label small{color:var(--muted);font-variant-numeric:tabular-nums}
 .msel-list input{accent-color:var(--accent);margin:0}
+#aOpenPos .opst b{color:var(--ink)}
 .msel-none{color:var(--muted);font-size:13px;padding:8px;margin:0}
 #pgApps table.dist{min-width:760px}
 #pgApps table.dist th,#pgApps table.dist td{padding:9px 10px}
@@ -542,7 +543,8 @@ td.why>b{color:var(--red)}
     <div class="rday"><span class="flabel">Show</span><div class="tabs" id="aDays" role="group" aria-label="Choose a day"></div><select id="aDaySel" aria-label="Pick a day"></select></div>
     <div class="figs" id="aFigs"></div>
     <h3>By district</h3>
-    <p class="sub">For the chosen day. District as the candidate entered it on the form. Pick a state, tick one or more districts; click a column to sort.</p>
+    <p class="sub">For the chosen day, in the states that have an open position in hr-tracker. District as the candidate entered it on the form. Pick a state, tick one or more districts; click a column to sort.</p>
+    <p class="sub" id="aOpenPos"></p>
     <div class="ufilters">
       <select id="aDSt" aria-label="State"></select>
       <div class="msel" id="aDistSel">
@@ -1320,7 +1322,7 @@ function bindNames(root){root.querySelectorAll(".nm[data-i]").forEach(b=>b.oncli
 /* ---------- Reports: the Google Sheet rows as a daily report (v1.8 / v1.9) ----------
    The rows live in applications.json (written by pipeline/sheets_export.py at every sync), not in this page:
    the file is fetched the first time the tab is opened and kept in memory. */
-let APPS=null,aLoad="";
+let APPS=null,aLoad="",TRK=null;   // TRK: hr-tracker positions (public/tracker.json), null until loaded
 const A_COLL=new Intl.Collator(undefined,{numeric:true,sensitivity:"base"});   // one collator: ~100x faster than localeCompare with options
 // daily report (v1.9): the chosen day ("0" today, "1" yesterday, "" all days, or YYYY-MM-DD), district table state,
 // and lookups built once after the sheet file loads: phone -> dashboard record / set-aside record / not-usable entry
@@ -1360,11 +1362,18 @@ function renderReport(){
     +card(s.strong,"Strong","call first")+card(s.medium,"Medium","one gap")+card(s.check,"Check","needs one call")
     +card(s.fit,"Marked fit","by recruiters","good")+card(s.unfit,"Marked unfit","by recruiters","bad");
   // by district
-  const g=new Map();for(const o of rows){const k=o.st+"\t"+o.fd;let e=g.get(k);if(!e){e={st:o.st,fd:o.fd,rows:[]};g.set(k,e)}e.rows.push(o)}
+  // v1.12: only the states with an open position in hr-tracker (matched by state); the open positions are listed above the table
+  const openBy=new Map();if(TRK&&TRK.rows)for(const r of TRK.rows){if(r.status==="open"&&r.st){(openBy.get(r.st)||openBy.set(r.st,[]).get(r.st)).push(r)}}
+  const g=new Map();for(const o of rows){if(openBy.size&&!openBy.has(o.st))continue;const k=o.st+"\t"+o.fd;let e=g.get(k);if(!e){e={st:o.st,fd:o.fd,rows:[]};g.set(k,e)}e.rows.push(o)}
   const all=[...g.values()].map(e=>Object.assign({st:e.st,fd:e.fd},aStats(e.rows)));
   const stN=new Map();for(const e of all)stN.set(e.st,(stN.get(e.st)||0)+e.people);
+  for(const x of openBy.keys())if(!stN.has(x))stN.set(x,0);          // an open state with no applicant on this day still appears
   const sts=[...stN.keys()].filter(Boolean).sort();if(aDSt&&!stN.has(aDSt))sts.push(aDSt);
-  $("#aDSt").innerHTML=[["","All states ("+N(s.people)+")"],...sts.map(x=>[x,x+" ("+N(stN.get(x)||0)+")"])].map(([v,l])=>`<option value="${esc(v)}"${v===aDSt?" selected":""}>${esc(l)}</option>`).join("");
+  const totalPeople=all.reduce((a,e)=>a+e.people,0);
+  $("#aDSt").innerHTML=[["","All states ("+N(totalPeople)+")"],...sts.map(x=>[x,x+" ("+N(stN.get(x)||0)+")"])].map(([v,l])=>`<option value="${esc(v)}"${v===aDSt?" selected":""}>${esc(l)}</option>`).join("");
+  const posLine=st=>{const c=new Map();for(const r of openBy.get(st)||[])c.set(r.desig,(c.get(r.desig)||0)+(r.seats||1));return [...c.entries()].sort((a,b)=>A_COLL.compare(a[0],b[0])).map(([d,n])=>esc(d)+(n>1?" ×"+n:"")).join(", ")};
+  $("#aOpenPos").innerHTML=!TRK?"Loading the open positions from hr-tracker…":TRK.err?`Could not load the open positions from hr-tracker (${esc(TRK.err)}) — all states are shown.`:!openBy.size?"hr-tracker has no open position right now — all states are shown.":
+    `<b>Open positions in hr-tracker</b> (${TRK.open}, as of ${esc(TRK.at)}): `+(aDSt&&openBy.has(aDSt)?[aDSt]:[...openBy.keys()].sort()).map(st=>`<span class="opst"><b>${esc(st)}</b> ${posLine(st)}</span>`).join(" · ");
   $("#aDSt").classList.toggle("on",!!aDSt);
   // district multi-select: the districts of the chosen state (or all), with people counts; ticked ones filter the table
   const inSt=all.filter(e=>!aDSt||e.st===aDSt);
@@ -1381,12 +1390,19 @@ function renderReport(){
   list.sort((a,b)=>{const c=(k2==="st"||k2==="fd")?A_COLL.compare(a[k2]||"￿",b[k2]||"￿")*dir:(a[k2]-b[k2])*dir;return c||(b.people-a.people)||A_COLL.compare(a.st,b.st)||A_COLL.compare(a.fd,b.fd)});
   const num=v=>`<td class="num${v?"":" z"}">${N(v)}</td>`;
   $("#aDistRows").innerHTML=list.length?list.map(e=>`<tr><td>${esc(e.st)||"—"}</td><td>${esc(e.fd)||"—"}</td>${num(e.people)}${num(e.suit)}${num(e.strong)}${num(e.medium)}${num(e.check)}${num(e.fit)}${num(e.unfit)}${num(e.nomark)}</tr>`).join("")
-    :`<tr><td colspan="10" class="empty">${rows.length?"No district matches.":"No applications on this day."}</td></tr>`;
+    :`<tr><td colspan="10" class="empty">${!rows.length?"No applications on this day.":all.length?"No district matches.":"No application from a state with an open position on this day."}</td></tr>`;
   document.querySelectorAll("#pgApps th button[data-dsort]").forEach(b=>b.setAttribute("aria-sort",b.dataset.dsort===aDSort?(aDDir>0?"ascending":"descending"):"none"));
+}
+async function loadTracker(){
+  try{const r=await fetch("tracker.json",{cache:"no-cache"});if(!r.ok)throw new Error("HTTP "+r.status);const j=await r.json();
+    TRK={at:j.at||"",open:j.open||0,source:j.source||"",rows:(j.rows||[]).map(a=>{const o={};j.cols.forEach((c,i)=>o[c]=a[i]);return o})};
+  }catch(e){TRK={err:(e&&e.message)||String(e),rows:[],open:0,at:""}}
+  if(page==="apps"&&APPS)renderApps();
 }
 async function loadApps(){
   if(APPS||aLoad==="busy")return;
   aLoad="busy";
+  if(!TRK)loadTracker();
   try{
     const r=await fetch("applications.json",{cache:"no-cache"});
     if(!r.ok)throw new Error("HTTP "+r.status);

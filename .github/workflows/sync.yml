@@ -97,6 +97,7 @@ jobs:
           python pipeline/publish.py
           python pipeline/sheets_export.py      # v1.8: every sheet row -> public/applications.json (Reports tab)
           python pipeline/naukri_export.py      # v1.10: Naukri leads sheet -> public/naukri.json (Naukri leads tab)
+          python pipeline/tracker_export.py     # v1.12: hr-tracker open positions -> public/tracker.json (Reports tab)
 
       - name: 8 - save and deploy
         run: |

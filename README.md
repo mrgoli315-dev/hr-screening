@@ -227,6 +227,20 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   as a Health value.
 - Upgrade from v1.10: replace `pipeline/v3/page.tpl.html` and `README.md`, then rebuild (or wait for the next sync).
 
+## v1.12 — Reports: only the states with an open position in hr-tracker
+- The "By district" table on **Reports** now covers only the states that have an open position in the HR Recruitment
+  Tracker (https://hr-p1.onrender.com/), matched by state. A line above the table lists those open positions per
+  state (designation and seats, as of the last sync). States with sheet applications but no open position are left
+  out; an open state with no application that day is still offered in the state dropdown with 0. The day selector
+  and the seven cards are unchanged (whole day).
+- Data: `pipeline/tracker_export.py` (step 7, after `naukri_export.py`) reads the tracker's Supabase tables
+  `positions` and `recruiters` with the public anon key the tracker page itself uses (read from the page each run;
+  `TRACKER_ANON_KEY` overrides), keeps a copy as `pipeline/sheets/tracker_latest.json` and writes
+  `public/tracker.json` (about 9 KB). If the tracker is unreachable the last copy is used; if there is none the page
+  says so and shows all states.
+- Upgrade from v1.11: replace `pipeline/v3/page.tpl.html`, `.github/workflows/sync.yml`, `local/serve.py`, `README.md`;
+  add `pipeline/tracker_export.py`. Then run a sync.
+
 ## Test locally before pushing (v1.7)
 ```
 python local/serve.py            the page at http://127.0.0.1:8765 with a local stand-in for Supabase (data in work/local_db.json)

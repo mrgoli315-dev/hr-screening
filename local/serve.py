@@ -32,7 +32,7 @@ PUBLIC = os.path.join(ROOT, 'public')
 WORK = os.path.join(ROOT, 'work')
 DB_PATH = os.path.join(WORK, 'local_db.json')
 BACKUP = os.path.join(WORK, 'local_backup')
-KEEP = [os.path.join(PUBLIC, 'index.html'), os.path.join(PUBLIC, 'applications.json'), os.path.join(PUBLIC, 'naukri.json'),
+KEEP = [os.path.join(PUBLIC, 'index.html'), os.path.join(PUBLIC, 'applications.json'), os.path.join(PUBLIC, 'naukri.json'), os.path.join(PUBLIC, 'tracker.json'),
         os.path.join(ROOT, 'pipeline', 'app', 'overrides.json')]
 LIVE = '--live' in sys.argv
 PORT = int(sys.argv[sys.argv.index('--port') + 1]) if '--port' in sys.argv else 8765
@@ -90,6 +90,7 @@ def run_sync(base):
              ('7 - publish', ['pipeline/publish.py']),
              ('7 - sheet rows for Reports', ['pipeline/sheets_export.py']),
              ('7 - Naukri leads', ['pipeline/naukri_export.py']),
+             ('7 - hr-tracker open positions', ['pipeline/tracker_export.py']),
              ('9 - mark done', ['pipeline/runs.py', 'done'])]
     SYNC['log'] = []
     try:

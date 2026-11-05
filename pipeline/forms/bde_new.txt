@@ -1619,3 +1619,7 @@
 11/5/2026 11:34:28|Tejas|9322531671|Maharashtra|Washim|1-2 years|2.8 LPA|3.5 LPA|Yes|Immediate joiner|Yes|Yes|1QKrd-J1fbeKMRSufSUo4U_nSTtkOAmri
 11/5/2026 12:17:31|Bathula Vikram|9550028275|Telangana|Warangal|1-2 years|3.8|4.5|Yes|15 days|No|Yes|1CTGmIVkda9iNtBu17AvO_nV3-G6nsgEv
 11/5/2026 13:10:08|Vinod reddy|8686850030|Telangana|Nalgonda|4+ years|3.9|4.3|Yes|15 days|No|Yes|1YHt1QPdNGLHW0VZ8M3jSoyUHAD-VrIRp
+11/5/2026 13:40:48|Karanam chiru raghavendra|9490261575|Andhra Pradesh|Ananthapuramu|4+ years|3.4|400000|Yes|Immediate joiner|Yes|Yes|1cIGAmjZwqRJq_9COJa8UG7_SibfKjU7D
+11/5/2026 13:45:02|veerappan k|9003363136|Tamil Nadu|Cuddalore|4+ years|3.4|4.5|Yes|Immediate joiner|Yes|Yes|1k9M5MOCQDHRIyEr1MOpvZoEgdnIXQScO
+11/5/2026 14:21:05|ravindra Shewale|9764806373|Maharashtra|Ahmednagar|4+ years|3.85 LPA|5 LPA|Yes|Immediate joiner|Yes|Yes|1t7wKXROPn2MrduZ7MpKeoTh8XwcJsYh2
+11/5/2026 14:34:22|GARADALA SAIBABA|8328476696|Andhra Pradesh|Ananthapuramu|4+ years|4 lakh|5.5 lakh|Yes|Immediate joiner|Yes|Yes|1JHlNtNOAW8jCIDUSNy-IsoAIGUt_EcDn

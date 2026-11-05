@@ -1609,3 +1609,6 @@
 11/5/2026 6:32:09|Aditya  Vishwambhar|9623140852|Maharashtra|Akola|2-4 years|5.2 LPA|7 LPA|Yes|15 days|Yes|Yes|1lkBikBgJafHW75YzWsUBSf9LVrTGC66Q
 11/5/2026 6:38:40|Viswanath reddy|8099988908|Andhra Pradesh|YSR Kadapa|4+ years|11.5lpa|14lpa|Yes|15 days|No|Yes|1VnNc95XqdLbbti5kxYKl7GDdPbqswnjv
 11/5/2026 6:47:44|DATTA JAGDEV INGOLE|9067529694|Maharashtra|Washim|2-4 years|3.30 lakh|5 lakh|Yes|15 days|No|Yes|1VhjUbpkvfSFxBT_THU-n8zen9Ea2jQmw
+11/5/2026 7:13:40|Viraj maske|8378870005|Maharashtra|Satara|4+ years|3.6|5lac|Yes|15 days|Yes|Yes|1sxxKLZt-exBVJ2dV6n7AGwhkRk8ZQP1_
+11/5/2026 7:19:49|Nagarajan K|9620483025|Tamil Nadu|Krishnagiri|4+ years|1000000|1100000|Yes|Immediate joiner|No|No|160zYaSgHLHuJWzzYLjRdBXhxKNOqcVj9
+11/5/2026 7:54:16|nikhil sunhara|9823408686|Maharashtra|Jalna|4+ years|2.9 Lpa|3.5 lpa|Yes|Immediate joiner|Yes|Yes|1Q92PbWL_6aEA4n5GEV1wJVrL66kPKsj5

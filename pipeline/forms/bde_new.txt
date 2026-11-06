@@ -1662,3 +1662,14 @@
 11/6/2026 17:20:40|Naru Dalbanjan|9741590399|Karnataka|Belagavi|4+ years|28000|3.36L|Yes|Immediate joiner|Yes|Yes|1hw0mrWzYBUpj38pQLfeym--vosmJY_Od
 11/6/2026 17:34:23|Kowshik A|9344421423|Tamil Nadu|Tiruvallur|4+ years|3.60LPA|4LPA|Yes|15 days|Yes|Yes|1B8_Kjuw7s9ty37Vg31Wl0O7RV_xZp2ZF
 11/6/2026 17:38:10|Rushikesh Rathod|7038379574|Maharashtra|Satara|2-4 years|3.2 lakh|4.5 lakh|Yes|Immediate joiner|Yes|Yes|1vwjgHsYQmEgob3ImWZRm7GC0LOndPqqi
+11/6/2026 18:06:08|Anurag Sudhakar gawai|7821969385|Maharashtra|Akola|2-4 years|2.4 Lpa|3.0Lpa|Yes|Immediate joiner|Yes|Yes|1j0PVlxtQ4PF3epdwl_QnGWAU0gxE3O-b
+11/6/2026 18:07:25|Ganesh Kumar K|9809157533|Tamil Nadu|Coimbatore|4+ years|4LPA|4.8LPA|Yes|Immediate joiner|No|Yes|18u1PU9nexaxFYmqhRAVT_JBhpzOBTkMV
+11/6/2026 18:20:00|Namir ibrahim mulla|9403105189|Karnataka|Belagavi|0-1 years|9.5lpa|14.0lpa|Yes|Immediate joiner|No|No|1MNIhZ__7wCA4WvjloUOvGIB9yOYyq_v9
+11/6/2026 18:51:13|Nunna Rajesh|8099029476|Telangana|Nalgonda|4+ years|4.2|4.8|Yes|Immediate joiner|No|Yes|14lprzQ1e56l2bW6LvWcAqGIf1zA_FdS9
+11/6/2026 18:55:15|Ramanath Talekar|8618673479|Karnataka|Belagavi|4+ years|420,000|540,000|Yes|15 days|Yes|Yes|1eng61jFkoNwMUxcMwiD1INDQmPBRnFCk
+11/6/2026 19:01:09|Shailesh Dhamne|9764425356|Maharashtra|Kolhapur|0-1 years|300000|550000|Yes|15 days|No|No|1FktETl898BZsw3kwnVS4A5f56Oz9Gg80
+11/6/2026 19:20:46|DIPAK RAJENDRA KAMBLE|9373113546|Maharashtra|Satara|2-4 years|4.35|5|Yes|Immediate joiner|Yes|Yes|19i33RUZttletYEYVjjtnM1UUOMVvr2bw
+11/6/2026 19:21:13|Abi Manyu|9344164599|Tamil Nadu|Erode|1-2 years|2.4 LPA|3.00LPA|Yes|Immediate joiner|No|Yes|1fYOaPtEJZxDkRZq2Ud0B7N0p2J8eAhB7
+11/6/2026 19:31:22|Ganesh Ramesh Kambale|8928986888|Maharashtra|Satara|2-4 years|3 lac|5 lac|Yes|Immediate joiner|No|Yes|1gCxkYtfhLc82gqCs_gKUxeexNBHNZboH
+11/6/2026 19:33:10|Muhammad|9959333028|Telangana|Hyderabad|4+ years|600000|600000|Yes|15 days|Yes|Yes|18LJZ8ehDpI4MwDeZ7qGVllp1mhPc5u2I
+11/6/2026 19:37:12|Tushar Ashok Mohite|7028492691|Maharashtra|Sangli|2-4 years|35000|40000|Yes|Immediate joiner|No|Yes|13b8aHotIBJwmWBJ_g_APZCjlAe9UxWY2

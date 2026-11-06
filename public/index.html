@@ -479,7 +479,7 @@ td.why>b{color:var(--red)}
 
   <div id="pgUnsuit" hidden>
     <h2 class="pgtitle">Unsuitable resumes</h2>
-    <p class="sub">Claude read these resumes and found nothing for any open role, so they are not on the dashboard. If you disagree, press <b>Transfer to dashboard</b>, choose the roles to consider them for, and they are matched to positions at the next sync (every 2 hours, or press "Sync leads now"). Every transfer and undo is recorded in the Activity log.</p>
+    <p class="sub">Claude read these resumes and found nothing for any open role, so they are not on the dashboard. If you disagree, press <b>Transfer to dashboard</b>, choose the roles to consider them for, and they are matched to positions at the next sync (every 2 hours from 9 AM to 7 PM, or press "Sync leads now"). Every transfer and undo is recorded in the Activity log.</p>
     <div class="ufilters" id="uFilters">
       <input type="search" id="uQ" placeholder="Search name, district, reason, phone…" aria-label="Search unsuitable resumes">
       <select id="uSt" aria-label="State"></select>
@@ -1299,7 +1299,7 @@ async function initSync(db){
     }catch(e){
       const c=e&&e.code; syncSince=null; b.disabled=false;
       const mobile=/Android|iPhone|iPad|Mobile/i.test(navigator.userAgent);
-      const nextRun="Automatic runs happen every 2 hours (6 AM, 8 AM, 10 AM … around the clock).";
+      const nextRun="Automatic runs happen every 2 hours from 9 AM to 7 PM (9, 11, 1, 3, 5, 7); nothing runs overnight.";
       m.textContent=c==="not_in_manifest"||c==="not_granted"?"You didn't allow this page to use Claude Code Remote. Click again and allow it when asked.":
         c==="server_not_connected"?`The Claude Code Remote connector isn't available to this page ${mobile?"on the phone app":"here"} (code: server_not_connected). ${mobile?"Open this page on the laptop, or message Claude \"sync HR\" from any chat.":"Open it from the laptop's Claude app or claude.ai in a browser."} ${nextRun}`:
         c==="tool_error"?`Could not start the sync: ${(e&&e.message)||"no detail"}. Check GH_TOKEN and GH_REPO in Vercel → Settings → Environment Variables. ${nextRun}`:

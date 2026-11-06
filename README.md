@@ -5,7 +5,7 @@ The same HR screening page, running on your own free accounts:
 | Part | Service | Cost |
 |---|---|---|
 | Page + "Sync leads now" button | Vercel (Hobby) | Free |
-| Sync every 2 hours (06:00, 08:00 … 04:00 IST) | GitHub Actions | Free (about 400–800 of the 2,000 free minutes a month) |
+| Sync every 2 hours, 9 AM to 7 PM IST (6 runs a day) | GitHub Actions | Free (about 200–400 of the 2,000 free minutes a month) |
 | Fit / Unfit marks, sync status | Supabase | Free |
 | Resume rating (Strong / Medium / Check / Hide) | Claude API | **Paid** — prepaid credits, charged per resume |
 
@@ -110,9 +110,11 @@ Then share the Vercel URL with the HR team — everyone uses that one link.
 ---
 
 ## Day to day
-- Nothing to do. It syncs every 2 hours (06:00, 08:00, 10:00 … IST, day and night). "Sync leads now" on the page runs it at any time.
+- Nothing to do. It syncs every 2 hours during working hours (9:00, 11:00, 13:00, 15:00, 17:00 and 19:00 IST; the
+  last run ends by about 7:15 PM, nothing overnight). "Sync leads now" on the page runs it at any time.
 - A run that finds nothing new skips the Claude rating and finishes in about 1–2 minutes; the page is redeployed only if it changed; no Activity log row.
-- To change the schedule: the `cron` line in `.github/workflows/sync.yml` (UTC; `30 */2 * * *` = every 2 hours on the even IST hour).
+- To change the schedule: the `cron` line in `.github/workflows/sync.yml` (UTC, IST = UTC+5:30; `30 3-13/2 * * *` =
+  03:30 … 13:30 UTC = 9 AM … 7 PM IST every 2 hours; the old `30 */2 * * *` was round the clock).
 - A run shows on the page: "Last automatic update: …". A failed run shows the step; details are in GitHub → Actions.
 - A resume Claude could not read stays "waiting" and is retried on the next run.
 - Marked by: there is no login; each person picks their name from the list (as before when not signed in).
@@ -250,6 +252,12 @@ No Supabase or Vercel change. Do NOT upload `public/index.html`.
   time the button is used; if that download is blocked the page falls back to the browser's print dialog, where
   "Save as PDF" gives the same report (only the Reports section prints).
 - Upgrade from v1.12: replace `pipeline/v3/page.tpl.html` and `README.md`, then rebuild (or wait for the next sync).
+
+## v1.14 — sync only during working hours
+- The automatic sync now runs six times a day, every 2 hours from 9:00 AM to 7:00 PM IST (the 7 PM run ends by about
+  7:15 PM), instead of round the clock. "Sync leads now" still works at any time. GitHub may start a scheduled run a
+  few minutes late when its queue is busy.
+- Upgrade from v1.13: replace `.github/workflows/sync.yml`, `pipeline/v3/page.tpl.html`, `README.md`; rebuild.
 
 ## Test locally before pushing (v1.7)
 ```

@@ -1649,3 +1649,11 @@
 11/6/2026 13:30:01|Selvakumar|9488387014|Tamil Nadu|Coimbatore|4+ years|4.8L|4.8L|Yes|Immediate joiner|Yes|Yes|1xdJ67OExsk6Ukys6aK4EOj1VOGdLA8bW
 11/6/2026 13:39:05|Mahesh Arvikar|8983777209|Maharashtra|Akola|4+ years|300,000|3,60,000|Yes|15 days|Yes|Yes|1xD1kaFhRdGd8dfQrkEpIklOH0Nfcas0m
 11/6/2026 13:55:18|THOTA BHARATH NAIDU|7013451663|Andhra Pradesh|Chittoor|4+ years|3|4|Yes|Immediate joiner|Yes|Yes|12qG8OAano4n0C_ABunPhfv9VaIdekHhi
+11/6/2026 14:17:26|Nitesh Kashinath Chavan|7796165644|Maharashtra|Ratnagiri|4+ years|300000|450000|Yes|Immediate joiner|No|Yes|1OHtDjQqX2ELW8elFDStFNSWxc7NUondt
+11/6/2026 14:21:28|VISHWA|8428701970|Tamil Nadu|Chennai|2-4 years|3|3.5 - 4|Yes|Immediate joiner|Yes|Yes|11vLG7lMlEaYeF9ZltKSoaDF6-SYmnqro
+11/6/2026 14:22:47|Chaitanya R Karande|8975767155|Maharashtra|Yavatmal|1-2 years|26000|300000|Yes|15 days|No|Yes|1LfYUq-ujmF8iR-_KG-sM7UwzMCkYzui9
+11/6/2026 15:01:11|Mohammed Shafi Soudagar|7090907490|Karnataka|Belagavi|4+ years|456000 LPA|600000 LPA|Yes|Immediate joiner|No|Yes|1ZQf-lo3yxSox_dcpn_X1--GmrXQmk2hA
+11/6/2026 15:03:49|Vallapu Ravi kiran|8639949678|Telangana|Mahabubabad|4+ years|4.7|6|Yes|Immediate joiner|Yes|Yes|1NfvrM4PFSm34vl9o7L_MyBqZ7ktfQbGl
+11/6/2026 15:33:29|P. Dhanush Dhanush|6305883123|Andhra Pradesh|Sri Potti Sriramulu Nellore|1-2 years|25000|35000|Yes|Immediate joiner|Yes|Yes|1ST-a_xWx6OB5GsLLcfkFAw-Zse6HJVJS
+11/6/2026 15:34:01|Rustum Walvekar|8872775543|Maharashtra|Kolhapur|1-2 years|420000|500000|Yes|15 days|Yes|Yes|1go3r8ahx9VKpbs0-T_aK6biVnD-zyy88
+11/6/2026 15:34:11|Sarath kumar Sj|7395949985|Tamil Nadu|Tiruvallur|4+ years|4|5|No|15 days|Yes|No|1bhAEyzjfDrati4VA53yAZ3-0tGeO8y9j

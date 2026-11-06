@@ -1640,3 +1640,6 @@
 11/6/2026 3:17:28|Basavaraj Eklaspur|8867145944|Karnataka|Dharwad|4+ years|384000|450000|Yes|15 days|No|Yes|17UqCG4zh8jDZf-CG6hjoqKJlNIbz-wcf
 11/6/2026 6:41:53|Amey Kulkarni|8830997112|Maharashtra|Pune|4+ years|5.4|6|Yes|15 days|No|Yes|1NTd1QV2iBG00ikC8hiu1jXM4L1qIl4Cm
 11/6/2026 8:44:31|Mayur Shridhar Mule|9890683140|Maharashtra|Satara|4+ years|4.12 LPA|6 LPA|Yes|Immediate joiner|No|Yes|1GxK3_lL_kFfwSV9fjhJ5vSHMIXO2yJ1g
+11/6/2026 9:16:36|Pritish Gosavi|7666126604|Maharashtra|Pune|1-2 years|400000|450000|Yes|Immediate joiner|No|Yes|1u-el7yRG-BGQldDX6Aenwp7QXXj3Uzh0
+11/6/2026 9:20:15|VINAYAK PAILWAN|7204261312|Karnataka|Belagavi|4+ years|300000|350000|Yes|Immediate joiner|Yes|Yes|12by4VI5oqoOx_tlJRwXyy3OMytQ6u4sD
+11/6/2026 9:51:44|vaibhav bhilare|9822842168|Maharashtra|Pune|4+ years|420000|550000|Yes|Immediate joiner|Yes|Yes|1K5XsMepEgIWWe5yEXCNl-mskOxE7dNgK

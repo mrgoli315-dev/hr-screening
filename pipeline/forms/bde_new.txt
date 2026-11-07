@@ -1691,3 +1691,8 @@
 11/7/2026 8:48:04|Krishna Chaitanya|8919052779|Andhra Pradesh|Chittoor|4+ years|7.5 LPA|5 LPA|Yes|15 days|No|Yes|1nmfOJuAjc2PkmFk33chf2UgUOrs5T7ZF
 11/7/2026 9:04:29|Atul Gupta|7887773158|Maharashtra|Pune|2-4 years|3lac.|3.5|Yes|15 days|Yes|Yes|1dS-Ow9l30qLwjUlsTpMH8vFFu4uI4qtS
 11/7/2026 9:40:34|Saurabh Kumar|7521925098|Uttar Pradesh|Chandauli|0-1 years|2.5|3.5|Yes|15 days|No|Yes|1YJUnbpNXPhZXFiLoLuN5Qwlb9ceFo7Jx
+11/7/2026 9:51:23|Sanjay Sutar|9518746959|Maharashtra|Kolhapur|4+ years|360000|450000|Yes|Immediate joiner|Yes|Yes|1cQLsidbBgHIBrjSMdZBOT9L0-8sQNdZL
+11/7/2026 10:23:29|Manjunath nagaraj kesapur|8147404726|Karnataka|Belagavi|4+ years|2|5|Yes|15 days|Yes|Yes|1JibN5Y61RfwQ3XmkReab0rlBE_afYl8f
+11/7/2026 10:23:52|Suhail Ahmed|9994023529|Tamil Nadu|Ranipet|1-2 years|4|6|Yes|15 days|Yes|Yes|1KxJ9_6wvtZtiMZeqWKyuFg3NQ1sXBQ7J
+11/7/2026 10:51:11|Mattapalli srikanth|6300916965|Telangana|Hyderabad|1-2 years|4|5.5|Yes|15 days|Yes|Yes|1ykvJvh4Tc9FqyrD3XctxFmG1QN_S1agR
+11/7/2026 11:36:55|Uttam singh|7721008101|Maharashtra|Palghar|2-4 years|4 LPA|5.5LPA|Yes|15 days|Yes|Yes|167pJqo6RDDA_mCKqOd4-VYqR3AK1WoDq

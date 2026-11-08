@@ -1721,3 +1721,8 @@
 11/8/2026 0:11:32|Sohel Tayyab Sayyad|9021622590|Maharashtra|Jalna|0-1 years|NA|4.5 LPA|Yes|15 days|No|No|1W5PeJOm8I8Y-lKU1GQHUpWEOQgmAQ37a
 11/8/2026 8:56:18|Rahul wankhade|9373537358|Maharashtra|Akola|4+ years|4.8|5.5|Yes|15 days|No|Yes|1bkXZXfCBUkzwzR-RSE8wwIyLgyYpAZJi
 11/8/2026 9:38:56|Tharun|9019207148|Andhra Pradesh|Sri Sathya Sai|2-4 years|800000|100000|Yes|Immediate joiner|No|No|1uXTfqvrpQLvEh9qco1dAPVw3ukwad89x
+11/8/2026 10:28:42|Satish|9966673893|Andhra Pradesh|East Godavari|4+ years|5|5|Yes|15 days|Yes|Yes|1oUO-I7H4KDgZJf0XtOu59m9SldxoFnYt
+11/8/2026 10:47:57|Sagarla venkanna|9951410107|Telangana|Nalgonda|4+ years|4 Lks|5.5Lks|Yes|Immediate joiner|No|Yes|1dDwO9Gmj0WARS0BKS3PMG34f6YX4YYWE
+11/8/2026 11:04:58|Shabbeer|9493300885|Andhra Pradesh|Chittoor|2-4 years|3.5|4.8|Yes|Immediate joiner|Yes|Yes|1YPR_yb2SttN_wNe6YE1Bn-Ba-pYAigRp
+11/8/2026 11:35:27|Sanil Rajore|9511846267|Maharashtra|Pune|4+ years|4.6|5.3|Yes|Immediate joiner|Yes|Yes|1o7GcKraNR9tesG_gtr6fSsPnoC7Lju8B
+11/8/2026 11:42:32|Swapnil Dolase|9152483657|Maharashtra|Solapur|4+ years|4.5|4.5|Yes|15 days|No|Yes|1epNhMF3ZZ-yRC6KLjqjYKkuQHSTwYw2X

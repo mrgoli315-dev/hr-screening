@@ -1726,3 +1726,5 @@
 11/8/2026 11:04:58|Shabbeer|9493300885|Andhra Pradesh|Chittoor|2-4 years|3.5|4.8|Yes|Immediate joiner|Yes|Yes|1YPR_yb2SttN_wNe6YE1Bn-Ba-pYAigRp
 11/8/2026 11:35:27|Sanil Rajore|9511846267|Maharashtra|Pune|4+ years|4.6|5.3|Yes|Immediate joiner|Yes|Yes|1o7GcKraNR9tesG_gtr6fSsPnoC7Lju8B
 11/8/2026 11:42:32|Swapnil Dolase|9152483657|Maharashtra|Solapur|4+ years|4.5|4.5|Yes|15 days|No|Yes|1epNhMF3ZZ-yRC6KLjqjYKkuQHSTwYw2X
+11/8/2026 12:27:25|Vaibhav Vinayak Kamat|9113022397|Karnataka|Belagavi|4+ years|450000|480000|Yes|Immediate joiner|No|Yes|1gr053o6QH-d6EMi8fzHD3zDFzDizYt28
+11/8/2026 13:29:59|Afzal Khan|8308905189|Maharashtra|Pune|4+ years|4.13|5.5|Yes|Immediate joiner|Yes|Yes|1TOfaNFgq3E1uZpK2sQ8bv90lQg4KYzea

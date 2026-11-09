@@ -1751,3 +1751,8 @@
 11/9/2026 10:16:02|Narendra Bhukya|8978915189|Telangana|Rangareddy|1-2 years|4.2|5|Yes|Immediate joiner|No|Yes|1_KgSK6LhqEFf8g2TuTOwGYP2pDrIEnrp
 11/9/2026 10:36:52|Satish Pralhad Chavan|9527918104|Maharashtra|Buldhana|4+ years|600000|750000|Yes|Immediate joiner|No|Yes|1OARbpBKFuPOIDCKUGDLjoee3gP6aGnvO
 11/9/2026 10:53:32|Ankush Sabale|9096878341|Maharashtra|Amravati|4+ years|550,000|60000|Yes|Immediate joiner|No|Yes|1m92pj52LIACBSFo_9WgOm5he9ZuFQDqM
+11/9/2026 12:22:51|Nasrun Muhammed S|7604817567|Tamil Nadu|Nagapattinam|1-2 years|2|2.5|Yes|Immediate joiner|No|Yes|1rEgwVsGnWTZFsLEm1YYNK4KyFSo_d4sJ
+11/9/2026 12:52:04|Krushna Bhosale|9309750202|Maharashtra|Satara|4+ years|5.10Lk|7.50Lk|Yes|Immediate joiner|Yes|Yes|1-NZxkVNiPAidxZa_NSGDXlZmm0s1x9ah
+11/9/2026 13:11:35|Rupesh Vijay Bhosale|9130000808|Maharashtra|Satara|4+ years|280000|400000|Yes|15 days|Yes|Yes|1vVGKMg0H1SoTlvc8NBrOOM19Y_viyf2D
+11/9/2026 13:14:20|Balaji sudam kamble|9552066084|Maharashtra|Latur|0-1 years|316000|350000|Yes|Immediate joiner|Yes|Yes|187-hoIhFA2gAsAUNs_0IWBWIZhQ7kr34
+11/9/2026 13:16:49|Mayur suresh holkar|9011959299|Maharashtra|Satara|0-1 years|200000|4500000|Yes|Immediate joiner|Yes|Yes|1A1-VEwKvcAeNl8rXR9zo2z214zKE_U_E

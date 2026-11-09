@@ -1733,3 +1733,18 @@
 11/8/2026 17:17:45|Valishetti Nagaraju|9640786865|Telangana|Nalgonda|2-4 years|2.4|3|Yes|15 days|Yes|Yes|1gztWBwK_1WCKkzdMl8fzWlP2vdwhwHWi
 11/8/2026 17:43:29|C KIRAN BABU|9032879261|Andhra Pradesh|Chittoor|4+ years|. 732193|732193|Yes|15 days|Yes|Yes|1tS5g082wHGAF4cCe3GzJOihuE2ODC50F
 11/8/2026 18:29:03|Girish s Giri|8105688682|Karnataka|Davanagere|4+ years|5.4|4.5|Yes|Immediate joiner|Yes|Yes|1G1RnjNzB1lYAxgC54EmScGNcfS4QdleT
+11/8/2026 19:41:52|Vasupalli Naresh Kumar|8309416566|Andhra Pradesh|Visakhapatnam|4+ years|6.6 LPA|7.0 LPA|Yes|Immediate joiner|No|Yes|1apjSN1VO2L37YtoXEOLY_OgMxIq4CA3z
+11/8/2026 21:27:57|Mooventhiran R|6385622973|Tamil Nadu|Tiruppur|4+ years|4LPA|5LPA|Yes|Immediate joiner|No|Yes|1L1UNBv6CxrKIKDyTUHP_9FZS4Y2K97sZ
+11/8/2026 21:31:15|Sandeep Datre|9890933344|Maharashtra|Parbhani|4+ years|6.21|6.34|Yes|15 days|Yes|Yes|1MBEXJTgwXh060kv8QK0GXsYg2XInFnnk
+11/8/2026 21:42:42|Akash S|9629833321|Tamil Nadu|Vellore|4+ years|3.5|4.5|Yes|15 days|Yes|Yes|1KpZehg7IHziHjNP4QJB-ImloXOtQwmFx
+11/8/2026 21:44:13|U G PARAMDHAMAIAH|8686353375|Andhra Pradesh|Chittoor|4+ years|343200|480000|Yes|15 days|Yes|Yes|15M4rdMZQLqWhidTimGX8IlR1zyfMUfEP
+11/8/2026 22:06:14|Abdul Hameed Bepari|7406826808|Karnataka|Belagavi|4+ years|6.96 LPA|7.86 LPA|Yes|Immediate joiner|Yes|Yes|193_NWOVm6j5R985DwxbCq0yd06_66gE9
+11/8/2026 23:08:34|Syed Adnan|7741853484|Maharashtra|Akola|4+ years|4.11|5.4|Yes|15 days|Yes|Yes|1BZ0dHyZcngtz_3BY_fBbcJcPVBlKUU0e
+11/8/2026 23:14:10|P Balaji|9030545434|Andhra Pradesh|Tirupati|1-2 years|175000|2,00,000|Yes|Immediate joiner|No|Yes|1uMFibP_e2x3rxyuMb_MFk6-cRaNBpVdL
+11/8/2026 23:18:45|Nayan Ingle|8087986852|Maharashtra|Akola|4+ years|530000|700000|Yes|Immediate joiner|Yes|Yes|1CtRL0_FH3rEwrHXp_Yv1MDWI3pFB6xmU
+11/8/2026 23:51:29|sandip ambat|9226182043|Maharashtra|Solapur|0-1 years|3.6L|4.8L|Yes|Immediate joiner|No|Yes|1mY6208TEgi8CGAX8cY7kxqe0vfwFf38K
+11/9/2026 0:39:40|Shaik MAHAMMAD iliyas|8977099026|Andhra Pradesh|Annamayya|4+ years|5.5|7.2|Yes|Immediate joiner|Yes|Yes|1pfOB45F38ddPK4vJUBTPvz5vMKBTYElP
+11/9/2026 1:17:53|HARISHKUMAR|8431382086|Karnataka|Dharwad|4+ years|4.2|0.3|Yes|Immediate joiner|No|Yes|1h0_GdsLjmM7e0J0Qdm16olzt6C_n8dEH
+11/9/2026 7:22:05|Tejas Bhoite|9067576021|Maharashtra|Pune|1-2 years|5LPA|6LPA|Yes|Immediate joiner|Yes|Yes|1a7_aFHISld3D_IqGY68yOei9w78oS4b3
+11/9/2026 8:58:37|Velavan N|9710469108|Tamil Nadu|Chennai|4+ years|5 Laks|10 to 15 %|Yes|Immediate joiner|No|Yes|1J_1dhbgG7wiOiEys1nGYGYF24QW8BPon
+11/9/2026 9:53:47|Madhesh kumar|9361923824|Tamil Nadu|Chennai|0-1 years|2|3.5|Yes|15 days|No|No|1UA6oeBPig9hwfLOewngRINVTmSNJivoJ

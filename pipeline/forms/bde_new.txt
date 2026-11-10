@@ -1774,3 +1774,10 @@
 11/10/2026 1:42:46|SHADAB SHAIKH|8530882996|Maharashtra|Satara|0-1 years|3|3.5|Yes|15 days|Yes|Yes|1LDh7LCo2cKgQW4wz2DFCDWWa3vdTGuZJ
 11/10/2026 8:43:11|panyam Dasu|9347468167|Andhra Pradesh|YSR Kadapa|1-2 years|2.7 Lpa|4.5 Lap|Yes|15 days|Yes|Yes|1ea1SL_k_1Wx1tz8kLTMRpWjeyKg6A4GS
 11/10/2026 9:36:46|Naveen Kumar V S|9611194209|Karnataka|Mysuru|4+ years|3.5 lakh|4.5 lakh|Yes|15 days|Yes|Yes|1WFRThz3t7lpM0EK-qx5K3zvpUaZMPYBe
+11/10/2026 11:50:19|kishore N|7901448400|Andhra Pradesh|Chittoor|4+ years|5.5|6.5|Yes|Immediate joiner|Yes|Yes|1rzzJ--0_nzKU0NC5pLLfRq6QgpQtoQ5X
+11/10/2026 10:53:57|Amol Nemgonda Patil|8421682702|Maharashtra|Sangli|4+ years|3.7 LPA|4.8 LPA|Yes|15 days|Yes|Yes|1yqIz7dR2kotIRg9gvzNV31JopG5keoMw
+11/10/2026 10:57:43|vinay nighojkar|7020770066|Maharashtra|Nashik|2-4 years|400000|450000|Yes|Immediate joiner|No|Yes|1za66P38nNv4hyxFTOmSYM8ZIPt5AMJem
+11/10/2026 11:11:03|pradyumna koli|7038192690|Maharashtra|Kolhapur|0-1 years|240000|3.5 lakh|Yes|15 days|No|Yes|1uHV7_iO9tKyxhUjar9isjxRolVdI2gNI
+11/10/2026 11:13:03|SHAIBAZ KHAN|8830727236|Maharashtra|Washim|4+ years|3.5|4|Yes|Immediate joiner|Yes|Yes|1a248G1gDyq6zMOoh_7KnIKz8K6_Ne206
+11/10/2026 11:18:04|Chetan kate|8421905005|Maharashtra|Pune|2-4 years|2.5|3|Yes|Immediate joiner|No|No|1unwMS-fyP1hT1G_wHeSuaLNw2RincRy7
+11/10/2026 11:50:31|Shreyas|9008156521|Karnataka|Bengaluru Urban|4+ years|45|5|Yes|Immediate joiner|Yes|Yes|1t6GOfbA9B89mYUJkiCZlvoek9EONNWM1

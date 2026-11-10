@@ -1781,3 +1781,7 @@
 11/10/2026 11:13:03|SHAIBAZ KHAN|8830727236|Maharashtra|Washim|4+ years|3.5|4|Yes|Immediate joiner|Yes|Yes|1a248G1gDyq6zMOoh_7KnIKz8K6_Ne206
 11/10/2026 11:18:04|Chetan kate|8421905005|Maharashtra|Pune|2-4 years|2.5|3|Yes|Immediate joiner|No|No|1unwMS-fyP1hT1G_wHeSuaLNw2RincRy7
 11/10/2026 11:50:31|Shreyas|9008156521|Karnataka|Bengaluru Urban|4+ years|45|5|Yes|Immediate joiner|Yes|Yes|1t6GOfbA9B89mYUJkiCZlvoek9EONNWM1
+11/10/2026 12:10:58|Yogesh dattatray Salunkhe|8087545457|Maharashtra|Satara|4+ years|250000|500000|Yes|15 days|No|Yes|11WAN0Nou4arWV_6zOeYoG0P_wevMO3fg
+11/10/2026 13:06:44|Amit Khandelwal|9422937839|Maharashtra|Akola|4+ years|500000|600000|Yes|Immediate joiner|Yes|Yes|1dJns242AF_RsFoVTC7f_862HqXc5o-RD
+11/10/2026 13:14:28|Rajan Taware|7066206929|Maharashtra|Pune|2-4 years|360000|480000|Yes|Immediate joiner|Yes|Yes|1JamX4E0GazLCOsRdyBzR_M2yCTTCRtuK
+11/10/2026 13:39:10|Valapala yaswanth|9502511615|Andhra Pradesh|Tirupati|1-2 years|5.4|6.2|No|Immediate joiner|No|Yes|1tVLToZORNzHBGPmsNxcgQHkt62yeHGzU

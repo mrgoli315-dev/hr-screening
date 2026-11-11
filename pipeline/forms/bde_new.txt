@@ -1834,3 +1834,12 @@
 11/11/2026 11:18:11|K NARESH|8328695095|Telangana|Wanaparthy|4+ years|360000|500000|Yes|Immediate joiner|Yes|Yes|1o3iqkNJ90bIjBDCrbDkZwTRqOFP3oV8v
 11/11/2026 11:27:42|Digvijay Thorat|7038102896|Maharashtra|Sangli|2-4 years|27000|30000|Yes|Immediate joiner|Yes|Yes|12me2WTSBlzTrE2QXHsAN5zEDYg2WMZA5
 11/11/2026 11:51:23|Muttevi ANANTHA SARMA|8096828022|Andhra Pradesh|Krishna|0-1 years|3|3.3|Yes|Immediate joiner|Yes|Yes|1AYw35gpXOe98FmJzBzlQRd3aLeKZB_Nb
+11/11/2026 11:55:15|LINGARAJA KALLURA|9663488491|Karnataka|Belagavi|4+ years|4LPA|4.5LPA|Yes|15 days|Yes|Yes|1JScekND1ulgiEtRuTlvpY6Xulvt5u2-m
+11/11/2026 12:07:28|HDDRBD Hask|7775065369|Chhattisgarh|Bilaspur|4+ years|4.6|10 LPA|Yes|Immediate joiner|Yes|Yes|1ciSR9fvPk1ryO-MO_39MdQ8hRVZQcgsL
+11/11/2026 12:42:48|Nirmalesh kulkarni|9742856378|Karnataka|Belagavi|2-4 years|2.84 lakh|4lakh|Yes|15 days|Yes|Yes|1NLJ2W1MDpmBszoQKoQtY5gUmFGLhjlIB
+11/11/2026 12:51:37|Hitendra Rokade|9309765112|Maharashtra|Ahmednagar|1-2 years|360000|450000|Yes|15 days|Yes|Yes|19V2e7qTz-TWevthJEmEV2ItE7UmjXktm
+11/11/2026 12:58:34|RAGHAVENDRA A|9989971364|Andhra Pradesh|Ananthapuramu|4+ years|360000|480000|Yes|Immediate joiner|Yes|Yes|1iDmgRn3necv77OcEzMWR50HVjxSPsSCW
+11/11/2026 13:07:49|Banoth Sampath|9182213007|Telangana|Bhadradri Kothagudem|4+ years|3.60lpa|5lpa|Yes|15 days|Yes|Yes|1S1SKjtiYx8IoL3bZ5YKydMUqEb1o51SW
+11/11/2026 13:12:20|PARI G|9677497699|Tamil Nadu|Cuddalore|4+ years|4LPA|5.5LPA|Yes|Immediate joiner|No|Yes|1Mr6Z8vHnM8a1ByyaKjHQpp3ooMpcYGVG
+11/11/2026 13:22:47|Shivaji chalichemala|9989389409|Andhra Pradesh|Chittoor|4+ years|2.5|3|Yes|Immediate joiner|Yes|Yes|1zXlqvYNvfpsLh9wy_-0pK4srdwT2CmNy
+11/11/2026 13:28:05|Sunil kore|9604310851|Maharashtra|Pune|4+ years|4lk|7&8|Yes|15 days|Yes|Yes|1a1QOuckUUHdVCtGmx3BSRRwgvpLn2jZW

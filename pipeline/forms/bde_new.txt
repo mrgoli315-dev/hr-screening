@@ -1843,3 +1843,28 @@
 11/11/2026 13:12:20|PARI G|9677497699|Tamil Nadu|Cuddalore|4+ years|4LPA|5.5LPA|Yes|Immediate joiner|No|Yes|1Mr6Z8vHnM8a1ByyaKjHQpp3ooMpcYGVG
 11/11/2026 13:22:47|Shivaji chalichemala|9989389409|Andhra Pradesh|Chittoor|4+ years|2.5|3|Yes|Immediate joiner|Yes|Yes|1zXlqvYNvfpsLh9wy_-0pK4srdwT2CmNy
 11/11/2026 13:28:05|Sunil kore|9604310851|Maharashtra|Pune|4+ years|4lk|7&8|Yes|15 days|Yes|Yes|1a1QOuckUUHdVCtGmx3BSRRwgvpLn2jZW
+11/11/2026 14:27:53|Sathish Kumar|8072146159|Tamil Nadu|Ranipet|4+ years|4.63LPA|5LPA|Yes|Immediate joiner|No|Yes|1GiFIVHZNM0MWFcoAcUq-K0iHHi2QwDzZ
+11/11/2026 14:41:53|chandra shaker chandra shaker|9666183654|Andhra Pradesh|Nandyal|1-2 years|5lpa|7.5|No|15 days|No|No|1sggxEBlWtJm0JiL4I6GL5SZB-s_zARWm
+11/11/2026 15:03:01|Lingaraj Naregal|9686388242|Karnataka|Gadag|0-1 years|Fresher|5 lpa|Yes|Immediate joiner|Yes|Yes|1GqwdhGAiGv7NQ5b-aP31sQZQF9n9R3cd
+11/11/2026 15:25:46|NAVEENKUMAR N|8838194690|Tamil Nadu|Kallakurichi|1-2 years|2|3|Yes|Immediate joiner|Yes|Yes|1o2XIIWXqHQ590vYAayRg8eQTjtLtaDDM
+11/11/2026 15:51:34|Saikiran|9490234238|Telangana|Karimnagar|2-4 years|3.5|5.5|Yes|Immediate joiner|Yes|Yes|1H-5bFqr3AfPtrlJkqZtvqJAPhbK8Fptc
+11/11/2026 16:21:09|Dipak Anil Surve|8600166698|Maharashtra|Satara|2-4 years|4.5|8|Yes|Immediate joiner|Yes|Yes|18EWr4DtzSWYs-AgRsgWcDIZiI1c_kFrv
+11/11/2026 16:21:20|Suresh Chandrasekaran|9611978561|Karnataka|Belagavi|4+ years|780000|780000|Yes|Immediate joiner|No|No|1EyDJu5Z63A34S1G1k1B_xIl03FBpom8s
+11/11/2026 16:42:30|Bharath kumar|7093458588|Telangana|Yadadri Bhuvanagiri|4+ years|3.3LPA|4.8LPA|Yes|15 days|Yes|Yes|1G1LSbusqVwqoLiCUoDkFCrPy8voNSr0f
+11/11/2026 17:32:52|Parag Balapure|9834923885|Maharashtra|Akola|4+ years|4.2lpa|5lpa|Yes|Immediate joiner|No|Yes|1ueZNdc_wLfjsqYZQZw9a_4Mt4o26WNAf
+11/11/2026 17:42:24|GUGULOTH VENKANNA|9010000458|Telangana|Mahabubabad|4+ years|24000|4.5|Yes|Immediate joiner|No|No|1lxeO6mAmkWqt55klcJRI-jx7PCIDvdoB
+11/11/2026 18:03:11|SATISH CHENNAGONI|9966989256|Telangana|Nalgonda|4+ years|350000|500000|Yes|Immediate joiner|Yes|Yes|1p7vER0ELLR5sHbtDpChTJubL2SVtjODM
+11/11/2026 18:30:32|Begari Ashok|7893844741|Telangana|Sangareddy|2-4 years|2.4 lpa|3.4.lpa|Yes|Immediate joiner|Yes|No|1YZ81tSGVBOC9lIvPfkX6lbhjHDyyV_cb
+11/11/2026 18:47:20|Vaibhav dhumal|9168001446|Maharashtra|Sangli|4+ years|4|5.0 LPA|Yes|15 days|No|No|1IVLBx_f8dZVpoUfiJttjvjBUAO4S-UEo
+11/11/2026 19:18:38|ABHIJIT ASHOK NICHANG|9623440344|Maharashtra|Pune|4+ years|2.8l|6-7|Yes|15 days|Yes|Yes|1wW70Sgc7GOWsDDEPom3neL53ksEPLS1G
+11/11/2026 19:21:37|K.Vineel Kumar|9959111807|Telangana|Medchal-Malkajgiri|4+ years|12 LPA|Negotiable|Yes|Immediate joiner|No|Yes|1mjcdkcAp94gl-dumB_zbwecfItoPBBZA
+11/11/2026 19:31:51|Bamar|9885603823|Telangana|Khammam|2-4 years|300000|3,50,000|Yes|Immediate joiner|Yes|Yes|181fTU_-fG4ki15gWriy9pU8DgQFGdkSG
+11/11/2026 19:44:39|Harish Nulakani|8712392414|Andhra Pradesh|Eluru|4+ years|5 LPA|7 LPA|Yes|15 days|Yes|Yes|1K0OyjYNKEELZEv08MonwkIftXkVYJZzr
+11/11/2026 20:00:00|shiva varaprasad|7569660750|Telangana|Warangal|2-4 years|3|5|Yes|15 days|Yes|Yes|1XUhULjFZaeMUcXcZl-a2k1PZ1LebRkaf
+11/11/2026 20:34:19|Pratik Parmeshwar Chavan|8767191961|Maharashtra|Beed|1-2 years|28000|38000|Yes|15 days|Yes|No|1krE0O0oGRPZWbFAaGsDgXxJugLtCzfFS
+11/11/2026 22:03:55|Kotha manideep|8977306031|Andhra Pradesh|Palnadu|1-2 years|5.0. Lpa|5.8 lpa|Yes|Immediate joiner|Yes|Yes|1GY1GMxXpyPaE40dBgCpG9PCgbDxcpqgn
+11/11/2026 22:05:54|Zishan Shaikh|7715991767|Maharashtra|Mumbai City|4+ years|4.5LPA|6LPA|Yes|Immediate joiner|No|Yes|1u6hYd94T0DjmoY0pZuD8WTwbkNFtCrpG
+11/11/2026 22:10:04|Sarjerao Gaikwad|8788449398|Maharashtra|Latur|4+ years|4.8|7.5|Yes|15 days|Yes|No|13hzcJpeKywB69xPb9pGkIZ7irzF2hZpg
+11/11/2026 22:27:09|Narendra Naren|9618479219|Andhra Pradesh|YSR Kadapa|1-2 years|2.5|3|No|15 days|No|Yes|1qduqT8kG6C2Bb9iTUQl3s1_vDUvMcabT
+11/11/2026 22:28:48|Atul Toraskar|9168539326|Maharashtra|Kolhapur|1-2 years|3.4|400000|Yes|15 days|No|Yes|1qpiXo1dX1qZErgJzFWHQMGaEc_o_Vz8j
+11/11/2026 22:36:17|Shaik anwar|8885165772|Andhra Pradesh|Chittoor|4+ years|Santhapeta|3,50,000|Yes|Immediate joiner|Yes|Yes|1IcFb3qstcCAkYOPkqxyKUeLfvYZBT9cj

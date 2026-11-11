@@ -1825,3 +1825,12 @@
 11/11/2026 9:29:47|Byndla Bharath Kumar|9505000778|Telangana|Hyderabad|0-1 years|3.5|4|Yes|Immediate joiner|No|Yes|1pDSHHsP1HU1oVSixT_rDbP8lPDhMMjMm
 11/11/2026 9:31:51|Akshay dhaygude|9588675642|Maharashtra|Satara|4+ years|400000|500000|Yes|Immediate joiner|Yes|Yes|1F1-q8eq6SxSaQjV0mASaGhUAEQWPn_3p
 11/11/2026 9:46:07|Srinivas Masani|6630208594|Telangana|Narayanpet|0-1 years|5|6.5|Yes|Immediate joiner|No|Yes|1OsDA1crsj-qBjKkMEmefmr2BeGLNWN3d
+11/11/2026 10:07:30|G A FAYAZ|9032151824|Andhra Pradesh|Kurnool|0-1 years|3.3|4|Yes|Immediate joiner|No|Yes|1kXLPrn9FHdp6mNGLIEnN9p0IxTOg_fsO
+11/11/2026 10:18:09|Rahul Mane|8296076486|Karnataka|Belagavi|4+ years|500000|630000|Yes|15 days|Yes|Yes|14YvtxSRkItMTeXLTR0WQ7qguwacELuGk
+11/11/2026 10:27:29|Sravan Vuggumudi|9700900351|Telangana|Medchal-Malkajgiri|2-4 years|4.0LPA|6.0LPA|Yes|Immediate joiner|Yes|No|17GYhn3LRZ-pPyQmyEpiHBH6uGIMrgQ8l
+11/11/2026 10:34:33|Salman Mulani|9664240806|Maharashtra|Mumbai City|2-4 years|2.4|3.5|Yes|15 days|No|No|1Su5sBOBrHI2Ssd73jsLoVKrjKcU7mIWr
+11/11/2026 10:37:35|Ashok Bhairu Mangale|8806347676|Maharashtra|Kolhapur|2-4 years|2-4 LPA|3-4 LPA|Yes|Immediate joiner|Yes|Yes|1ZAD4GsF-5b_lqBLY6TTAdynm18qrNHcZ
+11/11/2026 11:01:30|Premkumar|9626899909|Puducherry|Puducherry|2-4 years|612000|600000|Yes|Immediate joiner|No|Yes|1Z7MwurSBHJmLLlWq8AcU0bxBHreGnOFt
+11/11/2026 11:18:11|K NARESH|8328695095|Telangana|Wanaparthy|4+ years|360000|500000|Yes|Immediate joiner|Yes|Yes|1o3iqkNJ90bIjBDCrbDkZwTRqOFP3oV8v
+11/11/2026 11:27:42|Digvijay Thorat|7038102896|Maharashtra|Sangli|2-4 years|27000|30000|Yes|Immediate joiner|Yes|Yes|12me2WTSBlzTrE2QXHsAN5zEDYg2WMZA5
+11/11/2026 11:51:23|Muttevi ANANTHA SARMA|8096828022|Andhra Pradesh|Krishna|0-1 years|3|3.3|Yes|Immediate joiner|Yes|Yes|1AYw35gpXOe98FmJzBzlQRd3aLeKZB_Nb

@@ -1261,3 +1261,8 @@
 7680955926|2-4 yrs|400000|5.5|Immediate|Yes|Yes|Yes|4-8
 9158520764|2-4 yrs|5.4|6.5|15 days|Yes|Yes|Yes|1-3
 8523095799|2-4 yrs|600000|700000|Immediate|No|No|Yes|1-3
+9168751111|2-4 yrs|5.48|6.5|Immediate|Yes|Yes|Yes|4-8
+9923653553|4-7 yrs|264000|600000|15 days|Yes|No|Yes|None
+7028095538|7+ yrs|4|6|Immediate|Yes|Yes|Yes|4-8
+7021899706|0-1 yrs|2.4|3.5|Immediate|Yes|No|Yes|15+
+8408014636|4-7 yrs|5000000|600000|Immediate|Yes|No|Yes|15+

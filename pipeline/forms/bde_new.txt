@@ -1868,3 +1868,15 @@
 11/11/2026 22:27:09|Narendra Naren|9618479219|Andhra Pradesh|YSR Kadapa|1-2 years|2.5|3|No|15 days|No|Yes|1qduqT8kG6C2Bb9iTUQl3s1_vDUvMcabT
 11/11/2026 22:28:48|Atul Toraskar|9168539326|Maharashtra|Kolhapur|1-2 years|3.4|400000|Yes|15 days|No|Yes|1qpiXo1dX1qZErgJzFWHQMGaEc_o_Vz8j
 11/11/2026 22:36:17|Shaik anwar|8885165772|Andhra Pradesh|Chittoor|4+ years|Santhapeta|3,50,000|Yes|Immediate joiner|Yes|Yes|1IcFb3qstcCAkYOPkqxyKUeLfvYZBT9cj
+11/11/2026 22:51:48|Sujit varute|9923688702|Maharashtra|Kolhapur|1-2 years|4|4|Yes|15 days|No|Yes|1WaRe25q4dY3dKECggJCr2Q9sZ1G7XV1f
+11/11/2026 22:59:55|Sarjerao Gaikwad|8788449390|Maharashtra|Parbhani|4+ years|4.5|6.5|Yes|Immediate joiner|No|No|1CLKmumwGtlvZre4923fhlg3qrEK3r-Ul
+11/11/2026 23:20:30|K. H. G. C. Bose|9908929110|Telangana|Adilabad|4+ years|600000|750000|Yes|Immediate joiner|No|Yes|1AZUS8Ey7yIgh8yosAyWdrQ1VYWsFpy0A
+11/11/2026 23:49:49|Daksh Patil|9902504548|Karnataka|Belagavi|0-1 years|Nil|5-6 LPA|Yes|15 days|No|Yes|1_RMs9rU-8ydPDdhVlj5H4ENIUvUrlSA7
+11/12/2026 4:34:14|Arjula Arun Reddy Reddy|8374377090|Telangana|Jangaon|1-2 years|7|7.5|Yes|15 days|Yes|Yes|1FI4GRn9BmG_P4a4X_htxJgF16L6klK2F
+11/12/2026 6:48:43|Vijay Kumar mothe|9985491005|Telangana|Rangareddy|0-1 years|28000|32000|Yes|Immediate joiner|No|Yes|1dBuul-o1PiFDul-qsDRcU9U15UQXLmhT
+11/12/2026 7:52:07|Ranjith Banala|9703222922|Telangana|Peddapalli|4+ years|4|5|Yes|Immediate joiner|Yes|Yes|1dA6enoQvQUnVxE7ST1Ptb5FWMTFdFAmD
+11/12/2026 8:37:56|sunil sunkad|9573593516|Telangana|Rangareddy|4+ years|360000|500000|Yes|15 days|Yes|Yes|1O5L8GZjoTJD2cbK_gAnxxBb9STbG5_zY
+11/12/2026 9:32:43|Suraj Santosh wadekar|9370507219|Maharashtra|Pune|1-2 years|3.2|3.5|Yes|Immediate joiner|No|Yes|134T3kGSyoWuiPzoo9YhyHFA6OuHXmTb3
+11/12/2026 9:35:29|Shubham Padaval|8600244442|Maharashtra|Kolhapur|4+ years|4.8|5.5|Yes|Immediate joiner|Yes|Yes|1xjpEmX1u68mP2L0QOusK6eY3_rcWkHf8
+11/12/2026 9:53:31|Mayur Kanzarkar|9307814144|Maharashtra|Akola|2-4 years|3.2|4|Yes|Immediate joiner|Yes|Yes|1RpjDx3fRC-K3ZvB01X0hECn4WS2lXWdh
+11/12/2026 10:12:00|K Manikandan|9094364752|Tamil Nadu|Chennai|2-4 years|26000|30000|Yes|15 days|Yes|Yes|1UCmh3gnUwZX7PdieUPNzT68VuUNqVN9C

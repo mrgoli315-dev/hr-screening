@@ -1915,3 +1915,8 @@
 11/13/2026 11:21:00|Ameen Balekundri|9945869121|Karnataka|Belagavi|4+ years|4.2|6.5|Yes|15 days|No|Yes|1nFJOeapGsayIEq2LCpn_ra6kg5u8_WrP
 11/13/2026 11:42:19|Thiyagu|9790440445|Tamil Nadu|Coimbatore|4+ years|4.8|10 % hike|Yes|Immediate joiner|Yes|Yes|1uKkPNNqa-keyYwJ2QBEx0Zam_XHlpP8-
 11/13/2026 11:43:41|عرفات ملا|9902371203|Karnataka|Belagavi|0-1 years|250000|300000|Yes|Immediate joiner|Yes|No|1pNeARF8QxqxdKPK2k7A1HDQM2BPYlxxk
+11/13/2026 18:28:22|Mahesh Kumar|9686613820|Karnataka|Raichur|2-4 years|314000|340000|Yes|Immediate joiner|Yes|Yes|1eUZbn76aGzuWzoP2UUY2QyI37qf1-sVK
+11/13/2026 18:45:05|Aditya Kumbar|9916921738|Karnataka|Belagavi|0-1 years|4|40|Yes|15 days|No|Yes|1wal56_p_1MKD0km-FzpE_Sb0IONZPXb3
+11/13/2026 21:43:31|medi arun kumar|7702042166|Telangana|Hyderabad|1-2 years|3|4.5|Yes|Immediate joiner|Yes|Yes|1S9NECKxUA8taW3ciAM8I7KdK3apkP2Fq
+11/13/2026 23:06:48|Noor mahemmad|6281375159|Telangana|Hyderabad|4+ years|6 LPA|8 LPA|Yes|Immediate joiner|No|Yes|1aoFYaoKrA3J0ZIk61yg6tSALxwG3C3Cz
+11/13/2026 23:39:01|omkar jadaye|8277604126|Karnataka|Belagavi|2-4 years|2.8LPA|4LPA|Yes|15 days|No|Yes|1Q7AH43mehAOtbunv72MOA-jYQGU200bK

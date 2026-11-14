@@ -1926,3 +1926,14 @@
 11/14/2026 15:10:09|Antony Jesu Riyas|8925151976|Tamil Nadu|Thoothukudi|1-2 years|3.5 LPA|6LPA|Yes|15 days|Yes|Yes|1bja7GPlwhcRaQZunRzzrlc8fn8XoJP17
 11/14/2026 15:15:45|Rahul Rajesh Rathod|8380896132|Maharashtra|Washim|0-1 years|2.1|2.1|Yes|15 days|No|Yes|1V2h4xQ8ZuqVyvG60-YQgCRJYBqq6WxqK
 11/14/2026 15:40:51|Gowtham P|9578410100|Tamil Nadu|Erode|2-4 years|3.36LPA|4LPA|Yes|15 days|Yes|No|1JnngXUzVFDQjoFYak9mUMRNkq8GNBxL-
+11/14/2026 16:47:42|Mood Ganesh|9848079545|Telangana|Nizamabad|0-1 years|3.9|2.7|Yes|15 days|Yes|No|1rbg2H_lnPIHaz4511iMsAixrRIJ3Gmpw
+11/14/2026 17:04:42|Babaso Ombase|9975938249|Maharashtra|Pune|4+ years|622000|650000 to 720000|Yes|Immediate joiner|No|Yes|19oAnAb2r0kbSEjVjLn_7wKJxITULZ3d_
+11/14/2026 17:24:21|Jeswanth Yadav|9346795227|Telangana|Hyderabad|2-4 years|4.3|5.5|Yes|Immediate joiner|No|Yes|1W14y0ymovOEuVF3-vIxMEvb3Ytf4vvoK
+11/14/2026 18:02:08|Aayush Singh Parihar|9203390112|Madhya Pradesh|Satna|2-4 years|6.8 LPA|8 LPA|Yes|Immediate joiner|Yes|Yes|1bdGqrpTW6kzyKLtKVFXrcbvNBPRKhD95
+11/14/2026 19:10:41|R Karthikeyan|7639404412|Tamil Nadu|Chennai|0-1 years|22|25|Yes|Immediate joiner|No|Yes|1nXLEhwCgKK6YTkrqsXUSrszo6kxT3L_u
+11/14/2026 20:19:35|Vedang Rane|8390810268|Goa|North Goa|0-1 years|Fresher|3|Yes|Immediate joiner|Yes|No|1yimWqVcVv9AUr83tfC8YVxiR8AEdPoY3
+11/14/2026 20:50:00|Abhishek Yadav|7767089259|Maharashtra|Mumbai City|4+ years|1900000|1200000|Yes|Immediate joiner|No|Yes|1nvBaUqFNp3atiocXiXORZLlQjP91Xj9N
+11/14/2026 22:04:28|Tushar Motwani|7024429258|Madhya Pradesh|Bhopal|2-4 years|280000|350000|Yes|15 days|Yes|Yes|1Bh9XweB06zNu54vq1-2a_gpoT7TcaCS2
+11/14/2026 22:20:12|GURPIAR SINGH|9877452472|Punjab|Moga|0-1 years|2.4|7|Yes|Immediate joiner|No|Yes|1wmyJMoxXHhcRIxFEZZm1PIKDQHGNCdru
+11/14/2026 22:29:46|Mohamed ismail|7418218727|Tamil Nadu|Pudukkottai|4+ years|18000|23000|Yes|15 days|Yes|Yes|1g4Q1FslUjSuRzm_bWFZ3EJtXGo0KWgxy
+11/14/2026 22:35:15|satish kumar|7305671666|Telangana|Hyderabad|4+ years|5.59|7.2|Yes|15 days|Yes|Yes|13qd4Yy0Q-YuaCly8iIBAw4ZZ3NLcHg4P

@@ -1920,3 +1920,9 @@
 11/13/2026 21:43:31|medi arun kumar|7702042166|Telangana|Hyderabad|1-2 years|3|4.5|Yes|Immediate joiner|Yes|Yes|1S9NECKxUA8taW3ciAM8I7KdK3apkP2Fq
 11/13/2026 23:06:48|Noor mahemmad|6281375159|Telangana|Hyderabad|4+ years|6 LPA|8 LPA|Yes|Immediate joiner|No|Yes|1aoFYaoKrA3J0ZIk61yg6tSALxwG3C3Cz
 11/13/2026 23:39:01|omkar jadaye|8277604126|Karnataka|Belagavi|2-4 years|2.8LPA|4LPA|Yes|15 days|No|Yes|1Q7AH43mehAOtbunv72MOA-jYQGU200bK
+11/14/2026 10:51:39|sumit mahalle|9359282169|Maharashtra|Akola|4+ years|₹3.25|3.25|Yes|15 days|Yes|Yes|1Mf6mb6eghOeOTX-i38xi-o7vpxX5UumP
+11/14/2026 12:12:44|Charan Ummagoni|8074233651|Telangana|Jangaon|0-1 years|3|3|Yes|15 days|Yes|Yes|1ZBsV9z8Q-bvNdUynHlDYRy7TYy7bhszF
+11/14/2026 13:35:31|Ahmedraza maqbool Mulla|7411303096|Karnataka|Belagavi|4+ years|5|5|Yes|Immediate joiner|Yes|Yes|11_wGY8c8HwYF_Y6PC_6pk2DUW8CfO2jg
+11/14/2026 15:10:09|Antony Jesu Riyas|8925151976|Tamil Nadu|Thoothukudi|1-2 years|3.5 LPA|6LPA|Yes|15 days|Yes|Yes|1bja7GPlwhcRaQZunRzzrlc8fn8XoJP17
+11/14/2026 15:15:45|Rahul Rajesh Rathod|8380896132|Maharashtra|Washim|0-1 years|2.1|2.1|Yes|15 days|No|Yes|1V2h4xQ8ZuqVyvG60-YQgCRJYBqq6WxqK
+11/14/2026 15:40:51|Gowtham P|9578410100|Tamil Nadu|Erode|2-4 years|3.36LPA|4LPA|Yes|15 days|Yes|No|1JnngXUzVFDQjoFYak9mUMRNkq8GNBxL-

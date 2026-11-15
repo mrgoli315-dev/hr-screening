@@ -1954,3 +1954,10 @@
 11/15/2026 15:33:29|Vivek Singh|9170030229|West Bengal|Howrah|2-4 years|3.6lpa|4.lpa|Yes|Immediate joiner|No|Yes|19zVod134XsT-nvyG3QXyL_pbBRcGO0Mn
 11/15/2026 16:16:08|Gade Gopi Ramakrishna|9989549472|Telangana|Hyderabad|4+ years|3 laks|4 -4.5 laks|Yes|Immediate joiner|No|Yes|1_Y1slLH6BAa8akikzkkU_bNnnXVu_StX
 11/15/2026 16:49:13|Praveen Prakash|7373327415|Tamil Nadu|Erode|4+ years|2.6LPA|3.20LPA|Yes|15 days|Yes|No|1HtdJrFHFAO0qCvMQ3F7mlxbu7k1MQweU
+11/15/2026 17:02:30|Saurabh Kumar|7462928208|Bihar|Samastipur|2-4 years|3|4|Yes|Immediate joiner|Yes|Yes|1VfJrPBP0eZ1YZn5Zt_NEsI24HzTYuGmh
+11/15/2026 17:11:41|Nitin Kumar|7417913909|Uttar Pradesh|Muzaffarnagar|4+ years|620000|750000|Yes|Immediate joiner|Yes|Yes|1VNY39mpjQRGDE9qejlqASe-VdFwsLhx0
+11/15/2026 18:14:59|Gokul|8012771020|Tamil Nadu|Erode|4+ years|3.5|6.5|Yes|15 days|Yes|Yes|1aheCatDVE04nfQeGkiP-cv6Q1GPhOMjK
+11/15/2026 20:22:04|Parthasarthy|9361736709|Tamil Nadu|Madurai|2-4 years|3.5|4.5|Yes|Immediate joiner|Yes|Yes|1trDA9e8LQS-Yc-JlgviCe0TXDQTXwecG
+11/15/2026 22:08:36|Madhu donkanti|9666168183|Telangana|Hyderabad|4+ years|7|8.5|Yes|Immediate joiner|No|Yes|162Em6hLhWSdCs99yzy81MyAfD9vMnK9Y
+11/15/2026 22:14:21|Rahul Soni|7620712703|Maharashtra|Thane|4+ years|4LPA|5LPA|Yes|Immediate joiner|Yes|Yes|1RqjccLgwM0Pvct3-BElxTI9O2NZMF9K7
+11/15/2026 22:56:48|Md fardin|9391917812|Telangana|Mancherial|0-1 years|35000|30000|Yes|Immediate joiner|No|Yes|1uH6HCl6fiQuGmqXZTjKI6_Xpg6voXco6

@@ -1937,3 +1937,20 @@
 11/14/2026 22:20:12|GURPIAR SINGH|9877452472|Punjab|Moga|0-1 years|2.4|7|Yes|Immediate joiner|No|Yes|1wmyJMoxXHhcRIxFEZZm1PIKDQHGNCdru
 11/14/2026 22:29:46|Mohamed ismail|7418218727|Tamil Nadu|Pudukkottai|4+ years|18000|23000|Yes|15 days|Yes|Yes|1g4Q1FslUjSuRzm_bWFZ3EJtXGo0KWgxy
 11/14/2026 22:35:15|satish kumar|7305671666|Telangana|Hyderabad|4+ years|5.59|7.2|Yes|15 days|Yes|Yes|13qd4Yy0Q-YuaCly8iIBAw4ZZ3NLcHg4P
+11/14/2026 22:56:34|Rushabh Fulzele|8237130336|Maharashtra|Nagpur|2-4 years|27000|36000|Yes|Immediate joiner|Yes|Yes|1YxQ1eHN-3xFaz_tnPhTicIfBYapK4tId
+11/14/2026 23:02:16|Ajay Chandkai|7249392188|Maharashtra|Buldhana|4+ years|4.5 LPA|6-7 LPA|Yes|Immediate joiner|Yes|Yes|13jqxr1pIXg3SfuZAMP2BaLPqh5E0cZV_
+11/14/2026 23:19:32|MOHD MAHBOOB|9963858629|Telangana|Hyderabad|1-2 years|5|6|Yes|Immediate joiner|Yes|Yes|13qSsMXpXyuOxHpGVSsCq9Y58J-cWd2L6
+11/15/2026 1:47:38|Armeed Shira|8974682412|Meghalaya|East Khasi Hills|0-1 years|2 lpa|3.30 lpa|Yes|15 days|No|Yes|1R1E3wve-gdS-MsP0frskRudLHFmkgXKW
+11/15/2026 8:59:03|Gaddam Harikrishna|9704609918|Telangana|Warangal|1-2 years|3.4|4.2|Yes|Immediate joiner|Yes|Yes|1FQb3BbPSWXgeVGhEUTv99o-tRd-s6pul
+11/15/2026 9:09:57|Edulapuram Navanoothan|7674859536|Telangana|Mancherial|0-1 years|2|3|Yes|Immediate joiner|Yes|No|1J2DI6z8a42iIto18PWoZXRjtnDOsp-Wn
+11/15/2026 10:46:01|Vignesh|8667384900|Tamil Nadu|Erode|4+ years|6.27|8|Yes|15 days|No|Yes|1vmmGb3CZont8kk-eZAcTY4q0HQCgn84_
+11/15/2026 11:24:08|Sahil|9146676771|Maharashtra|Nashik|4+ years|03 ₹3.50|3.50 ₹4.00|Yes|Immediate joiner|Yes|No|1FykEGvx1j6Cno8VE22ROEBQ7ViFzzxgh
+11/15/2026 11:58:34|Ivarajan|8610080715|Tamil Nadu|Chennai|4+ years|9|12|Yes|Immediate joiner|No|Yes|1slfD6YSIvjuRcg1hvGRR-YfBHbV8VfW8
+11/15/2026 12:18:03|Kali Prasad Silla|9573579613|Andhra Pradesh|Srikakulam|4+ years|4.5LPA|5LPA|Yes|15 days|No|Yes|1sG3zu3QIVzfathSmF7vWnMEnVaB9MkZc
+11/15/2026 12:19:17|Ashadeep Taksande|8421436299|Maharashtra|Chandrapur|4+ years|350000|400000|Yes|Immediate joiner|No|Yes|1lwjVWNfwuQ9Uq3h1JCJqLBiFjR0v7kZ6
+11/15/2026 12:42:13|Ravi Chavan|9158668382|Maharashtra|Jalna|4+ years|4.0LPA|5.0 LPA|Yes|15 days|No|Yes|1KhtPtvbiysiIfZBGvYOo_VFtShnhscEw
+11/15/2026 13:17:08|MOHAMED FAROOK K|6379369381|Tamil Nadu|Tiruvarur|4+ years|300000|360000|Yes|15 days|Yes|Yes|1Ou94vVU5hIrKIoFpI0Ecyte7tz2iIdr-
+11/15/2026 14:18:08|Vasandhkumar krishnan|6381526946|Tamil Nadu|Namakkal|1-2 years|3.5 LPA|5.5 LpA|Yes|15 days|No|Yes|10ujHfcEN3GS1kwU7TLSwj_QTPo7yjpTa
+11/15/2026 15:33:29|Vivek Singh|9170030229|West Bengal|Howrah|2-4 years|3.6lpa|4.lpa|Yes|Immediate joiner|No|Yes|19zVod134XsT-nvyG3QXyL_pbBRcGO0Mn
+11/15/2026 16:16:08|Gade Gopi Ramakrishna|9989549472|Telangana|Hyderabad|4+ years|3 laks|4 -4.5 laks|Yes|Immediate joiner|No|Yes|1_Y1slLH6BAa8akikzkkU_bNnnXVu_StX
+11/15/2026 16:49:13|Praveen Prakash|7373327415|Tamil Nadu|Erode|4+ years|2.6LPA|3.20LPA|Yes|15 days|Yes|No|1HtdJrFHFAO0qCvMQ3F7mlxbu7k1MQweU

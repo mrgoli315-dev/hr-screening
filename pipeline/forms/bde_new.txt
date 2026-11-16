@@ -1981,3 +1981,18 @@
 11/16/2026 13:41:26|Amey Indore|8432731765|Maharashtra|Amravati|4+ years|9.5|9.5|Yes|15 days|Yes|Yes|1anQjTZyJVYuA-WxmtdFCkrlhw6Z7LFkM
 11/16/2026 16:04:19|Gopi|7092132392|Tamil Nadu|Vellore|4+ years|300000|400000|Yes|15 days|Yes|Yes|1w9nAlGk9GSNPoJEiJU4pBwOrAdUN19pL
 11/16/2026 16:54:58|M Rakesh|8374478435|Telangana|Hyderabad|4+ years|4.5|6|Yes|15 days|No|Yes|1J0ZCX0e1A1-mbk2vLsjGdjM7b1p_K7h5
+11/16/2026 18:59:17|Mayil Vanan|8270394902|Tamil Nadu|Thanjavur|1-2 years|2.0 LPA|3.0 LPA|Yes|Immediate joiner|Yes|Yes|1JayjY2dpIiFr_k0EkQFs5APXy2WWYhgP
+11/16/2026 19:01:50|Sanjay Janwani|9630562900|Madhya Pradesh|Indore|1-2 years|400000|400000|Yes|15 days|No|No|1XPAc2AwqBPEbtvM2nCu3fr9iSvIdTORF
+11/16/2026 19:13:48|Rohan Mane|8999821936|Maharashtra|Latur|0-1 years|0|0|Yes|Immediate joiner|No|No|1u7R5BKrvjy1aJefJGzX0CVuKZThh92ih
+11/16/2026 19:18:06|Mohammed Hussain Ashraf|6290510823|West Bengal|Kolkata|1-2 years|3.7|5.5|Yes|15 days|No|No|194YnE7XGONm9rhyGVRvfggqVg4yEJalF
+11/16/2026 19:53:48|Nitin Narwane|7276767437|Maharashtra|Ahmednagar|2-4 years|350000|500000|Yes|Immediate joiner|Yes|Yes|1lwCN-OiF0B9qFdNCZks4LgvnbFrSsb9a
+11/16/2026 22:17:15|SAYUJ M|7824931191|Tamil Nadu|Nilgiris|0-1 years|2.2|2.5|Yes|15 days|No|Yes|13fC_25SW8JeCaQbQ5WfhsdKyBzBqpxW0
+11/16/2026 22:19:29|Sagar subhash galande|8208611865|Maharashtra|Nashik|2-4 years|396000|450000|Yes|15 days|No|Yes|1cnFuE_3M6idEBrrR8xQyWeLJBBQlE4Gk
+11/16/2026 22:48:43|Abhishek Dwivedi|8982121951|Madhya Pradesh|Satna|2-4 years|288000|420000|Yes|Immediate joiner|No|Yes|1SKnO5Tn824fDgsjeGgzXS1_thpojgCYm
+11/16/2026 23:03:55|Pramod Pund|9284100269|Maharashtra|Ahmednagar|0-1 years|17000|20000|Yes|Immediate joiner|No|No|1FKjZMcjWPxsNO5Zm3vtkO52q4cpLwYGx
+11/16/2026 23:14:34|Syed Sameer|9890386889|Telangana|Hyderabad|4+ years|515000|700000|Yes|15 days|Yes|Yes|1oEVDJZkqyDjCR-qTrRDq-UM4z17V3ZPL
+11/16/2026 23:48:53|Shubham Kadam|7447717474|Maharashtra|Pune|0-1 years|2.8 LPA|4 LPA|Yes|15 days|No|Yes|1ci3PHuCsyXyhsJ4rg0pRGgcuG7-cKSVo
+11/16/2026 23:54:11|Jeeva B|6369478528|Tamil Nadu|Chennai|2-4 years|2.8|3.2|Yes|Immediate joiner|Yes|Yes|1aL2Vpa1f8hXq0md2DFG8vGCkPeevILpr
+11/17/2026 0:02:43|Mohammad Asif Hawaldar|9964384585|Karnataka|Belagavi|1-2 years|3,50,000/-|4,50,000/-|Yes|15 days|Yes|Yes|1BWr8hM48_ksHYoeIXLN3BkeIo-lK21Lv
+11/17/2026 0:35:17|Prathmesh Lodam|8767412582|Maharashtra|Akola|0-1 years|2.5LPA|5.5 LPA|Yes|15 days|Yes|Yes|1Rq-1DOi3v6yA0ZPArK09MnBKqW77-o_8
+11/17/2026 1:23:00|Jaiganesh|8667640488|Tamil Nadu|Ranipet|4+ years|5.4 LPA|6.0 LPA|Yes|15 days|No|Yes|1ZlDZv3ql3-NvAZjtwdWMHcCv3tpMEQ4V

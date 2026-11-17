@@ -2010,3 +2010,41 @@
 11/17/2026 15:58:00|Perupongu Shivaji|9949770631|Telangana|Nalgonda|4+ years|4.5|5.5|Yes|Immediate joiner|Yes|Yes|1ndHppzuaCK-Uza9ZV7Vy68iLqh8YuheC
 11/17/2026 16:15:20|Harish m|9361111825|Tamil Nadu|Salem|4+ years|3.48LPA|4.5LAP|Yes|15 days|No|Yes|1diMaaIMMDxmlQ6CBrGROZ1-Jf3eubdGR
 11/17/2026 17:44:30|Javeed Hussain|7386060286|Telangana|Nalgonda|4+ years|6|6|Yes|Immediate joiner|No|Yes|1S_WdumOEOvZrPbRUxSzvkfsBBhq5EaE0
+11/17/2026 17:54:58|Sivapathasekaran|6379261490|Tamil Nadu|Mayiladuthurai|0-1 years|1.8|4|No|Immediate joiner|No|No|1hc56JPwjr5QSZSWbtUCaG2W3BeUZUFVa
+11/17/2026 18:26:29|Surendra Ganasala|7995525421|Andhra Pradesh|East Godavari|2-4 years|300000|3.3|Yes|Immediate joiner|No|Yes|1dS36vQW3BQoy-WQ7a8cHA_M8GsqXDHkH
+11/17/2026 18:59:03|V.K.BALAMURALI|7904844507|Tamil Nadu|Madurai|0-1 years|2.5|3|Yes|Immediate joiner|Yes|Yes|1o6f4HG8BGU18C75FzpNz0fIl-9CHLZ3i
+11/17/2026 19:29:45|Yuvanesan|8056752052|Tamil Nadu|Tiruvallur|2-4 years|4.2|6|Yes|15 days|No|Yes|1mBp1QELAuMG1TJKEvkBSJWZX1RscQVVC
+11/17/2026 19:37:55|karthikeyan|9080338355|Tamil Nadu|Coimbatore|4+ years|3.5|5|Yes|15 days|No|No|173U_I-D0GUNWBUclXfqY-rEp8kON8Bh7
+11/17/2026 19:48:02|Daniel Daniel|9578553924|Tamil Nadu|Coimbatore|4+ years|4|4.5|Yes|Immediate joiner|Yes|Yes|1pA0-uKplqD-Wyc5ffF8Ane-rO31uL_W7
+11/17/2026 19:55:05|Arun Arun|9751952262|Tamil Nadu|Erode|4+ years|3 LPA|3.7 LPA|Yes|15 days|Yes|Yes|1y26TiCQZvSouuM2JclHg2tJwFpI9KKIQ
+11/17/2026 19:55:29|Murali Krishna|9344533259|Tamil Nadu|Salem|0-1 years|I am a fresher|3 lpa|Yes|Immediate joiner|Yes|Yes|1EocmCkK1HmUCOR9Jc19exiczeovSgJPY
+11/17/2026 20:05:04|Prasad|9356853327|Maharashtra|Solapur|1-2 years|4 LPA|5 to 5.5 LPA|Yes|15 days|Yes|Yes|1zGwQpTM50N1BOrFrMlJ8aVsL_4shXcnX
+11/17/2026 20:07:41|Swastik Jain|6364483014|Karnataka|Belagavi|2-4 years|2.4 LPA|4.2 LPA|Yes|Immediate joiner|No|Yes|1qAban-RIheis-Ov2JUZex7aeWiTYq23H
+11/17/2026 20:15:56|K Pavan Chary|7287875029|Telangana|Hyderabad|4+ years|4.0 LPA|5.0 LPA|Yes|15 days|Yes|Yes|1nRB6DRZ0z-e0y2k_axlTpm8nFPcfU41N
+11/17/2026 20:23:27|Vrushabh Sunil Balode|9850497161|Maharashtra|Pune|1-2 years|4 LPA|5 LPA|Yes|Immediate joiner|No|Yes|1LBG5WgPIWtSl0HWOVuk1CJyWywISaKxZ
+11/17/2026 20:56:11|ks Rajesh kumar|7032193634|Andhra Pradesh|Chittoor|1-2 years|3|4|Yes|Immediate joiner|No|Yes|1tU4GqCHmOKbslh6wuj8vFCpUJnVk3xp4
+11/17/2026 21:06:46|Manoj Manikandan T|8778029032|Tamil Nadu|Coimbatore|2-4 years|2.5L|3.5L|Yes|Immediate joiner|Yes|Yes|1ju1pZfID5Mt9l_EkgvjBfudG6k5Yi-Iq
+11/17/2026 21:06:50|Ravi Naik|9014442877|Telangana|Hyderabad|1-2 years|4 lacks|6 lacks|Yes|Immediate joiner|No|Yes|1PBq_CeYkaXrqEF4lFvtvyNA_k-9ono50
+11/17/2026 21:17:12|Maahi|9866599498|Telangana|Medchal-Malkajgiri|4+ years|4.5|6|Yes|Immediate joiner|No|Yes|18ap-z71BobYOo1WkT80TDJKKCXZnM9pt
+11/17/2026 21:18:12|Akshay Avinash Devde|7387359089|Maharashtra|Parbhani|1-2 years|3.68|4.5|Yes|15 days|No|Yes|1227Ur-DGAGaSailZEkZQN1BVUIgY9a93
+11/17/2026 21:25:37|Ragupathy|9600358847|Tamil Nadu|Tiruvannamalai|0-1 years|2.5|3|Yes|Immediate joiner|Yes|Yes|1hlnucrLR2OuZsj6yEIl5Ga8QCEGpTH0g
+11/17/2026 21:36:15|Karthik Bellamkonda|7680871879|Andhra Pradesh|Sri Potti Sriramulu Nellore|0-1 years|2.4|3|Yes|Immediate joiner|No|No|18H4t6vpTJkkFF5BFv1TV_MW_axg4i83o
+11/17/2026 21:46:28|Ghulam mohd Afzal|9700251863|Telangana|Hyderabad|4+ years|3.8|4.5|Yes|Immediate joiner|Yes|Yes|1Q7sC3NUBuTGUi2yJkNwfegQWYAGtvTsH
+11/17/2026 21:53:47|Pushpenda shelar|9011590249|Maharashtra|Pune|4+ years|600000|10 lpa|Yes|15 days|No|Yes|1uSqmORROETIrk19e-WhcbZk_BwA1PUI4
+11/17/2026 21:59:49|Challa Ashok|8591478896|Telangana|Hyderabad|4+ years|3.5LPA|4.5LPA|Yes|Immediate joiner|Yes|Yes|1L-sZVA85lsyhVImaK6keyPVmHwI02phF
+11/17/2026 22:02:56|Naveen Kumar|7569025188|Telangana|Hyderabad|1-2 years|3.0 LPA|3.5 LPA|Yes|Immediate joiner|Yes|Yes|1QfEQ_JtoQZjF-XitoPM53D-wcKcZlF7p
+11/17/2026 22:36:35|Bobbyraj Yadahalli|9620676027|Karnataka|Belagavi|4+ years|5.40LPA|7.80LPA|Yes|15 days|Yes|Yes|1C1ALcfttYfV6mkkBUo9D-vjKlxYAVHlK
+11/17/2026 22:36:51|Gnaneshwar Itikala|7995965337|Telangana|Nalgonda|0-1 years|2.5|3|Yes|Immediate joiner|No|No|1syC6UdvIKtyPI7h9PR50GpUFVnio4gmZ
+11/17/2026 22:43:24|venkatesh c|8870612245|Tamil Nadu|Kanyakumari|4+ years|3.25|4.25|Yes|Immediate joiner|Yes|Yes|1f_VFJxnslxxms7sNYSULUn7Ov9WDKfjh
+11/17/2026 22:48:01|S.B.Mohatesheem|9391223004|Andhra Pradesh|Chittoor|0-1 years|2.9 LPA|4 LPA|Yes|Immediate joiner|No|No|11k33jXCtWsSVl-sNx9SpTAPQL_WCzj48
+11/17/2026 22:55:08|Rohit Patane|7620355557|Maharashtra|Satara|2-4 years|4.98LPA|6LPA|Yes|15 days|No|Yes|1PwJ_T-ERD5NGCdO3qjKGusDNapcmr_RY
+11/17/2026 22:58:37|Avinash Vijay Naik|7507813747|Maharashtra|Akola|4+ years|2.5|2.8|Yes|15 days|Yes|Yes|1vi4_QQwCmNfa25_1Mv4lIG4NyG095gap
+11/17/2026 23:03:10|Syed Khizer|9049766488|Maharashtra|Pune|4+ years|4.5 LPA|6LPA|Yes|Immediate joiner|No|Yes|1RJO9ki3Glg8x5eTbIgpU3OpEgbqE5Bjq
+11/17/2026 23:03:34|Afroz Khan|8529608251|Tamil Nadu|Vellore|2-4 years|2.4|4|Yes|Immediate joiner|Yes|Yes|1_i2Yccaczrl5MJqKqqrHf8LZS8Elbzzr
+11/17/2026 23:09:02|Shobith Reddy|7794948811|Telangana|Rangareddy|1-2 years|500000|0|Yes|Immediate joiner|Yes|Yes|1ZGtEMkTHJEerSoPSvbNaXTs4_s4rPChd
+11/17/2026 23:37:47|shashikumar konin|9164630379|Karnataka|Kalaburagi|2-4 years|3.75lpa|5lpa|Yes|15 days|No|Yes|1a4dzAy6EJEUmGzAip8Lf4qTaDKuufe5v
+11/17/2026 23:38:22|vasanthakumar J|6380859791|Tamil Nadu|Erode|4+ years|5LPA|7LPA|Yes|Immediate joiner|No|Yes|19I0WNJkFvpc1ORBifaS7RoIVcgY191SF
+11/17/2026 23:41:04|Vallarasu K|9182481109|Tamil Nadu|Chennai|1-2 years|360000|420000|Yes|Immediate joiner|No|Yes|1n4PXR7nAARUkGPU3c1CZjmJ_szjy60Lm
+11/18/2026 0:27:56|Mahesh Patil|7263928467|Maharashtra|Pune|2-4 years|5.3|5.9|Yes|15 days|Yes|No|15YlMcq8y4pEZeu_MX2RrVlsysL7ITQbU
+11/18/2026 1:13:11|Vishnu Choudhari|7676693238|Goa|North Goa|0-1 years|300000|3.5|Yes|Immediate joiner|Yes|Yes|1K5eg6dv4yxRGYZsX5oEX3TKh8CHl7Ki4
+11/18/2026 1:50:02|Syed  Adil|6305120228|Telangana|Hyderabad|0-1 years|25000|24000|Yes|Immediate joiner|No|No|1JffSYp80_lCQWaC88vZVkth6dACbPNxc

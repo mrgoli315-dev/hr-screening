@@ -1491,3 +1491,63 @@
 8237810777|7+ yrs|2.4|3|15 days|Yes|Yes|Yes|9-15
 9545063059|4-7 yrs|4.2|5|Immediate|Yes|Yes|Yes|9-15
 9948957454|2-4 yrs|300000|4.5|Immediate|Yes|No|Yes|4-8
+9160677866|7+ yrs|500000|600000|Immediate|Yes|Yes|Yes|4-8
+9823917997|4-7 yrs|5|7|Immediate|Yes|No|Yes|1-3
+8686633190|7+ yrs|40000|70000|15 days|No|Yes|No|15+
+9989331500|4-7 yrs|5.5|7.5|15 days|Yes|No|No|4-8
+7330205205|1-2 yrs|3.5|4.5|Immediate|Yes|Yes|No|1-3
+8072109483|7+ yrs|10|12|15 days|Yes|Yes|Yes|15+
+9511973676|2-4 yrs|417000|550000|15 days|Yes|Yes|Yes|9-15
+8788105196|2-4 yrs|3.5|4.6|15 days|Yes|No|Yes|1-3
+6360162502|1-2 yrs|10|12|15 days|Yes|Yes|Yes|4-8
+8309320033|0-1 yrs|3.6|4|Immediate|Yes|Yes|Yes|4-8
+9164443190|4-7 yrs|4.2|4.7-5.0|Immediate|Yes|No|Yes|15+
+7416932246|2-4 yrs|34|4.2|15 days|Yes|Yes|Yes|1-3
+7391919758|4-7 yrs|450000|60000|15 days|Yes|Yes|Yes|4-8
+8554868697|2-4 yrs|6.6|9|Immediate|Yes|No|Yes|4-8
+7841949784|7+ yrs|400000|500000|15 days|Yes|No|Yes|4-8
+8308209171|2-4 yrs|7|8|Immediate|Yes|No|No|None
+9063228177|1-2 yrs|3|4.5|15 days|Yes|No|Yes|1-3
+9175992834|7+ yrs|1179000|1600000|Immediate|Yes|No|Yes|15+
+9449799040|7+ yrs|600000|800000|Immediate|Yes|Yes|Yes|4-8
+9356734616|2-4 yrs|5.96|6.5|Immediate|Yes|No|Yes|4-8
+9617056453|7+ yrs|7.5|9.5|15 days|Yes|Yes|Yes|15+
+9182596400|4-7 yrs|5|6|15 days|Yes|No|Yes|4-8
+8431196331|2-4 yrs|3|7|Immediate|Yes|No|Yes|1-3
+9595404747|7+ yrs|26000|35000|Immediate|Yes|Yes|Yes|4-8
+9743432143|7+ yrs|4.2|6.5|15 days|Yes|No|Yes|9-15
+9937811133|7+ yrs|4.8|6.5|Immediate|Yes|No|Yes|15+
+8142081878|7+ yrs|3.5|4.2|Immediate|Yes|Yes|Yes|4-8
+7447881911|1-2 yrs|4.5|5|Immediate|Yes|Yes|Yes|None
+7989939895|1-2 yrs|6|8|15 days|Yes|No|Yes|4-8
+7028385232|1-2 yrs|3|4.5|15 days|Yes|No|Yes|15+
+9441291710|2-4 yrs|420000|560000|Immediate|Yes|Yes|Yes|1-3
+9623801541|7+ yrs|4.25|5.5|15 days|Yes|Yes|Yes|15+
+7083635615|1-2 yrs|3|5|15 days|Yes|Yes|Yes|1-3
+8308164263|0-1 yrs|0|2|Immediate|Yes|No|No|None
+9595181418|0-1 yrs|0|3|15 days|Yes|No|No|None
+8087650186|1-2 yrs|840000|960000|Immediate|Yes|No|Yes|9-15
+9740298984|2-4 yrs|461000|520000|15 days|Yes|No|Yes|4-8
+9391181982|4-7 yrs|720000|800000|Immediate|Yes|No|No|1-3
+8552049853|2-4 yrs|4,20,000|4,80,000|Immediate|Yes|No|Yes|1-3
+7517808384|4-7 yrs|450000|800000|Immediate|Yes|No|Yes|15+
+7639686896|7+ yrs|400000|450000|Immediate|Yes|Yes|Yes|15+
+6302139388|0-1 yrs|0|0|Immediate|Yes|Yes|No|None
+9404435883|7+ yrs|6.12|7.5|Immediate|Yes|No|Yes|4-8
+9966116386|1-2 yrs|4|6|Immediate|Yes|No|Yes|4-8
+9095103636|7+ yrs|840000|1000000|15 days|Yes|Yes|Yes|15+
+8975628695|4-7 yrs|5.2|6.2|15 days|Yes|Yes|Yes|15+
+7796387120|2-4 yrs|400000|500000|15 days|Yes|No|No|4-8
+9579925336|0-1 yrs|3.1|5|Immediate|Yes|No|Yes|1-3
+7776943365|0-1 yrs|3|4|15 days|Yes|No|No|None
+9075837877|0-1 yrs|3|6|Immediate|Yes|Yes|Yes|1-3
+7040800080|7+ yrs|500000|600000|Immediate|Yes|Yes|Yes|9-15
+8888087284|2-4 yrs|6|8|Immediate|Yes|Yes|Yes|4-8
+7083104662|7+ yrs|400000|500000|15 days|Yes|No|Yes|15+
+9096309139|2-4 yrs|368000|950000|Immediate|Yes|No|Yes|4-8
+8686708363|7+ yrs|1000000|1200000|15 days|Yes|Yes|Yes|9-15
+9032151238|7+ yrs|12|13|Immediate|Yes|Yes|Yes|15+
+8341929403|4-7 yrs|500000|700000|Immediate|Yes|No|Yes|4-8
+7032260089|7+ yrs|6.5|7.5|Immediate|Yes|No|Yes|9-15
+9975042164|4-7 yrs|300000|350000|Immediate|Yes|No|Yes|4-8
+7744925846|2-4 yrs|4.06|6|Immediate|Yes|Yes|No|4-8

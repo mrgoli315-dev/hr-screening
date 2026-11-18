@@ -2097,3 +2097,29 @@
 11/18/2026 15:14:48|Sandeep Rathod|9686469530|Karnataka|Kalaburagi|0-1 years|3000000|400000|Yes|Immediate joiner|No|No|1H0bSzIhagk1f_3RJ3nRXQnrHIYtpLhvg
 11/18/2026 15:25:58|Siva|9344498916|Tamil Nadu|Nagapattinam|4+ years|3.5|4.5|Yes|15 days|No|Yes|1pcT96VyCxp-ddqNdtAkS08xt9awOqrev
 11/18/2026 17:31:11|Rajratna Dhage|7499252315|Dadra and Nagar Haveli and Daman and Diu|Dadra and Nagar Haveli|0-1 years|300000|450000|Yes|Immediate joiner|No|Yes|1rOX9BbWFEUO315tJqdHmzD239Ze8aDaR
+11/18/2026 18:29:22|PRASANTH S|8525033137|Tamil Nadu|Krishnagiri|1-2 years|280000|330000|Yes|15 days|Yes|Yes|1_FBElnYkSG4Aez2g-9d-AfY2bWlVLecg
+11/18/2026 20:13:38|banavath taranaik|9121931563|Andhra Pradesh|Palnadu|4+ years|7.2|8.6|Yes|Immediate joiner|Yes|Yes|1bX4QBGAKBXP2HYHYR3yn_2GIcWv2pQsU
+11/18/2026 20:35:32|Arutselvan|9080921138|Tamil Nadu|Erode|1-2 years|276000|300000|Yes|Immediate joiner|No|Yes|1FnidQn0Mmb_NZISfk1LZqO5pPAiDrr3j
+11/18/2026 20:37:18|Raghul Ramakrishnan|9626819810|Tamil Nadu|Salem|1-2 years|4|4.5|Yes|15 days|Yes|Yes|1NA6czIuXcU6gFld_HNGq8m8Mn_R2bZbl
+11/18/2026 21:07:52|N chinrasu|6384701282|Tamil Nadu|Salem|1-2 years|3 .5lpa|4.5lpa|Yes|Immediate joiner|Yes|Yes|1c9h0HGj0wEUYys5CnISV4TARn7Szukbx
+11/18/2026 21:13:57|Adi Nikhil|7893031644|Telangana|Bhadradri Kothagudem|2-4 years|3L|4L|No|Immediate joiner|Yes|Yes|13Oaif54vXl4r3sp1cdIYOISplHdBi9gx
+11/18/2026 21:24:09|Karthick|7639681387|Tamil Nadu|Namakkal|2-4 years|2.5|2.5|Yes|Immediate joiner|Yes|Yes|1YtPJ9oA03jn-Oa38AhH5xo-gX92Vv0au
+11/18/2026 21:27:43|Mathri raju|7993401827|Telangana|Hyderabad|4+ years|420000|700000|Yes|Immediate joiner|Yes|Yes|1K8pJ4vALMXcx0OnWwp7I_0oEQny9JMMp
+11/18/2026 21:47:35|Rohit Ingulkar|9768708386|Maharashtra|Mumbai City|4+ years|4,31,448|500000|Yes|15 days|Yes|Yes|1y_EY1Lu4ho96r6KC_HXOv_1fhStLXcIe
+11/18/2026 21:57:01|Akash N|9600654547|Tamil Nadu|Cuddalore|0-1 years|3LPA|3LPA|No|Immediate joiner|No|No|1lf82IVNZZ6WpzYldeTeVHKCD8pIPE47U
+11/18/2026 22:15:54|Rakesh Gautam Jadhav|9146115434|Maharashtra|Ahmednagar|4+ years|4.80L|6.00L|Yes|15 days|Yes|Yes|1Pw7cFMqKxZqphT4qHXIvn5d-5Yj9N6uj
+11/18/2026 22:17:15|SANJAYKUMAR M M|9597483633|Tamil Nadu|Erode|1-2 years|2.5 LPA|3 LPA|Yes|Immediate joiner|Yes|Yes|1iw2Int7zEXfdSVO5BLVE1BRx_auC540x
+11/18/2026 22:20:12|Velmurugan|9600925997|Tamil Nadu|Coimbatore|4+ years|576000|800000|Yes|Immediate joiner|Yes|Yes|1ps-SMFJPJjISAlByRj17Q0oAp9UQ4n01
+11/18/2026 22:30:55|Pavan Ch|9381963739|Telangana|Rangareddy|1-2 years|4.2|5.5|Yes|Immediate joiner|Yes|Yes|11pJ0VWwIi2c-9UO5Pz2nTbgpkxo492oI
+11/18/2026 22:32:10|Hemanth Kumar V|6361147678|Karnataka|Kolar|4+ years|400000|420000|Yes|15 days|Yes|Yes|1JfyaN1wHieNPPcuRqlwqXKzIM3Jc_GQg
+11/18/2026 22:35:39|Jeevan Suki|7066386663|Maharashtra|Pune|0-1 years|312000|450000|Yes|15 days|Yes|Yes|1X8QZI3Rn63FgG3J_7wf6XdVS4iaWp2iO
+11/18/2026 22:41:40|Kishan Ramrao Kusale|8390788451|Maharashtra|Pune|2-4 years|420000|600000|Yes|Immediate joiner|No|Yes|192eQzxqifQshO5qSeodBm3CtjTWp5Ios
+11/18/2026 23:06:21|Vignesh|9342212885|Tamil Nadu|Chennai|2-4 years|3.5 Lpa|4.5 Lpa|Yes|15 days|Yes|Yes|1t_nv0VK9X1ewjGoao9jOfU8pEughMFUf
+11/18/2026 23:10:26|AK.S. Sabari|7871711724|Tamil Nadu|Madurai|4+ years|25000|25000|Yes|Immediate joiner|Yes|Yes|1CCk1o9hO3gvJceFt9nSO0rBPYNXwJSAu
+11/18/2026 23:11:07|J Mohammed ashik|9042558565|Tamil Nadu|Tiruppur|1-2 years|2.4|3|Yes|Immediate joiner|Yes|Yes|1qCoaePSn0Yy64UI-ciHMJVyCbpkKmZ5T
+11/19/2026 0:07:41|Kishor s|9345446192|Tamil Nadu|Pudukkottai|0-1 years|4|4.5|No|15 days|No|No|1-nAWQI5T2cN81q6M9Cp9JRlWDQ-dUxTB
+11/19/2026 0:08:32|Santhosh Kumar|7702730367|Telangana|Hyderabad|2-4 years|6.5|7.5|Yes|Immediate joiner|No|Yes|1385S8zMxULtGc52YkE2SAyjWViuW0yFb
+11/19/2026 0:11:23|K sathish raj|7299214863|Tamil Nadu|Chennai|1-2 years|3,30,000|3,50,000|Yes|15 days|Yes|Yes|1ytpmrmvUfDiZnS-ijPwVU6diAJuts8YN
+11/19/2026 0:16:10|Vijay|8637426400|Tamil Nadu|Coimbatore|4+ years|3|3|Yes|15 days|Yes|Yes|1BbO4WxpXW44i-wMZaKbI1x6PvmBGFpZV
+11/19/2026 0:19:56|S.Sikkandar|9578126706|Tamil Nadu|Coimbatore|4+ years|25000 +|35000 +|Yes|15 days|No|Yes|1YhYRu-aWmx0gjk6v9MhPeGnyyjBpG3p2
+11/19/2026 0:26:03|Raj Patil|9527214355|Maharashtra|Raigad|2-4 years|300000|320000|Yes|15 days|Yes|Yes|1QZzQ47tUu1koAGxUKgUbRSc7F8U1g6pg

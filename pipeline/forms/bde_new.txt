@@ -2160,3 +2160,28 @@
 11/19/2026 16:28:47|Chandhru|9944500732|Tamil Nadu|Salem|2-4 years|3.5|400000|Yes|15 days|No|Yes|1YGeYKPc5OazmSVxzKS_fI0QT93aWKXlN
 11/19/2026 17:06:33|Karthik|9952891828|Tamil Nadu|Erode|4+ years|36800|50000|Yes|15 days|Yes|Yes|1h6L6mFEI09R8uc2B-GDhWTGYQZSLCeAz
 11/19/2026 17:16:36|Idris Shaikh|9168111828|Maharashtra|Yavatmal|1-2 years|2.5 LPA|3.0 LPA|Yes|Immediate joiner|Yes|Yes|1-Vbw4pQ2s0xAptW7DCbi0BzVIfLko0MQ
+11/19/2026 17:45:46|Mahendra Pardeshi|8530943256|Maharashtra|Pune|2-4 years|3.6|5.5|Yes|Immediate joiner|Yes|Yes|1woh_-eln77srzNkKre7koSCwiHcSlyQS
+11/19/2026 18:06:24|Parth Mulye|9370595108|Maharashtra|Pune|1-2 years|3.4LPA|3.8LPA|Yes|Immediate joiner|No|Yes|17WU88gQd_XTdxD649RVboauD07E23tvK
+11/19/2026 18:08:25|Aniket Deshpande|7875051510|Maharashtra|Akola|4+ years|450000|550000|Yes|Immediate joiner|No|Yes|1ElkID-bsj76uc6y4Y1kkGyJzaVT1RtzQ
+11/19/2026 18:30:06|Gagankumar|8431297570|Karnataka|Chikkaballapur|1-2 years|272000|480000|Yes|Immediate joiner|No|No|1NVRBMz5BNaLzmSt8CDYVXindeUTi8kqe
+11/19/2026 19:37:59|P Boopathi|9754788529|Tamil Nadu|Madurai|1-2 years|2.5 LPA|3.0 LPA|Yes|Immediate joiner|Yes|Yes|1V7KwDQ4BwmIRWdcR6NHr2Afga3FnGeNY
+11/19/2026 19:43:57|Srinu|9618662520|Telangana|Sangareddy|4+ years|3|3.5-4|Yes|Immediate joiner|No|Yes|1LZeAoimmOqSHQswmtSsG8VnffRxS2gYd
+11/19/2026 19:47:22|Dipak Dilip Tandale|9075664650|Maharashtra|Chhatrapati Sambhajinagar|0-1 years|242000|350000|Yes|15 days|No|Yes|1-WMSrlnYmTpVYp8k0Ehac52hMMAFdb_a
+11/19/2026 20:11:34|Ajay Manik Javalge|9325967895|Maharashtra|Latur|1-2 years|282116|400000|Yes|Immediate joiner|Yes|Yes|1WE2dQd-dhc0KHc49n5ZXK7U8okAzn3gj
+11/19/2026 20:12:04|Kolanu Naveen|6305660239|Telangana|Nalgonda|0-1 years|0|3|Yes|Immediate joiner|No|Yes|1Qf5znBeYoTyurU3XACeikXUXlTVOaBGN
+11/19/2026 20:50:26|R shiva Shankar Naidu|6304227607|Andhra Pradesh|Kurnool|2-4 years|2.8|3.5|Yes|Immediate joiner|Yes|No|1vj9yeu1tgNyrvxdFjtBmq5Kj6XwWG_Q6
+11/19/2026 20:59:21|Marimuthu|9489623752|Tamil Nadu|Thoothukudi|4+ years|2.4LPA|3LPA|Yes|15 days|Yes|Yes|1zyZW4AKWj9yUKGjteX8jcI1elAWTgi-O
+11/19/2026 21:38:09|Ajay .V|9659713048|Tamil Nadu|Madurai|0-1 years|1.5 LPA|2.5 LPA|Yes|Immediate joiner|No|Yes|1vKCowTqwxEyUtmXaVu0l0KQvbGOeLlSb
+11/19/2026 21:59:35|Yuvas.G|8754488148|Tamil Nadu|Chengalpattu|2-4 years|2.4|3.5|Yes|Immediate joiner|No|Yes|1yszazH3tDIYRAG6vwL34vjxYnf3PwdB6
+11/19/2026 22:02:36|Chandran G|8220350756|Tamil Nadu|Coimbatore|4+ years|415400|600000|Yes|Immediate joiner|Yes|Yes|1Nz_BMVUW_Vv2y8zIalzaKAXk7ksaAHfi
+11/19/2026 22:24:22|JAYAKRISHNA Krishna|9908937656|Telangana|Nalgonda|0-1 years|2|3|Yes|Immediate joiner|No|No|1D-xCq8T0EwL_j0iLuhgdZ-gtysELlXSw
+11/19/2026 22:26:29|karthik k|9944097463|Tamil Nadu|Thanjavur|4+ years|320000|420000|Yes|Immediate joiner|No|Yes|1rOGo1nkoI5Al0HE96fPHjjG28od1s7tv
+11/19/2026 22:32:20|Ramesh|8754318976|Tamil Nadu|Tenkasi|4+ years|3.6 LPA|4.2 LPA|Yes|15 days|No|Yes|1oLn9uQDjpA56FM63k2zjiCzJC4_Fs-CG
+11/19/2026 22:50:06|Kumaran J|6369601451|Tamil Nadu|Tiruvallur|4+ years|346000|449800|Yes|15 days|Yes|No|1xpD8-0-V9Y8f0x-OB_qcC3QQMHYaLGZ6
+11/19/2026 22:53:42|Gangipalli Vinay|7780364794|Telangana|Karimnagar|0-1 years|3|4|Yes|Immediate joiner|No|Yes|1kK3Quj4m_p9kL1hNyBWNRxMZkF-qqiqB
+11/19/2026 22:56:07|Karan Tokalwar|8087455305|Maharashtra|Chandrapur|1-2 years|6LPA|9LPA|Yes|15 days|Yes|Yes|1fJIbiboRzG-o_t8dFmjaUQRLjoBp1qPa
+11/19/2026 23:21:37|Sri Abishek|7604935622|Tamil Nadu|Theni|1-2 years|2.9LPA|3.5LPA|Yes|Immediate joiner|No|Yes|14QzRPmHO05AZCzLKkNWGQOISp9H2ZV8K
+11/19/2026 23:29:18|Bharath CKN|8317306994|Karnataka|Bengaluru Rural|2-4 years|38,000|4,56,000|Yes|Immediate joiner|Yes|Yes|1O2Aj47FQnsuzcNp0yxtOzGZQ4TdyfME-
+11/19/2026 23:31:12|Santhoh B|8270180155|Tamil Nadu|Tiruvallur|4+ years|1034000|1300000|Yes|15 days|No|Yes|1o5em1RZxQhpa6OrUUOOjmUJyeWs2kGw7
+11/20/2026 0:30:17|Ahamed Haroun Raseeth.A|9698342581|Tamil Nadu|Erode|4+ years|5.3 LPA|6 LPA|Yes|Immediate joiner|Yes|Yes|1UWqdWqx-VpveQh6WEmzH9qo6xQZAyNbT
+11/20/2026 0:57:14|F RUBAN ALEX|9003358439|Tamil Nadu|Dindigul|2-4 years|3.5LPA|4.0LPA|Yes|Immediate joiner|No|Yes|1kYldx3d67isIVh68M7FVb7FpN5AD8I0y

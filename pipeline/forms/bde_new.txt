@@ -2185,3 +2185,29 @@
 11/19/2026 23:31:12|Santhoh B|8270180155|Tamil Nadu|Tiruvallur|4+ years|1034000|1300000|Yes|15 days|No|Yes|1o5em1RZxQhpa6OrUUOOjmUJyeWs2kGw7
 11/20/2026 0:30:17|Ahamed Haroun Raseeth.A|9698342581|Tamil Nadu|Erode|4+ years|5.3 LPA|6 LPA|Yes|Immediate joiner|Yes|Yes|1UWqdWqx-VpveQh6WEmzH9qo6xQZAyNbT
 11/20/2026 0:57:14|F RUBAN ALEX|9003358439|Tamil Nadu|Dindigul|2-4 years|3.5LPA|4.0LPA|Yes|Immediate joiner|No|Yes|1kYldx3d67isIVh68M7FVb7FpN5AD8I0y
+11/20/2026 8:46:50|Tamil Arasan|9080561004|Tamil Nadu|Erode|4+ years|300000|336000|Yes|15 days|Yes|Yes|1Si86c0kjAU-vMdGwavh4zAF8R7dYtS_9
+11/20/2026 9:00:18|B more|9373866291|Maharashtra|Chhatrapati Sambhajinagar|2-4 years|3.5|4.2|Yes|Immediate joiner|Yes|Yes|1VQlF9jB_Uw3m5UQD1O0c7FkV3O0jWRFA
+11/20/2026 12:49:06|Sankara narayanan R|7305800338|Tamil Nadu|Chennai|0-1 years|3|3|Yes|Immediate joiner|No|Yes|191Why5blDSEygeuqsL9EeR8CyKUpjIUz
+11/20/2026 9:13:14|SHASHI PRIYATHAM REDDY TEEGALA|7993403425|Telangana|Suryapet|4+ years|6.0 LPA|6.5 LPA|Yes|Immediate joiner|Yes|Yes|1vxtwcfVP96Z-FDG-SMvZFuPVBK3WKx5N
+11/20/2026 10:20:35|Rajesh Kumar D|8903226780|Tamil Nadu|Chennai|2-4 years|24000|26000|Yes|15 days|No|Yes|1eafEcA3I3s0h_PH2iGekZrt6q20hNfAJ
+11/20/2026 10:21:26|Somasundaram|7305742708|Tamil Nadu|Viluppuram|1-2 years|3,60,000|4,00,000|Yes|15 days|Yes|Yes|1RNq6Wyk_UMp0JY0uX2uawBy0h4ggFC_2
+11/20/2026 10:26:40|Gaurav kumar|7050559107|Bihar|Sitamarhi|4+ years|400000|500000|Yes|Immediate joiner|Yes|Yes|1gteTO2CJXyoQ0Mlc4XwhG6n1xtIHGU3C
+11/20/2026 10:54:23|Rajesh|8778135723|Tamil Nadu|Kancheepuram|1-2 years|3|3|Yes|Immediate joiner|Yes|Yes|1apwDKDFFm9TMkqrhUThLgzJroQv_3--P
+11/20/2026 10:57:40|Logeshwaran Chidambaram|6369589282|Tamil Nadu|Sivaganga|4+ years|500000|500000|Yes|Immediate joiner|No|Yes|1FgDGzzkDWq1xQS_W6e_GzrCfaPZ-pH2i
+11/20/2026 10:58:35|Bharathishankar|9944614166|Tamil Nadu|Erode|4+ years|2.4|2.8|Yes|Immediate joiner|No|Yes|1jR7BVeeZn5t_ThnBGDy7_2aPGrkYiytP
+11/20/2026 11:39:47|Raju Goud|9603523405|Telangana|Nalgonda|4+ years|5.6|5.6|Yes|Immediate joiner|Yes|Yes|18tnFDZTkb-q0SDEnTGHS1MkATzDmOH6j
+11/20/2026 12:10:53|DEEPAK VIJAY GS|6381559594|Tamil Nadu|Erode|2-4 years|2.5|3.1|Yes|Immediate joiner|Yes|Yes|11ITmqd_SIQlaFbGh1aUu5GtlnBRUkCF9
+11/20/2026 12:15:54|ABDUL HAJA MYDEEN|8012497457|Tamil Nadu|Thanjavur|4+ years|2.5|3.5|Yes|15 days|Yes|Yes|1vb1eLXFXBDe8Ma5V50OD6SXDp-rq4vAe
+11/20/2026 13:15:59|Maclin|6369173910|Tamil Nadu|Coimbatore|1-2 years|396000|420000|Yes|Immediate joiner|Yes|Yes|1FsTw56NKfDOqOyvy7ZQC9Y7iHNSoJ8FF
+11/20/2026 14:12:50|Manoj M|7548800765|Tamil Nadu|Erode|1-2 years|25000|30000|Yes|15 days|Yes|Yes|1UoHCb4ygM9mVBxW1DJ5wIr2sKJ9YWdxN
+11/20/2026 14:27:26|Ankit Sharma|7620764147|Maharashtra|Akola|0-1 years|3|3.5|Yes|Immediate joiner|Yes|No|1cZJvEEmfT2QHp_BsWW7ZawXY-lfUM7Dn
+11/20/2026 15:16:22|Thota Bhaskara Sambasiva Rao|7013181741|Telangana|Hyderabad|0-1 years|Fresher|Fresher|Yes|Immediate joiner|Yes|Yes|1nlc_idcb6zgysSH_a2lJWTbjJ91sCoIn
+11/20/2026 15:39:58|Nandhakumar G|8675729798|Tamil Nadu|Salem|2-4 years|450000|480000|Yes|Immediate joiner|Yes|Yes|1rWbn3WqpEOuAV7zJ33CZPkt2bZY1nuV4
+11/20/2026 15:45:40|Sundaresan|9677591203|Tamil Nadu|Dindigul|2-4 years|4.6 LPA|5.0 LPA|Yes|Immediate joiner|No|Yes|142Vf5s4cL97aeTTG40bs_VZUVZ7k8f21
+11/20/2026 15:46:24|VINOD SURAJNARAYAN MISHRA|8830066405|Maharashtra|Akola|1-2 years|25k|30k|Yes|Immediate joiner|Yes|Yes|1X0xXprdkmwkd4StxI1ade6Uom0bd5Vzr
+11/20/2026 16:11:01|Akshay shrimant fand|8381050908|Maharashtra|Beed|1-2 years|3.60LPA|5.50LPA|Yes|Immediate joiner|Yes|Yes|1EBt1XyGJ1plDAEhWP_3L-CefDWsy8NOd
+11/20/2026 16:44:58|MUSHKAM PAVAN|6305919905|Telangana|Rajanna Sircilla|2-4 years|2|40|Yes|15 days|No|Yes|1Kv5WPdyS0Ov5AcbQMTExWAWJ_RIhUhWg
+11/20/2026 17:01:46|Simhadri|9553070120|Andhra Pradesh|Kurnool|0-1 years|2|1.5|Yes|Immediate joiner|Yes|Yes|1dNY99sAVeVOC8UdF51d_4HilxmpYO3mJ
+11/20/2026 17:03:12|Bandi nandhu|9390017513|Andhra Pradesh|Chittoor|4+ years|2.6|3|Yes|Immediate joiner|No|Yes|17JPMiCJTeX1oIMJMAdqlcVmAyazO2FRY
+11/20/2026 17:06:22|Mahi Mahesh|8333944497|Telangana|Mahabubnagar|0-1 years|3.53|600000|Yes|15 days|Yes|Yes|1RNZPAfJnr4hWM1fvJC8o8mkfBBfRPZ6Q
+11/20/2026 17:17:13|Gollangi kowshik kumar|9390541611|Andhra Pradesh|Srikakulam|2-4 years|25|30|Yes|Immediate joiner|Yes|Yes|1JzgHLN6FTSiOe1-uxYNrz33nv1MeXLMg

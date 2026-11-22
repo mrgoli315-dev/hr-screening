@@ -2346,3 +2346,42 @@
 11/22/2026 15:57:10|Prasad|7330705783|Telangana|Nalgonda|0-1 years|300000|350000|Yes|Immediate joiner|Yes|Yes|1TeF5sW_cMKT_FbjvENfi63f0IoyIlPDX
 11/22/2026 16:54:10|Petchi Muthu|7092524865|Tamil Nadu|Thoothukudi|1-2 years|3.6|4|Yes|15 days|No|Yes|1YRts_vcrnGqkN7S1H9tq82DDlA-0z06n
 11/22/2026 16:58:01|Sheri Laxman Reddy|9550734425|Telangana|Medak|1-2 years|3lpa|4.5 lpa|Yes|15 days|Yes|Yes|1AanTPr0c6J8vPJvdYS77SjalSczUbc3F
+11/22/2026 18:21:41|Akash Jadhav|8788778959|Maharashtra|Satara|0-1 years|18000|18000|Yes|Immediate joiner|Yes|Yes|1BW0thuVm_raoc5xzTc3uPuHl5bigpbQq
+11/22/2026 18:42:14|Raja Raja|8940743161|Tamil Nadu|Salem|0-1 years|3|3.5|Yes|15 days|No|No|1_WzLSs6a3FF3c0L5Vr3pIjNnRCjvQhiS
+11/22/2026 19:11:57|Sanket Sanjay Dhage|9022093293|Maharashtra|Ahmednagar|1-2 years|3|4|Yes|Immediate joiner|Yes|Yes|1n6K-Hcv9_Nh2J7pESKl7p6oJiCLSO-zd
+11/22/2026 19:21:48|Niresh|8072449755|Tamil Nadu|Salem|2-4 years|3.25lpa|4lpa|Yes|15 days|No|Yes|1HiRd8JAmrpj6-3juRomxLdXc3_kcLdyv
+11/22/2026 19:23:53|Abhishek Gavhane|9307072800|Maharashtra|Pune|4+ years|3.36 LPA|4.0 LPA|Yes|Immediate joiner|Yes|Yes|15FMpxbitfMQria-jAHB74gg0P7aO9DXB
+11/22/2026 19:38:24|Mardhandi Baga Reddy|8008211965|Telangana|Sangareddy|4+ years|300000|400000|Yes|Immediate joiner|Yes|Yes|11Yjr7wMpqfaeU_LLS7jyELrGP7lBwEby
+11/22/2026 19:43:07|AviraboinaVamshi|6300622212|Telangana|Suryapet|2-4 years|350000|450000|Yes|Immediate joiner|Yes|Yes|1pHcrClR_YdCF0I58VXM3UbsnxBwMsU28
+11/22/2026 19:48:17|Gajji Shiva kumar|6303822373|Telangana|Rangareddy|1-2 years|300000|35000|Yes|Immediate joiner|Yes|Yes|1TD1_OCITv-dnXsdu2DqjLR41eL5BOG8r
+11/22/2026 19:54:30|Vaibhav taur|7385801312|Maharashtra|Pune|1-2 years|29000|35000|Yes|Immediate joiner|Yes|Yes|1pgEs57SAURezIg17UsIMAfZ_hgnXjZvI
+11/22/2026 19:55:35|Devaraju|9010199321|Telangana|Hanumakonda|1-2 years|2.64|280000|Yes|15 days|Yes|Yes|1YBD486FGDL1mLDAyXeFJviAxJaFj0PA_
+11/22/2026 20:12:17|Kiran Vishnu Bankar|8956772751|Maharashtra|Pune|0-1 years|300000|450000|Yes|Immediate joiner|Yes|Yes|1wYgDKnlKO4C-prwM_jyHV60LCIyHGN6h
+11/22/2026 20:17:28|ASHISH SOMWANSHI vishwakarma|8856990625|Maharashtra|Amravati|4+ years|250000|300000|Yes|Immediate joiner|Yes|Yes|1QRtkXiztVUUlcHXnIXGerw5zSngRLvGn
+11/22/2026 20:21:22|Michel Raj|9003503076|Tamil Nadu|Viluppuram|1-2 years|19000|25000|Yes|Immediate joiner|Yes|Yes|1oL1Lur-VmyjBmMzfPAu_eNZ6HCK9T2ru
+11/22/2026 20:42:32|Shubham Pohokar|9623828022|Maharashtra|Akola|0-1 years|200000|300000|Yes|Immediate joiner|No|Yes|1dtrqiK_utuAIc8NVvzqrg6dXV8piVg3h
+11/22/2026 20:45:00|dhiraj biradar|9130871707|Maharashtra|Latur|4+ years|2.8|3.2|Yes|Immediate joiner|No|Yes|1U3rxUb9BYXVttdmKKAElS-gBL4d03TI4
+11/22/2026 20:46:12|Maram Ganesh|8978583002|Telangana|Jagtial|1-2 years|360000|400000|Yes|Immediate joiner|Yes|Yes|1OMgGg980xAVb-YF2LwIurksgwJaFiait
+11/22/2026 20:51:45|Sriram .A|9488109077|Tamil Nadu|Coimbatore|2-4 years|2.5 lpa|3.5 lpa|Yes|15 days|No|Yes|1efxaNcwleolvjg11HdMYTW9-Xexjwq7I
+11/22/2026 21:01:24|Rajamanikyam|9515570372|Andhra Pradesh|Chittoor|0-1 years|4|4|Yes|Immediate joiner|Yes|Yes|15_imbL4LPURfrAsGFlPGWj0mvZkIHyVZ
+11/22/2026 21:20:08|Kumkam Ramalingam|9701092304|Andhra Pradesh|Guntur|0-1 years|2.4|3|Yes|15 days|No|Yes|1_xqyx_3gGT6TQJfd1T870UcGG7Aa9bNM
+11/22/2026 21:41:24|LUCKY ADAVILLA|9398884173|Telangana|Rangareddy|1-2 years|5|5-6|Yes|Immediate joiner|No|Yes|10Vd6R2w4v0GQNPqHQjg1x3YO34X6M6L3
+11/22/2026 21:43:18|Atul Shinde|8432893670|Maharashtra|Pune|2-4 years|4,80,000|5,00,000|Yes|Immediate joiner|No|Yes|1JR04-3o9ADtCxCziD4lo7AGJA-gZ4IOh
+11/22/2026 21:45:28|swapnil Patule|8010541229|Maharashtra|Pune|0-1 years|3.5|3.8|Yes|15 days|Yes|Yes|15io1YZl_uFK7TTxFBD9WfxFaIblGuT2o
+11/22/2026 21:53:52|Saurabh Thorat|8446977569|Maharashtra|Chhatrapati Sambhajinagar|0-1 years|0|0|Yes|Immediate joiner|No|Yes|1tpTKSbzQ3UrqYgh8gQlwMm89r-h5C_8W
+11/22/2026 22:03:57|Manoj Bhasar|8329305808|Maharashtra|Pune|1-2 years|360000|380000|Yes|Immediate joiner|Yes|Yes|1lZamFyUQwZ6A4xaSxTffA1NBvS0_AcDQ
+11/22/2026 22:13:28|SURAJ KANTI|8811950008|Assam|Cachar|4+ years|25000|350000|Yes|Immediate joiner|Yes|Yes|1br6RVAulx_pfmG2yU1vVEA7cUdafNVPg
+11/22/2026 22:30:57|Mohammed Sohail|7569508801|Telangana|Rangareddy|2-4 years|2.6|2.5|Yes|Immediate joiner|Yes|Yes|152lhk-4dvW1V4CA4LzhBVf6omYjDJQRk
+11/22/2026 22:34:53|Yuvraj Jadhav|9075711971|Maharashtra|Ahmednagar|4+ years|6.4|12|Yes|15 days|Yes|Yes|1_-n7bO_6thHxnZFjLCKjrowY1RfDVSW0
+11/22/2026 22:35:40|Yokesh|7868985900|Tamil Nadu|Vellore|2-4 years|384000|4lakh above|Yes|Immediate joiner|Yes|Yes|1Kb9--sb5OsMzLT9JsXuHKyi1ZwCTjVqM
+11/22/2026 22:37:29|Khizar Ansari|8248478531|Tamil Nadu|Coimbatore|0-1 years|2|2.2|Yes|15 days|Yes|Yes|1gWMSFOHHxWLy2sXyu96MBmqn9asccXix
+11/22/2026 22:45:18|Syed Ali Arbaaz|9623212025|Maharashtra|Chhatrapati Sambhajinagar|1-2 years|3.2|3.8|Yes|15 days|Yes|Yes|1ojJDQxlgAZ89QIg02yts5QyteVxKyqqK
+11/22/2026 22:55:35|Anupam Bharti|7753865244|Uttar Pradesh|Varanasi|0-1 years|15000|20000|Yes|Immediate joiner|Yes|Yes|1YoE-ixKPOq5ZlvtpD3eftnoDUim1doba
+11/22/2026 23:04:25|Piyush jain|7620460244|Maharashtra|Nashik|4+ years|444000|488400|Yes|Immediate joiner|Yes|Yes|1otr5dWPKSBlmsb8icfYYImtXlSQgifb4
+11/22/2026 23:09:01|Asraf|9345771073|Tamil Nadu|Nilgiris|2-4 years|2.3|3|Yes|Immediate joiner|No|Yes|1SQIMylwxMVvUwTZ2WaJcUL63JkTkK8Iq
+11/22/2026 23:17:27|Amar Amresh abs jankar|8788317804|Maharashtra|Pune|4+ years|4.4 lac|5.2lac|Yes|15 days|Yes|Yes|1dRrRc4hg_COgEGzb663KDvACidkBDKPO
+11/22/2026 23:23:27|SHIVA K|9003046243|Tamil Nadu|Vellore|1-2 years|2.5LPA|3 LPA|Yes|Immediate joiner|No|Yes|1pl4EDujV7yTx05g5yWV8h2Gv-NOM26p9
+11/22/2026 23:31:02|kanniyappan Velu|7305900941|Tamil Nadu|Chengalpattu|1-2 years|3 L|3.5L|Yes|Immediate joiner|Yes|Yes|1BXs7ksmryxN0XVnX8AB1UerackPCqVj_
+11/23/2026 0:05:33|Karan Arjun Umap|7387090262|Maharashtra|Pune|2-4 years|300000|350000|Yes|Immediate joiner|No|Yes|1t081oydReIyJATVEXD2bftkjHC3nC9CB
+11/23/2026 0:32:23|Anamala THIRUMALESH|9701910717|Telangana|Medchal-Malkajgiri|2-4 years|3.3LPA|4.4LPA|Yes|15 days|Yes|Yes|1K1egU_mRXt9-zLzxgCS8qsd7yykkYbSv
+11/23/2026 1:17:16|Adnan Baig|7020844891|Maharashtra|Parbhani|1-2 years|180,000|240,000|Yes|Immediate joiner|No|Yes|1H0zaX6nC8TdHU8iuoB7DAZVm_Va9w1zm

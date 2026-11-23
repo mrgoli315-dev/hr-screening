@@ -2162,3 +2162,39 @@
 9370875313|0-1 yrs|3|3.5-4|Immediate|Yes|No|Yes|9-15
 8976911120|4-7 yrs|3.8|4.5|Immediate|Yes|Yes|Yes|1-3
 8356949525|1-2 yrs|4.2|4.8|Immediate|Yes|No|Yes|15+
+8466926076|2-4 yrs|5.8|7.5|Immediate|Yes|Yes|Yes|4-8
+7026182348|7+ yrs|750000|1000000|15 days|Yes|Yes|Yes|9-15
+9960826099|0-1 yrs|3.4|3.7|Immediate|Yes|Yes|Yes|1-3
+8169444610|4-7 yrs|5.4|6.5|15 days|Yes|No|Yes|4-8
+9595509190|7+ yrs|600000|700000|Immediate|Yes|Yes|Yes|9-15
+8919291943|0-1 yrs|2.8|3.8|15 days|Yes|No|Yes|4-8
+8459244389|0-1 yrs|2.5|4|Immediate|Yes|No|Yes|1-3
+9553530047|4-7 yrs|3.5|4|Immediate|Yes|No|Yes|1-3
+9623039197|4-7 yrs|6|8|Immediate|Yes|Yes|Yes|4-8
+7499115885|7+ yrs|5.4|20|Immediate|Yes|Yes|Yes|9-15
+8008738325|2-4 yrs|2.5|3.5|Immediate|Yes|No|Yes|15+
+6362949489|7+ yrs|5.6|7.5|15 days|Yes|Yes|Yes|15+
+7378784878|4-7 yrs|3.5|5|15 days|Yes|Yes|Yes|4-8
+9960943488|7+ yrs|9|15|15 days|Yes|No|Yes|15+
+8369521020|7+ yrs|9|11|Immediate|Yes|Yes|Yes|15+
+7306081859|7+ yrs|480000|576000|Immediate|Yes|Yes|Yes|1-3
+7498944412|1-2 yrs|4.56|5.5|15 days|Yes|No|Yes|9-15
+7020559332|7+ yrs|750000|900000|15 days|Yes|Yes|Yes|4-8
+9360905186|7+ yrs|500000|800000|15 days|No|Yes|Yes|15+
+9533281567|4-7 yrs|3.5|4.5|Immediate|Yes|No|Yes|4-8
+9665822711|4-7 yrs|16000|20000|Immediate|Yes|Yes|Yes|15+
+7774818072|0-1 yrs|2|3|Immediate|Yes|No|Yes|4-8
+8088621374|0-1 yrs|3.3|4.5|Immediate|Yes|No|Yes|15+
+8956715253|0-1 yrs|4.5|5|15 days|Yes|Yes|Yes|None
+8975399074|7+ yrs|7.68|10|Immediate|Yes|Yes|Yes|15+
+9960768612|7+ yrs|800000|1000000|Immediate|Yes|Yes|Yes|15+
+9652290980|4-7 yrs|3.5|4.5|Immediate|Yes|Yes|Yes|1-3
+8329210348|4-7 yrs|5.2|6|15 days|Yes|No|Yes|4-8
+9035850846|4-7 yrs|7|10|Immediate|Yes|No|Yes|15+
+9493819537|4-7 yrs|4.5|6.5|Immediate|Yes|No|Yes|15+
+9515259161|4-7 yrs|600000|800000|Immediate|No|Yes|Yes|4-8
+8830371001|4-7 yrs|471500|600000|Immediate|Yes|No|No|None
+9075661860|4-7 yrs|396000|450000|Immediate|Yes|Yes|Yes|4-8
+8985871962|7+ yrs|11.4|13|Immediate|Yes|Yes|Yes|15+
+7659933344|0-1 yrs|3.8|4.5|Immediate|Yes|Yes|Yes|1-3
+9766355593|4-7 yrs|420000|480000|Immediate|Yes|Yes|Yes|1-3
